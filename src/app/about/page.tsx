@@ -107,7 +107,9 @@ const AboutPage = () => {
         </div>
 
         {/* Call to Action */}
-        <GetEstimate/>
+        <div className="pt-10">
+          <GetEstimate />
+        </div>
 
       </main>
     </div>
