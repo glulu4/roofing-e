@@ -29,14 +29,22 @@ export default function Review() {
                             </svg>
                             <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9">
                                 <p className="font-secondary">
-                                    Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt
-                                    nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque
-                                    bibendum.
+                                    When I hired Paragon Exterior for a complete roof replacement, 
+                                    I didn't just get a new roof—I got peace of mind. 
+
+                                    What truly impressed me was their commitment to customer satisfaction 
+                                    and using sustainable roofing solutions. With their expert installation, 
+                                    my roof now stands strong against harsh weather conditions, and I’ve 
+                                    already noticed a drop in my utility bills thanks to their innovative insulation techniques.
+
+                                    If you're searching for top-rated roofing contractors who prioritize quality,
+                                    affordability, and eco-friendly solutions, look no further than Paragon Exterior. 
+                                    They're the go-to experts for roofing and solar panel installations in the area!
                                 </p>
                             </blockquote>
                             <figcaption className="mt-8 text-base">
-                                <div className="font-semibold text-white">Judith Black</div>
-                                <div className="mt-1 text-gray-400 font-secondary">CEO of Workcation</div>
+                                <div className="font-semibold text-white">Jonathan Davis</div>
+                                <div className="mt-1 text-gray-400 font-secondary">Homeowner, Philadelphia, PA</div>
                             </figcaption>
                         </figure>
                     </div>

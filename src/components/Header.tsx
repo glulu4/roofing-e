@@ -54,11 +54,11 @@ export const Navigation: FunctionComponent = () => {
       </div>
       {/* mobile */}
       <div className="md:hidden">
-        <Sheet>
+        <Sheet >
           <SheetTrigger>
             <Menu size="24" />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="bg-primaryblue text-white border-white/30 shadow-sm pt-10">
             <SheetHeader>
               <SheetDescription>
                 {menuItems.map((item) => (
@@ -68,6 +68,7 @@ export const Navigation: FunctionComponent = () => {
                     target={item.openInNewTab ? "_blank" : "_self"}
                     className={cn(
                       "block py-2",
+                      "text-xl text-white",
                       pathname === item.href && "font-semibold",
                       
                     )}

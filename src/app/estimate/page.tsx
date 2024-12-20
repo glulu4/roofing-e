@@ -204,10 +204,10 @@ export default function Example() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-8 flex justify-end">
+                        <div className="mt-8 flex justify-center">
                             <button
                                 type="submit"
-                                className="rounded-md bg-primaryblue px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="rounded-md bg-primaryblue px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Send message
                             </button>

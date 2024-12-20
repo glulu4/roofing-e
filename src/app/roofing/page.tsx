@@ -79,7 +79,7 @@ const Page = async ({
                 <RoofOptionsSection/>
             </div>
 
-            <div className="">
+            <div className="pb-16 md:pt-2 md:pb-4 sm:pb-10">
                 <GetEstimate />
             </div>
 

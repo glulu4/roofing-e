@@ -26,7 +26,7 @@ const features = [
         description:
             'We work with various roofing materials, including asphalt shingles, metal roofing, and tile, to meet your specific needs.',
         href: '#',
-        icon: () => <FontAwesomeIcon icon={faRecycle} size="1x" color="#fde68a" />, // JSX element wrapped in a function
+        icon: () => <FontAwesomeIcon icon={faRecycle} size="2x" color="#152d47" />, // JSX element wrapped in a function
     },
 ]
 
@@ -53,7 +53,7 @@ export default function Customizable() {
                                 >
                                     <div className="sm:shrink-0">
                                         <div className="flex items-center justify-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
-                                            <features.icon className="h-8 w-8 text-amber-500" />
+                                            <features.icon className="h-8 w-8 text-primaryblue" />
                                         </div>
                                     </div>
                                     <div className="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
