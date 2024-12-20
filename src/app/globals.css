@@ -72,9 +72,22 @@
     }
     body {
       @apply bg-background text-foreground;
+      background-color: #f4f4f5;
+      /* background-color: #F0F0F1; */
     }
 
     .blog-content img {
       @apply w-full;
     }
   }
+
+
+  @layer base {
+  .font-sans {
+    color: #152D47; /* Replace with your desired color */
+  }
+
+
+
+}
+

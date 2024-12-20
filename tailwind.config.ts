@@ -19,12 +19,25 @@ const config = {
       },
     },
     extend: {
+
+      width: {
+  'fill': 'fill-available',
+  'webkit-fill': '-webkit-fill-available',
+  'moz-fill': '-moz-available',
+},
+height: {
+  'fill': 'fill-available',
+  'webkit-fill': '-webkit-fill-available',
+  'moz-fill': '-moz-available',
+},
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: "white",//"#ebebeb",
+        card: "#ebebeb",
         foreground: "hsl(var(--foreground))",
+        primaryblue:"#152D47",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -49,10 +62,10 @@ const config = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        // card: {
+        //   DEFAULT: "hsl(var(--card))",
+        //   foreground: "hsl(var(--card-foreground))",
+        // },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,8 +87,12 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        // sans: ["var(--font-raleway)", ...fontFamily.sans],
+        // secondary:["var(--font-cabin)", ...fontFamily.serif],
+        sans:["var(--font-cabin)", ...fontFamily.serif],    
+        secondary:["var(--font-raleway)", ...fontFamily.sans],
       },
+
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],

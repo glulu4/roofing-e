@@ -1,0 +1,36 @@
+
+import HeaderText from "../HeaderText";
+import SecondaryText from "../SecondaryText";
+
+interface QualitySectionProps {
+    mainText:string;
+    description:string;
+    image: string;
+}
+
+export default function QualitySection({image, mainText, description}: QualitySectionProps) {
+
+
+    return (
+        <div className="mx-auto w-11/12 px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-8 bg-primaryblue p-10 rounded-sm">
+
+            <div className="w-full lg:w-1/2 flex flex-col justify-center py-12">
+                <HeaderText className="mb-8 text-white">
+                    {mainText}
+                </HeaderText>
+                <SecondaryText className=" text-gray-300">
+                    {description}
+                </SecondaryText>
+            </div>
+
+            {/* Image Section */}
+            <div className="w-full lg:w-1/2 flex items-center justify-center">
+                <img
+                    src={image} // Replace with actual image URL
+                    alt="Roofing craftsmanship"
+                    className="rounded-lg object-cover w-full h-full max-h-[500px]"
+                />
+            </div>
+        </div>
+    );
+}
