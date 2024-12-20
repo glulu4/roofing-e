@@ -1,6 +1,6 @@
 'use client'
 
-import HeaderText from "../Headertext"
+import HeaderText from "../HeaderText"
 import SecondaryText from "../SecondaryText"
 
 
