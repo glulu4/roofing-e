@@ -5,7 +5,7 @@ export default function GetEstimate() {
         <div className="">
             <div className="px-6 sm:px-6 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
-                    <HeaderText>
+                    <HeaderText variant="large">
                         Get Your Free Estimate
 
                     </HeaderText>

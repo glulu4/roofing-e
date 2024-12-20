@@ -30,16 +30,16 @@ export default function Review() {
                             <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9">
                                 <p className="font-secondary">
                                     When I hired Paragon Exterior for a complete roof replacement, 
-                                    I didn't just get a new roof—I got peace of mind. 
+                                    I didn&apos;t just get a new roof, I got peace of mind.
 
                                     What truly impressed me was their commitment to customer satisfaction 
                                     and using sustainable roofing solutions. With their expert installation, 
-                                    my roof now stands strong against harsh weather conditions, and I’ve 
+                                    my roof now stands strong against harsh weather conditions, and I&apos;ve
                                     already noticed a drop in my utility bills thanks to their innovative insulation techniques.
 
-                                    If you're searching for top-rated roofing contractors who prioritize quality,
+                                    If you&apos;re searching for top-rated roofing contractors who prioritize quality,
                                     affordability, and eco-friendly solutions, look no further than Paragon Exterior. 
-                                    They're the go-to experts for roofing and solar panel installations in the area!
+                                    They&apos;re the go-to experts for roofing and solar panel installations in the area!
                                 </p>
                             </blockquote>
                             <figcaption className="mt-8 text-base">

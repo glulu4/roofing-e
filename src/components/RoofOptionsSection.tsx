@@ -70,7 +70,7 @@ const roofOptions = [
 
 export default function RoofOptionsSection() {
     return (
-        <section className="bg-white py-24 sm:py-32">
+        <section className="bg-gray-50 py-24 sm:py-32">
             <div className="text-center">
                 <HeaderText variant='large'>Asphalt Shingles</HeaderText>
                 <SecondaryText className="mt-4 text-lg text-gray-700">It’s as simple as good, better, best</SecondaryText>

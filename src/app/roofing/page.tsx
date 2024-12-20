@@ -75,7 +75,7 @@ const Page = async ({
                 />
             </div>
 
-            <div>
+            <div className="">
                 <RoofOptionsSection/>
             </div>
 
