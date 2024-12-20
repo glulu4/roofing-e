@@ -50,7 +50,7 @@ export default function Example() {
                             Get Your Free Estimate
                         </h2>
                         <p className="mt-6 text-xl text-gray-600">
-                            Take the first step towards a more energy-efficient and durable home. Our team of experts will provide a comprehensive assessment of your roofing or solar needs at no cost to you. Discover how you can save money, increase your home's value, and enjoy peace of mind with our professional solutions.
+                            Take the first step towards a more energy-efficient and durable home. Our team of experts will provide a comprehensive assessment of your roofing or solar needs at no cost to you. Discover how you can save money, increase your home&apos;s value, and enjoy peace of mind with our professional solutions.
                         </p>
                         <dl className="mt-10 space-y-4 text-lg text-gray-600">
                             <div className="flex gap-x-4">

@@ -119,7 +119,7 @@ export default function Example() {
                         type="submit"
                         className="block w-full rounded-md bg-primaryblue px-5 py-3 text-xl font-bold text-white shadow-sm hover:bg-blue-500 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-blue-600"
                     >
-                        Let’s Talk
+                        Let&apos;s Talk
                     </button>
                 </div>
             </form>
