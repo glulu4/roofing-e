@@ -3,7 +3,7 @@
 import {useState} from 'react';
 
 export default function Example() {
-    const [agreed, setAgreed] = useState(false);
+    // const [agreed, setAgreed] = useState(false);
 
     return (
         <div className="isolate bg-white px-6 py-28 sm:py-36 lg:px-10">
@@ -24,7 +24,7 @@ export default function Example() {
                     Contact Sales
                 </h2>
                 <p className="mt-4 text-xl text-gray-700">
-                    Get in touch to learn more about our premium solutions. We're here to help.
+                    Get in touch to learn more about our premium solutions. We&apos;re here to help.
                 </p>
             </div>
             <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">

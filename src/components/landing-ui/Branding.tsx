@@ -1,8 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import HeaderText from '../Headertext';
-import SecondaryText from '../SecondaryText';
-
 export default function Branding() {
     return (
         <div className="flex flex-col items-center justify-center p-8 rounded-lg pb-0">
