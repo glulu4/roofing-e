@@ -46,7 +46,7 @@ export default function Example() {
                                 <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
                             </svg>
                         </div>
-                        <h2 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+                        <h2 className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-6xl">
                             Get Your Free Estimate
                         </h2>
                         <p className="mt-6 text-xl text-gray-600">
@@ -70,7 +70,7 @@ export default function Example() {
                                     <PhoneIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
                                 </dt>
                                 <dd>
-                                    <a href="tel:+1 (555) 234-5678" className="hover:text-gray-900">
+                                    <a href="tel:+1 (555) 234-5678" className="hover:text-primaryblue">
                                         +1 (555) 234-5678
                                     </a>
                                 </dd>
@@ -81,7 +81,7 @@ export default function Example() {
                                     <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
                                 </dt>
                                 <dd>
-                                    <a href="mailto:hello@example.com" className="hover:text-gray-900">
+                                    <a href="mailto:hello@example.com" className="hover:text-primaryblue">
                                         hello@example.com
                                     </a>
                                 </dd>
@@ -93,7 +93,7 @@ export default function Example() {
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="first-name" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="first-name" className="block text-lg font-semibold text-primaryblue">
                                     First name
                                 </label>
                                 <input
@@ -101,11 +101,11 @@ export default function Example() {
                                     name="first-name"
                                     type="text"
                                     autoComplete="given-name"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div>
-                                <label htmlFor="last-name" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="last-name" className="block text-lg font-semibold text-primaryblue">
                                     Last name
                                 </label>
                                 <input
@@ -113,11 +113,11 @@ export default function Example() {
                                     name="last-name"
                                     type="text"
                                     autoComplete="family-name"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="email" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="email" className="block text-lg font-semibold text-primaryblue">
                                     Email
                                 </label>
                                 <input
@@ -125,11 +125,11 @@ export default function Example() {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="phone-number" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="phone-number" className="block text-lg font-semibold text-primaryblue">
                                     Phone number
                                 </label>
                                 <input
@@ -137,11 +137,11 @@ export default function Example() {
                                     name="phone-number"
                                     type="tel"
                                     autoComplete="tel"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="address" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="address" className="block text-lg font-semibold text-primaryblue">
                                     Street Address
                                 </label>
                                 <input
@@ -149,11 +149,11 @@ export default function Example() {
                                     name="address"
                                     type="text"
                                     autoComplete="address-line1"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div>
-                                <label htmlFor="city" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="city" className="block text-lg font-semibold text-primaryblue">
                                     City
                                 </label>
                                 <input
@@ -161,11 +161,11 @@ export default function Example() {
                                     name="city"
                                     type="text"
                                     autoComplete="address-level2"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div>
-                                <label htmlFor="state" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="state" className="block text-lg font-semibold text-primaryblue">
                                     State
                                 </label>
                                 <input
@@ -173,11 +173,11 @@ export default function Example() {
                                     name="state"
                                     type="text"
                                     autoComplete="address-level1"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                             <div>
-                                <label htmlFor="zip" className="block text-lg font-semibold text-gray-900">
+                                <label htmlFor="zip" className="block text-lg font-semibold text-primaryblue">
                                     ZIP
                                 </label>
                                 <input
@@ -185,12 +185,12 @@ export default function Example() {
                                     name="zip"
                                     type="text"
                                     autoComplete="postal-code"
-                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="mt-2 block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
 
                             <div className="sm:col-span-2">
-                                <label htmlFor="message" className="block text-base font-semibold text-gray-900">
+                                <label htmlFor="message" className="block text-base font-semibold text-primaryblue">
                                     Message
                                 </label>
                                 <div className="mt-3">
@@ -198,7 +198,7 @@ export default function Example() {
                                         id="message"
                                         name="message"
                                         rows={4}
-                                        className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                        className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                                         defaultValue={''}
                                     />
                                 </div>

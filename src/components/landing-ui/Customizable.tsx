@@ -34,7 +34,7 @@ export default function Customizable() {
     return (
 
         <div >
-            <div className="mx-auto w-5/6 px-4 py-24 sm:px-6 lg:px-8">
+            <div className="mx-auto w-11/12 px-4 py-24 sm:px-6 lg:px-8">
                 <div className="rounded-2xl bg-primaryblue px-6 py-16 sm:p-16">
                     <div className="mx-auto max-w-xl lg:max-w-none">
                         <div className="text-center">

@@ -8,6 +8,7 @@ import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import { Crimson_Pro, Heebo, Raleway, Cabin } from "next/font/google";
+import StickyButton from "@/components/StickyButton";
 
 // const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -77,6 +78,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <StickyButton/>
           </main>
         </ThemeProvider>
       </body>

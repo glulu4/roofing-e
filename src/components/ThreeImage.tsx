@@ -19,7 +19,7 @@ export default function ThreeImageLayout({posts}: ThreeImageLayoutProps) {
                                 alt={post.title}
                                 className="w-full h-72 object-cover rounded-lg"
                             />
-                            <h3 className="mt-6 text-4xl text-black font-bold">
+                            <h3 className="mt-6 text-4xl text-primaryblue font-bold">
                                 {post.title}
                             </h3>
                             <SecondaryText className="mt-2 text-gray-600">

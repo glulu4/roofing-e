@@ -31,7 +31,7 @@ const AboutPage = () => {
       <main className="container mx-auto px-5 py-16 sm:py-24 lg:py-32">
         {/* Hero Section */}
         <div className="text-center">
-          <h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-6xl">
             About Paragon Exterior
           </h1>
           <p className="mt-6 text-xl text-gray-600">
@@ -51,7 +51,7 @@ const AboutPage = () => {
             />
           </div>
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-primaryblue sm:text-4xl">
               Who We Are
             </h2>
             <SecondaryText>
@@ -69,7 +69,7 @@ const AboutPage = () => {
 
 
         <div className="mt-24 bg-gray-50 p-10 w-full rounded-md">
-          <h2 className="text-center text-4xl font-semibold tracking-tight text-gray-900">
+          <h2 className="text-center text-4xl font-semibold tracking-tight text-primaryblue">
             Our Core Values
           </h2>
           <p className="mt-4 text-center text-lg text-gray-600">
@@ -80,7 +80,7 @@ const AboutPage = () => {
               <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
                 <FaHandshake className="h-8 w-8 text-amber-500" /> {/* New Integrity Icon */}
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Integrity</h3>
+              <h3 className="mt-4 text-xl font-bold text-primaryblue">Integrity</h3>
               <p className="mt-2 text-gray-600">
                 We believe in doing what’s right, every time. Honesty and transparency are at the heart of our work.
               </p>
@@ -89,7 +89,7 @@ const AboutPage = () => {
               <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
                 <FaAward className="h-8 w-8 text-amber-500" /> {/* New Excellence Icon */}
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Excellence</h3>
+              <h3 className="mt-4 text-xl font-bold text-primaryblue">Excellence</h3>
               <p className="mt-2 text-gray-600">
                 Quality craftsmanship and attention to detail define every project we undertake.
               </p>
@@ -98,7 +98,7 @@ const AboutPage = () => {
               <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
                 <FaLightbulb className="h-8 w-8 text-amber-500" /> {/* New Innovation Icon */}
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Innovation</h3>
+              <h3 className="mt-4 text-xl font-bold text-primaryblue">Innovation</h3>
               <p className="mt-2 text-gray-600">
                 We leverage the latest technology to deliver energy-efficient and sustainable solutions.
               </p>

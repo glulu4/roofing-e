@@ -1,20 +1,16 @@
 
 "use client";
 import HeroVideo from "@/components/landing-ui/HeroVideo";
-import ArrowProgress from "@/components/landing-ui/ArrowProgress";
 import Customizable from "@/components/landing-ui/Customizable";
-import Expertise from "@/components/landing-ui/Expertise";
 import FiveStars from "@/components/landing-ui/FiveStars";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
-import ProtectionPyramid from "@/components/landing-ui/PyramidSection";
-import PyramidSection from "@/components/landing-ui/PyramidSection";
-import QualitySection from "@/components/landing-ui/Quality";
 import Review from "@/components/landing-ui/Review";
 import {wisp} from "@/lib/wisp";
 import Change from "@/components/landing-ui/Change";
 import Enrich from "@/components/landing-ui/Enrich";
 import Customize2 from "@/components/landing-ui/Customize2";
 import Branding from "@/components/landing-ui/Branding";
+import TrustedBy from "@/components/TrustedBy";
 
 const Page = async ({
   searchParams,
@@ -46,30 +42,13 @@ const Page = async ({
         <Customizable />
       </div>
 
-      <Enrich/>
+    <div className="flex justify-center items-center">
+            <Enrich />
+
+    </div>
 
 
       <Customize2 />
-      {/* Customizable Section */}
-
-      {/* Expertise Section */}
-      {/* <div className="py-8 sm:py-16 md:py-20">
-        <Expertise />
-      </div> */}
-
-
-            {/* Protection Pyramid Section */}
-      {/* <div className="py-8 sm:py-16 md:py-20">
-        <div className="bg-card mx-auto w-10/12 rounded-md p-6 sm:p-10">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-left">
-            Protect Your Home from the Elements
-          </h2>
-          <div className="flex flex-col justify-center items-center py-8 sm:py-16">
-            <ProtectionPyramid
-            />
-          </div>
-        </div>
-      </div> */}
 
 
 
@@ -81,6 +60,10 @@ const Page = async ({
       </div>
 
 
+
+      <div>
+        <TrustedBy/>
+      </div>
 
       {/* Get Estimate Section */}
       <div className="pb-16 md:pt-2 md:pb-4 sm:pb-10">

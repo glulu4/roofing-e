@@ -58,7 +58,7 @@ const Page = async ({
 
                     ]}
                     text="Solar"
-                    secText="this is some addition seo optimized text"
+                    secText="Power Your Home with Clean, Renewable Energy"
 
                 />
             </div>
@@ -82,9 +82,11 @@ const Page = async ({
             <div>
                 <Benefits />
             </div>
-            <div className="pb-16 md:pt-2 md:pb-4 sm:pb-10">
+            
+            <div className="pb-16 pt-16 sm:pt-0 md:pt-2 md:pb-4 sm:pb-10">
                 <GetEstimate />
             </div>
+
 
 
 

@@ -11,27 +11,24 @@ import RoofOptionsSection from "@/components/RoofOptionsSection";
 const posts = [
     {
         id: 1,
-        title: 'Boost your conversion rate',
+        title: 'Boost Your Home’s Protection',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        'Your roof is your home’s first line of defense against the elements. With Fly Roofing, you’ll enjoy unmatched durability and design that not only protects but enhances your property’s curb appeal. Our high-quality materials and expert craftsmanship ensure your home stays safe and beautiful for years to come.',
         imageUrl: "images/house7.jpeg",
     },
     {
         id: 2,
-        title: 'Boost your conversion rate',
-        description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        title: 'Innovative Roofing for Solar Integration',
+        description:"Combine the power of modern roofing with solar technology! Fly Roofing specializes in seamless solar panel integration, allowing you to save on energy costs while maintaining a sleek and professional look. Transform your home into an energy-efficient powerhouse with our solar-friendly roofing solutions.",
         imageUrl: "images/house6.webp"
     },
     {
         id: 3,
-        title: 'Boost your conversion rate',
-        href: '#',
-        description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        title: 'Celebrating Multi-Cultural Designs',
+        description:"At Fly Roofing, we take pride in serving diverse communities. Whether you’re looking for traditional shingles or culturally inspired roofing styles, we have the expertise to honor your heritage while providing the protection your family deserves. Let us design a roof that reflects your story and values.",
         imageUrl: "images/house10.jpeg"
     },
-    // More posts...
+   
 ];
 
 const Page = async ({
@@ -55,7 +52,7 @@ const Page = async ({
 
                     ]}
                     text="Roofing"
-                    secText="this is some addition seo optimized text"
+                    secText="Tailored Expertise, Exceptional Durability, Unmatched Value"
                 
                 />
             </div>
@@ -79,7 +76,7 @@ const Page = async ({
                 <RoofOptionsSection/>
             </div>
 
-            <div className="pb-16 md:pt-2 md:pb-4 sm:pb-10">
+            <div className="pb-16 pt-16 sm:pt-0 md:pt-2 md:pb-4 sm:pb-10">
                 <GetEstimate />
             </div>
 

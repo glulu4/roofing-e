@@ -71,7 +71,7 @@ export default function Benefits() {
                 {/* Details section */}
                 <section aria-labelledby="details-heading">
                     <div className="flex flex-col items-center text-center">
-                        <HeaderText >
+                        <HeaderText className="text-primaryblue">
                             Benefits of Solar
                         </HeaderText>
                         <SecondaryText >
@@ -87,7 +87,7 @@ export default function Benefits() {
                                 src="/images/benefit2.jpeg"
                                 className="aspect-[3/2] w-full rounded-lg object-cover"
                             />
-                            <SecondaryText className="mt-8 text-gray-500">
+                            <SecondaryText className="mt-8 text-gray-600">
                             Reduce your electricity costs by harnessing 
                             the power of the sun. Solar energy provides clean and 
                             affordable energy for your home.                           
@@ -99,7 +99,7 @@ export default function Benefits() {
                                 src="/images/benefit1.jpeg"
                                 className="aspect-[3/2] w-full rounded-lg object-cover"
                             />
-                            <SecondaryText className="mt-8 text-gray-500">
+                            <SecondaryText className="mt-8 text-gray-600">
                                 Take advantage of federal and state solar tax 
                                 credits to lower the upfront cost of installing a 
                                 solar system.

@@ -20,7 +20,7 @@ export default function Example() {
                 />
             </div>
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-balance text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h2 className="text-balance text-5xl font-bold tracking-tight text-primaryblue sm:text-6xl">
                     Contact Sales
                 </h2>
                 <p className="mt-4 text-xl text-gray-700">
@@ -30,7 +30,7 @@ export default function Example() {
             <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="first-name" className="block text-base font-semibold text-gray-900">
+                        <label htmlFor="first-name" className="block text-base font-semibold text-primaryblue">
                             First name
                         </label>
                         <div className="mt-3">
@@ -39,12 +39,12 @@ export default function Example() {
                                 name="first-name"
                                 type="text"
                                 autoComplete="given-name"
-                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="last-name" className="block text-base font-semibold text-gray-900">
+                        <label htmlFor="last-name" className="block text-base font-semibold text-primaryblue">
                             Last name
                         </label>
                         <div className="mt-3">
@@ -53,12 +53,12 @@ export default function Example() {
                                 name="last-name"
                                 type="text"
                                 autoComplete="family-name"
-                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="company" className="block text-base font-semibold text-gray-900">
+                        <label htmlFor="company" className="block text-base font-semibold text-primaryblue">
                             Company
                         </label>
                         <div className="mt-3">
@@ -67,12 +67,12 @@ export default function Example() {
                                 name="company"
                                 type="text"
                                 autoComplete="organization"
-                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="email" className="block text-base font-semibold text-gray-900">
+                        <label htmlFor="email" className="block text-base font-semibold text-primaryblue">
                             Email
                         </label>
                         <div className="mt-3">
@@ -81,12 +81,12 @@ export default function Example() {
                                 name="email"
                                 type="email"
                                 autoComplete="email"
-                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="phone-number" className="block text-base font-semibold text-gray-900">
+                        <label htmlFor="phone-number" className="block text-base font-semibold text-primaryblue">
                             Phone number
                         </label>
                         <div className="mt-3">
@@ -95,12 +95,12 @@ export default function Example() {
                                 name="phone-number"
                                 type="text"
                                 placeholder="123-456-7890"
-                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="message" className="block text-base font-semibold text-gray-900">
+                        <label htmlFor="message" className="block text-base font-semibold text-primaryblue">
                             Message
                         </label>
                         <div className="mt-3">
@@ -108,7 +108,7 @@ export default function Example() {
                                 id="message"
                                 name="message"
                                 rows={4}
-                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                                 defaultValue={''}
                             />
                         </div>
