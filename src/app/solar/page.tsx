@@ -14,27 +14,25 @@ import Benefits from "@/components/Benefits";
 const posts = [
     {
         id: 1,
-        title: 'Boost your conversion rate',
+        title: 'Save Money with Solar Power',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            'Reduce your electricity bills and take control of your energy expenses with cost-effective solar panel solutions. Our innovative systems help homeowners and businesses lower costs while making a positive environmental impact.',
         imageUrl: "images/solar/house-solar2.jpeg",
     },
     {
         id: 2,
-        title: 'Boost your conversion rate',
+        title: 'Eco-Friendly Energy Solutions',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl: "images/solar/house-solar.jpeg"
-        },
+            'Switch to renewable energy and reduce your carbon footprint. Solar energy is clean, sustainable, and the perfect choice for environmentally conscious individuals. Let’s build a greener future together.',
+        imageUrl: "images/solar/house-solar.jpeg",
+    },
     {
         id: 3,
-        title: 'Boost your conversion rate',
-        href: '#',
+        title: 'Increase Your Property Value',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:"images/solar/house4-solar.jpeg"
+            'Solar panels not only save energy but also enhance your property’s market value. Invest in a long-term energy solution that adds tangible value to your home or business.',
+        imageUrl: "images/solar/house4-solar.jpeg",
     },
-    // More posts...
 ];
 
 export type ThreeImageArrayType = typeof posts[number];
