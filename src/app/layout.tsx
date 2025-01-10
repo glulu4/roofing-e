@@ -9,6 +9,8 @@ import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import { Crimson_Pro, Heebo, Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
+import ogImage from "./opengraph-image.webp"
+// const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const fontSans = Raleway({
   subsets: ['latin'],
@@ -16,6 +18,13 @@ const fontSans = Raleway({
   variable: '--font-raleway',
   display: 'swap',
 });
+
+// const heebo = Heebo({
+//   subsets: ['latin'],
+//   weight: ['200', '300', '400', '500', '700', '900'], // Specify all desired weights
+//   variable: '--font-heebo',
+//   display: 'swap',
+// })
 
 const fontCabin = Cabin({
   subsets: ['latin'],
@@ -34,14 +43,40 @@ export const metadata: Metadata = {
   },
   description: config.blog.metadata.description,
   openGraph: {
-    title: config.blog.metadata.title.default,
-    description: config.blog.metadata.description,
+    title: "Paragon Exterior",
+    description: "Roofing Solutions",
+    url: "https://www.paragonexterior.com",
+    siteName: "Paragon Exterior",
     images: [
-      signOgImageUrl({
-        title: config.blog.name,
-      }),
-    ]
-  }
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paragon Exterior",
+    description: "Roofing Solutions",
+    images: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height
+      },
+    ],
+  },
+  // openGraph: {
+  //   title: config.blog.metadata.title.default,
+  //   description: config.blog.metadata.description,
+  //   images: [
+  //     signOgImageUrl({
+  //       title: config.blog.name,
+  //     }),
+  //   ]
+  // }
 };
 
 export default function RootLayout({
