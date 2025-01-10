@@ -36,13 +36,7 @@ const posts = [
 ];
 
 export type ThreeImageArrayType = typeof posts[number];
-const Page = async ({
-    searchParams,
-}: {
-    searchParams: {[key: string]: string | string[] | undefined};
-}) => {
-    const page = searchParams.page ? parseInt(searchParams.page as string) : 1;
-    const result = await wisp.getPosts({limit: 6, page});
+const Page = () => {
     return (
         <div>
             {/* Hero Video Section */}

@@ -29,7 +29,7 @@ export default function Change() {
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:gap-x-44">
 
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl flex flex-col gap-12">
-                                    <HeaderText className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-7xl">
+                                    <HeaderText className=" text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-7xl">
                                         Your Trusted Partner for Superior Roofing Solutions
                                     </HeaderText>
                                     <SecondaryText className=" text-gray-500">

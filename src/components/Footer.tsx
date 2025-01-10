@@ -133,7 +133,7 @@ export const Footer: FunctionComponent = () => {
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-sm/6 text-neutral-50">&copy; 2024 Paragon Exterior. All rights reserved. Powered By Wisp</p>
+        <p className="mt-10 text-center text-sm/6 text-neutral-50">&copy; 2024 Paragon Exterior.  All rights reserved.</p>
       </div>
     </footer>
   )

@@ -43,14 +43,21 @@ export const metadata: Metadata = {
   },
   description: config.blog.metadata.description,
   openGraph: {
-    title: config.blog.metadata.title.default,
-    description: config.blog.metadata.description,
+    title: `Paragon Exterior`,
+    description: `Discover Expert Roofing Solutions`,
+    url: `https://www.paragonexterior.com`,
+    siteName: "Paragon Exterior",
     images: [
-      signOgImageUrl({
-        title: config.blog.name,
-      }),
-    ]
-  }
+      {
+        url: "https://www.paragonexterior.com/images/roof-background-img.png",
+        width: 1200,
+        height: 630,
+        alt: `Paragon Exterior`,
+      },
+    ],
+    type: "website",
+  },
+
 };
 
 export default function RootLayout({

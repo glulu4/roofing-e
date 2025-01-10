@@ -1,9 +1,82 @@
 'use client';
 
-import {useState} from 'react';
+import {useState, ChangeEvent, FormEvent} from 'react';
+
+export interface ContactFormData {
+    firstName: string;
+    lastName: string;
+    company: string;
+    email: string;
+    phoneNumber: string;
+    message: string;
+}
 
 export default function Example() {
-    // const [agreed, setAgreed] = useState(false);
+    const [formData, setFormData] = useState<ContactFormData>({
+        firstName: '',
+        lastName: '',
+        company: '',
+        email: '',
+        phoneNumber: '',
+        message: ''
+    });
+
+    const handleChange = (
+        e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        const {name, value} = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        // Simple validation
+        // if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+        //     alert("Please fill in all required fields.");
+        //     return;
+        // }
+
+        // if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+        //     alert("Please enter a valid email address.");
+        //     return;
+        // }
+
+
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({formData}),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log("Form submitted:", data);
+            alert("Your message has been sent successfully!");
+            setFormData({
+                firstName: "",
+                lastName: "",
+                company: "",
+                email: "",
+                phoneNumber: "",
+                message: "",
+            });
+        } catch (error) {
+            console.error("Error submitting the form:", error);
+            alert("Failed to send your message. Please try again later.");
+        }
+    };
+
 
     return (
         <div className="isolate bg-white px-6 py-28 sm:py-36 lg:px-10">
@@ -27,7 +100,7 @@ export default function Example() {
                     Get in touch to learn more about our premium solutions. We&apos;re here to help.
                 </p>
             </div>
-            <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="first-name" className="block text-base font-semibold text-primaryblue">
@@ -35,10 +108,13 @@ export default function Example() {
                         </label>
                         <div className="mt-3">
                             <input
+                            required
                                 id="first-name"
-                                name="first-name"
+                                name="firstName"
                                 type="text"
                                 autoComplete="given-name"
+                                value={formData.firstName}
+                                onChange={handleChange}
                                 className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
@@ -49,10 +125,13 @@ export default function Example() {
                         </label>
                         <div className="mt-3">
                             <input
+                                required
                                 id="last-name"
-                                name="last-name"
+                                name="lastName"
                                 type="text"
                                 autoComplete="family-name"
+                                value={formData.lastName}
+                                onChange={handleChange}
                                 className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
@@ -63,10 +142,13 @@ export default function Example() {
                         </label>
                         <div className="mt-3">
                             <input
+                                required
                                 id="company"
                                 name="company"
                                 type="text"
                                 autoComplete="organization"
+                                value={formData.company}
+                                onChange={handleChange}
                                 className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
@@ -77,10 +159,13 @@ export default function Example() {
                         </label>
                         <div className="mt-3">
                             <input
+                                required
                                 id="email"
                                 name="email"
                                 type="email"
                                 autoComplete="email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
@@ -91,10 +176,13 @@ export default function Example() {
                         </label>
                         <div className="mt-3">
                             <input
+                                required
                                 id="phone-number"
-                                name="phone-number"
-                                type="text"
+                                name="phoneNumber"
+                                type="tel"
                                 placeholder="123-456-7890"
+                                value={formData.phoneNumber}
+                                onChange={handleChange}
                                 className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
@@ -105,11 +193,13 @@ export default function Example() {
                         </label>
                         <div className="mt-3">
                             <textarea
+                                required
                                 id="message"
                                 name="message"
                                 rows={4}
+                                value={formData.message}
+                                onChange={handleChange}
                                 className="block w-full rounded-md bg-white px-4 py-3 text-lg text-primaryblue outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
-                                defaultValue={''}
                             />
                         </div>
                     </div>

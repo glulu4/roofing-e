@@ -1,14 +1,13 @@
 import React from 'react';
 import HeaderText from './HeaderText';
 import SecondaryText from './SecondaryText';
-import SecondaryHeader from './SecondaryHeader';
 
 const roofOptions = [
     {
-        title: 'Natural Shadow',
+        title: 'Royal Sovereign® 3-Tab Shingles',
         subtitle: 'A Good Roof',
-        description: 'Get the basic necessities of a good roof at an affordable price.',
-        imageUrl: '/images/type1.jpg', // Replace with actual image paths
+        description: 'These traditional 3-tab shingles provide reliable performance and timeless beauty at an affordable price point. They feature a Class A fire rating and a Micro Weave™ Core that resists cracking and splitting, ensuring long-term durability. Available in 13 different colors, they offer versatility to match various home styles.',
+        imageUrl: '/images/royal-sovereign.jpg', // Replace with actual image paths
         features: [
             {label: 'Shingle', value: 'GAF Natural Shadow'},
             {label: 'Underlayment', value: '15lb Felt'},
@@ -19,10 +18,10 @@ const roofOptions = [
         ],
     },
     {
-        title: 'GAF HDZ',
+        title: 'Timberline® HDZ™ Architectural Shingles',
         subtitle: 'A Better Roof',
-        description: 'Get a roof that will look great and last longer than a basic “good” roof all at a best-value price.',
-        imageUrl: '/images/type2.jpg',
+        description: "As North America's best-selling shingles, Timberline® HDZ™ offers a perfect blend of beauty and performance. Designed to resemble wood shakes, they come with LayerLock™ Technology for enhanced wind resistance and a StrikeZone™ nailing area for easier installation. These shingles are available in a wide array of colors to complement any home exterior.",
+        imageUrl: '/images/timberline-hdz.jpg',
         features: [
             {label: 'Shingle', value: 'GAF Timberline HDZ'},
             {label: 'Underlayment', value: 'GAF FeltBuster'},
@@ -35,10 +34,10 @@ const roofOptions = [
         ],
     },
     {
-        title: 'Designer Grade',
+        title: 'Timberline® UHDZ™ Ultra High Definition Shingles',
         subtitle: 'The Best Roof',
-        description: 'Do you want your house to be the envy of your neighbors? This is the roof for you.',
-        imageUrl: '/images/type3.jpg',
+        description: "For homeowners seeking a more pronounced dimensional look, Timberline® UHDZ™ shingles offer a thicker, ultra-dimensional wood-shake appearance. They feature a Dual Shadow Line for enhanced depth and a 30-year StainGuard Plus PRO™ Limited Warranty against blue-green algae discoloration. These premium shingles are available in several rich color blends.",
+        imageUrl: '/images/timberline-uhdz.png',
         features: [
             {label: 'Shingle', value: 'GAF Designer Grade'},
             {label: 'Underlayment', value: 'GAF Deck Armor'},
@@ -51,10 +50,10 @@ const roofOptions = [
         ],
     },
     {
-        title: 'Roof + Solar',
+        title: 'Designer Shingles (e.g., Camelot® II)',
         subtitle: 'The SmartRoof',
-        description: 'Get an elegant, low-profile energy system that integrates directly with your newly replaced roof.',
-        imageUrl: '/images/type4.jpg',
+        description: "GAF's Designer Shingles, such as the Camelot® II series, offer the ultimate in sophistication and architectural style. Mimicking the appearance of hand-cut European shingles, they provide a luxury look at an affordable price. These shingles come with advanced protection technology and are available in a selection of artisan-crafted color palettes.",
+        imageUrl: '/images/royal-slate-gaf-roof-shingles-0692695-64_1000.jpg',
         features: [
             {label: 'Shingle', value: 'GAF Asphalt Shingle'},
             {label: 'Underlayment', value: 'GAF Deck Armor'},
@@ -68,6 +67,7 @@ const roofOptions = [
     },
 ];
 
+
 export default function RoofOptionsSection() {
     return (
         <section className="bg-gray-50 py-24 sm:py-32">
@@ -78,7 +78,12 @@ export default function RoofOptionsSection() {
             <div className="mt-16 mx-auto grid w-5/6 grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
                 {roofOptions.map((option) => (
                     <div key={option.title} className="border border-gray-200 rounded-lg shadow-sm p-6">
-                        <HeaderText variant="small">{option.title}</HeaderText>
+                        {/* <HeaderText className='pb-10' variant="small">{option.title}</HeaderText> */}
+
+                        <div className="flex items-center justify-center h-32 py-3">
+                            <HeaderText className=" text-center" variant="small">{option.title}</HeaderText>
+                        </div>
+
                         <SecondaryText className="mt-2 text-sm font-medium text-gray-500">{option.subtitle}</SecondaryText>
                         <img
                             src={option.imageUrl}
