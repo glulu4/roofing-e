@@ -9,6 +9,35 @@ import Enrich from "@/components/landing-ui/Enrich";
 import Customize2 from "@/components/landing-ui/Customize2";
 import Branding from "@/components/landing-ui/Branding";
 import TrustedBy from "@/components/TrustedBy";
+import {Metadata} from "next";
+import {config} from "@/config";
+
+
+export const metadata: Metadata = {
+  title: {
+    absolute: config.blog.metadata.title.absolute,
+    default: config.blog.metadata.title.default,
+    template: config.blog.metadata.title.template,
+  },
+  description: config.blog.metadata.description,
+  openGraph: {
+    title: `Paragon Exterior`,
+    description: `Discover Expert Roofing Solutions`,
+    url: `https://www.paragonexterior.com`,
+    siteName: "Paragon Exterior",
+    images: [
+      {
+        url: "https://www.paragonexterior.com/images/roof-background-img.png",
+        width: 1200,
+        height: 630,
+        alt: `Paragon Exterior`,
+      },
+    ],
+    type: "website",
+  },
+
+};
+
 
 const Page = () => {
   return (
