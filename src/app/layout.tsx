@@ -10,21 +10,12 @@ import {Footer} from "@/components/Footer";
 import { Crimson_Pro, Heebo, Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
 
-// const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
 const fontSans = Raleway({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '700', '900'], // Specify all desired weights
   variable: '--font-raleway',
   display: 'swap',
 });
-
-// const heebo = Heebo({
-//   subsets: ['latin'],
-//   weight: ['200', '300', '400', '500', '700', '900'], // Specify all desired weights
-//   variable: '--font-heebo',
-//   display: 'swap',
-// })
 
 const fontCabin = Cabin({
   subsets: ['latin'],
@@ -43,21 +34,14 @@ export const metadata: Metadata = {
   },
   description: config.blog.metadata.description,
   openGraph: {
-    title: `Paragon Exterior`,
-    description: `Discover Expert Roofing Solutions`,
-    url: `https://www.paragonexterior.com`,
-    siteName: "Paragon Exterior",
+    title: config.blog.metadata.title.default,
+    description: config.blog.metadata.description,
     images: [
-      {
-        url: "https://www.paragonexterior.com/public/images/roof-background-img.png",
-        width: 1200,
-        height: 630,
-        alt: `Paragon Exterior`,
-      },
-    ],
-    type: "website",
-  },
-
+      signOgImageUrl({
+        title: config.blog.name,
+      }),
+    ]
+  }
 };
 
 export default function RootLayout({
