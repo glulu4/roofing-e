@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     template: config.blog.metadata.title.template,
   },
   description: config.blog.metadata.description,
+  metadataBase: new URL("https://www.paragonexterior.com"),
   openGraph: {
     title: "Paragon Exterior",
     description: "Roofing Solutions",
