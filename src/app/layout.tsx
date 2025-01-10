@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Paragon Exterior",
     images: [
       {
-        url: "https://www.paragonexterior.com/images/roof-background-img.png",
+        url: "https://www.paragonexterior.com/public/images/roof-background-img.png",
         width: 1200,
         height: 630,
         alt: `Paragon Exterior`,
