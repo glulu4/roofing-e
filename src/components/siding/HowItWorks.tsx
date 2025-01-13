@@ -1,7 +1,6 @@
 
 import React from 'react';
 import HeaderText from '../HeaderText';
-import SecondaryHeader from '../SecondaryHeader';
 import SecondaryText from '../SecondaryText';
 
 const HowItWorks = () => {
