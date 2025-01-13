@@ -21,7 +21,7 @@ const menuItems: MenuItem[] = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   {name: "Roofing", href: "/roofing"},
-  // {name: "Sidings", href: "/siding"},
+  {name: "Sidings", href: "/siding"},
   {name: "Solar", href: "/solar"},
   {name: "Contact", href: "/contact"},
   {name: "Free Estimate", href: "/estimate"},
