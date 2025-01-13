@@ -34,44 +34,126 @@ export async function POST(request: NextRequest) {
         const smtpTransport = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: process.env.GMAIL_TEST_EMAIL,
-                pass: process.env.GMAIL_TEST_PASSWORD, // Use App Password here
+                user: process.env.GMAIL_SENDER,
+                pass: process.env.GMAIL_PASSWORD, // Use App Password here
             },
         });
 
         // Construct the email
-        const mailOptions = {
-            from: `${fullName} <${process.env.GMAIL_TEST_EMAIL}>`,
-            to: process.env.GMAIL_TEST_EMAIL,
-            replyTo: email,
-            subject: `Website Activity from ${email}`,
-            html: `
-                <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-                    <h2 style="color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 5px;">Contact Form Submission</h2>
-                    <section style="margin-top: 20px;">
-                        <h3 style="color: #333; margin: 10px 0;">Name</h3>
-                        <p>${fullName}</p>
-                    </section>
-                    <section style="margin-top: 20px;">
-                        <h3 style="color: #333; margin: 10px 0;">Email</h3>
-                        <p>${email}</p>
-                    </section>
-                    <section style="margin-top: 20px;">
-                        <h3 style="color: #333; margin: 10px 0;">Company</h3>
-                        <p>${company || 'N/A'}</p>
-                    </section>
-                    <section style="margin-top: 20px;">
-                        <h3 style="color: #333; margin: 10px 0;">Phone Number</h3>
-                        <p>${phoneNumber || 'N/A'}</p>
-                    </section>
-                    <section style="margin-top: 20px;">
-                        <h3 style="color: #333; margin: 10px 0;">Message</h3>
-                        <p style="white-space: pre-wrap;">${message}</p>
-                    </section>
-                </div>
-            `,
+const mailOptions = {
+  from: `${fullName} <${email}>`,
+  to: process.env.EMAIL_TO_SEND_TO,
+  replyTo: email,
+  subject: `Someone Contacted You - Paragon Exterior`,
+  html: `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="
+        font-family: 'Segoe UI', Arial, sans-serif;
+        line-height: 1.6;
+        color: #2d3748;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f7fafc;
+      ">
+        <div style="
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 30px;
+          margin: 20px 0;
+        ">
+          <div style="
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #4299e1;
+          ">
+            <h1 style="
+              color: #2b6cb0;
+              margin: 0;
+              font-size: 24px;
+              font-weight: 600;
+            ">New Contact Form Submission</h1>
+          </div>
 
-        };
+          <div style="margin-bottom: 25px;">
+            <h2 style="
+              color: #4a5568;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 0 0 8px 0;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+            ">Contact Details</h2>
+            
+            <div style="
+              background-color: #edf2f7;
+              border-radius: 6px;
+              padding: 15px;
+              margin-top: 10px;
+            ">
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                  <td style="padding: 8px 0; color: #718096; width: 120px;">Name:</td>
+                  <td style="padding: 8px 0; font-weight: 500;">${fullName}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; color: #718096;">Email:</td>
+                  <td style="padding: 8px 0; font-weight: 500;">${email}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; color: #718096;">Company:</td>
+                  <td style="padding: 8px 0; font-weight: 500;">${company || 'N/A'}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; color: #718096;">Phone:</td>
+                  <td style="padding: 8px 0; font-weight: 500;">${phoneNumber || 'N/A'}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px;">
+            <h2 style="
+              color: #4a5568;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 0 0 8px 0;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+            ">Message</h2>
+            <div style="
+              background-color: #edf2f7;
+              border-radius: 6px;
+              padding: 15px;
+              margin-top: 10px;
+              white-space: pre-wrap;
+              font-size: 15px;
+              line-height: 1.6;
+            ">${message}</div>
+          </div>
+
+          <div style="
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            font-size: 14px;
+            color: #718096;
+          ">
+            This email was sent from the Paragon Exterior contact form.
+          </div>
+        </div>
+      </body>
+    </html>
+  `
+};
 
         // Send the email
         const info = await smtpTransport.sendMail(mailOptions);
