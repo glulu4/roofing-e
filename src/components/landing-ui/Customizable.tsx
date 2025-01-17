@@ -71,7 +71,7 @@ export default function Customizable() {
                             </HeaderText>
 
                             <SecondaryText className="mt-4 text-lg text-neutral-50">
-                                Solar energy is an investment in your home, your finances, and the planet. Here’s why going solar is worth it.
+                                Design a roof that complements your style, enhances your home, and supports sustainable living.
                             </SecondaryText>
                         </div>
                         <div className="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3">
