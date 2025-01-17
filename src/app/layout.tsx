@@ -9,7 +9,7 @@ import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import { Crimson_Pro, Heebo, Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
-import ogImage from "./opengraph-image.webp"
+import ogImage from "./opengraph-image.png"
 // const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const fontSans = Raleway({

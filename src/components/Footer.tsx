@@ -19,7 +19,7 @@ const navigation = {
   social: [
     {
       name: "Facebook",
-      href: "https://www.facebook.com/profile.php?id=61568616263418",
+      href: "https://www.facebook.com/people/Paragon-Exterior/61572385371262/?mibextid=wwXIfr&rdid=mHnxYd4df9TcOHxK&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F158Gz9PZBG%2F%3Fmibextid%3DwwXIfr",
       icon: FaFacebookF,
     },
     {
