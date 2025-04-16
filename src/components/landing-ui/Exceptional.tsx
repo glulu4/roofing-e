@@ -3,31 +3,38 @@
 import {HomeIcon, LifebuoyIcon, NewspaperIcon, PhoneIcon, SunIcon, WrenchScrewdriverIcon} from '@heroicons/react/20/solid'
 import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
+import Image from 'next/image';
 
 const cards = [
     {
         name: 'Custom Roof Installations',
-        description: 'Choose from a variety of roofing types, including asphalt shingles, metal roofing, clay tiles, and flat roofs. We’ll help you find the perfect fit for your style, budget, and climate needs.',
+        description:
+            'Looking for a roofing company that understands style and performance? We install asphalt shingles, metal roofs, clay tiles, and flat roofing systems tailored to your home’s design and needs.',
         icon: HomeIcon,
     },
     {
         name: 'Solar Roof Solutions',
-        description: 'Embrace the future of energy with solar-integrated roofing systems. Lower your energy bills and increase your home’s value with sustainable, state-of-the-art technology.',
+        description:
+            'Go green with our solar roofing options. As trusted residential roofing contractors, we help you save on energy bills while increasing your home’s value with state-of-the-art roof technology.',
         icon: SunIcon,
     },
     {
         name: 'Repairs & Maintenance',
-        description: 'Keep your roof in peak condition with our expert repair and maintenance services. From fixing leaks to restoring storm-damaged roofs, we’ve got you covered.',
+        description:
+            'Need roof repair near you? Our expert roofing contractors handle everything from minor leaks to storm damage. Prevent costly issues with proactive maintenance you can count on.',
         icon: WrenchScrewdriverIcon,
     },
 ]
 
-export default function Customize2() {
+
+export default function Exceptional() {
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
             {/* Background Image */}
-            <img
-                alt=""
+            <Image
+                width={1000}
+                height={1000}
+                alt="roofing company"
                 src="/images/quality-roof-image.jpg"
                 className="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center"
             />
@@ -55,7 +62,7 @@ export default function Customize2() {
                             Roofing Excellence Backed by Exceptional Support
                         </HeaderText>
                         <SecondaryText className='text-neutral-50'>
-                            From traditional shingles to modern solar roofing systems, we provide durable and energy-efficient solutions for every home. Our expert team ensures superior craftsmanship and unmatched customer service to protect what matters most.
+                            As one of the leading roofing companies in the area, we specialize in roof repair, custom installations, and energy-efficient solutions. Whether you&apos;re searching for residential roofing, flat roofing, or the best roofing company near you — we&apos;ve got your home covered.
                         </SecondaryText>
                     </div>
                 </div>

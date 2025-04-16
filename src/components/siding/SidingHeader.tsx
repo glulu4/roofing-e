@@ -1,6 +1,7 @@
 import {cn} from '@/lib/utils'
 import HeaderText from '../HeaderText'
 import SecondaryText from '../SecondaryText'
+import Image from 'next/image';
 
 const tiers = [
     {
@@ -20,8 +21,10 @@ const tiers = [
 export default function SidingHeader() {
     return (
         <div className="relative isolate overflow-hidden py-24 sm:py-32">
-            <img
-                alt="Paragon Exterior"
+            <Image
+                width={1000}
+                height={1000}
+                alt="Paragon Exterior | Roofing comapany"
                 src="/images/siding/siding1.jpeg"
                 className="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center"
             />

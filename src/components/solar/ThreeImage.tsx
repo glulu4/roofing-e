@@ -1,6 +1,7 @@
 
 import {ThreeImageArrayType} from "@/app/solar/page";
-import SecondaryText from "./SecondaryText";
+import SecondaryText from "../SecondaryText";
+import Image from "next/image";
 
 
 interface ThreeImageLayoutProps{
@@ -14,9 +15,11 @@ export default function ThreeImageLayout({posts}: ThreeImageLayoutProps) {
                 <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                     {posts.map((post) => (
                         <div key={post.id} className="flex flex-col items-start">
-                            <img
+                            <Image  
+                                width={500}
+                                height={500}
                                 src={post.imageUrl}
-                                alt={post.title}
+                                alt="roofing companies"
                                 className="w-full h-72 object-cover rounded-lg"
                             />
                             <h3 className="mt-6 text-4xl text-primaryblue font-bold">

@@ -4,12 +4,14 @@ interface HeaderTextProps {
   children: React.ReactNode;
   className?: string;
   variant?: 'small' | 'default' | 'large';
+  as?: keyof JSX.IntrinsicElements; // 'h1' | 'h2' | 'h3' | 'p' | etc.
 }
 
-export default function HeaderText({ 
-  children, 
-  className = "", 
-  variant = 'default' 
+export default function HeaderText({
+  children,
+  className = "",
+  variant = 'default',
+  as: Tag = 'h2' // default to <h2>
 }: HeaderTextProps) {
   const variants = {
     small: "text-2xl font-extrabold tracking-tight sm:text-3xl",
@@ -18,8 +20,8 @@ export default function HeaderText({
   }
 
   return (
-    <h2 className={`${variants[variant]} ${className}`}>
+    <Tag className={`${variants[variant]} ${className}`}>
       {children}
-    </h2>
+    </Tag>
   );
 }

@@ -2,9 +2,11 @@
 "use client";
 import HeroVideo from "@/components/landing-ui/HeroVideo";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
-import QualitySection from "@/components/landing-ui/Quality";
-import ThreeImage from "@/components/ThreeImage";
+// import QualitySection from "@/components/landing-ui/Quality";
+// import ThreeImage from "@/components/ThreeImage";
 import RoofOptionsSection from "@/components/RoofOptionsSection";
+import QualitySection from "@/components/solar/Quality";
+import ThreeImageLayout from "@/components/solar/ThreeImage";
 
 const posts = [
     {
@@ -12,19 +14,19 @@ const posts = [
         title: 'Boost Your Home’s Protection',
         description:
         'Your roof is your home’s first line of defense against the elements. With Paragon Exterior, you’ll enjoy unmatched durability and design that not only protects but enhances your property’s curb appeal. Our high-quality materials and expert craftsmanship ensure your home stays safe and beautiful for years to come.',
-        imageUrl: "images/house7.jpeg",
+        imageUrl: "/images/house7.jpeg",
     },
     {
         id: 2,
         title: 'Innovative Roofing for Solar Integration',
         description:"Combine the power of modern roofing with solar technology! Paragon Exterior specializes in seamless solar panel integration, allowing you to save on energy costs while maintaining a sleek and professional look. Transform your home into an energy-efficient powerhouse with our solar-friendly roofing solutions.",
-        imageUrl: "images/house6.webp"
+        imageUrl: "/images/house6.webp"
     },
     {
         id: 3,
         title: 'Celebrating Multi-Cultural Designs',
         description:"At Paragon Exterior, we take pride in serving diverse communities. Whether you’re looking for traditional shingles or culturally inspired roofing styles, we have the expertise to honor your heritage while providing the protection your family deserves. Let us design a roof that reflects your story and values.",
-        imageUrl: "images/house10.jpeg"
+        imageUrl: "/images/house10.jpeg"
     },
    
 ];
@@ -59,7 +61,7 @@ const Page = () => {
 
             <div >
                 
-                <ThreeImage
+                <ThreeImageLayout
                 posts={posts}
                 />
             </div>

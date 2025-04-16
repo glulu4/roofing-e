@@ -1,10 +1,6 @@
-import {Footer} from "@/components/Footer";
-import {Header} from "@/components/Header";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import SecondaryText from "@/components/SecondaryText";
-import {signOgImageUrl} from "@/lib/og-image";
 import Image from "next/image";
-
 import {FaHandshake, FaAward, FaLightbulb} from "react-icons/fa"; // Import react-icons
 
 export async function generateMetadata() {
@@ -14,13 +10,7 @@ export async function generateMetadata() {
     openGraph: {
       title: "About Paragon Exterior",
       description: "Learn more about Paragon Exterior, our values, and our commitment to excellence.",
-      images: [
-        signOgImageUrl({
-          title: "Paragon Exterior",
-          label: "About Us",
-          brand: "Paragon Exterior",
-        }),
-      ],
+
     },
   };
 }

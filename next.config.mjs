@@ -8,9 +8,17 @@ const nextConfig = {
       },
     ],
   },
-  redirects: async () => {
-    return [];
-  },
+  // redirects: async () => {
+  //   return [
+  //     {
+  //       // source: "/:path*", // Redirect all pages
+  //       source: "/((?!dvd$).*)", // Match everything EXCEPT "/dvd"
+
+  //       destination: "/dvd", // Redirect to a notice page
+  //       permanent: false,
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;

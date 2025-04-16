@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import HeaderText from "../HeaderText";
 import SecondaryText from "../SecondaryText";
 
@@ -25,9 +26,11 @@ export default function QualitySection({image, mainText, description}: QualitySe
 
             {/* Image Section */}
             <div className="w-full lg:w-1/2 flex items-center justify-center">
-                <img
+                <Image
+                    width={500}
+                    height={500}
                     src={image} // Replace with actual image URL
-                    alt="Paragon Exterior"
+                    alt="Paragon Exterior roofing company"
                     className="rounded-lg object-cover w-full h-full max-h-[500px]"
                 />
             </div>

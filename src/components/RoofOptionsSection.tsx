@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderText from './HeaderText';
 import SecondaryText from './SecondaryText';
+import Image from 'next/image';
 
 const roofOptions = [
     {
@@ -85,7 +86,9 @@ export default function RoofOptionsSection() {
                         </div>
 
                         <SecondaryText className="mt-2 text-sm font-medium text-gray-500">{option.subtitle}</SecondaryText>
-                        <img
+                        <Image
+                            width={500}
+                            height={500}
                             src={option.imageUrl}
                             alt={option.title}
                             className="mt-4 h-40 w-full object-cover rounded-md"

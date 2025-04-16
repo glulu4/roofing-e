@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
+import Image from 'next/image';
 
 export default function SidingMaterial() {
     return (
@@ -19,8 +20,10 @@ export default function SidingMaterial() {
                                 <div className="relative lg:col-span-3">
                                     <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
-                                        <img
-                                            alt="Vinyl Siding"
+                                        <Image
+                                            width={1000}
+                                            height={500}
+                                            alt="roofing company"
                                             src="/images/siding/vinyl-siding.jpg"
                                             className="h-80 object-cover object-left"
                                         />
@@ -38,8 +41,10 @@ export default function SidingMaterial() {
                                 <div className="relative lg:col-span-3">
                                     <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
-                                        <img
-                                            alt="Aluminum Siding"
+                                        <Image
+                                            width={5000}
+                                            height={500}
+                                            alt="roofing company"
                                             src="/images/siding/aluminum-siding.jpg"
                                             className="h-80 object-cover object-left lg:object-right"
                                         />
@@ -57,8 +62,10 @@ export default function SidingMaterial() {
                                 <div className="relative lg:col-span-2">
                                     <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-                                        <img
-                                            alt="Fiber Cement Siding"
+                                        <Image
+                                            width={500}
+                                            height={500}
+                                            alt="roofing company"
                                             src="/images/siding/fiber-cement-siding.jpg"
                                             className="h-80 object-cover object-left"
                                         />
@@ -76,8 +83,10 @@ export default function SidingMaterial() {
                                 <div className="relative lg:col-span-2">
                                     <div className="absolute inset-px rounded-lg bg-white" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                        <img
-                                            alt="Cedar Siding"
+                                        <Image
+                                            width={500}
+                                            height={500}
+                                            alt="roofing company"
                                             src="/images/siding/cedar-siding.png"
                                             className="h-80 object-cover"
                                         />
@@ -95,8 +104,10 @@ export default function SidingMaterial() {
                                 <div className="relative lg:col-span-2">
                                     <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                                        <img
-                                            alt="Engineered Wood Siding"
+                                        <Image
+                                            width={500}
+                                            height={500}
+                                            alt="roofing company"
                                             src="/images/siding/engineered-wood-siding.webp"
                                             className="h-80 object-cover"
                                         />

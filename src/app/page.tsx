@@ -6,27 +6,28 @@ import GetEstimate from "@/components/landing-ui/GetEstimate";
 import Review from "@/components/landing-ui/Review";
 import Change from "@/components/landing-ui/Change";
 import Enrich from "@/components/landing-ui/Enrich";
-import Customize2 from "@/components/landing-ui/Customize2";
+import Customize2 from "@/components/landing-ui/Exceptional";
 import Branding from "@/components/landing-ui/Branding";
-import TrustedBy from "@/components/TrustedBy";
+import TrustedBy from "@/components/landing-ui/TrustedBy";
+import Exceptional from "@/components/landing-ui/Exceptional";
 
 const Page = () => {
   return (
     <div>
       {/* Hero Video Section */}
       <div className="flex w-full">
-        <HeroVideo 
-        videos= {[
+        <HeroVideo
+          videos={[
             "/videos/house3.mp4",
 
-        "/videos/house1.mp4",
-        "/videos/house2.mp4",
-        ]}
+            "/videos/house1.mp4",
+            "/videos/house2.mp4",
+          ]}
         />
       </div>
 
 
-        <Change />
+      <Change />
 
 
 
@@ -34,13 +35,12 @@ const Page = () => {
         <Customizable />
       </div>
 
-    <div className="flex justify-center items-center">
-            <Enrich />
+      <div className="flex justify-center items-center">
+        <Enrich />
+      </div>
 
-    </div>
 
-
-      <Customize2 />
+      <Exceptional />
 
 
 
@@ -54,14 +54,14 @@ const Page = () => {
 
 
       <div>
-        <TrustedBy/>
+        <TrustedBy />
       </div>
       {/* Get Estimate Section */}
       <div className="pb-16 md:pt-2 md:pb-4 sm:pb-10">
         <GetEstimate />
       </div>
 
-      
+
 
     </div>
   );

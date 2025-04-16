@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
+import Image from 'next/image';
 
 const steps = [
     {
@@ -49,9 +50,11 @@ export default function StepsSection() {
                     >
                         {/* Image */}
                         <div className="flex-shrink-0 w-full md:w-1/2">
-                            <img
+                            <Image
+                                width={500}
+                                height={500}
                                 src={step.image}
-                                alt={`Step ${step.step}`}
+                                alt={`best roofing company near me`}
                                 className="rounded-lg shadow-lg"
                             />
                         </div>

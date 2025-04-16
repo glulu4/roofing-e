@@ -1,6 +1,4 @@
 const buildConfig = () => {
-  const blogId = process.env.NEXT_PUBLIC_BLOG_ID || "cm4qddamr0005vdwr6d6w38um";
-  if (!blogId) throw new Error("NEXT_PUBLIC_BLOG_ID is missing");
   const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "Paragon Exterior";
   const copyright = process.env.NEXT_PUBLIC_BLOG_COPYRIGHT || "Paragon Exterior";
   const defaultTitle =
@@ -25,9 +23,7 @@ const buildConfig = () => {
     ogImageSecret:
       process.env.OG_IMAGE_SECRET ||
       "secret_used_for_signing_and_verifying_the_og_image_url",
-    wisp: {
-      blogId,
-    },
+
   };
 };
 
