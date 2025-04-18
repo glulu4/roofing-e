@@ -1,19 +1,13 @@
-"use client"
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { config } from "@/config";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
-import { Crimson_Pro, Heebo, Raleway, Cabin } from "next/font/google";
+import { Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
-import ogImage from "./opengraph-image.png"
-import {Router} from "next/router";
-import {redirect, usePathname} from "next/navigation";
-// const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
 
 const fontSans = Raleway({
   subsets: ['latin'],
@@ -23,15 +17,6 @@ const fontSans = Raleway({
 });
 
 
-
-
-// const heebo = Heebo({
-//   subsets: ['latin'],
-//   weight: ['200', '300', '400', '500', '700', '900'], // Specify all desired weights
-//   variable: '--font-heebo',
-//   display: 'swap',
-// })
-
 const fontCabin = Cabin({
   subsets: ['latin'],
   weight: ['400', '500', '700',], // Specify all desired weights
@@ -40,7 +25,110 @@ const fontCabin = Cabin({
 })
 
 
+export const metadata: Metadata = {
 
+  title: {
+    template: '%s | Paragon Exterior',
+    default: 'Paragon Exterior | Best Roofing Company Near You',
+  },
+
+  keywords: "roof repair near me, roof repair, Flat roofing, roofing companies, best roofing company near me, roofing company, company roofing, residential roofing, roofing contractor",
+
+  description: "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
+  openGraph: {
+    title: "Paragon Exterior | Best Roofing Company Near You",
+    description: "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
+    url: "https://www.paragonexterior.com",
+    siteName: "Paragon Exterior",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Paragon Exterior",
+        type: "image/png",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  other: {
+    // Roofing Contractor Business Info
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Paragon Exterior",
+      "image": "https://www.paragonexterior.com/logo.png",
+      "url": "https://www.paragonexterior.com",
+      "telephone": "+1-555-123-4567",
+      "email": "sales@paragonexterior.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Neshaminy Interplex Dr #103",
+        "addressLocality": "Feasterville-Trevose",
+        "addressRegion": "PA",
+        "postalCode": "19053",
+        "addressCountry": "US"
+      },
+      "description": "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
+      "areaServed": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Feasterville-Trevose",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        }
+      },
+      "priceRange": "$$",
+      "sameAs": [
+        "https://facebook.com/paragonexterior",
+        "https://instagram.com/paragonexterior"
+      ]
+    }),
+
+    // SEO-Optimized FAQ Schema with Keywords
+    "application/ld+json-faq": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find roof repair near me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paragon Exterior provides expert roof repair near Feasterville-Trevose, PA and surrounding areas. Our licensed roofing contractors handle everything from leaks to full replacements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services do your roofing contractors offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our roofing contractors offer residential roofing, roof repairs, flat roofing systems, and new roof installations using top-rated materials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose Paragon Exterior as your roofing company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We’re known as one of the best roofing companies near you, offering affordable pricing, fast response times, and high-quality roof work backed by years of experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with residential roofing clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we specialize in residential roofing services, including roof repair, roof replacement, and custom roofing solutions tailored to your home’s needs."
+          }
+        }
+      ]
+    })
+  }
+
+}
 
 
 export default function RootLayout({
@@ -49,25 +137,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const pathName = usePathname();
-  console.log("pathName: ", pathName);
+
   
-  // redirect('/dvd')
 
-  if (pathName === '/dvd') {
-    return (
-      <html lang="en">
-        <body
-        className="bg-black"
-        >
 
-            <main>
-              {children}
-            </main>
-        </body>
-      </html>
-    )
-  }
   return (
     
     <html lang="en">
