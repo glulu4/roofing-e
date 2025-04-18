@@ -6,7 +6,6 @@ import GetEstimate from "@/components/landing-ui/GetEstimate";
 import Review from "@/components/landing-ui/Review";
 import Change from "@/components/landing-ui/Change";
 import Enrich from "@/components/landing-ui/Enrich";
-import Customize2 from "@/components/landing-ui/Exceptional";
 import Branding from "@/components/landing-ui/Branding";
 import TrustedBy from "@/components/landing-ui/TrustedBy";
 import Exceptional from "@/components/landing-ui/Exceptional";

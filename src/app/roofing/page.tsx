@@ -11,25 +11,27 @@ import ThreeImageLayout from "@/components/solar/ThreeImage";
 const posts = [
     {
         id: 1,
-        title: 'Boost Your Home’s Protection',
+        title: 'Roof Repair and Protection for Your Home',
         description:
-        'Your roof is your home’s first line of defense against the elements. With Paragon Exterior, you’ll enjoy unmatched durability and design that not only protects but enhances your property’s curb appeal. Our high-quality materials and expert craftsmanship ensure your home stays safe and beautiful for years to come.',
+            "Your roof is your home's first defense against the elements. As a trusted roofing company, Paragon Exterior delivers expert roof repair and residential roofing services using high-quality materials and skilled craftsmanship. Protect your home with a roof that’s built to last and elevate curb appeal.",
         imageUrl: "/images/house7.jpeg",
     },
     {
         id: 2,
-        title: 'Innovative Roofing for Solar Integration',
-        description:"Combine the power of modern roofing with solar technology! Paragon Exterior specializes in seamless solar panel integration, allowing you to save on energy costs while maintaining a sleek and professional look. Transform your home into an energy-efficient powerhouse with our solar-friendly roofing solutions.",
+        title: 'Solar-Ready Roofing from Top Roofing Contractors',
+        description:
+            "Combine modern roof design with solar power. Our expert roofing contractors specialize in integrating solar panels into durable, energy-efficient roofing systems. Whether you're upgrading your existing roof or starting fresh, Paragon Exterior is the roofing company that builds smarter, greener homes.",
         imageUrl: "/images/house6.webp"
     },
     {
         id: 3,
-        title: 'Celebrating Multi-Cultural Designs',
-        description:"At Paragon Exterior, we take pride in serving diverse communities. Whether you’re looking for traditional shingles or culturally inspired roofing styles, we have the expertise to honor your heritage while providing the protection your family deserves. Let us design a roof that reflects your story and values.",
+        title: 'Residential Roofing with Style and Heritage',
+        description:
+            "Paragon Exterior proudly serves diverse communities with residential roofing solutions that honor cultural preferences and architectural beauty. Whether you want traditional shingles or custom roofing designs, our team delivers expert craftsmanship with the protection your family deserves.",
         imageUrl: "/images/house10.jpeg"
     },
-   
 ];
+
 
 const Page = () => {
     return (
@@ -53,10 +55,11 @@ const Page = () => {
 
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
-                    mainText="Unmatched Quality and Craftsmanship"
-                    description="Our roofs are built with the highest standards of quality and craftsmanship, ensuring lasting durability and superior performance. Whether it’s protecting your home from harsh weather or adding aesthetic value, our roofing solutions are designed to exceed expectations. With premium materials and expert installation, we provide roofs that stand the test of time, offering both beauty and reliability for years to come."
+                    mainText="Trusted Roofing Company for Quality Craftsmanship"
+                    description="As one of the best roofing companies near you, Paragon Exterior delivers expert roof repair, residential roofing, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
                     image="/images/roof-shingle2.webp"
                 />
+
             </div>
 
             <div >

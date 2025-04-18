@@ -6,15 +6,15 @@ import Image from 'next/image';
 const tiers = [
     {
         name: "Customized Visual Design Previews",
-        description: "Get a personalized exterior design rendering to visualize the transformation of your home before the project begins.",
+        description: "See how your home will look before work begins. In addition to expert siding, our roofing company offers full exterior transformations with roof repair and residential roofing integration included.",
     },
     {
         name: 'Comprehensive Workmanship Warranty',
-        description: "Our highly skilled crews deliver exceptional quality, and we stand behind our work with a warranty that ensures peace of mind for years to come.",
+        description: "Our licensed roofing contractors and siding teams deliver exceptional quality backed by a workmanship warranty. Whether it's siding or roof repair, Paragon Exterior ensures lasting durability and peace of mind.",
     },
     {
         name: 'Transparent Pricing with No Surprises',
-        description: "Our all-inclusive pricing means no hidden costs, with waste removal and repairs included upfront.",
+        description: "Our all-inclusive pricing covers everything — from siding materials to roof repairs. No hidden costs, just honest pricing from one of the best roofing companies near you.",
     },
 ];
 

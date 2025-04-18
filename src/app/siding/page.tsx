@@ -21,7 +21,7 @@ export default function page() {
           We Find Solutions For You
         </HeaderText>
 
-        <div className='my-12'>
+        {/* <div className='my-12'>
           <SecondaryText>
 
             Choosing the right siding for your home is a
@@ -44,7 +44,18 @@ export default function page() {
             humid continental climate, characterized by hot summers 
             and cold winters with year-round precipitation.
           </SecondaryText>
+        </div> */}
+
+        <div className='my-12'>
+          <SecondaryText>
+            Choosing the right siding for your home is a vital decision that impacts more than just exterior appearance. Quality siding works hand-in-hand with residential roofing to create a protective shield against the elements. It boosts energy efficiency, reduces utility bills, and improves your home&apos;s overall comfort and curb appeal. Whether you&apos;re upgrading siding or working with one of the best roofing companies near you, we’ll guide you through selecting the perfect solution that lasts.
+          </SecondaryText>
+
+            <SecondaryText>
+            At Paragon Exterior&reg;, we&rsquo;re more than a siding and roofing company &mdash; we&rsquo;re your trusted partner in exterior transformation. From roof repair to siding installations, we help homeowners in humid continental climates like Pennsylvania find long-lasting materials that withstand hot summers, harsh winters, and year-round weather. Let our expert roofing contractors and siding specialists simplify the process and deliver results you&rsquo;ll love.
+            </SecondaryText>
         </div>
+
 
       </div>
 
@@ -60,7 +71,7 @@ export default function page() {
         </HeaderText>
 
         <div className='my-12'>
-          <SecondaryText>
+          {/* <SecondaryText>
             Replacing siding is a structured process that ensures
              your home is well-protected, energy-efficient, and 
              visually appealing. Each step in the siding 
@@ -74,6 +85,9 @@ export default function page() {
               each phase, we make it simple and stress-free 
               for you to understand how we transform your 
               home with durable and attractive siding.
+          </SecondaryText> */}
+          <SecondaryText>
+            Replacing siding is a structured process that ensures your home remains protected, energy-efficient, and visually appealing. At Paragon Exterior®, our approach combines expert siding installation with the knowledge and precision of a trusted roofing contractor. Each phase — from removing old materials and inspecting for damage to precise installation and cleanup — is handled by our experienced team. Whether you&apos;re updating siding or working with one of the best roofing companies near you for roof repair or residential roofing, we make the process simple, stress-free, and built to last.
           </SecondaryText>
 
 
