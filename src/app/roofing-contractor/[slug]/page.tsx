@@ -95,7 +95,7 @@ export default function ServiceAreaPage({params}: {params: {slug: string}}) {
                     <details>
                         <summary className="text-lg font-semibold cursor-pointer">Why Work With Local Roofers?</summary>
                         <SecondaryText className="mt-2">
-                            Working with local roofing contractors means faster response times, personalized service, and peace of mind. At Paragon Exterior, we know the weather, homes, and roofing codes of your area. You're not just another customer — you're our neighbor.
+                            Working with local roofing contractors means faster response times, personalized service, and peace of mind. At Paragon Exterior, we know the weather, homes, and roofing codes of your area. You&apos;re not just another customer — you&apos;re our neighbor.
                         </SecondaryText>
                     </details>
 
