@@ -5,26 +5,47 @@ import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
 import Image from 'next/image';
 
+// const cards = [
+//     {
+//         name: 'Custom Roof Installations',
+//         description:
+//             'Looking for a roofing company that understands style and performance? We install asphalt shingles, metal roofs, clay tiles, and flat roofing systems tailored to your home’s design and needs.',
+//         icon: HomeIcon,
+//     },
+//     {
+//         name: 'Solar Roof Solutions',
+//         description:
+//             'Go green with our solar roofing options. As trusted residential roofing contractors, we help you save on energy bills while increasing your home’s value with state-of-the-art roof technology.',
+//         icon: SunIcon,
+//     },
+//     {
+//         name: 'Repairs & Maintenance',
+//         description:
+//             'Need roof repair near you? Our expert roofing contractors handle everything from minor leaks to storm damage. Prevent costly issues with proactive maintenance you can count on.',
+//         icon: WrenchScrewdriverIcon,
+//     },
+// ]
 const cards = [
     {
-        name: 'Custom Roof Installations',
+        name: 'Clear Communication',
         description:
-            'Looking for a roofing company that understands style and performance? We install asphalt shingles, metal roofs, clay tiles, and flat roofing systems tailored to your home’s design and needs.',
-        icon: HomeIcon,
+            'From your first estimate to final inspection, we keep you informed every step of the way. No surprises, just honest updates and easy scheduling.',
+        icon: PhoneIcon,
     },
     {
-        name: 'Solar Roof Solutions',
+        name: 'Top-Quality Craftsmanship',
         description:
-            'Go green with our solar roofing options. As trusted residential roofing contractors, we help you save on energy bills while increasing your home’s value with state-of-the-art roof technology.',
-        icon: SunIcon,
+            'Every project is handled by skilled roofing professionals using durable, high-performance materials. We don’t just build roofs—we build confidence.',
+        icon: LifebuoyIcon,
     },
     {
-        name: 'Repairs & Maintenance',
+        name: 'Respect for Your Property',
         description:
-            'Need roof repair near you? Our expert roofing contractors handle everything from minor leaks to storm damage. Prevent costly issues with proactive maintenance you can count on.',
-        icon: WrenchScrewdriverIcon,
+            'We treat your home like it’s our own. That means clean job sites, careful prep and protection, and a team that shows up on time, ready to work.',
+        icon: NewspaperIcon,
     },
-]
+];
+
 
 
 export default function Exceptional() {
@@ -59,10 +80,10 @@ export default function Exceptional() {
                 <div className="flex flex-col items-center justify-center">
                     <div className="mx-auto max-w-2xl text-center">
                         <HeaderText className="text-neutral-50">
-                            Roofing Excellence Backed by Exceptional Support
+                            What to expect from Paragon Exterior
                         </HeaderText>
                         <SecondaryText className='text-neutral-50'>
-                            As one of the leading roofing companies in the area, we specialize in roof repair, custom installations, and energy-efficient solutions. Whether you&apos;re searching for residential roofing, flat roofing, or the best roofing company near you — we&apos;ve got your home covered.
+                            We know inviting a roofing crew to your home is a big decision. That&apos;s why at Paragon Exterior, you can expect professionalism from start to finish—clear communication, dependable craftsmanship, and a crew that respects your time and property. From small repairs to full replacements, we make the process smooth and stress-free.
                         </SecondaryText>
                     </div>
                 </div>

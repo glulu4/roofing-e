@@ -25,11 +25,11 @@ export default function Enrich() {
                                 </SecondaryText> */}
 
                                 <HeaderText className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-7xl">
-                                    Trusted Roofing Company for Repairs & Residential Roofing
+                                    Why Homeowners Choose Paragon Exterior
                                 </HeaderText>
 
                                 <SecondaryText className="text-gray-600">
-                                    Looking for expert roof repair near you? Paragon Exterior is one of the top-rated roofing companies delivering high-quality roof repairs, installations, and replacements. Whether you need residential roofing or a trusted roofing contractor for your next project, we provide reliable service built to last — all at competitive prices.
+Paragon Exterior isn&apos;t just another roofing company — we&apos;re your neighbors, your problem solvers, and your go-to team for peace of mind when it matters most. Our commitment to quality, reliability, and customer satisfaction has made us one of the most trusted roofing contractors in the region. Whether you&apos;re dealing with an urgent roof repair or planning a full roof replacement, our team delivers top-tier craftsmanship, clear communication, and competitive pricing every time.
                                 </SecondaryText>
 
                             </div>

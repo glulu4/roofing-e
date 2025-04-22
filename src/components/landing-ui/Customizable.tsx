@@ -12,21 +12,21 @@ const features = [
     {
         name: 'Roofing Repair',
         description:
-            "We specialize in expert roof repair for all home types. Whether you're dealing with leaks, missing shingles, or storm damage, our roofing contractors deliver fast, reliable solutions. Searching for roof repair near me? We've got you covered.",
+            "Our roofing repair services are unmatched. We specialize in expert roof repair for all home types. Whether you're dealing with leaks, missing shingles, or storm damage, our roofing company delivers fast, affordable, and reliable solutions. Searching for roof repair near me? We've got you covered.",
         href: '#',
         icon: StarIcon,
     },
     {
         name: 'Residential Roofing',
         description:
-            "As the top roofing company in the area, we provide high-quality residential roofing services built to last. From replacements to new installations, trust the best roofing company near you to protect your home with style.",
+            "As the top roofing company in the area, we provide high-quality residential roofing services. From replacements to new installations, trust the best roofing company near you to protect your home with style.",
         href: '#',
         icon: SwatchIcon,
     },
     {
         name: 'Flat Roofing',
         description:
-            "Our roofing company offers flat roofing systems, ideal for modern homes and commercial buildings. With expert installation and long-lasting materials, we’re the roofing contractor you can rely on.",
+            "Our roofing company also specializes in offers flat roofs, ideal for modern homes and commercial buildings. With expert installation and long-lasting materials, we’re the local roofing company you can rely on.",
         href: '#',
         icon: () => (
             <FontAwesomeIcon icon={faRecycle} size="2x" color="#152d47" />
@@ -51,7 +51,7 @@ export default function Customizable() {
                             </HeaderText>
 
                             <SecondaryText className="mt-4 text-lg text-neutral-50">
-                                As one of the best roofing companies in your area, we offer custom roof designs, expert roof repair, and long-lasting residential roofing solutions tailored to your home.
+                                As one of the best roofing companies in your area, we offer a range of services, including roofing repair, roof replacements, flat roofing, and long-lasting residential roofing solutions tailored to your home.
                             </SecondaryText>
 
                         </div>

@@ -33,9 +33,15 @@ export default function Change() {
                                         Your Trusted Roofing Company for Quality Repairs & Replacements
                                     </HeaderText>
                                     <SecondaryText>
-                                        At Paragon Exterior, we provide expert roof repair, roof replacements, and residential roofing services designed to protect your home and boost its curb appeal. Whether you&apos;re dealing with storm damage or planning a full upgrade, our licensed roofing contractors deliver long-lasting results with unmatched craftsmanship.
+                                        At Paragon Exterior,
+                                        we provide expert roof repairs, roof replacements, residential roofing services, 
+                                        and solar panel installations. 
+                                        Our roofing company works hard to design a roof that's built to protect your home and boost its curb appeal.
+                                        Whether you&apos;re dealing with storm damage or planning a full upgrade, 
+                                        Paragon Exterior has been delivering long-lasting results with unmatched craftsmanship.
 
-                                        Serving homeowners looking for the best roofing company near me, we&apos;re committed to quality, affordability, and customer satisfaction — building roofs that last and relationships that matter.
+                                        Our roofing company has been serving homeowners for years on end.
+                                        Looking for the best roofing company? We&apos;re committed to quality, affordability, and customer satisfaction — building roofs that last and relationships that matter.
                                     </SecondaryText>
 
                                 </div>
