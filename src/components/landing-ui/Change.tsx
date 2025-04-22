@@ -36,7 +36,7 @@ export default function Change() {
                                         At Paragon Exterior,
                                         we provide expert roof repairs, roof replacements, residential roofing services, 
                                         and solar panel installations. 
-                                        Our roofing company works hard to design a roof that's built to protect your home and boost its curb appeal.
+                                        Our roofing company works hard to design a roof that&apos;s built to protect your home and boost its curb appeal.
                                         Whether you&apos;re dealing with storm damage or planning a full upgrade, 
                                         Paragon Exterior has been delivering long-lasting results with unmatched craftsmanship.
 
