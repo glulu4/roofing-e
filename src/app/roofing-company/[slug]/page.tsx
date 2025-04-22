@@ -56,7 +56,7 @@ export default function ServiceAreaPage({params}: {params: {slug: string}}) {
             {/* Hero Section */}
             <section className="text-center">
                 <HeaderText as="h1" variant="large">
-                    {location.name}'s' Trusted Roofing Company
+                    {location.name}&apos;s Trusted Roofing Company
                 </HeaderText>
                 <SecondaryText className="mt-4">
                     Paragon Exterior is your neighborhood roofing contractor, offering
