@@ -3,6 +3,7 @@ import GetEstimate from "@/components/landing-ui/GetEstimate";
 import SecondaryText from "@/components/SecondaryText";
 import {Metadata} from "next";
 import {serviceAreas} from "../../../../public/service-areas";
+import FAQ from "@/components/FAQ";
 
 
 
@@ -15,8 +16,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata> {
     const location = serviceAreas[params.slug];
     return {
-        title: `Expert Roofing Company in ${location?.name || "Your Area"} | Paragon Exterior`,
-        description: location?.description || "We provide expert roofing services near you. From roofing repair, to flat roofs, to residential roofing, we have you covered.",
+        title: `Roofing Company in ${location?.name} | Paragon Exterior`,
+        description: location?.description || "We provide roofing services near you. From roofing repair, to flat roofs, to residential roofing, we have you covered.",
         
     };
 }
@@ -150,65 +151,7 @@ When you spot a drip or after a storm, you want fast, reliable roof repair—and
             </section>
 
             {/* FAQ */}
-            <section>
-                <HeaderText as="h2">Frequently Asked Questions</HeaderText>
-                <ul className="mt-4 space-y-4">
-                    <li>
-                        <strong>Do you offer roof repair near me in {location.name}?</strong>
-                        <p>
-                            Absolutely—our local crews respond fast to leaks, storm damage, and wear
-                            anywhere in {location.name} and surrounding neighborhoods.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Are you licensed roofing contractors?</strong>
-                        <p>
-                            Yes. Paragon Exterior is fully licensed, insured, and one of the
-                            best roofing companies near you for residential roofing and
-                            solar‑ready installs.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>What roofing materials do you install?</strong>
-                        <p>
-                            From traditional asphalt shingles to metal, tile, and modern flat
-                            roofing—our versatile team handles it all.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Do you offer emergency roof repair?</strong>
-                        <p>
-                            We do. Our emergency roofing contractors are on call for urgent
-                            repairs to protect your home from further damage.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Can I add solar panels for my house?</strong>
-                        <p>
-                            Yes! We design and install solar‑ready roofing systems that
-                            accommodate household solar panels and solar electricity for home
-                            energy savings.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>How do I know if I need a full roof replacement?</strong>
-                        <p>
-                            If your roof is over 15 years old, sagging, or leaking frequently,
-                            our roof replacement experts will assess and recommend a durable,
-                            long‑lasting solution.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Do you offer financing options?</strong>
-                        <p>
-                            We offer flexible financing on roof repair, full residential
-                            roofing, and solar roofing projects—so you can get quality work
-                            today and pay over time.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
+            <FAQ locationName={location.name}/>
             {/* CTA */}
             <GetEstimate />
         </div>
