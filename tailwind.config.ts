@@ -35,6 +35,7 @@ height: {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "white",//"#ebebeb",
+        "text-primary":"oklch(28.2% 0.091 267.935)",
         card: "#ebebeb",
         foreground: "hsl(var(--foreground))",
         primaryblue:"#152D47",

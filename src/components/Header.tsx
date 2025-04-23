@@ -313,6 +313,7 @@ const navigationItems: (MenuItem | string)[] = [
   {name: "About", href: "/about"},
   "SERVICES_DROPDOWN", // Placeholder that we'll replace with the dropdown
   {name: "Contact", href: "/contact"},
+  {name:"Blog", href:"/blog"},
   {name: "Free Estimate", href: "/estimate"},
 ];
 

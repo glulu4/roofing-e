@@ -71,15 +71,126 @@ export const metadata: Metadata = {
         "addressCountry": "US"
       },
       "description": "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
-      "areaServed": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Feasterville-Trevose",
-          "addressRegion": "PA",
-          "addressCountry": "US"
+      // "areaServed": {
+      //   "@type": "Place",
+      //   "address": {
+      //     "@type": "PostalAddress",
+      //     "addressLocality": "Feasterville-Trevose",
+      //     "addressRegion": "PA",
+      //     "addressCountry": "US"
+      //   }
+      // },
+
+      "areaServed": [
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Feasterville-Trevose",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Philadelphia",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Germantown",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Southampton",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bensalem",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Langhorne",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Yardley",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Levittown",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bristol",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Newtown",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Richboro",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montgomeryville",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
         }
-      },
+      ],
       "priceRange": "$$",
       "sameAs": [
         "https://facebook.com/paragonexterior",
@@ -97,7 +208,7 @@ export const metadata: Metadata = {
           "name": "Where can I find roof repair near me?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Paragon Exterior provides expert roof repair near Feasterville-Trevose, PA and surrounding areas. Our licensed roofing contractors handle everything from leaks to full replacements."
+            "text": "Paragon Exterior provides expert roof repair all over PA and surrounding areas. Our licensed roofing contractors handle everything from leaks to full replacements."
           }
         },
         {
@@ -105,7 +216,7 @@ export const metadata: Metadata = {
           "name": "What services do your roofing contractors offer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our roofing contractors offer residential roofing, roof repairs, flat roofing systems, and new roof installations using top-rated materials."
+            "text": "Our roofing company offer residential roofing, roof repairs, roof replacements, flat roofing, and new roof installations using top-rated materials."
           }
         },
         {
@@ -136,11 +247,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
-  
-
-
   return (
     
     <html lang="en">

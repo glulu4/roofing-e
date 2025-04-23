@@ -6,6 +6,10 @@ const buildConfig = () => {
   const defaultDescription =
     process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Paragon Exterior";
 
+
+  const blogId = process.env.NEXT_PUBLIC_BLOG_ID;
+  if (!blogId) throw new Error("NEXT_PUBLIC_BLOG_ID is missing");
+
   return {
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://www.paragonexterior.com",
     blog: {
@@ -20,9 +24,12 @@ const buildConfig = () => {
         description: defaultDescription,
       },
     },
-    ogImageSecret:
-      process.env.OG_IMAGE_SECRET ||
-      "secret_used_for_signing_and_verifying_the_og_image_url",
+    wisp: {
+      blogId,
+    },
+    // ogImageSecret:
+    //   process.env.OG_IMAGE_SECRET ||
+    //   "secret_used_for_signing_and_verifying_the_og_image_url",
 
   };
 };

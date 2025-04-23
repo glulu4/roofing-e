@@ -335,4 +335,9 @@ export const serviceAreas: {
         name: "Feasterville-Trevose",
         description: "We provide top-notch roof repair and residential roofing solutions in Feasterville-Trevose, NJ.",
     },
+    norriton:{
+        name:"Norriton",
+        description: "We provide top-notch roof repair and residential roofing solutions in Feasterville-Trevose, NJ.",
+
+    }
 };
