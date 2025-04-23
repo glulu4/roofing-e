@@ -48,12 +48,14 @@ const AboutPage = () => {
               At Paragon Exterior, we pride ourselves on delivering top-notch roofing and solar services that stand the
               test of time. Founded with a mission to redefine home improvement, we’ve built a reputation for
               craftsmanship, innovation, and unparalleled customer service.
+              Our roofing company has been serving PA for years on end, completing roof 
+              repairs, roof replacements, flats roofs, solar installation, and residential roofs. 
             </SecondaryText>
-            <p className="mt-4 text-lg text-gray-600">
+            <SecondaryText>
               From durable roofing solutions to cutting-edge solar installations, we believe in creating sustainable and
               energy-efficient homes. Our team of experts is committed to helping you protect your investment while
               enhancing the beauty and value of your property.
-            </p>
+            </SecondaryText>
           </div>
         </div>
 
