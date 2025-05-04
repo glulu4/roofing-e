@@ -31,17 +31,15 @@ export default function ServiceAreaPage({params}: {params: {slug: string}}) {
         <div className="p-6 max-w-5xl mx-auto space-y-16">
             {/* Hero Section */}
             <section className="text-center">
-                <HeaderText variant="large">
-                    Trusted Roofing Contractor in {location.name}, PA
+                <HeaderText as="h1" variant="large">
+                    {location.name} Roofing Contractors | Paragon Exterior
                 </HeaderText>
                 <SecondaryText className="mt-4">
                     At Paragon Exterior, we&apos;re your neighborhood roofing contractor, offering
                     roof repair near me, residential roofing, flat roofing, and emergency roof repair
                     in {location.name}. Let&apos;s make your home safe, sound, and stunning.
                 </SecondaryText>
-                {/* <button  className="mt-6 bg-primaryblue text-white px-6 py-3 rounded">
-                    Get Your Free Estimate
-                </button> */}
+
             </section>
 
             {/* Why Choose Us */}

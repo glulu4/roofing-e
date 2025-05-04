@@ -7,6 +7,7 @@ import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import { Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
+import {config} from "@/config";
 
 
 const fontSans = Raleway({
@@ -28,6 +29,7 @@ const fontCabin = Cabin({
 export const metadata: Metadata = {
 
   title: {
+    absolute: "Paragon Exterior",
     template: '%s | Paragon Exterior',
     default: 'Paragon Exterior | Best Roofing Company Near You',
   },
