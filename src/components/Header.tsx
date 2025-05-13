@@ -394,6 +394,9 @@ export const Navigation: FunctionComponent = () => {
                 <a href="/about" className={cn("block py-2", "text-xl text-white", pathname === "/about" && "font-semibold")}>
                   About
                 </a>
+                <a href="/blog" className={cn("block py-2", "text-xl text-white", pathname === "/blog" && "font-semibold")}>
+                  Blog
+                </a>
 
                 {/* Services section in mobile menu */}
                 <div className="py-2">

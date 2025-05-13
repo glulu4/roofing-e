@@ -7,7 +7,6 @@ import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import { Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
-import {config} from "@/config";
 
 
 const fontSans = Raleway({
@@ -27,6 +26,7 @@ const fontCabin = Cabin({
 
 
 export const metadata: Metadata = {
+  
 
   title: {
     absolute: "Paragon Exterior",
@@ -73,15 +73,7 @@ export const metadata: Metadata = {
         "addressCountry": "US"
       },
       "description": "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
-      // "areaServed": {
-      //   "@type": "Place",
-      //   "address": {
-      //     "@type": "PostalAddress",
-      //     "addressLocality": "Feasterville-Trevose",
-      //     "addressRegion": "PA",
-      //     "addressCountry": "US"
-      //   }
-      // },
+
 
       "areaServed": [
         {
