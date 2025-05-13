@@ -36,6 +36,8 @@ const posts = [
     },
 ];
 
+
+
 export async function generateStaticParams() {
     return Object.keys(serviceAreas).map((slug) => ({slug}));
 }
@@ -51,6 +53,15 @@ export default function ServiceAreaPage({params}: {params: {slug: string}}) {
     const location = serviceAreas[params.slug];
     if (!location) return <div>Area not found.</div>;
 
+
+    const sectiontext = `
+We know that choosing a roofing contractor can feel overwhelming. That’s why at Paragon Exterior, we’ve made it our mission to keep the process simple, transparent, and stress-free—so you’re 100% thrilled with the finished result.
+
+From rapid estimate turnarounds to clear, proactive communication before, during, and after your project, plus our industry-leading workmanship, premium materials, and unbeatable warranties, we stand firmly behind every promise we make.
+
+Experience what makes Paragon Exterior the select roofing contractor of ${location}. See why homeowners in ${location} trust us as the area’s Top Rated Roofing Contractor!
+`
+
     return (
         <div className="p-6 max-w-7xl mx-auto space-y-16 pt-24">
             {/* Hero Section */}
@@ -59,19 +70,25 @@ export default function ServiceAreaPage({params}: {params: {slug: string}}) {
                     {location.name}&apos;s Trusted Roofing Company
                 </HeaderText>
                 <SecondaryText className="mt-4">
-                    Paragon Exterior is your neighborhood roofing contractor, offering
+                    Paragon Exterior is {location.name}&apos;s select roofing contractor, offering
                     roof repairs, flexible pricing, residential roofing, flat roofing, and even solar panels. 
                     <a href="/solar" className="text-blue-700">
                         &nbsp;Learn more about solar.&nbsp;
                         </a>
                     As one of the top roofing companies in {location.name}, we&apos;d love to make your home safe, sound, and stunning.
                 </SecondaryText>
-                <div className="mt-4">
+                <div className="py-12">
                     <a href="/estimate" className="mt-6 bg-primaryblue text-white px-6 py-3 my-6 rounded">
                         Get Your Free Estimate
                     </a>
                 </div>
 
+            </section>
+            <section>
+                <SecondaryText className="mt-4">
+                    {sectiontext}
+                </SecondaryText>
+                
             </section>
 
             {/* Why Choose Us */}
