@@ -59,7 +59,7 @@ We know that choosing a roofing contractor can feel overwhelming. That’s why a
 
 From rapid estimate turnarounds to clear, proactive communication before, during, and after your project, plus our industry-leading workmanship, premium materials, and unbeatable warranties, we stand firmly behind every promise we make.
 
-Experience what makes Paragon Exterior the select roofing contractor of ${location}. See why homeowners in ${location} trust us as the area’s Top Rated Roofing Contractor!
+Experience what makes Paragon Exterior the select roofing contractor of ${location.name}. See why homeowners in ${location.name} trust us as the area’s Top Rated Roofing Contractor!
 `
 
     return (
