@@ -5,19 +5,16 @@ import {Metadata} from "next";
 import {serviceAreas} from "../../../../public/service-areas";
 import FAQ from "@/components/FAQ";
 
-
-
 // needed to build static paths
 export async function generateStaticParams() {
     return Object.keys(serviceAreas).map((slug) => ({slug}))
 }
 
-
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata> {
     const location = serviceAreas[params.slug];
     return {
-        title: `Roofing Company in ${location?.name} | Paragon Exterior`,
-        description: location?.description || "We provide roofing services near you. From roofing repair, to flat roofs, to residential roofing, we have you covered.",
+        title: `Roofing Contractor in ${location?.name} | Paragon Exterior`,
+        description:`We are ${location.name}'s select roofing contractor. Paragon Exterior provides quality roofing services near you. From roofing repair, to flat roofs, solar installation, to residential roofing, we have you covered.`,
         
     };
 }
@@ -32,7 +29,7 @@ export default function ServiceAreaPage({params}: {params: {slug: string}}) {
             {/* Hero Section */}
             <section className="text-center">
                 <HeaderText as="h1" variant="large">
-                    {location.name} Roofing Contractors | Paragon Exterior
+                    {location.name}&apos;s Roofing Contractor | Paragon Exterior
                 </HeaderText>
                 <SecondaryText className="mt-4">
                     At Paragon Exterior, we&apos;re your neighborhood roofing contractor, offering
@@ -91,7 +88,7 @@ When you spot a drip or after a storm, you want fast, reliable roof repair—and
             </section>
 
             <section>
-                <HeaderText as="h2">Trsuted Roofing Contractor</HeaderText>
+                <HeaderText as="h2">{location.name}&apos;s Trsuted Roofing Contractor</HeaderText>
                 <SecondaryText className="mt-2">
                     Paragon Exterior is your trusted roofing contractor in {location.name}, PA—fully licensed, insured, and backed by years of experience. As your local roofing contractor near me, we handle everything from shingle and metal roofing installations to flat roofing systems and solar‑ready prep. Whether you need a full roof replacement or a simple inspection, our team combines top‑quality materials with meticulous craftsmanship to deliver durable, beautiful roofs that protect your home and boost curb appeal.
                 </SecondaryText>
@@ -142,7 +139,7 @@ When you spot a drip or after a storm, you want fast, reliable roof repair—and
             <section>
                 <HeaderText as="h2">Complete Exterior Services</HeaderText>
                 <SecondaryText className="mt-2">
-                    Paragon Exterior isn&apos;t just a roofing company—we do siding too. Bundle your
+                    Paragon Exterior isn&apos;t just a roofing company. We do siding too. Bundle your
                     roof and siding upgrades to protect, insulate, and beautify your home
                     in {location.name}.
                 </SecondaryText>

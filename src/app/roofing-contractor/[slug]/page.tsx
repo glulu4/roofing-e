@@ -46,6 +46,7 @@ export async function generateMetadata({params}: {params: {slug: string}}): Prom
     const location = serviceAreas[params.slug];
     return {
         title: `${location?.name}'s Roofing Contractor | Paragon Exterior`,
+        description:`We are ${location.name}'s select roofing contractor. Paragon Exterior provides quality roofing services near you. From roofing repair, to flat roofs, solar installation, to residential roofing, we have you covered.`,
     };
 }
 
@@ -67,7 +68,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
             {/* Hero Section */}
             <section className="text-center">
                 <HeaderText as="h1" variant="large">
-                    {location.name}&apos;s Trusted Roofing Company
+                    {location.name}&apos;s Trusted Roofing Contractor
                 </HeaderText>
                 <SecondaryText className="mt-4">
                     Paragon Exterior is {location.name}&apos;s select roofing contractor, offering
@@ -97,7 +98,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
 
                 <TextImgRow
                     title={`Why ${location.name} Chooses Paragon Exterior for Roofing`}
-                    description="We’re a local roofing company with a reputation for quality and reliability. Our licensed roofing contractors are experts in roof repair, residential roofing, and flat roofing systems. We offer transparent pricing, free inspections, and financing options to make your roofing project easy and affordable."
+                    description="We’re a local roofing contractor with a reputation for quality and reliability. Our licensed roofing contractors are experts in roof repair, residential roofing, and flat roofing systems. We offer transparent pricing, free inspections, and financing options to make your roofing project easy and affordable."
                     imageSrc="/images/slug-images/roofing-contractor.jpg"
                     imageAlt="Roofing Contractor"
                 />
