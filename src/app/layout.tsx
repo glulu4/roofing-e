@@ -253,10 +253,10 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider
-          attribute="class"
+          // attribute="class"
           defaultTheme="light"
           // enableSystem
-          disableTransitionOnChange
+          // disableTransitionOnChange
         >
           <main>
             <Header />
