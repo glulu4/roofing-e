@@ -1,5 +1,5 @@
 
-import {ThreeImageArrayType} from "@/app/solar/page";
+import {ThreeImageArrayType} from "@/app/roof-replacement/[slug]/page";
 import SecondaryText from "../SecondaryText";
 import Image from "next/image";
 

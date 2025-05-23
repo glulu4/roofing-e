@@ -42,16 +42,26 @@ export async function generateStaticParams() {
     return Object.keys(serviceAreas).map((slug) => ({slug}));
 }
 
-export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata> {
-    const location = serviceAreas[params.slug];
+export async function generateMetadata({params}: {params: Promise<{slug: string}>}): Promise<Metadata> {
+    const {slug} = await params;
+    const location = serviceAreas[slug];
     return {
         title: `${location?.name}'s Roofing Contractor | Paragon Exterior`,
         description:`We are ${location.name}'s select roofing contractor. Paragon Exterior provides quality roofing services near you. From roofing repair, to flat roofs, solar installation, to residential roofing, we have you covered.`,
     };
 }
 
-export default function ServiceAreaPage({params}: {params: {slug: string}}) {
-    const location = serviceAreas[params.slug];
+
+
+
+interface PageProps {
+    params: Promise<{slug: string}>;
+}
+
+export default async function ServiceAreaPage({params}: PageProps) {
+    const {slug} = await params;
+
+    const location = serviceAreas[slug];
     if (!location) return <div>Area not found.</div>;
 
 

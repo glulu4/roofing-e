@@ -1,14 +1,13 @@
 import {wisp} from "@/lib/wisp";
 import Link from "next/link";
 
-interface Params {
-    slug: string;
-}
+
 export default async function BlogPost({
-    params: {slug},
+    params,
 }: {
-    params: Params;
+    params: Promise<{slug: string}>;
 }) {
+    const { slug } = await params;
     const result = await wisp.getPost(slug);
     if (!result.post) return null;
     const {title, publishedAt, createdAt, content, tags} = result.post;

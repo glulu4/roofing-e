@@ -34,6 +34,8 @@ const posts = [
     },
 ];
 
+export type ThreeImageArrayType = typeof posts[number];
+
 export async function generateStaticParams() {
     return Object.keys(serviceAreas).map((slug) => ({slug}));
 }
@@ -41,21 +43,24 @@ export async function generateStaticParams() {
 export async function generateMetadata({
     params,
 }: {
-    params: {slug: string};
+    params: Promise<{slug: string}>;
 }): Promise<Metadata> {
-    const location = serviceAreas[params.slug];
+    const {slug} = await params;
+    const location = serviceAreas[slug];
     return {
         title: `${location?.name} Roof Replacement | Paragon Exterior`,
         description: `Looking for expert roof replacement in ${location?.name}? Paragon Exterior handles everything from asphalt shingle replacements to metal and tile roof installs, backed by industry-leading warranties.`,
     };
 }
 
-export default function RoofReplacementPage({
+export default async function page({
     params,
 }: {
-    params: {slug: string};
+    params: Promise<{slug: string}>;
 }) {
-    const location = serviceAreas[params.slug];
+    const {slug} = await params;
+
+    const location = serviceAreas[slug];
     if (!location) return <div>Area not found.</div>;
 
     const introText = `
