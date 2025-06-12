@@ -80,7 +80,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
                 <HeaderText as="h1" variant="large">
                     {location.name}&apos;s Trusted Roofing Contractor
                 </HeaderText>
-                <SecondaryText className="mt-4">
+                <SecondaryText as="h2" className="mt-4">
                     Paragon Exterior is {location.name}&apos;s select roofing contractor, offering
                     roof repairs, flexible pricing, residential roofing, flat roofing, and even solar panels. 
                     <a href="/solar" className="text-blue-700">
@@ -127,7 +127,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
                 <div className="mt-6 space-y-4">
                     <details>
                         <summary className="text-lg font-semibold cursor-pointer">Why Work With Local Roofers?</summary>
-                        <SecondaryText className="mt-2">
+                        <SecondaryText as="p" className="mt-2">
                             Working with a local roofing company means you get faster response times, personalized service, and peace of mind. 
                             At Paragon Exterior, you&apos;re not just another customer — you&apos;re our neighbor.
                         </SecondaryText>
@@ -135,7 +135,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
 
                     <details>
                         <summary className="text-lg font-semibold cursor-pointer">Roof Repair and Installation in the {location.name}</summary>
-                        <SecondaryText className="mt-2">
+                        <SecondaryText as="p" className="mt-2">
                             From minor leaks to full replacements, our expert roofing company handle every project with precision. We install residential roofs that are beautiful, durable, and solar ready.
                             Our roofing company guarantees top-quality roof repairs and installations near you.
                         </SecondaryText>
@@ -145,7 +145,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
                         <summary className="text-lg font-semibold text-primaryGreenDark cursor-pointer">
                             Advantages of Choosing Paragon Exterior
                         </summary>
-                        <SecondaryText className="mt-2">
+                        <SecondaryText as="p" className="mt-2">
                             We provide free estimates, transparent pricing, and all our work is backed by warranty. Having served the {location.name} area years on end, we’re your trusted roofing company for repairs, and installation.
                         </SecondaryText>
                     </details>

@@ -76,7 +76,7 @@ export default async function page({
                 <HeaderText as="h1" variant="large">
                     {location.name}&apos;s Roof Replacement Experts
                 </HeaderText>
-                <SecondaryText className="mt-4">
+                <SecondaryText as="h2" className="mt-4">
                     Paragon Exterior delivers complete roof replacement solutions in{" "}
                     {location.name}. From asphalt shingles to metal and tile, our team
                     installs top-quality roofing systems that stand up to the elements.
@@ -93,7 +93,7 @@ export default async function page({
 
             {/* Introduction */}
             <section>
-                <SecondaryText className="mt-4">{introText}</SecondaryText>
+                <SecondaryText as="p"  className="mt-4">{introText}</SecondaryText>
             </section>
 
             {/* Why Choose Us */}
@@ -121,7 +121,7 @@ export default async function page({
                         <summary className="text-lg font-semibold cursor-pointer">
                             What’s Involved in a Full Roof Replacement?
                         </summary>
-                        <SecondaryText className="mt-2">
+                        <SecondaryText as="p" className="mt-2">
                             We remove your existing shingles or tiles, inspect and repair the
                             decking as needed, and install underlayment, flashing, and your
                             new roofing material per manufacturer specs.
@@ -131,7 +131,7 @@ export default async function page({
                         <summary className="text-lg font-semibold cursor-pointer">
                             How Long Does Replacement Take?
                         </summary>
-                        <SecondaryText className="mt-2">
+                        <SecondaryText as="p" className="mt-2">
                             Most residential replacements finish in 1–3 days, weather
                             permitting. We coordinate permits, schedule crews, and keep you
                             updated every step of the way.
@@ -141,7 +141,7 @@ export default async function page({
                         <summary className="text-lg font-semibold cursor-pointer text-primaryGreenDark">
                             Do You Offer Financing?
                         </summary>
-                        <SecondaryText className="mt-2">
+                        <SecondaryText as="p" className="mt-2">
                             Yes—ask about our flexible financing plans to spread your investment
                             out over time with low monthly payments.
                         </SecondaryText>
