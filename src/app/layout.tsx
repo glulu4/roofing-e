@@ -287,7 +287,7 @@ export const metadata: Metadata = {
     "roofing company near me",
   ],
   applicationName: "Paragon Exterior | Roofing Company",
-  description: "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
+  description: "Paragon Exterior is the best roofing company near you offering expert roof repair, tile roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
   openGraph: {
     title: "Paragon Exterior | Best Roofing Company Near You",
     description: "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Pennsylvania.",
