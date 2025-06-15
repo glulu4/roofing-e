@@ -12,7 +12,7 @@ const features = [
     {
         name: 'Roofing Repair',
         description:
-            "Our roofing repair services are unmatched. We specialize in expert roof repair for all home types. Whether you're dealing with leaks, missing shingles, or storm damage, our roofing company delivers fast, affordable, and reliable solutions. Searching for roof repair near me? We've got you covered.",
+            "Our roofing repair services are unmatched. We specialize in expert roof repair for all home types, including tile roof repair. Whether you're dealing with leaks, missing shingles, or storm damage, our roofing company delivers fast, affordable, and reliable solutions.",
         href: '#',
         icon: StarIcon,
     },

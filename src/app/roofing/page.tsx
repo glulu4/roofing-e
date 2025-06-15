@@ -56,7 +56,7 @@ const Page = () => {
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
                     mainText="Trusted Roofing Company for Quality Craftsmanship"
-                    description="As one of the best roofing companies near you, Paragon Exterior delivers expert roof repair, residential roofing, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
+                    description="As one of the most trusted roofing companies near you, Paragon Exterior delivers expert roof repair, residential roofing, tile roof repair, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
                     image="/images/roof-shingle2.webp"
                 />
 
