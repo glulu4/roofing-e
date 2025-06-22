@@ -11,8 +11,8 @@ const navigation = {
     {name: "About", href: "/about"},
     {name: "Roofing", href: "/roofing"},
     {name: "Siding", href: "/siding"},
+    {name:"Blog", href: "/blog"},
 
-    {name: "Solar", href: "/solar"},
     {name: "Contact", href: "/contact"},
     {name: "Free Estimate", href: "/estimate"},
   ],
