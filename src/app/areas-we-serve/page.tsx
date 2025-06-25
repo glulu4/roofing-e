@@ -1,17 +1,8 @@
-// import React from 'react'
-
-// export default function page() {
-//   return (
-//     <div>page</div>
-//   )
-// }
 import React from 'react';
 import {MapPin, Phone, Mail, MapIcon} from 'lucide-react';
 import Link from 'next/link';
 import { serviceAreas as serviceAreaSlugs } from '../../../public/service-areas';
 import HeaderText from '@/components/HeaderText';
-import {BsBodyText} from 'react-icons/bs';
-import SecondaryHeader from '@/components/SecondaryHeader';
 import SecondaryText from '@/components/SecondaryText';
 import GetEstimate from '@/components/landing-ui/GetEstimate';
 
@@ -336,84 +327,8 @@ const ServiceAreasPage = () => {
                     ))}
                 </div>
 
-                {/* Call to Action Section */}
                 <GetEstimate/>
-                {/* <div className="mt-20">
-                    <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 rounded-3xl p-12 text-center relative overflow-hidden">
-                        <div className="absolute inset-0 bg-black/10"></div>
-                        <div className="relative z-10">
-                            <h2 className="text-4xl font-bold text-white mb-6">
-                                Ready to Get Started?
-                            </h2>
-                            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                                Whether you need roof repairs, complete roof replacement, siding installation, or any exterior work,
-                                our expert team is ready to serve your community with top-quality craftsmanship.
-                            </p>
 
-                            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                                <a
-                                    href="tel:+12674973183"
-                                    className="bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl"
-                                >
-                                    <Phone className="h-6 w-6" />
-                                    Call Now for Free Estimate
-                                </a>
-                                <a
-                                    href="mailto:info@paragonexterior.com"
-                                    className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300 flex items-center gap-3"
-                                >
-                                    <Mail className="h-6 w-6" />
-                                    Get Quote Online
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="absolute top-4 left-4 w-24 h-24 bg-white/5 rounded-full blur-xl"></div>
-                        <div className="absolute bottom-4 right-4 w-32 h-32 bg-blue-400/10 rounded-full blur-xl"></div>
-                    </div>
-                </div> */}
-
-                {/* Why Choose Us Section */}
-                {/* <div className="mt-20 text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-12">
-                        Why Homeowners Choose <span className="text-blue-600">Paragon Exterior</span>
-                    </h2>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Local Expertise</h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                Deep understanding of local building codes, weather patterns, and architectural styles
-                                across the Delaware Valley region.
-                            </p>
-                        </div>
-
-                        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <div className="w-8 h-8 bg-green-600 rounded-full"></div>
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Quality Guaranteed</h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                Premium materials, expert installation, and comprehensive warranties ensure
-                                your investment is protected for years to come.
-                            </p>
-                        </div>
-
-                        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Customer First</h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                Clear communication, respect for your property, and dedication to customer
-                                satisfaction on every project, big or small.
-                            </p>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
     );
