@@ -23,7 +23,7 @@ export default function SidingMaterial() {
                                         <Image
                                             width={1000}
                                             height={500}
-                                            alt="roofing company"
+                                            alt="Vinyl siding installation"
                                             src="/images/siding/vinyl-siding.jpg"
                                             className="h-80 object-cover object-left"
                                         />
@@ -44,7 +44,7 @@ export default function SidingMaterial() {
                                         <Image
                                             width={5000}
                                             height={500}
-                                            alt="roofing company"
+                                            alt="Aluminum siding panels"
                                             src="/images/siding/aluminum-siding.jpg"
                                             className="h-80 object-cover object-left lg:object-right"
                                         />
@@ -65,7 +65,7 @@ export default function SidingMaterial() {
                                         <Image
                                             width={500}
                                             height={500}
-                                            alt="roofing company"
+                                            alt="Fiber cement siding boards"
                                             src="/images/siding/fiber-cement-siding.jpg"
                                             className="h-80 object-cover object-left"
                                         />
@@ -86,7 +86,7 @@ export default function SidingMaterial() {
                                         <Image
                                             width={500}
                                             height={500}
-                                            alt="roofing company"
+                                            alt="Cedar siding panels"
                                             src="/images/siding/cedar-siding.png"
                                             className="h-80 object-cover"
                                         />
@@ -107,7 +107,7 @@ export default function SidingMaterial() {
                                         <Image
                                             width={500}
                                             height={500}
-                                            alt="roofing company"
+                                            alt="Engineered wood siding sample"
                                             src="/images/siding/engineered-wood-siding.webp"
                                             className="h-80 object-cover"
                                         />

@@ -24,7 +24,7 @@ export default function SidingHeader() {
             <Image
                 width={1000}
                 height={1000}
-                alt="Paragon Exterior | Roofing comapany"
+                alt="Paragon Exterior | Roofing company"
                 src="/images/siding/siding1.jpeg"
                 className="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center"
             />

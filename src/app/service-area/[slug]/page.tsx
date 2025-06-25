@@ -16,7 +16,8 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     return {
         title: `Roofing Contractor in ${location?.name} | Paragon Exterior`,
         description:`We are ${location.name}'s select roofing contractor. Paragon Exterior provides quality roofing services near you. From roofing repair, to flat roofs, solar installation, to residential roofing, we have you covered.`,
-        
+        alternates: { canonical: `https://www.paragonexterior.com/service-area/${slug}` },
+
     };
 }
 
