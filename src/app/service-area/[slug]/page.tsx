@@ -150,7 +150,7 @@ When you spot a drip or after a storm, you want fast, reliable roof repair—and
             {/* FAQ */}
             <FAQ locationName={location.name}/>
             {/* CTA */}
-            <GetEstimate />
+            <GetEstimate location={location.name} />
         </div>
     );
 }
