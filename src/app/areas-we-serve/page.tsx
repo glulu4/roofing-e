@@ -7,11 +7,18 @@
 // }
 import React from 'react';
 import {MapPin, Phone, Mail, MapIcon} from 'lucide-react';
+import Link from 'next/link';
+import { serviceAreas as serviceAreaSlugs } from '../../../public/service-areas';
 import HeaderText from '@/components/HeaderText';
 import {BsBodyText} from 'react-icons/bs';
 import SecondaryHeader from '@/components/SecondaryHeader';
 import SecondaryText from '@/components/SecondaryText';
 import GetEstimate from '@/components/landing-ui/GetEstimate';
+
+const nameToSlug: Record<string, string> = {};
+Object.entries(serviceAreaSlugs).forEach(([slug, value]) => {
+    nameToSlug[value.name.toLowerCase()] = slug;
+});
 
 const ServiceAreasPage = () => {
     const serviceAreas = [
@@ -300,24 +307,28 @@ const ServiceAreasPage = () => {
                                 {/* Cities Grid */}
                                 <div className="p-8">
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                        {area.cities.map((city, cityIndex) => (
-                                            <div
-                                                key={cityIndex}
-                                                className="group/city p-4 rounded-lg bg-gray-50 hover:bg-blue-50 hover:shadow-md transition-all duration-300 cursor-pointer border border-transparent hover:border-blue-200"
-                                            >
-                                                <div className="flex items-start gap-2">
-                                                    <div className="w-2 h-2 bg-blue-400 rounded-full group-hover/city:bg-blue-600 transition-colors mt-2 flex-shrink-0"></div>
-                                                    <div className="flex-1 min-w-0">
-                                                        <span className="text-gray-800 group-hover/city:text-blue-700 font-semibold text-sm block">
-                                                            {city.name}
-                                                        </span>
-                                                        <span className="text-gray-500 group-hover/city:text-blue-500 text-xs">
-                                                            {city.zip}
-                                                        </span>
+                                        {area.cities.map((city, cityIndex) => {
+                                            const slug = nameToSlug[city.name.toLowerCase()];
+                                            return (
+                                                <Link
+                                                    key={cityIndex}
+                                                    href={slug ? `/service-area/${slug}` : '#'}
+                                                    className="group/city p-4 rounded-lg bg-gray-50 hover:bg-blue-50 hover:shadow-md transition-all duration-300 cursor-pointer border border-transparent hover:border-blue-200"
+                                                >
+                                                    <div className="flex items-start gap-2">
+                                                        <div className="w-2 h-2 bg-blue-400 rounded-full group-hover/city:bg-blue-600 transition-colors mt-2 flex-shrink-0"></div>
+                                                        <div className="flex-1 min-w-0">
+                                                            <span className="text-gray-800 group-hover/city:text-blue-700 font-semibold text-sm block">
+                                                                {city.name}
+                                                            </span>
+                                                            <span className="text-gray-500 group-hover/city:text-blue-500 text-xs">
+                                                                {city.zip}
+                                                            </span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        ))}
+                                                </Link>
+                                            );
+                                        })}
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +352,7 @@ const ServiceAreasPage = () => {
 
                             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                                 <a
-                                    href="tel:+1234567890"
+                                    href="tel:+12674973183"
                                     className="bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl"
                                 >
                                     <Phone className="h-6 w-6" />

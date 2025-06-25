@@ -6,6 +6,11 @@ import SidingHeader from '@/components/siding/SidingHeader'
 import SidingMaterial from '@/components/siding/SidingMaterial'
 import StepsSection from '@/components/siding/StepsSection'
 import React from 'react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.paragonexterior.com/siding' },
+}
 
 export default function page() {
   return (

@@ -292,7 +292,7 @@ export const Navigation: FunctionComponent = () => {
                   <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+12674973183"
                       className="flex items-center space-x-3 py-2 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200"
                     >
                       <Phone size="18" />

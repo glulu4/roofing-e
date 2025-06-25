@@ -22,6 +22,7 @@ export async function generateMetadata({
         title: `${location?.name} Roof Replacement Cost | Paragon Exterior`,
         description: `Wondering what a roof replacement costs in ${location?.name
             }? Paragon Exterior breaks down average prices and offers fixed, written quotes for every material.`,
+        alternates: { canonical: `https://www.paragonexterior.com/roof-replacement-cost/${slug}` },
     };
 }
 
