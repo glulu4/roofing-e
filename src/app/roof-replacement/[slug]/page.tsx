@@ -103,7 +103,7 @@ export default async function page({
                     title={`Why ${location.name} Trusts Paragon Exterior for Roof Replacement`}
                     description="Local expertise, transparent pricing, and unmatched warranties. Our licensed roofers handle every step—from tear-off to final inspection—with care and precision."
                     imageSrc="/images/replace1.jpeg"
-                    imageAlt="Roof Replacement"
+                    imageAlt={`Roof Replacement in ${location.name}`}
                 />
             </section>
 

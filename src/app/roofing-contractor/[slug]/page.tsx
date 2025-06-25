@@ -111,7 +111,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
                     title={`Why ${location.name} Chooses Paragon Exterior for Roofing`}
                     description="We’re a local roofing contractor with a reputation for quality and reliability. Our licensed roofing contractors are experts in roof repair, residential roofing, and flat roofing systems. We offer transparent pricing, free inspections, and financing options to make your roofing project easy and affordable."
                     imageSrc="/images/slug-images/roofing-contractor.jpg"
-                    imageAlt="Roofing Contractor"
+                    imageAlt={`Roofing Contractor in ${location.name}`}
                 />
             </section>
 
