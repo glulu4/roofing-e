@@ -153,7 +153,7 @@ export default async function page({
             <FAQ locationName={location.name} />
 
             {/* CTA */}
-            <GetEstimate />
+            <GetEstimate location={location.name} />
         </div>
     );
 }

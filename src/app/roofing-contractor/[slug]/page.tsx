@@ -155,7 +155,7 @@ Experience what makes Paragon Exterior the select roofing contractor of ${locati
 
             <FAQ locationName={location.name} />
             {/* CTA */}
-            <GetEstimate />
+            <GetEstimate location={location.name} />
         </div>
     );
 }

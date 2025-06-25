@@ -119,7 +119,7 @@ export default async function Page({
             </section>
 
             <FAQ locationName={location.name} />
-            <GetEstimate />
+            <GetEstimate location={location.name} />
         </div>
     );
 }
