@@ -7,11 +7,10 @@ export default function GetEstimate() {
             <div className="px-6 sm:px-6 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
                     <HeaderText variant="large">
-                        Get Your Free Estimate
-
+                        Get Your Free Estimate Today
                     </HeaderText>
-                    <SecondaryText className=" font-secondary mx-auto mt-6 max-w-xl text-gray-600">
-                        We’re here to understand your needs and provide a personalized, no-obligation estimate – because we treat your home like it’s our own.
+                    <SecondaryText className="font-secondary mx-auto mt-6 max-w-xl text-gray-600">
+                        We’re here to understand your needs and provide a personalized, no-obligation estimate – because we treat your home like it’s our own. Find out why homeowners trust Paragon Exterior as thier trusted roofing and siding contractor.
                     </SecondaryText>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <a
