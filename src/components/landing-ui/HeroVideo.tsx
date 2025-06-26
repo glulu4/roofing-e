@@ -1,6 +1,6 @@
+"use client";
+
 import React, {useState, useEffect, useRef} from "react";
-
-
 
 interface HeroVideoProps {
     text?:string
