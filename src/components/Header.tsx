@@ -31,6 +31,8 @@ const servicesDropdown: DropdownItem = {
   items: [
     {name: "Roofing", href: "/roofing"},
     {name: "Siding", href: "/siding"},
+    {name: "Gutters", href: "/gutters"},
+    {name: "Commercial", href: "/commercial"},
     // { name: "Solar", href: "/solar" },
   ]
 };

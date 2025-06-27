@@ -1,12 +1,12 @@
 
-"use client";
 import HeroVideo from "@/components/landing-ui/HeroVideo";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
-// import QualitySection from "@/components/landing-ui/Quality";
-// import ThreeImage from "@/components/ThreeImage";
 import RoofOptionsSection from "@/components/RoofOptionsSection";
-import QualitySection from "@/components/solar/Quality";
+import QualitySection from "@/components/Quality";
 import ThreeImageLayout from "@/components/solar/ThreeImage";
+import HeaderText from "@/components/HeaderText";
+import SecondaryText from "@/components/SecondaryText";
+import Services from "@/components/roofing/Services";
 
 const posts = [
     {
@@ -33,44 +33,68 @@ const posts = [
 ];
 
 
+export const metadata = {
+    title: "Roofing Services | Paragon Exterior",
+    description: "Explore our expert roofing services, including roof repair, roof leak repair, residential roofing, and flat roofing solutions. Trust Paragon Exterior for quality craftsmanship and durable materials.",
+}
+
 const Page = () => {
     return (
         <div>
-            {/* Hero Video Section */}
             <div className="flex w-full">
-                <HeroVideo 
+                <HeroVideo
 
                     videos={[
                         "/videos/house1.mp4",
                         "/videos/house2.mp4",
                         "/videos/house3.mp4",
-
-
                     ]}
-                    text="Roofing"
+                    text="Roofing Services"
                     secText="Tailored Expertise, Exceptional Durability, Unmatched Value"
-                
                 />
             </div>
+
+
+            <div className="flex flex-col justify-center sm:text-center items-center w-5/6 mx-auto text-left px-6 py-32">
+
+
+                <HeaderText as="h1" variant='large'>
+                    Explore our Roofing Services
+                </HeaderText>
+
+                <div className='my-12'>
+                    <SecondaryText>
+                        Choosing the right roofing solution is crucial for protecting your home and enhancing its curb appeal. Quality roofing works hand-in-hand with siding to create a protective shield against the elements. It boosts energy efficiency, reduces utility bills, and improves your home’s overall comfort and aesthetic. Whether you’re upgrading your roof or working with one of the best roofing companies near you, we’ll guide you through selecting the perfect solution that lasts.
+                    </SecondaryText>
+
+                    <SecondaryText>
+                        At Paragon Exterior®, we’re more than a roofing company — we’re your trusted partner in exterior transformation. From roof repair to new installations, we help homeowners in humid continental climates like Pennsylvania find long-lasting materials that withstand hot summers, harsh winters, and year-round weather. Let our expert roofing contractors simplify the process and deliver results you’ll love.
+                    </SecondaryText>
+                </div>
+
+
+            </div>
+
+            <Services/>
 
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
                     mainText="Trusted Roofing Company for Quality Craftsmanship"
-                    description="As one of the most trusted roofing companies near you, Paragon Exterior delivers expert roof repair, residential roofing, tile roof repair, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
+                    description="As the most trusted roofing company near you, Paragon Exterior delivers expert roof repair, residential roofing, tile roof repair, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
                     image="/images/roof-shingle2.webp"
                 />
 
             </div>
 
             <div >
-                
+
                 <ThreeImageLayout
-                posts={posts}
+                    posts={posts}
                 />
             </div>
 
             <div className="">
-                <RoofOptionsSection/>
+                <RoofOptionsSection />
             </div>
 
             <div className="pb-16 pt-16 sm:pt-0 md:pt-2 md:pb-4 sm:pb-10">

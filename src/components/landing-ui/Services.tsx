@@ -15,6 +15,7 @@ import {useState} from 'react';
 import HeaderText from '../HeaderText';
 import Image from 'next/image';
 import {ComponentType} from 'react';
+import Link from 'next/link';
 
 // 🔥 TypeScript Types
 interface ServiceCategory {
@@ -26,13 +27,16 @@ interface ServiceCategory {
 }
 
 // 🎯 Service data with proper typing
+
+// chimney
+// bay windows
 const serviceData = [
     {
         id: "01",
         title: "Roofing Services",
         description: "Explore our range of roofing services, including roof repair, roof installation, roof leak repair, and roof replacement – tailored to enhance your home's protection and aesthetics.",
         image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-        slug: "roofing"
+        slug: "/roofing"
     },
     {
         id: "02",
@@ -48,9 +52,22 @@ const serviceData = [
         image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
         slug: "gutters"
     },
-
     {
         id: "04",
+        title: "Windows",
+        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+        slug: "gutters"
+    },
+    {
+        id: "05",
+        title: "Chimneys",
+        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+        slug: "gutters"
+    },
+    {
+        id: "06",
         title: "Commercial Services",
         description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
@@ -68,7 +85,6 @@ interface ServiceCardProps {
     service: ServiceCategory;
     index: number;
     totalItems: number;
-    onServiceClick: (slug: string) => void;
 }
 
 // 🔥 Individual Service Card Component
@@ -76,12 +92,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     service,
     index,
     totalItems,
-    onServiceClick
 }) => {
     return (
         <>
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between group py-16 hover:bg-slate-100 p-5 rounded-xl transition-all duration-200 cursor-pointer"
-                onClick={() => onServiceClick(service.slug)}>
+            <Link className="flex flex-col lg:flex-row lg:items-center lg:justify-between group py-16 hover:bg-slate-100 p-5 rounded-xl transition-all duration-200 cursor-pointer"
+                href={`${service.slug}`}>
 
                 {/* Left side - Number and Image */}
                 <div className="flex flex-col sm:flex-row sm:items-center lg:flex-row lg:items-center lg:flex-1 sm:gap-10">
@@ -123,7 +138,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                         </button>
                     </div>
                 </div>
-            </div>
+            </Link>
 
             {/* Divider */}
             {index < totalItems - 1 && (
@@ -133,22 +148,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     );
 };
 
-// 🎯 Props interface for main component
-interface RoofingServicesProps {
-    onServiceClick?: (slug: ServiceSlug) => void;
-}
 
 // 🚀 Main Component
-const RoofingServices: React.FC<RoofingServicesProps> = ({
-    onServiceClick = (slug) => {
-        // Default behavior - you can customize this
-        console.log(`Navigate to: /services/${slug}`);
-        // router.push(`/services/${slug}`);
-    }
-}) => {
-    const handleServiceClick = (slug: string) => {
-        onServiceClick(slug as ServiceSlug);
-    };
+const RoofingServices = () => {
+    // const handleServiceClick = (slug: string) => {
+        
+
+    // };
 
     return (
         <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
@@ -181,7 +187,7 @@ const RoofingServices: React.FC<RoofingServicesProps> = ({
                                 service={service}
                                 index={index}
                                 totalItems={serviceData.length}
-                                onServiceClick={handleServiceClick}
+                                // onServiceClick={handleServiceClick}
                             />
                         ))}
                     </div>
@@ -200,5 +206,4 @@ export type {
     Service,
     ServiceId,
     ServiceSlug,
-    RoofingServicesProps
 };
