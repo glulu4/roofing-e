@@ -2,6 +2,13 @@ import {BlogPostsPreview} from "@/components/wisp/BlogPostPreview";
 import {wisp} from "@/lib/wisp";
 import {BlogPostsPagination} from "@/components/wisp/BlogPostPagination";
 
+
+export const metadata = {
+    title: "Blog | Paragon Exterior",
+    description:
+        "Explore our blog for expert insights on roofing, siding, windows, and home improvement. Stay informed with Paragon Exterior's latest tips and trends.",
+};
+
 const Page = async ({
     searchParams,
 }: {
