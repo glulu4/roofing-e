@@ -14,7 +14,7 @@ export default function QualitySection({image, mainText, description, headerText
 
 
     return (
-        <div className="mx-auto w-11/12 px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-8 bg-primaryblue p-10 rounded-sm">
+        <div className="mx-auto w-10/12 px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-8 bg-primaryblue p-10 rounded-lg">
 
             <div className="w-full lg:w-1/2 flex flex-col justify-center py-12">
                 <HeaderText className="mb-8 text-neutral-50" as={headerTextTag || "h2"}>

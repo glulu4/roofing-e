@@ -70,7 +70,9 @@ export default async function Page() {
 
 
             {/* CTA */}
-            <GetEstimate />
+                        <div className="py-12 pt-20 sm:pt-0">
+                            <GetEstimate />
+                        </div>
         </div>
     );
 }

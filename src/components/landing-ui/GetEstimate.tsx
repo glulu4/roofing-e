@@ -8,7 +8,7 @@ export default function GetEstimate({ location }: { location?: string } = {}) {
         : `We’re here to understand your needs and provide a personalized, no-obligation estimate – because we treat your home like it’s our own. Find out why homeowners trust Paragon Exterior as thier trusted roofing and siding contractor.`;
 
     return (
-        <div className="">
+        <div className = "pb-16 md:pt-2 md:pb-4 sm:pb-10">
             <div className="px-6 sm:px-6 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
                     <HeaderText variant="large">{heading}</HeaderText>

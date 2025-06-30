@@ -65,7 +65,7 @@ export default async function Page() {
             <FlatRoofHighlights />
 
             {/* MAIN CONTENT ROWS */}
-            <div className="mx-auto w-5/6 py-6 lg:py-12">
+            <div className="mx-auto w-5/6 py-10 lg:py-20">
                 <div className="mb-32 text-center">
                     <HeaderText>Why Choose Paragon Exterior for Flat Roofing?</HeaderText>
                     <SecondaryText>
@@ -97,7 +97,9 @@ export default async function Page() {
             </div>
 
             {/* CTA */}
-            <GetEstimate />
+            <div className="py-12 pt-20 sm:pt-0">
+                <GetEstimate />
+            </div>
         </div>
     );
 }

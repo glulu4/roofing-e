@@ -68,7 +68,7 @@ const Page = () => {
         <TrustedBy />
       </div>
       {/* Get Estimate Section */}
-      <div className="pb-16 md:pt-2 md:pb-4 sm:pb-10">
+      <div >
         <GetEstimate />
       </div>
 

@@ -1,5 +1,4 @@
 import {wisp} from "@/lib/wisp";
-import Link from "next/link";
 
 
 export default async function BlogPost({
@@ -13,7 +12,7 @@ export default async function BlogPost({
     const {title, publishedAt, createdAt, content, tags} = result.post;
     return (
         <div>
-            <div className="prose lg:prose-xl dark:prose-invert mx-auto lg:prose-h1:text-4xl mb-10 lg:mt-20 break-words">
+            <div className="prose lg:prose-xl dark:prose-invert mx-auto w-5/6 sm:w-auto lg:prose-h1:text-4xl mb-10 lg:mt-20 break-words">
                 <h1>{title}</h1>
                 <div
                     className="blog-content mx-auto"

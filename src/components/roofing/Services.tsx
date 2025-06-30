@@ -80,7 +80,7 @@ export default function RoofingServices() {
 
                                 {/* Content container with slide-up animation */}
                                 <div className="relative z-10 transform transition-all duration-300 group-hover:-translate-y-2">
-                                    <HeaderText as="h2" variant="default" className="mt-3 text-lg/6 font-semibold text-white transition-all duration-300 group-hover:text-blue-200">
+                                    <HeaderText as="h2" variant="default" className="mt-3 font-semibold text-white transition-all duration-300 group-hover:text-blue-200">
                                         {/* <a href={service.href}> */}
                                         <span className="absolute inset-0" />
                                         {service.title}
@@ -88,7 +88,7 @@ export default function RoofingServices() {
                                     </HeaderText>
 
                                     {/* Description that slides in on hover */}
-                                    <p className="mt-2 text-sm text-gray-300 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                                    <p className="mt-2 text-sm text-gray-300 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                                         {service.description}
                                     </p>
 

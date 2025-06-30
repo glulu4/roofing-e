@@ -320,9 +320,9 @@ export default function EmergencyRoofRepairPage() {
                 </div>
             </section>
 
-            {/* CTA - Enhanced with Emergency Focus */}
-            <GetEstimate
-            />
+              <div className="py-12 pt-20 sm:pt-0">
+                  <GetEstimate />
+              </div>
         </div>
     );
 }
