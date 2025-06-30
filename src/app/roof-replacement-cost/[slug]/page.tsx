@@ -19,7 +19,7 @@ export async function generateMetadata({
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `${location?.name} Roof Replacement Cost | Paragon Exterior`,
+        title: `${location?.name} Roof Replacement Cost `,
         description: `Wondering what a roof replacement costs in ${location?.name
             }? Paragon Exterior breaks down average prices and offers fixed, written quotes for every material.`,
         alternates: { canonical: `https://www.paragonexterior.com/roof-replacement-cost/${slug}` },

@@ -48,7 +48,7 @@ export async function generateMetadata({
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `${location?.name} Roof Replacement | Paragon Exterior`,
+        title: `${location?.name} Roof Replacement `,
         description: `Looking for expert roof replacement in ${location?.name}? Paragon Exterior handles everything from asphalt shingle replacements to metal and tile roof installs, backed by industry-leading warranties.`,
         alternates: { canonical: `https://www.paragonexterior.com/roof-replacement/${slug}` },
     };
