@@ -45,7 +45,7 @@ const services = [
         title: 'Emergency Roof Repair',
         href: '/roofing/emergency-roof-repair',
         description: '24/7 emergency roof repair services for storm damage, active leaks, and urgent roofing needs. Immediate response with tarping and permanent repairs across PA, NJ, DE.',
-        imageUrl: '/images/roof-service/emergency-roofing/roof-damage.jpg',
+        imageUrl: '/images/roof-service/emergency-roofing/roof-damage.webp',
     },
   ];
 
