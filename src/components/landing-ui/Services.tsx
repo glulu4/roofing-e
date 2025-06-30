@@ -45,34 +45,34 @@ const serviceData = [
         image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
         slug: "siding"
     },
-    {
-        id: "03",
-        title: "Gutter Services",
-        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-        slug: "gutters"
-    },
-    {
-        id: "04",
-        title: "Windows",
-        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-        slug: "gutters"
-    },
-    {
-        id: "05",
-        title: "Chimneys",
-        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-        slug: "gutters"
-    },
-    {
-        id: "06",
-        title: "Commercial Services",
-        description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-        slug: "commercial"
-    }
+    // {
+    //     id: "03",
+    //     title: "Gutter Services",
+    //     description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+    //     slug: "gutters"
+    // },
+    // {
+    //     id: "04",
+    //     title: "Windows",
+    //     description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+    //     slug: "gutters"
+    // },
+    // {
+    //     id: "05",
+    //     title: "Chimneys",
+    //     description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+    //     slug: "gutters"
+    // },
+    // {
+    //     id: "06",
+    //     title: "Commercial Services",
+    //     description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
+    //     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+    //     slug: "commercial"
+    // }
 ] as const satisfies readonly ServiceCategory[];
 
 // 🚀 Extract types from the data
@@ -171,7 +171,7 @@ const RoofingServices = () => {
                     </div>
                     <div className="mt-8 lg:max-w-md">
                         <p className="text-gray-600 text-lg leading-relaxed">
-                            Experience Top-Tier Roofing and Exterior Services, Designed to Withstand the Elements While Elevating Your Property's Aesthetic and Value.
+                            Experience Top-Tier Roofing and Exterior Services, Designed to Withstand the Elements While Elevating Your Property&apos;s Aesthetic and Value.
                         </p>
                     </div>
                 </div>

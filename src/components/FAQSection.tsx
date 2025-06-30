@@ -51,7 +51,7 @@ const FAQSection = ({
                     </SecondaryText>
                 </div> */}
 
-                <div className="mx-auto max-w-[800px]">
+                <div className="mx-auto max-w-5xl">
                     <Accordion type="single" collapsible className="w-full">
                         {faqs.map((faq, index) => (
                             <AccordionItem className='py-2' key={index} value={`faq-${index}`}>

@@ -37,9 +37,9 @@ export default function RoofingCompany() {
 
                                         We specialize in roof repairs, roof replacements, flat roofing, siding installation, gutter repair, and even gutter replacements — all designed to improve your property’s durability and curb appeal.
 
-                                        Whether you're dealing with storm damage, a leaking roof, or planning a full exterior upgrade, our roofing company delivers long-lasting results with unmatched craftsmanship and care.
+                                        Whether you&apos;re dealing with storm damage, a leaking roof, or planning a full exterior upgrade, our roofing company delivers long-lasting results with unmatched craftsmanship and care.
 
-                                        Looking for the best roofing company near you? We're committed to quality, affordability, and customer satisfaction — building roofs that last and relationships that matter.
+                                        Looking for the best roofing company near you? We&apos;re committed to quality, affordability, and customer satisfaction — building roofs that last and relationships that matter.
                                     </SecondaryText>
 
 

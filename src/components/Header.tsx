@@ -31,8 +31,8 @@ const servicesDropdown: DropdownItem = {
   items: [
     {name: "Roofing", href: "/roofing"},
     {name: "Siding", href: "/siding"},
-    {name: "Gutters", href: "/gutters"},
-    {name: "Commercial", href: "/commercial"},
+    // {name: "Gutters", href: "/gutters"},
+    // {name: "Commercial", href: "/commercial"},
     // { name: "Solar", href: "/solar" },
   ]
 };
@@ -294,11 +294,11 @@ export const Navigation: FunctionComponent = () => {
                   <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:+12674973183"
+                      href="tel:+12157997663"
                       className="flex items-center space-x-3 py-2 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200"
                     >
                       <Phone size="18" />
-                      <span>(267) 497-3183</span>
+                      <span>(215) 799-7663</span>
                     </a>
                     <a
                       href="mailto:sales@paragonexterior.com"

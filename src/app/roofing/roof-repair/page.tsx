@@ -3,6 +3,7 @@ import Hero from '@/components/service-page/Hero';
 import Info from '@/components/service-page/Info';
 import React from 'react'
 import RoofRepairReasons from '@/components/service-page/roof/RoofRepairReasons';
+import InfoSection from '@/components/service-page/Info';
 
 
 
@@ -24,11 +25,15 @@ export default async function page() {
                 imgAlt="Paragon Exterior roofing company"
             />
 
-            <Info 
+            <InfoSection
                 imgSrc="/images/roof-service/roof-repair/roof-repair3.jpg"
-                imgAlt="Roof repair demonstration"
+                imgAlt="Professional roof repair technician working on damaged roof"
+                title="Roof Repair You Can Count On"
+                titleAs='h1'
+                mainContent="Whether it's storm damage, age-related wear, or unexpected leaks, Paragon Exterior is ready to provide fast, reliable roof repair when you need it most. Our experienced roofing specialists proudly serve Pennsylvania, New Jersey, and Delaware with expert craftsmanship and honest service. We've built a dedicated roof repair team that focuses on diagnosing and fixing all types of roofing problems — from missing shingles and damaged flashing to leaks and structural concerns. Our trained and professional technicians arrive ready to assess the damage and fix it right the first time, ensuring your home stays protected."
+                bottomContent="Severe storms can cause sudden damage — torn shingles, damaged gutters, or dangerous leaks. Our emergency roof repair team responds quickly to secure your roof, prevent further damage, and restore your peace of mind. After a storm, don't wait — let our experts inspect your roof and address issues before they escalate."
+                imagePosition="right"
             />
-
 
 
             <RoofRepairReasons
