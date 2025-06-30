@@ -35,14 +35,14 @@ const serviceData = [
         id: "01",
         title: "Roofing Services",
         description: "Explore our range of roofing services, including roof repair, roof installation, roof leak repair, and roof replacement – tailored to enhance your home's protection and aesthetics.",
-        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+        image: "/images/home/roof-service.webp",
         slug: "/roofing"
     },
     {
         id: "02",
         title: "Siding Services",
         description: "Learn more about our siding services, including siding installation, siding repair, and vertical siding",
-        image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+        image: "/images/home/siding-service.webp",
         slug: "siding"
     },
     // {
