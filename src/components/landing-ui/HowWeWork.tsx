@@ -36,7 +36,7 @@ const features = [
 
 
 
-export default function Customizable() {
+export default function HowWeWork() {
     return (
         <div>
             <div className="mx-auto w-11/12 px-4 py-24 sm:px-6 lg:px-8">

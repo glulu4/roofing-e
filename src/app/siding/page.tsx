@@ -19,37 +19,12 @@ export default function page() {
       <SidingHeader />
 
 
-      <div className="flex flex-col justify-center items-center w-5/6 mx-auto text-left px-6 py-32">
+      <div className="flex flex-col justify-center items-center w-5/6 mx-auto sm:text-center text-left px-6 py-32">
 
 
         <HeaderText variant='large'>
           We Find Solutions For You
         </HeaderText>
-
-        {/* <div className='my-12'>
-          <SecondaryText>
-
-            Choosing the right siding for your home is a
-             vital decision that impacts more than just the 
-             exterior appearance. Siding serves as a protective 
-             shield against the elements, enhances your home&apos;s 
-             energy efficiency by reducing utility bills, and 
-             elevates the overall comfort and aesthetic appeal 
-             of your living space. With an extensive variety of
-             materials—ranging from natural to engineered options—each 
-             offering unique advantages, selecting the ideal siding can 
-             feel like a daunting task. Let us simplify the process and 
-             help you make a choice you&apos;ll love for years to come.
-          </SecondaryText>
-
-          <SecondaryText>
-            At Paragon Exterior®, we take pride in assisting 
-            our clients in discovering the ideal siding solution 
-            for their homes, which has a 
-            humid continental climate, characterized by hot summers 
-            and cold winters with year-round precipitation.
-          </SecondaryText>
-        </div> */}
 
         <div className='my-12'>
           <SecondaryText>

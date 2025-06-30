@@ -113,43 +113,13 @@ export default async function page({
             </section>
 
             {/* Details & FAQs */}
-            <section>
-                <HeaderText variant="large" as="h2">
-                    Ready for Your New Roof?
-                </HeaderText>
-                <div className="mt-6 space-y-4">
-                    <details>
-                        <summary className="text-lg font-semibold cursor-pointer">
-                            What’s Involved in a Full Roof Replacement?
-                        </summary>
-                        <SecondaryText as="p" className="mt-2">
-                            We remove your existing shingles or tiles, inspect and repair the
-                            decking as needed, and install underlayment, flashing, and your
-                            new roofing material per manufacturer specs.
-                        </SecondaryText>
-                    </details>
-                    <details>
-                        <summary className="text-lg font-semibold cursor-pointer">
-                            How Long Does Replacement Take?
-                        </summary>
-                        <SecondaryText as="p" className="mt-2">
-                            Most residential replacements finish in 1–3 days, weather
-                            permitting. We coordinate permits, schedule crews, and keep you
-                            updated every step of the way.
-                        </SecondaryText>
-                    </details>
-                    <details open>
-                        <summary className="text-lg font-semibold cursor-pointer text-primaryGreenDark">
-                            Do You Offer Financing?
-                        </summary>
-                        <SecondaryText as="p" className="mt-2">
-                            Yes—ask about our flexible financing plans to spread your investment
-                            out over time with low monthly payments.
-                        </SecondaryText>
-                    </details>
-                </div>
-            </section>
 
+
+            <div className="text-center">
+                <HeaderText>
+                    Frequently Asked Questions
+                </HeaderText>
+            </div>
             <FAQ locationName={location.name} />
 
             {/* CTA */}

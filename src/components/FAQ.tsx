@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderText from './HeaderText'
 import SecondaryText from './SecondaryText';
+import FAQSection from './FAQSection';
 
 export default function FAQ({ locationName }: { locationName: string }) {
     const faqData = [
@@ -24,11 +25,6 @@ export default function FAQ({ locationName }: { locationName: string }) {
                 "We do. Our emergency roofing contractors are on call for urgent repairs to protect your home from further damage.",
         },
         {
-            question: "Can I add solar panels for my house?",
-            answer:
-                "Yes! We design and install solar‑ready roofing systems that accommodate household solar panels and solar electricity for home energy savings.",
-        },
-        {
             question: "How do I know if I need a full roof replacement?",
             answer:
                 "If your roof is over 15 years old, sagging, or leaking frequently, our roof replacement experts will assess and recommend a durable, long‑lasting solution.",
@@ -41,16 +37,17 @@ export default function FAQ({ locationName }: { locationName: string }) {
     ];
 
     return (
-        <section>
-            <HeaderText as="h2">Frequently Asked Questions</HeaderText>
-            <ul className="mt-4 space-y-4">
-                {faqData.map((faq, index) => (
-                    <li key={index}>
-                        <HeaderText variant='small' as='h3'>{faq.question}</HeaderText>
-                        <SecondaryText>{faq.answer}</SecondaryText>
-                    </li>
-                ))}
-            </ul>
-        </section>
+        <FAQSection faqs={faqData} />
+        // <section>
+        //     <HeaderText as="h2">Frequently Asked Questions</HeaderText>
+        //     <ul className="mt-4 space-y-4">
+        //         {faqData.map((faq, index) => (
+        //             <li key={index}>
+        //                 <HeaderText variant='small' as='h3'>{faq.question}</HeaderText>
+        //                 <SecondaryText>{faq.answer}</SecondaryText>
+        //             </li>
+        //         ))}
+        //     </ul>
+        // </section>
     );
 }

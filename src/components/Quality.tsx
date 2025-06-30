@@ -1,22 +1,23 @@
 
 import Image from "next/image";
-import HeaderText from "../HeaderText";
-import SecondaryText from "../SecondaryText";
+import HeaderText from "./HeaderText";
+import SecondaryText from "./SecondaryText";
 
 interface QualitySectionProps {
     mainText:string;
     description:string;
     image: string;
+    headerTextTag?: keyof JSX.IntrinsicElements; // Optional prop for header text tag
 }
 
-export default function QualitySection({image, mainText, description}: QualitySectionProps) {
+export default function QualitySection({image, mainText, description, headerTextTag}: QualitySectionProps) {
 
 
     return (
         <div className="mx-auto w-11/12 px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-8 bg-primaryblue p-10 rounded-sm">
 
             <div className="w-full lg:w-1/2 flex flex-col justify-center py-12">
-                <HeaderText className="mb-8 text-neutral-50">
+                <HeaderText className="mb-8 text-neutral-50" as={headerTextTag || "h2"}>
                     {mainText}
                 </HeaderText>
                 <SecondaryText className=" text-neutral-100">

@@ -160,6 +160,17 @@ export default function Example() {
                                     </a>
                                 </dd>
                             </div>
+                            <div className="flex gap-x-4">
+                                <dt className="flex-none">
+                                    <span className="sr-only">Email</span>
+                                    <PhoneIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                                </dt>
+                                <dd>
+                                    <a href="tel:+12157997663" className="hover:text-primaryblue">
+                                        (215) 799-7663
+                                    </a>
+                                </dd>
+                            </div>
                         </dl>
                     </div>
                 </div>
