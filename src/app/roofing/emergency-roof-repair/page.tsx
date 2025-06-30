@@ -251,30 +251,35 @@ export default function EmergencyRoofRepairPage() {
                 steps={[
                     {
                         name: "Emergency Call Received",
-                        description: "Call our 24/7 emergency roof repair hotline. Our live operators immediately dispatch emergency roofers to your location for urgent roof repair needs.",
+                        description:
+                            "Call our 24/7 emergency roof repair hotline. Our team will prioritize your situation and coordinate a prompt response for urgent roof repair needs.",
                         date: "Immediate",
-                        dateTime: "2024-01-01"
+                        dateTime: "2024-01-01",
                     },
                     {
-                        name: "Rapid Emergency Response",
-                        description: "Our emergency roof repair team arrives within 1-2 hours to assess storm damage, identify leak sources, and begin immediate emergency repairs.",
-                        date: "Within 2 Hours",
-                        dateTime: "2024-01-01"
+                        name: "Emergency Response Initiated",
+                        description:
+                            "A qualified emergency roof repair crew is dispatched as quickly as possible to assess damage, identify leaks, and begin stabilizing your roof.",
+                        date: "As Soon As Possible",
+                        dateTime: "2024-01-01",
                     },
                     {
-                        name: "Emergency Roof Stabilization",
-                        description: "Immediate emergency tarping and leak stopping to prevent further water damage. Our emergency roofers secure your roof with professional-grade materials.",
-                        date: "Same Day",
-                        dateTime: "2024-01-01"
+                        name: "Roof Stabilization",
+                        description:
+                            "We take immediate action to protect your property, including tarping and leak prevention, using durable, professional-grade materials.",
+                        date: "Promptly",
+                        dateTime: "2024-01-01",
                     },
                     {
-                        name: "Permanent Emergency Repairs",
-                        description: "Complete emergency roof repair or replacement scheduling. We work with insurance companies for storm damage claims and provide permanent roofing solutions.",
+                        name: "Permanent Repairs Scheduled",
+                        description:
+                            "We work with you to schedule permanent repairs or roof replacement, assist with insurance claims, and provide a long-term solution.",
                         date: "Next Available",
-                        dateTime: "2024-01-02"
-                    }
+                        dateTime: "2024-01-02",
+                    },
                 ]}
             />
+
 
             {/* COVERAGE AREAS - Important for Local SEO */}
             <section className="bg-slate-50 py-16 my-16">

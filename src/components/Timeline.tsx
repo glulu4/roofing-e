@@ -1,27 +1,6 @@
 import React from 'react'
 import HeaderText from './HeaderText';
-const timeline = [
-    {
-        name: 'Fill out application',
-        description: "Start your journey by completing our quick and secure online application. Provide basic information about yourself and your funding needs in just a few minutes.",
-        date: 'Step 1',
-    },
-    {
-        name: 'Get approved',
-        description: "Our fast-track approval process reviews your application quickly. Most applicants receive a decision within 24 hours, with many getting instant pre-approval.",
-        date: 'Step 2',
-    },
-    {
-        name: 'Develop business plan',
-        description: 'Work with our financial advisors to refine your business strategy. We offer complimentary consultation to help you maximize the impact of your funding.',
-        date: 'Step 3',
-    },
-    {
-        name: 'Receive funding',
-        description: 'Once approved, funds are typically transferred within 48 hours. Choose from flexible disbursement options tailored to your specific financial needs.',
-        date: 'Step 4',
-    },
-]
+
 
 interface TimelineProps {
     title:string;
@@ -37,7 +16,7 @@ interface TimelineProps {
 export default function Timeline({
     className,
     title,
-    steps = timeline, // Default to the predefined timeline if no steps are provided
+    steps,
 
 }: TimelineProps) {
     return (
@@ -48,7 +27,7 @@ export default function Timeline({
             </HeaderText>
 
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
-                {timeline.map((item) => (
+                {steps.map((item) => (
                     <div key={item.name}>
                         <time className="flex items-center text-md/6 font-semibold text-primaryGreenLight">
                             <svg viewBox="0 0 4 4" aria-hidden="true" className="mr-4 size-1 flex-none">
