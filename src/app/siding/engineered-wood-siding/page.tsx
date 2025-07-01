@@ -1,6 +1,7 @@
 import Hero from '@/components/service-page/Hero'
 import HeaderText from '@/components/HeaderText'
 import SecondaryText from '@/components/SecondaryText'
+import InfoSection from '@/components/service-page/Info'
 import GetEstimate from '@/components/landing-ui/GetEstimate'
 import type { Metadata } from 'next'
 import React from 'react'
@@ -36,6 +37,15 @@ export default function Page() {
           It offers the charm of traditional wood siding without frequent painting or costly upkeep, making Engineered Wood Siding a smart upgrade for any home.
         </SecondaryText>
       </div>
+
+      <InfoSection
+        imgSrc="/images/siding/engineered-wood-siding.webp"
+        imgAlt="Engineered wood siding panels on home"
+        title="Strength of Engineered Wood"
+        mainContent="Engineered wood siding bonds real wood fibers with durable resins, creating boards that resist warping, cracking, and pests."
+        bottomContent="Factory treatments shield each panel from moisture and impact, providing the warmth of wood with far less maintenance."
+        imagePosition="right"
+      />
       <div className="py-12">
         <GetEstimate />
       </div>

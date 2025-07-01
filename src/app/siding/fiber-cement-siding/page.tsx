@@ -1,6 +1,7 @@
 import Hero from '@/components/service-page/Hero'
 import HeaderText from '@/components/HeaderText'
 import SecondaryText from '@/components/SecondaryText'
+import InfoSection from '@/components/service-page/Info'
 import GetEstimate from '@/components/landing-ui/GetEstimate'
 import type { Metadata } from 'next'
 import React from 'react'
@@ -36,6 +37,15 @@ export default function Page() {
           This premium material stands up to harsh weather and holds paint longer than traditional wood, making Fiber Cement Siding a smart investment for your home.
         </SecondaryText>
       </div>
+
+      <InfoSection
+        imgSrc="/images/siding/fiber-cement-siding.jpg"
+        imgAlt="Fiber cement siding detail"
+        title="Long-Lasting Fiber Cement"
+        mainContent="Fiber cement siding blends cement with cellulose fibers to create a dimensionally stable board that resists warping and rot."
+        bottomContent="Its flame resistance and outstanding paint retention mean your exterior keeps its fresh appearance for decades."
+        imagePosition="right"
+      />
       <div className="py-12">
         <GetEstimate />
       </div>

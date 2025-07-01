@@ -1,6 +1,7 @@
 import Hero from '@/components/service-page/Hero'
 import HeaderText from '@/components/HeaderText'
 import SecondaryText from '@/components/SecondaryText'
+import InfoSection from '@/components/service-page/Info'
 import GetEstimate from '@/components/landing-ui/GetEstimate'
 import type { Metadata } from 'next'
 import React from 'react'
@@ -36,6 +37,15 @@ export default function Page() {
           Cedar Siding is eco-friendly and offers superior resistance to moisture and pests, ensuring long-lasting curb appeal.
         </SecondaryText>
       </div>
+
+      <InfoSection
+        imgSrc="/images/siding/cedar-siding.png"
+        imgAlt="Closeup of cedar siding boards"
+        title="Natural Warmth of Cedar Siding"
+        mainContent="Cedar siding provides rich texture and insulation that helps regulate indoor temperatures while delivering timeless curb appeal."
+        bottomContent="Properly sealed cedar resists humidity and insects, maturing into a beautiful patina that enhances your home year after year."
+        imagePosition="right"
+      />
       <div className="py-12">
         <GetEstimate />
       </div>
