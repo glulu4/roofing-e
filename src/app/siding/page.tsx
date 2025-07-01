@@ -34,8 +34,8 @@ const services = [
   },
   {
     id: 4,
-    title: 'Vertical Siding',
-    href: '/siding/vertical-siding',
+    title: 'Board and Batten Siding',
+    href: '/siding/board-and-batten-siding',
     description: 'Stylish vertical siding options to add a modern touch to your home. Our team specializes in installing vertical siding that enhances aesthetics and provides superior protection against the elements.',
     imageUrl: '/images/siding/siding-service/vertical-siding.webp',
   },

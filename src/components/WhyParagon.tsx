@@ -1,61 +1,3 @@
-// import React from 'react'
-// import HeaderText from './HeaderText'
-// import SecondaryText from './SecondaryText'
-// import {FaAward, FaHandshake, FaLightbulb} from 'react-icons/fa'
-
-// interface WhyParagonProps {
-//     title: string;
-//     subTitle?: string;
-// }
-
-// export default function WhyParagon({
-
-//     title,
-//     subTitle = "At Paragon Exterior, our values guide everything we do. Here’s what sets us apart."
-
-// }: WhyParagonProps) {
-//   return (
-//            <div className="mt-24 bg-gray-50 p-10  mx-auto w-5/6 rounded-md ">
-//              <HeaderText variant='default' as="h2" className="text-center mx-auto max-w-4xl font-semibold tracking-tight text-primaryblue">
-//               {title}
-//              </HeaderText>
-//              <SecondaryText className="mt-4 text-center text-gray-600">
-//               {subTitle}
-//              </SecondaryText>
-//              <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-//                <div className="text-center">
-//                  <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
-//                    <FaHandshake className="h-8 w-8 text-amber-500" /> {/* New Integrity Icon */}
-//                  </div>
-//                  <h3 className="mt-4 text-xl font-bold text-primaryblue">Integrity</h3>
-//                  <p className="mt-2 text-gray-600">
-//                    We believe in doing what’s right, every time. Honesty and transparency are at the heart of our work.
-//                  </p>
-//                </div>
-//                <div className="text-center">
-//                  <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
-//                    <FaAward className="h-8 w-8 text-amber-500" /> {/* New Excellence Icon */}
-//                  </div>
-//                  <h3 className="mt-4 text-xl font-bold text-primaryblue">Excellence</h3>
-//                  <p className="mt-2 text-gray-600">
-//                    Quality craftsmanship and attention to detail define every project we undertake.
-//                  </p>
-//                </div>
-//                <div className="text-center">
-//                  <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">
-//                    <FaLightbulb className="h-8 w-8 text-amber-500" /> {/* New Innovation Icon */}
-//                  </div>
-//                  <h3 className="mt-4 text-xl font-bold text-primaryblue">Innovation</h3>
-//                  <p className="mt-2 text-gray-600">
-//                    We leverage the latest technology to deliver energy-efficient and sustainable solutions.
-//                  </p>
-//                </div>
-//              </div>
-//            </div>
-   
-//   )
-// }
-
 import React from 'react'
 import HeaderText from './HeaderText'
 import SecondaryText from './SecondaryText'
@@ -71,7 +13,7 @@ interface WhyParagonReason {
 interface WhyParagonProps {
     title: string;
     subTitle?: string;
-    service?: 'roof-repair' | 'roof-replacement' | 'velux-skylights' | 'flat-roofing' | 'roof-leak-repair' | 'emergency-roof-repair' | 'roofing' | 'siding' | 'siding-installation' | 'siding-repair' | 'siding-replacement' | 'vertical-siding' | 'general';
+    service?: 'roof-repair' | 'roof-replacement' | 'velux-skylights' | 'flat-roofing' | 'roof-leak-repair' | 'emergency-roof-repair' | 'roofing' | 'siding' | 'siding-installation' | 'siding-repair' | 'siding-replacement' | 'vertical-siding' | 'board-and-batten-siding' | 'general';
     customReasons?: WhyParagonReason[];
     className?: string;
     titleAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -299,6 +241,26 @@ const serviceReasons = {
             keywordPhrase: "siding replacement value"
         },
     ],
+    'board-and-batten-siding': [
+        {
+            icon: FaTools,
+            title: "Board and Batten Siding Specialists",
+            description: "Our board and batten siding experts specialize in traditional and modern board and batten installation for authentic farmhouse charm.",
+            keywordPhrase: "board and batten siding specialists"
+        },
+        {
+            icon: FaHome,
+            title: "Custom Board and Batten Designs",
+            description: "From wide boards to narrow battens, we create custom board and batten siding patterns that enhance your home's architectural character.",
+            keywordPhrase: "custom board and batten"
+        },
+        {
+            icon: FaShieldAlt,
+            title: "Durable Board and Batten Installation",
+            description: "Our board and batten siding installation ensures proper spacing, weather protection, and long-lasting beauty for your home.",
+            keywordPhrase: "board and batten installation"
+        },
+    ],
     'vertical-siding': [
         {
             icon: FaLightbulb,
@@ -482,6 +444,9 @@ export const WhyParagonSidingRepair = (props: Omit<WhyParagonProps, 'service'>) 
 
 export const WhyParagonSidingReplacement = (props: Omit<WhyParagonProps, 'service'>) =>
     <WhyParagon {...props} service="siding-replacement" />;
+
+export const WhyParagonBoardAndBattenSiding = (props: Omit<WhyParagonProps, 'service'>) =>
+    <WhyParagon {...props} service="board-and-batten-siding" />;
 
 export const WhyParagonVerticalSiding = (props: Omit<WhyParagonProps, 'service'>) =>
     <WhyParagon {...props} service="vertical-siding" />;
