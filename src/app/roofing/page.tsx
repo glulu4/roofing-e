@@ -6,7 +6,7 @@ import QualitySection from "@/components/Quality";
 import ThreeImageLayout from "@/components/solar/ThreeImage";
 import HeaderText from "@/components/HeaderText";
 import SecondaryText from "@/components/SecondaryText";
-import Services from "@/components/roofing/Services";
+import ServicesGrid from "@/components/service-page/Services";
 
 const posts = [
     {
@@ -29,6 +29,53 @@ const posts = [
         description:
             "Paragon Exterior proudly serves diverse communities with residential roofing solutions that honor cultural preferences and architectural beauty. Whether you want traditional shingles or custom roofing designs, our team delivers expert craftsmanship with the protection your family deserves.",
         imageUrl: "/images/house10.jpeg"
+    },
+];
+
+
+
+const services = [
+    {
+        id: 1,
+        title: 'Roof Repair',
+        href: '/roofing/roof-repair',
+        description: 'Professional roof repair services for storm damage, missing shingles, leaks, and flashing issues. Licensed roofers serving PA, NJ, and DE with fast, reliable repairs.',
+        imageUrl: '/images/roof-service/roof-repair/roof-repair4.jpg',
+    },
+    {
+        id: 2,
+        title: 'Roof Replacement',
+        href: '/roofing/roof-replacement',
+        description: 'Complete roof replacement services using premium asphalt shingles, metal roofing, and architectural materials. Expert installation with warranties for lasting protection.',
+        imageUrl: '/images/roof-service/roof-replacement/roof-replacement.avif',
+    },
+    {
+        id: 3,
+        title: 'Velux Skylights',
+        href: '/roofing/velux-skylights',
+        description: 'Professional Velux skylight installation and repair services. Add natural light and ventilation to your home with energy-efficient, leak-proof skylight solutions.',
+        imageUrl: '/images/roof-service/skylight/skylight.jpg',
+    },
+    {
+        id: 4,
+        title: 'Flat Roofing',
+        href: '/roofing/flat-roofing',
+        description: 'Specialized flat roof installation, repair, and maintenance using EPDM, TPO, and modified bitumen systems. Commercial and residential flat roofing experts.',
+        imageUrl: '/images/roof-service/flat-roofing/flat-roof.jpg',
+    },
+    {
+        id: 5,
+        title: 'Roof Leak Repair',
+        href: '/roofing/roof-leak-repair',
+        description: 'Fast roof leak detection and repair services. Stop water damage with expert leak repairs for all roof types. Emergency leak repair available 24/7 in PA, NJ, DE.',
+        imageUrl: '/images/roof-service/roof-leak/roof-leak.jpg',
+    },
+    {
+        id: 6,
+        title: 'Emergency Roof Repair',
+        href: '/roofing/emergency-roof-repair',
+        description: '24/7 emergency roof repair services for storm damage, active leaks, and urgent roofing needs. Immediate response with tarping and permanent repairs across PA, NJ, DE.',
+        imageUrl: '/images/roof-service/emergency-roofing/roof-damage.webp',
     },
 ];
 
@@ -75,7 +122,7 @@ const Page = () => {
 
             </div>
 
-            <Services/>
+            <ServicesGrid services={services}/>
 
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection

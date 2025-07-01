@@ -4,6 +4,7 @@ import Info from '@/components/service-page/Info';
 import React from 'react'
 import RoofRepairReasons from '@/components/service-page/roof/RoofRepairReasons';
 import InfoSection from '@/components/service-page/Info';
+import {WhyParagonRoofRepair} from '@/components/WhyParagon';
 
 
 
@@ -36,15 +37,18 @@ export default async function page() {
             />
 
 
-            <RoofRepairReasons
+            <RoofRepairReasons />
 
+            <WhyParagonRoofRepair
+            title='Why Choose Paragon Exterior for Roof Repair?'
+            titleAs='h2'
             />
 
-                        <div className="py-12 pt-20 sm:pt-0">
-                            <GetEstimate />
-                        </div>
+            <div className="py-12 pt-20 sm:pt-0">
+                <GetEstimate />
+            </div>
         </div>
 
     )
 }
-  
+

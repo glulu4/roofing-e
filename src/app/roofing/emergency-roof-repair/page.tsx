@@ -141,6 +141,7 @@ import SecondaryText from "@/components/SecondaryText";
 import React from "react";
 import Timeline from "@/components/Timeline";
 import IncentivesSection from "@/components/service-page/Incentive";
+import {WhyParagonEmergencyRoofRepair} from "@/components/WhyParagon";
 
 /* ─────────────────────────────────────────
    META - Enhanced for SEO
@@ -324,6 +325,20 @@ export default function EmergencyRoofRepairPage() {
                     </SecondaryText>
                 </div>
             </section>
+
+
+                <WhyParagonEmergencyRoofRepair
+                title="Why Choose Paragon Exterior for Emergency Roof Repair?"
+                subTitle="At Paragon Exterior, we understand that emergencies can happen at any time.
+                Our dedicated team is available 24/7 to provide fast, reliable emergency roof repair services
+                that protect your home and restore your peace of mind. With years of experience in emergency roofing
+                situations, we have the expertise to handle any roof emergency, big or small. We use high-quality materials
+                and proven techniques to ensure your roof is secure and leak-free. Trust Paragon Exterior for all your emergency roof repair needs. Our commitment to customer satisfaction means we work quickly and
+                efficiently to resolve your roofing issues, minimizing damage and disruption to your home. Contact us anytime
+                for immediate assistance with emergency roof repairs. Our team is ready to respond to your call and
+                provide the expert service you need to protect your home from further damage."
+                titleAs="h2"
+                />
 
               <div className="py-12 pt-20 sm:pt-0">
                   <GetEstimate />

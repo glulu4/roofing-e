@@ -1,3 +1,4 @@
+import HeaderText from "@/components/HeaderText";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import SecondaryText from "@/components/SecondaryText";
 import Image from "next/image";
@@ -61,12 +62,12 @@ const AboutPage = () => {
 
 
         <div className="mt-24 bg-gray-50 p-10 w-full rounded-md">
-          <h2 className="text-center text-4xl font-semibold tracking-tight text-primaryblue">
+          <HeaderText as="h2" className="text-center font-semibold tracking-tight text-primaryblue">
             Our Core Values
-          </h2>
-          <p className="mt-4 text-center text-lg text-gray-600">
+          </HeaderText>
+          <SecondaryText className="mt-4 text-center text-gray-600">
             At Paragon Exterior, our values guide everything we do. Here’s what sets us apart:
-          </p>
+          </SecondaryText>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="text-center">
               <div className="flex justify-center items-center bg-amber-100 rounded-full w-16 h-16 mx-auto">

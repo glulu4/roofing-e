@@ -113,6 +113,7 @@ import HeaderText from '@/components/HeaderText';
 import SecondaryText from '@/components/SecondaryText';
 import AboutSection from '@/components/service-page/roof/AboutSection';
 import FAQSection from '@/components/FAQSection';
+import {WhyParagonVeluxSkylights} from '@/components/WhyParagon';
 
 export const metadata = {
     title: 'Velux Skylights Installation | Paragon Exterior',
@@ -130,7 +131,7 @@ export default async function page() {
             />
 
             <AboutSection
-            className='py-20'
+                className='py-20'
                 title="Velux Skylights – Brighten Your Home"
                 subtitle="Velux skylights are designed to fill your space with natural light while maintaining energy efficiency and enhancing your home’s beauty. Our expert installers ensure a perfect fit for lasting performance."
                 images={[
@@ -190,10 +191,15 @@ export default async function page() {
             </div>
 
 
+            <WhyParagonVeluxSkylights
+                title='Why Trust Paragon Exterior for Your Velux Skylights Installation?'
+                subTitle='At Paragon Exterior, we pride ourselves on delivering top-notch Velux skylight installation that combines beauty with durability. Our experienced team understands the intricacies of skylight installation, ensuring your home not only looks stunning but is also protected against the elements.'
+                titleAs='h2'
+            />
 
-                        <div className="py-12 pt-20 sm:pt-0">
-                            <GetEstimate />
-                        </div>
+            <div className="py-12 pt-20 sm:pt-0">
+                <GetEstimate />
+            </div>
         </div>
     )
 }

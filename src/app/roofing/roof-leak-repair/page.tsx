@@ -59,6 +59,7 @@ export default async function Page() {
 
             {/* INFO SECTION */}
             <InfoSection
+            className="bg-blue-50"
                 imgSrc="/images/roof-service/roof-leak/infra-red.webp"
                 imgAlt="Infrared moisture scan of leaking roof"
                 titleAs="h2"

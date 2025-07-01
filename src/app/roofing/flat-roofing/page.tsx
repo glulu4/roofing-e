@@ -5,6 +5,7 @@ import Row from "@/components/Row";
 import HeaderText from "@/components/HeaderText";
 import SecondaryText from "@/components/SecondaryText";
 import React from "react";
+import {WhyParagonFlatRoofing} from "@/components/WhyParagon";
 
 /* ——— META ——— */
 export const metadata = {
@@ -95,6 +96,12 @@ export default async function Page() {
                     className="pt-12 lg:pt-24"
                 />
             </div>
+
+            <WhyParagonFlatRoofing
+                title="Why Choose Paragon Exterior for Flat Roofing?"
+                subTitle="At Paragon Exterior, we pride ourselves on delivering top-notch flat roofing solutions that combine durability with energy efficiency. Our experienced team understands the unique challenges of flat roofs, ensuring your home or business is protected against leaks and weather damage. We use only the highest quality materials and the latest techniques to provide you with a flat roofing system that lasts for decades."
+                titleAs="h2"
+            />
 
             {/* CTA */}
             <div className="py-12 pt-20 sm:pt-0">

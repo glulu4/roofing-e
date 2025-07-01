@@ -6,10 +6,44 @@ import SidingHeader from '@/components/siding/SidingHeader'
 import SidingMaterial from '@/components/siding/SidingMaterial'
 import StepsSection from '@/components/siding/StepsSection'
 import React from 'react'
-import type { Metadata } from 'next'
+import type {Metadata} from 'next'
+import ServicesGrid from '@/components/service-page/Services'
+
+
+const services = [
+  {
+    id: 1,
+    title: 'Siding Installation',
+    href: '/siding/siding-installation',
+    description: 'Expert siding installation services to enhance your home’s protection and curb appeal. Choose from a variety of materials including fiber cement, vinyl, and engineered wood.',
+    imageUrl: '/images/siding/siding-service/siding-installation.webp',
+  },
+  {
+    id: 2,
+    title: 'Siding Repair',
+    href: '/siding/siding-repair',
+    description: 'Professional siding repair services to fix damage from weather, pests, or wear. Ensure your home remains energy-efficient and visually appealing with our expert solutions.',
+    imageUrl: '/images/siding/siding-service/siding-repair.webp',
+  },
+  {
+    id: 3,
+    title: 'Siding Replacement',
+    href: '/siding/siding-replacement',
+    description: 'Complete siding replacement services to upgrade your home’s exterior. We offer a range of durable materials like fiber cement, vinyl, and aluminum to suit your style and budget.',
+    imageUrl: '/images/siding/siding-service/siding-replacement.webp',
+  },
+  {
+    id: 4,
+    title: 'Vertical Siding',
+    href: '/siding/vertical-siding',
+    description: 'Stylish vertical siding options to add a modern touch to your home. Our team specializes in installing vertical siding that enhances aesthetics and provides superior protection against the elements.',
+    imageUrl: '/images/siding/siding-service/vertical-siding.webp',
+  },
+]
 
 export const metadata: Metadata = {
-  alternates: { canonical: 'https://www.paragonexterior.com/siding' },
+  title: 'Siding Solutions | Paragon Exterior',
+  description: 'Explore our siding solutions that enhance your home’s protection, energy efficiency, and curb appeal. From installation to repair, we have you covered.',
 }
 
 export default function page() {
@@ -22,22 +56,35 @@ export default function page() {
       <div className="flex flex-col justify-center items-center w-5/6 mx-auto sm:text-center text-left px-6 py-32">
 
 
-        <HeaderText variant='large'>
-          We Find Solutions For You
+        <HeaderText as="h1" variant='large'>
+          Siding Solutions Tailored For You
         </HeaderText>
-
         <div className='my-12'>
           <SecondaryText>
-            Choosing the right siding for your home is a vital decision that impacts more than just exterior appearance. Quality siding works hand-in-hand with residential roofing to create a protective shield against the elements. It boosts energy efficiency, reduces utility bills, and improves your home&apos;s overall comfort and curb appeal. Whether you&apos;re upgrading siding or working with one of the best roofing companies near you, we’ll guide you through selecting the perfect solution that lasts.
+            Choosing the right siding for your home is a vital decision that impacts more than just exterior appearance.
+            Quality siding works hand-in-hand with residential roofing to create a protective shield against the elements.
+            It boosts energy efficiency, reduces utility bills, and enhances your home&apos;s overall comfort and curb appeal.
+            Whether you&apos;re planning new <strong>siding installation</strong>, tackling <strong>siding repair</strong>, or considering <strong>siding replacement</strong>,
+            we’ll guide you through selecting durable materials like <strong>fiber cement</strong>, <strong>vinyl</strong>, <strong>aluminum</strong>, <strong>cedar</strong>, and <strong>engineered wood</strong> for lasting performance.
           </SecondaryText>
 
-            <SecondaryText>
-            At Paragon Exterior&reg;, we&rsquo;re more than a siding and roofing company &mdash; we&rsquo;re your trusted partner in exterior transformation. From roof repair to siding installations, we help homeowners in humid continental climates like Pennsylvania find long-lasting materials that withstand hot summers, harsh winters, and year-round weather. Let our expert roofing contractors and siding specialists simplify the process and deliver results you&rsquo;ll love.
-            </SecondaryText>
+          <SecondaryText>
+            At Paragon Exterior&reg;, we&rsquo;re more than a siding and roofing company — we&rsquo;re your trusted partner in exterior transformation.
+            From roof repair to expert <strong>siding installations</strong> and <strong>vertical siding</strong> solutions, we help homeowners in humid continental climates like Pennsylvania
+            choose materials that withstand hot summers, harsh winters, and year-round weather.
+            Let our skilled roofing contractors and siding specialists simplify the process and deliver results you&rsquo;ll love.
+          </SecondaryText>
         </div>
 
 
+
       </div>
+
+
+      <div>
+        <ServicesGrid services={services}/>
+      </div>
+
 
       <div>
         <SidingMaterial />
@@ -77,7 +124,7 @@ export default function page() {
 
       <div>
         {/* <StepsSection/> */}
-        <HowItWorks/>
+        <HowItWorks />
       </div>
 
       <div className="pb-16 pt-16 sm:pt-0 md:pt-2 md:pb-4 sm:pb-10">

@@ -7,6 +7,7 @@ import Row from '@/components/Row';
 import HeaderText from '@/components/HeaderText';
 import SecondaryText from '@/components/SecondaryText';
 import InfoSection from '@/components/service-page/Info';
+import {WhyParagonRoofReplacement} from '@/components/WhyParagon';
 
 
 
@@ -31,7 +32,7 @@ export default async function page() {
 
 
       <InfoSection
-      titleAs='h1'
+        titleAs='h1'
         imgSrc="/images/roof-service/roof-replacement/roof-replacement-info.webp"
         imgAlt="Crew performing a roof replacement with new shingles"
         title="Roof Replacement You Can Trust"
@@ -78,11 +79,16 @@ export default async function page() {
       </div>
 
 
+      <WhyParagonRoofReplacement
+        title='Why Choose Paragon Exterior for Your Roof Replacement?'
+        titleAs='h2'
+        subTitle='At Paragon Exterior, we pride ourselves on delivering top-notch roof replacement services that combine beauty with durability. Our experienced team understands the intricacies of roof replacement, ensuring your home not only looks stunning but is also protected against the elements.'
+      />
 
 
-                  <div className="py-12 pt-20 sm:pt-0">
-                      <GetEstimate />
-                  </div>
+      <div className="py-12 pt-20 sm:pt-0">
+        <GetEstimate />
+      </div>
     </div>
 
   )
