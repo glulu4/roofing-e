@@ -28,7 +28,7 @@ export default function Page() {
             <Hero
                 mainText="Siding Replacement Experts"
                 subText="Upgrade your home’s exterior with durable, energy-efficient siding replacement from Paragon Exterior. Enjoy fresh curb appeal and year-round protection."
-                imgSrc="/images/siding/siding-service/siding-replace/hero.webp"
+                imgSrc="/images/siding/siding-service/siding-replace/hero.jpeg"
                 imgAlt="Crew installing new siding during siding replacement"
             />
 
