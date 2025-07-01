@@ -103,7 +103,7 @@ export default function SidingRepairPage() {
                                 </div>
                                 <HeaderText variant="small" className="mb-4">Assessment & Matching</HeaderText>
                                 <SecondaryText className="text-sm">
-                                    We inspect damage severity, note your siding's color, texture, and style for perfect matching.
+                                    We inspect damage severity, note your siding&apos;s color, texture, and style for perfect matching.
                                 </SecondaryText>
                             </div>
 
@@ -158,7 +158,7 @@ export default function SidingRepairPage() {
                                 <SecondaryText className="mb-6">
                                     Not every siding issue requires complete replacement. Our siding repair experts evaluate each situation
                                     to determine the most cost-effective solution. When damage is extensive or repair costs approach
-                                    replacement costs, we'll recommend new siding installation.
+                                    replacement costs, we&apos;ll recommend new siding installation.
                                 </SecondaryText>
                                 <SecondaryText className="mb-6">
                                     We install shake and shingle, vertical, and horizontal vinyl siding that requires minimal maintenance

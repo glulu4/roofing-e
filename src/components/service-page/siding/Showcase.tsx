@@ -59,7 +59,7 @@ const VerticalSidingShowcase = () => {
         }, 5000);
 
         return () => clearInterval(interval);
-    }, [currentView]);
+    }, [currentView, viewOptions, handleViewChange]);
 
     return (
         <section className="py-20 bg-gradient-to-br from-slate-900 via-primaryblue to-slate-800 relative overflow-hidden">

@@ -4,11 +4,9 @@ import GetEstimate from '@/components/landing-ui/GetEstimate'
 import InfoSection from '@/components/service-page/Info'
 import HeaderText from '@/components/HeaderText'
 import SecondaryText from '@/components/SecondaryText'
-import Row from '@/components/Row'
-import IncentivesSection from '@/components/service-page/Incentive'
+
 import {Metadata} from 'next'
 import VerticalSidingShowcase from '@/components/service-page/siding/Showcase'
-import {Head} from 'next/document'
 import WhyParagon from '@/components/WhyParagon'
 
 // SEO Metadata export
@@ -101,7 +99,7 @@ export default function VerticalSidingPage() {
                     </HeaderText>
                     <SecondaryText className="text-center max-w-3xl mx-auto mb-12">
                         Installing vertical siding demands specialized knowledge of water management, proper fastening techniques, and structural considerations.
-                        Our vertical siding experts understand the unique challenges and ensure proper installation that protects your home while delivering the stunning visual impact you're seeking.
+                        Our vertical siding experts understand the unique challenges and ensure proper installation that protects your home while delivering the stunning visual impact you&apos;re seeking.
                     </SecondaryText>
  
                 </div>

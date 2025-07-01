@@ -159,7 +159,7 @@ export default function SidingInstallationPage() {
                         <HeaderText>Why Choose Paragon Exterior for Siding Installation?</HeaderText>
                         <SecondaryText>
                             Our expert siding installation crews ensure flawless seams, proper insulation, and long-term performance.
-                            Whether you need rapid siding installation or a complete home transformation, we deliver workmanship that enhances your home's beauty and protection.
+                            Whether you need rapid siding installation or a complete home transformation, we deliver workmanship that enhances your home&apos;s beauty and protection.
                         </SecondaryText>
                     </div>
 
@@ -204,7 +204,7 @@ export default function SidingInstallationPage() {
                                 </SecondaryText>
                                 <SecondaryText className="mb-6">
                                     Whether you need full home siding installation or targeted repairs, our team ensures
-                                    color matching, proper weatherproofing, and a flawless finish that enhances your home's
+                                    color matching, proper weatherproofing, and a flawless finish that enhances your home&apos;s
                                     curb appeal and protection.
                                 </SecondaryText>
                                 <div className="space-y-3">
