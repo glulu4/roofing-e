@@ -1,6 +1,7 @@
 import Hero from '@/components/service-page/Hero'
 import HeaderText from '@/components/HeaderText'
 import SecondaryText from '@/components/SecondaryText'
+import InfoSection from '@/components/service-page/Info'
 import GetEstimate from '@/components/landing-ui/GetEstimate'
 import type { Metadata } from 'next'
 import React from 'react'
@@ -36,6 +37,15 @@ export default function Page() {
           With excellent resistance to rot and insects, Vinyl Siding keeps maintenance low while boosting energy efficiency and curb appeal.
         </SecondaryText>
       </div>
+
+      <InfoSection
+        imgSrc="/images/siding/vinyl-siding.jpg"
+        imgAlt="Detail of durable vinyl siding panels"
+        title="Versatile Vinyl Siding"
+        mainContent="Modern vinyl siding provides bold color choices and realistic wood textures without the need for constant upkeep."
+        bottomContent="Impact-resistant panels lock out moisture and never need painting, keeping your exterior vibrant year after year."
+        imagePosition="right"
+      />
       <div className="py-12">
         <GetEstimate />
       </div>
