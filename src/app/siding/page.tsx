@@ -42,8 +42,8 @@ const services = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Siding Solutions | Paragon Exterior',
-  description: 'Explore our siding solutions that enhance your home’s protection, energy efficiency, and curb appeal. From installation to repair, we have you covered.',
+  title: 'Professional Siding Contractors',
+  description: 'Learn why Paragon Exterior are the trusted Professional Siding Contractors near you. Explore our siding solutions that enhance your home’s protection, energy efficiency, and curb appeal. From installation to repair, we have you covered.',
 }
 
 export default function page() {
@@ -57,7 +57,7 @@ export default function page() {
 
 
         <HeaderText as="h1" variant='large'>
-          Siding Solutions Tailored For You
+          Siding Contractors You Can Trust
         </HeaderText>
         <div className='my-12'>
           <SecondaryText>
@@ -65,14 +65,14 @@ export default function page() {
             Quality siding works hand-in-hand with residential roofing to create a protective shield against the elements.
             It boosts energy efficiency, reduces utility bills, and enhances your home&apos;s overall comfort and curb appeal.
             Whether you&apos;re planning new <strong>siding installation</strong>, tackling <strong>siding repair</strong>, or considering <strong>siding replacement</strong>,
-            we’ll guide you through selecting durable materials like <strong>fiber cement</strong>, <strong>vinyl</strong>, <strong>aluminum</strong>, <strong>cedar</strong>, and <strong>engineered wood</strong> for lasting performance.
+            you can trust Paragon Exterior to be you siding contractors. We’ll guide you through selecting durable materials like <strong>fiber cement</strong>, <strong>vinyl</strong>, <strong>aluminum</strong>, <strong>cedar</strong>, and <strong>engineered wood</strong> for lasting performance.
           </SecondaryText>
 
           <SecondaryText>
             At Paragon Exterior&reg;, we&rsquo;re more than a siding and roofing company — we&rsquo;re your trusted partner in exterior transformation.
             From roof repair to expert <strong>siding installations</strong> and <strong>vertical siding</strong> solutions, we help homeowners in humid continental climates like Pennsylvania
             choose materials that withstand hot summers, harsh winters, and year-round weather.
-            Let our skilled roofing contractors and siding specialists simplify the process and deliver results you&rsquo;ll love.
+            Let our skilled roofing and siding contractors simplify the process and deliver results you&rsquo;ll love.
           </SecondaryText>
         </div>
 
@@ -93,26 +93,12 @@ export default function page() {
       <div className="flex flex-col justify-center items-center w-5/6 mx-auto text-left px-6 py-32">
 
 
-        <HeaderText variant='large' className='text-left'>
-          The Steps we take
+        <HeaderText as='h2' variant='large' className='text-left'>
+          The Steps we take as your Siding Contractors
         </HeaderText>
 
         <div className='my-12'>
-          {/* <SecondaryText>
-            Replacing siding is a structured process that ensures
-             your home is well-protected, energy-efficient, and 
-             visually appealing. Each step in the siding 
-             replacement journey is carefully designed to 
-             safeguard your property, enhance its curb 
-             appeal, and improve insulation. From 
-             removing old siding and inspecting for 
-             damage to precise installation and thorough
-              clean-up, we follow a detailed process to 
-              deliver results that last. By breaking down 
-              each phase, we make it simple and stress-free 
-              for you to understand how we transform your 
-              home with durable and attractive siding.
-          </SecondaryText> */}
+
           <SecondaryText>
             Replacing siding is a structured process that ensures your home remains protected, energy-efficient, and visually appealing. At Paragon Exterior®, our approach combines expert siding installation with the knowledge and precision of a trusted roofing contractor. Each phase — from removing old materials and inspecting for damage to precise installation and cleanup — is handled by our experienced team. Whether you&apos;re updating siding or working with one of the best roofing companies near you for roof repair or residential roofing, we make the process simple, stress-free, and built to last.
           </SecondaryText>

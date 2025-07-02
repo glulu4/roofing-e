@@ -37,7 +37,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
                                 </Link>
 
                                 {/* Aluminum Siding */}
@@ -59,7 +59,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-tr-[2rem]" />
-                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
 
                                 </Link>
 
@@ -82,7 +82,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-bl-[2rem]" />
-                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
 
                                 </Link>
 
@@ -105,7 +105,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5" />
-                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
 
                                 </Link>
 
@@ -128,7 +128,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
 
                                 </Link>
                             </div>
