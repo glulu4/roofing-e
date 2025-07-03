@@ -12,7 +12,7 @@ import React from "react";
    SEO META
 ───────────────────────────────────────── */
 export const metadata = {
-    title: "Roof Leak Repair | Paragon Exterior",
+    title: "Roof Leak Repair Near Me",
     description:
         "Paragon Exterior provides fast roof leak repair across Pennsylvania, New Jersey, and Delaware. Stop water damage with our emergency roof-leak specialists—honest estimates, permanent fixes, and industry-leading warranties."
 };

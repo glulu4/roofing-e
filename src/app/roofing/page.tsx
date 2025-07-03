@@ -77,6 +77,13 @@ const services = [
         description: '24/7 emergency roof repair services for storm damage, active leaks, and urgent roofing needs. Immediate response with tarping and permanent repairs across PA, NJ, DE.',
         imageUrl: '/images/roof-service/emergency-roofing/roof-damage.webp',
     },
+    {
+        id: 7,
+        title: 'Metal Roofing',
+        href: '/roofing/metal-roofing',
+        description: 'Durable metal roofing installation and repair services. Choose from standing seam, corrugated, and architectural metal roofing systems for long-lasting protection.',
+        imageUrl: '/images/roof-service/metal/metal-roof-card.webp',
+        },
 ];
 
 

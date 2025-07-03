@@ -147,7 +147,7 @@ import {WhyParagonEmergencyRoofRepair} from "@/components/WhyParagon";
    META - Enhanced for SEO
 ───────────────────────────────────────── */
 export const metadata = {
-    title: "Emergency Roof Repair Services | 24/7 Storm Damage Response | Paragon Exterior",
+    title: "Emergency Roof Repair Services | 24/7 Storm Damage Response",
     description: "Need emergency roof repair? Paragon Exterior provides 24/7 emergency roofing services for storm damage, active leaks, and urgent repairs in PA, NJ, DE. Fast response guaranteed.",
     keywords: "emergency roof repair, 24/7 roof repair, storm damage repair, emergency roofing services, urgent roof repair, roof leak repair, emergency roofer",
     openGraph: {

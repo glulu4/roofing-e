@@ -45,6 +45,13 @@ const serviceData = [
         image: "/images/home/siding-service.webp",
         slug: "siding"
     },
+    {
+        id: "03",
+        title: "Commercial Services",
+        description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
+        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+        slug: "/commercial-roofing"
+    }
     // {
     //     id: "03",
     //     title: "Gutter Services",

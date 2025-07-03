@@ -10,7 +10,7 @@ import {WhyParagonRoofRepair} from '@/components/WhyParagon';
 
 
 export const metadata = {
-    title: 'Roof Repair | Paragon Exterior',
+    title: 'Local Roof Repair Contractors',
     description: 'Professional roof repair services for homes and businesses. Our expert team specializes in roof leak repair, shingle replacement, and long-lasting roofing solutions. Restore your roof’s integrity and protect your property with Paragon Exterior.'
 }
 
