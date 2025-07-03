@@ -3,7 +3,6 @@ import Hero from "@/components/service-page/Hero";
 import InfoSection from "@/components/service-page/Info";
 import IncentivesSection from "@/components/service-page/Incentive";
 import ServicesGrid from "@/components/service-page/Services";
-import FAQ from "@/components/FAQ";
 import WhyParagon from "@/components/WhyParagon";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import Row from "@/components/Row";
@@ -30,7 +29,7 @@ const metalRoofingServices = [
         title: "Standing Seam Metal Roofing",
         href: "/roofing/metal-roofing/standing-seam-metal-roof",
         description: "Premium standing seam metal roofing systems with concealed fasteners for superior weather protection and modern aesthetics.",
-        imageUrl: "/images/metal-roofing/standing-seam.jpg"
+        imageUrl: "/images/roof-service/metal/standing-seam/seam4.webp"
     },
     {
         id: 2,
