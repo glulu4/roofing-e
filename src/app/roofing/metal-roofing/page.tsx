@@ -12,7 +12,7 @@ import Image from "next/image";
 
 // SEO metadata with metal roofing keyword focus
 export const metadata: Metadata = {
-    title: "Expert Metal Roofing Installation & Repair Services",
+    title: "Metal Roofing Installation & Repair Services",
     description: "Professional metal roofing services in Philadelphia, NJ & Delaware. Get durable, energy-efficient metal roofing with 40+ year lifespan. Free metal roof estimates available.",
     keywords: "metal roofing, metal roof installation, metal roof repair, standing seam metal roof, steel roofing, aluminum roofing, metal roofing contractors",
     openGraph: {
@@ -34,16 +34,16 @@ const metalRoofingServices = [
     {
         id: 2,
         title: "Corrugated Metal Roofing",
-        href: "/roofing/corrugated-metal",
+        href: "/roofing/metal-roofing/corrugated-metal-roofing",
         description: "Cost-effective corrugated metal roofing solutions offering excellent durability and weather resistance for residential and commercial properties.",
-        imageUrl: "/images/metal-roofing/corrugated.jpg"
+        imageUrl: "/images/roof-service/metal/corrugated/corrugated-metal-roof-card.webp"
     },
     {
         id: 3,
         title: "Metal Roof Repair",
-        href: "/roofing/metal-roof-repair",
+        href: "/roofing/metal-roofing/metal-roof-repair",
         description: "Expert metal roof repair services including leak repair, panel replacement, and fastener maintenance to extend your roof's lifespan.",
-        imageUrl: "/images/metal-roofing/repair.jpg"
+        imageUrl: "/images/roof-service/metal/metal-roof-repair/metal-roof-repair-card.webp"
     }
 ];
 

@@ -5,6 +5,7 @@ import Benefits from '@/components/solar/Benefits';
 import GetEstimate from '@/components/landing-ui/GetEstimate';
 import HeaderText from '@/components/HeaderText';
 import SecondaryText from '@/components/SecondaryText';
+import StandingSeamTabs from '@/components/service-page/roof/StandingSeamTabs';
 
 export const metadata = {
     title: 'Standing Seam Metal Roof Installation',
@@ -40,6 +41,11 @@ export default function StandingSeamMetalRoofPage() {
                     </>
                 }
                 imagePosition="right"
+            />
+
+            <StandingSeamTabs
+            
+            className="w-5/6 mx-auto mt-12 mb-16 sm:mb-24 lg:mb-32"
             />
 
             {/* KEY BENEFITS */}
