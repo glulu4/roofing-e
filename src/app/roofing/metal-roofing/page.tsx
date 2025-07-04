@@ -247,8 +247,8 @@ export default function MetalRoofingPage() {
             />
 
             {/* Metal Roofing Services */}
-            <section className="py-16 bg-gray-50 mx-auto sm:w-5/6">
-                <div className="text-center mb-12  px-8">
+            <section className="">
+                <div className="text-center mb-12 px-8">
                     <HeaderText as="h2" className="text-primaryblue">
                         Comprehensive Metal Roofing Services
                     </HeaderText>
