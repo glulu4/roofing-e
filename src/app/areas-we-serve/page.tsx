@@ -12,7 +12,7 @@ Object.entries(serviceAreaSlugs).forEach(([slug, value]) => {
 });
 
 export const metadata = {
-    title: "Areas We Serve | Paragon Exterior",
+    title: "Areas We Serve",
     description:
         "Explore the areas we serve across Pennsylvania, New Jersey, and Delaware. From Philadelphia to Bucks County, our expert roofing and exterior services are just a call away."
 };

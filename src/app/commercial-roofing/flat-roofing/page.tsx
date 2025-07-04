@@ -80,7 +80,7 @@ export default async function Page() {
                     title="Signs Your Commercial Flat Roof Needs Professional Attention"
                     description={
                         <>
-                            Ponding water, membrane blisters, cracked seams, or interior leaks in your commercial building signal it's time for professional commercial flat roofing service.{" "}
+                            Ponding water, membrane blisters, cracked seams, or interior leaks in your commercial building signal it&apos;s time for professional commercial flat roofing service.{" "}
                             <a href="/blog/commercial-flat-roof-warning-signs" className="text-primaryBlue">Learn more</a> about protecting your commercial property from costly damage.
                         </>
                     }

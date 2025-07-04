@@ -89,16 +89,16 @@ export default function MetalRoofRepairPage() {
                 title="Metal Roof Repair Services"
                 mainContent={
                     <>
-                        If your metal roof is leaking or shows signs of damage, our professional roofing company recommends annual metal roof inspections from both ground level and on-roof assessments. Regular metal roof maintenance helps prevent major repair issues and extends your roof's lifespan significantly.
+                        If your metal roof is leaking or shows signs of damage, our professional roofing company recommends annual metal roof inspections from both ground level and on-roof assessments. Regular metal roof maintenance helps prevent major repair issues and extends your roof&apos;s lifespan significantly.
 
                         <br /><br />
 
-                        Our comprehensive metal roof repair services include fixing surface scuffs, removing debris accumulation, cleaning dirt and mildew, addressing stains, and treating corrosion before it spreads. We also repair damaged flashing, replace worn fasteners, and reseal penetrations to maintain your roof's weather resistance.
+                        Our comprehensive metal roof repair services include fixing surface scuffs, removing debris accumulation, cleaning dirt and mildew, addressing stains, and treating corrosion before it spreads. We also repair damaged flashing, replace worn fasteners, and reseal penetrations to maintain your roof&apos;s weather resistance.
                     </>
                 }
                 bottomContent={
                     <>
-                        If you've experienced recent storm damage that has you concerned about your metal roof's condition, schedule a professional roof inspection today. When damage is visible or suspected, contact us immediately so we can quickly restore the integrity of your metal roofing system and prevent further deterioration or interior damage.
+                        If you&apos;ve experienced recent storm damage that has you concerned about your metal roof&apos;s condition, schedule a professional roof inspection today. When damage is visible or suspected, contact us immediately so we can quickly restore the integrity of your metal roofing system and prevent further deterioration or interior damage.
                     </>
                 }
                 imagePosition="left"
@@ -131,7 +131,7 @@ export default function MetalRoofRepairPage() {
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm">
                             <h3 className="text-xl font-semibold mb-4 text-gray-800">Storm Damage Repair</h3>
-                            <p className="text-gray-600">Emergency metal roof repair services for hail damage, wind damage, and debris impact to quickly restore your roof's protection.</p>
+                            <p className="text-gray-600">Emergency metal roof repair services for hail damage, wind damage, and debris impact to quickly restore your roof&apos;s protection.</p>
                         </div>
                     </div>
                 </div>
