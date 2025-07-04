@@ -113,9 +113,8 @@ export default function Page() {
             />
 
             {/* FAQ */}
-            <section className="mx-auto w-5/6 py-12">
-                <HeaderText className="text-center my-20">Siding Replacement FAQ</HeaderText>
                 <FAQSection
+                    title="Frequently Asked Questions About Siding Replacement"
                     faqs={[
                         {
                             question: "How much does siding replacement cost?",
@@ -134,7 +133,7 @@ export default function Page() {
                         }
                     ]}
                 />
-            </section>
+
 
             
             <WhyParagonSidingReplacement

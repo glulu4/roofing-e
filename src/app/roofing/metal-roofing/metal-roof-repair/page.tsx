@@ -66,11 +66,15 @@ export default function MetalRoofRepairPage() {
                 title="Expert Metal Roof Repair Services"
                 mainContent={
                     <>
-                        Our **metal roof repair services** fix leaks, dents, rust, corrosion, and damaged panels to protect your home or building from the elements. We handle everything from sealing small holes and replacing fasteners to resealing seams and installing new panels when needed.
+                        Our <strong>metal roof repair services</strong> fix leaks, dents, 
+                        rust, corrosion, and damaged panels to protect your home or building 
+                        from the elements. We handle everything from sealing small holes and 
+                        replacing fasteners to resealing 
+                        seams and installing new panels when needed.
 
                         <br /><br />
 
-                        Whether it’s emergency **metal roof leak repair** after a storm or proactive **metal roof maintenance**, our licensed contractors deliver long-lasting solutions using top-quality materials.
+                        Whether it’s emergency <strong>metal roof leak repair</strong> after a storm or proactive <strong>metal roof maintenance</strong>, our licensed contractors deliver long-lasting solutions using top-quality materials.
                     </>
                 }
                   
@@ -201,7 +205,9 @@ export default function MetalRoofRepairPage() {
                     <div className="grid md:grid-cols-3 gap-6">
                         <div>
                             <h3 className="text-lg font-semibold mb-3">Pennsylvania</h3>
-                            <p className="text-gray-600">Comprehensive metal roof repair services across PA including Philadelphia, Pittsburgh, Allentown, and surrounding communities.</p>
+                            <p className="text-gray-600">
+                                Comprehensive metal roof repair services across the Greater Philadelphia Area, including Philadelphia, Feasterville-Trevose, Germantown, Collegeville, and King of Prussia.
+                            </p>
                         </div>
                         <div>
                             <h3 className="text-lg font-semibold mb-3">New Jersey</h3>
@@ -216,10 +222,10 @@ export default function MetalRoofRepairPage() {
             </div>
 
             {/* FAQ */}
-            <div className="my-24 w-5/6 mx-auto">
-                <HeaderText className="text-center mb-6">Metal Roof Repair FAQs</HeaderText>
-                <FAQSection faqs={faqs} />
-            </div>
+                <FAQSection
+                title="Frequently Asked Questions About Metal Roof Repair"
+                 faqs={faqs} />
+
 
             {/* CTA */}
             <div className="py-16 text-center">

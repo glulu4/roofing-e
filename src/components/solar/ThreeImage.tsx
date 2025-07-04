@@ -11,7 +11,7 @@ interface ThreeImageLayoutProps{
 export default function ThreeImageLayout({posts}: ThreeImageLayoutProps) {
     return (
         <div className="bg-white py-24 sm:py-32">
-            <div className="mx-auto w-5/6 px-6 lg:px-8">
+            <div className="mx-auto sm:w-5/6 px-8">
                 <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                     {posts.map((post) => (
                         <div key={post.id} className="flex flex-col items-start text-center">

@@ -63,10 +63,10 @@ export default async function Page() {
             />
 
             {/* HIGHLIGHTS */}
-            <CommercialFlatRoofHighlights />
+            {/* <CommercialFlatRoofHighlights /> */}
 
             {/* MAIN CONTENT ROWS */}
-            <div className="mx-auto w-5/6 py-10 lg:py-20">
+            <div >
                 <div className="mb-32 text-center">
                     <HeaderText>Why Choose Paragon Exterior for Commercial Flat Roofing?</HeaderText>
                     <SecondaryText>
@@ -75,7 +75,6 @@ export default async function Page() {
                     </SecondaryText>
                 </div>
 
-                {/* Warning-signs Row */}
                 <Row
                     title="Signs Your Commercial Flat Roof Needs Professional Attention"
                     description={
@@ -87,7 +86,6 @@ export default async function Page() {
                     imageSrc="/images/commercial/flat/flat2.webp"
                 />
 
-                {/* Repair vs Replacement Row */}
                 <Row
                     title="Commercial Flat Roof Repair vs. Replacement—Expert Guidance"
                     description="Not every commercial flat roof leak requires complete replacement. Our commercial roofing experts start with a comprehensive inspection, evaluate repair options, and only recommend full commercial flat roof replacement when it's the most cost-effective long-term solution for your business. Honest advice, transparent commercial roofing pricing, and strong warranties—that's the Paragon promise."
@@ -96,7 +94,6 @@ export default async function Page() {
                     className="pt-12 lg:pt-24"
                 />
 
-                {/* Additional Commercial Focus Row */}
                 <Row
                     title="Reliable Commercial Flat Roofing Materials"
                     description="We specialize in EPDM synthetic rubber roofing, TPO thermoplastic systems, and modified bitumen commercial flat roofing. These durable materials are designed specifically for commercial applications, offering superior weather resistance, energy efficiency, and longevity that commercial property owners demand. Our commercial flat roofing systems can last 20-30 years when properly installed and maintained."

@@ -1,14 +1,22 @@
 import HeaderText from "../HeaderText";
 import SecondaryText from "../SecondaryText";
 
-export default function GetEstimate({ location }: { location?: string } = {}) {
+interface GetEstimateProps {
+    location?: string;
+    className?: string;
+}
+
+export default function GetEstimate({
+    location,
+    className = "",
+}: GetEstimateProps) {
     const heading = location ? `Get Your Free Estimate in ${location}` : 'Get Your Free Estimate Today';
     const subText = location
         ? `We’re ready to help homeowners in ${location} with a personalized, no-obligation estimate. Find out why locals trust Paragon Exterior for roofing and siding.`
         : `We’re here to understand your needs and provide a personalized, no-obligation estimate – because we treat your home like it’s our own. Find out why homeowners trust Paragon Exterior as thier trusted roofing and siding contractor.`;
 
     return (
-        <div className = "pb-16 md:pt-2 md:pb-4 sm:pb-10">
+        <div className={`pb-16 md:pt-2 md:pb-4 sm:pb-10 ${className}`}>
             <div className="px-6 sm:px-6 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
                     <HeaderText variant="large">{heading}</HeaderText>

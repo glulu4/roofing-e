@@ -109,7 +109,7 @@ const Page = () => {
             </div>
 
 
-            <div className="flex flex-col justify-center sm:text-center items-center w-5/6 mx-auto text-left px-6 py-32">
+            <div className="flex flex-col justify-center sm:text-center items-center sm:w-5/6 mx-auto text-left px-8 py-32">
 
 
                 <HeaderText as="h1" variant='large'>

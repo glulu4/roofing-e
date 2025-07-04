@@ -130,7 +130,7 @@ export default function MetalRoofingPage() {
 
             {/* Metal Roofing Types Section */}
             <section className="py-16 bg-gray-50">
-                <div className="mx-auto w-5/6 px-6 lg:px-8">
+                <div className="mx-auto sm:w-5/6 px-8">
                     <HeaderText as="h2" className="text-center text-primaryblue mb-12">
                         Metal Roofing Materials We Install
                     </HeaderText>
@@ -247,8 +247,8 @@ export default function MetalRoofingPage() {
             />
 
             {/* Metal Roofing Services */}
-            <section className="py-16 bg-gray-50">
-                <div className="text-center mb-12">
+            <section className="py-16 bg-gray-50 mx-auto sm:w-5/6">
+                <div className="text-center mb-12  px-8">
                     <HeaderText as="h2" className="text-primaryblue">
                         Comprehensive Metal Roofing Services
                     </HeaderText>
@@ -302,7 +302,7 @@ export default function MetalRoofingPage() {
 
 
             {/* Call to Action */}
-            <GetEstimate />
+            <GetEstimate className='pt-16 sm:pt-4' />
         </div>
     );
 }

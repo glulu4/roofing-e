@@ -2,10 +2,7 @@ import GetEstimate from '@/components/landing-ui/GetEstimate';
 import Hero from '@/components/service-page/Hero';
 import InfoSection from '@/components/service-page/Info';
 import React from 'react';
-import RoofRepairReasons from '@/components/service-page/roof/RoofRepairReasons';
 import Row from '@/components/Row';
-import HeaderText from '@/components/HeaderText';
-import SecondaryText from '@/components/SecondaryText';
 import {WhyParagonRoofReplacement} from '@/components/WhyParagon';
 import Reasons from '@/components/service-page/Reasons';
 

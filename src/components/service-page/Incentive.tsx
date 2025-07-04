@@ -56,7 +56,7 @@ export default function IncentivesSection({
     return (
         <div className={`${backgroundColor} ${className}`}>
             <div className="mx-auto w-5/6 py-24 sm:px-2 sm:py-32 lg:px-4">
-                <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
+                <div className="mx-auto max-w-2xl lg:max-w-none">
                     {/* Hero Section */}
                     <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
                         {/* Text Content */}

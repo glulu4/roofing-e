@@ -163,12 +163,9 @@ export default async function page() {
                 </div>
             </div>
 
-            <div className="mx-auto w-5/6 py-6 lg:py-12">
-                <HeaderText className="text-center mb-12">
-                    Frequently Asked Questions
-                </HeaderText>
 
                 <FAQSection
+                    title="Frequently Asked Questions About Velux Skylights"
                     faqs={[
                         {
                             question: "What are the benefits of Velux skylights?",
@@ -188,7 +185,7 @@ export default async function page() {
                         }
                     ]}
                 />
-            </div>
+
 
 
             <WhyParagonVeluxSkylights

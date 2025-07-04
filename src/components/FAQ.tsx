@@ -1,9 +1,7 @@
 import React from 'react'
-import HeaderText from './HeaderText'
-import SecondaryText from './SecondaryText';
 import FAQSection from './FAQSection';
 
-export default function FAQ({ locationName }: { locationName: string }) {
+export default function FAQ({ locationName}: { locationName: string }) {
     const faqData = [
         {
             question: `Do you offer roof repair near me in ${locationName}?`,
@@ -37,7 +35,10 @@ export default function FAQ({ locationName }: { locationName: string }) {
     ];
 
     return (
-        <FAQSection faqs={faqData} />
+        <FAQSection 
+        title='Frequently Asked Questions'
+
+        faqs={faqData} />
         // <section>
         //     <HeaderText as="h2">Frequently Asked Questions</HeaderText>
         //     <ul className="mt-4 space-y-4">

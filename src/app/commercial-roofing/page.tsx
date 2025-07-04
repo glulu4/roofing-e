@@ -123,11 +123,9 @@ const Page = () => {
 
 
 
-            <div className="mx-auto w-5/6 px-6 py-20">
-                <HeaderText as="h2" className="mb-12 text-center">
-                    Frequently Asked Questions
-                </HeaderText>
+
                 <FAQSection
+                    title="Frequently Asked Questions About Commercial Roofing"
                     faqs={[
                         {
                             question: "What is commercial roofing?",
@@ -151,7 +149,7 @@ const Page = () => {
                         }
                     ]}
                 />
-            </div>
+
 
 
 

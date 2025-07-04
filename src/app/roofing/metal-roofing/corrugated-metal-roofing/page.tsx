@@ -138,11 +138,13 @@ export default function CorrugatedMetalRoofPage() {
             />
 
 
-            <div className='py-24'>
+            {/* <div className='py-24'>
                 <HeaderText className='text-center mb-16 text-primaryblue'>
                     Frequently Asked Questions About Corrugated Metal Roofing
-                </HeaderText>
+                </HeaderText> */}
+
                 <FAQSection
+                title='Frequently Asked Questions About Corrugated Metal Roofing'
                     faqs={[
                         {
                             question: "Is corrugated metal roofing good?",
@@ -162,7 +164,7 @@ export default function CorrugatedMetalRoofPage() {
                         }
                     ]}
                 />
-            </div> 
+            {/* </div>  */}
             {/* CTA */}
             <div className="py-16 text-center">
                 <GetEstimate />
