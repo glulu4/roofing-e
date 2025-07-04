@@ -13,7 +13,7 @@ import {WhyParagonRoofReplacement} from '@/components/WhyParagon';
 
 
 export const metadata = {
-  title: 'Roof Replacement | Paragon Exterior',
+  title: 'Local Roof Replacement Professionals',
   description: 'Expert roof replacement services for homes and businesses in Pennsylvania, New Jersey, and Delaware. Our team provides durable, energy-efficient roofing solutions designed to protect your property and enhance curb appeal. Trust Paragon Exterior for professional roof installation and replacement.'
 }
 

@@ -321,7 +321,14 @@ export const metadata: Metadata = {
     "roofing maintenance",
     "roofing repair",
     "roofing replacement",
-
+    "velux skylights",
+    "board and batten siding",
+    "vinyl siding",
+    "fiber cement siding",
+    "wood siding",
+    "metal roofing",
+    "asphalt shingles",
+    "flat roofing systems",
   ],
   applicationName: "Paragon Exterior | Roofing & Siding Experts",
   openGraph: {

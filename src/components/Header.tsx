@@ -32,7 +32,7 @@ const servicesDropdown: DropdownItem = {
     {name: "Roofing", href: "/roofing"},
     {name: "Siding", href: "/siding"},
     // {name: "Gutters", href: "/gutters"},
-    // {name: "Commercial", href: "/commercial"},
+    {name: "Commercial", href: "/commercial-roofing"},
     // { name: "Solar", href: "/solar" },
   ]
 };

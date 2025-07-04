@@ -2,6 +2,8 @@ import React from 'react';
 import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
 import Image from 'next/image';
+import {ArrowUpRight} from 'lucide-react';
+import Link from 'next/link';
 
 export default function SidingMaterial() {
     return (
@@ -17,7 +19,7 @@ export default function SidingMaterial() {
                         <div className="mx-auto lg:px-8">
                             <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
                                 {/* Vinyl Siding */}
-                                <div className="relative lg:col-span-3">
+                                <Link href="/siding/vinyl-siding" className="relative lg:col-span-3">
                                     <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
                                         <Image
@@ -35,10 +37,11 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-                                </div>
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+                                </Link>
 
                                 {/* Aluminum Siding */}
-                                <div className="relative lg:col-span-3">
+                                <Link href="/siding/aluminum-siding" className="relative lg:col-span-3">
                                     <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
                                         <Image
@@ -56,10 +59,12 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-tr-[2rem]" />
-                                </div>
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+
+                                </Link>
 
                                 {/* Fiber Cement Siding */}
-                                <div className="relative lg:col-span-2">
+                                <Link href="/siding/fiber-cement-siding" className="relative lg:col-span-2">
                                     <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
                                         <Image
@@ -77,10 +82,12 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-bl-[2rem]" />
-                                </div>
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+
+                                </Link>
 
                                 {/* Cedar Siding */}
-                                <div className="relative lg:col-span-2">
+                                <Link href="/siding/cedar-siding/" className="relative lg:col-span-2">
                                     <div className="absolute inset-px rounded-lg bg-white" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                                         <Image
@@ -98,10 +105,12 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5" />
-                                </div>
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+
+                                </Link>
 
                                 {/* Engineered Wood Siding */}
-                                <div className="relative lg:col-span-2">
+                                <Link href="/siding/engineered-wood-siding" className="relative lg:col-span-2">
                                     <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
                                         <Image
@@ -119,7 +128,9 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                                </div>
+                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+
+                                </Link>
                             </div>
                         </div>
                     </div>

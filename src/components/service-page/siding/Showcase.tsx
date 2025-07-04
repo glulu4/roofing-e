@@ -1,5 +1,5 @@
 "use client";
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 import Image from 'next/image';
 import {
     ArrowUpIcon,
@@ -14,7 +14,7 @@ const VerticalSidingShowcase = () => {
     const [currentView, setCurrentView] = useState('horizontal');
     const [isAnimating, setIsAnimating] = useState(false);
 
-    const viewOptions = [
+    const viewOptions = useMemo(() => [
         {
             id: 'horizontal',
             title: 'Traditional Horizontal',
@@ -36,9 +36,9 @@ const VerticalSidingShowcase = () => {
             icon: SparklesIcon,
             image: '/images/siding/siding-service/vertical-siding/mix.webp'
         }
-    ];
+    ], []);
 
-    const handleViewChange = (viewId: string) => {
+    const handleViewChange = React.useCallback((viewId: string) => {
         if (viewId !== currentView) {
             setIsAnimating(true);
             setTimeout(() => {
@@ -46,7 +46,7 @@ const VerticalSidingShowcase = () => {
                 setIsAnimating(false);
             }, 300);
         }
-    };
+    }, [currentView]);
 
     const currentViewData = viewOptions.find(view => view.id === currentView);
 

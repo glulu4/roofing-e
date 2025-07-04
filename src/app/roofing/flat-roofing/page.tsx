@@ -9,7 +9,7 @@ import {WhyParagonFlatRoofing} from "@/components/WhyParagon";
 
 /* ——— META ——— */
 export const metadata = {
-    title: "Flat Roofing Company | Paragon Exterior",
+    title: "Flat Roofing Company",
     description:
         "Paragon Exterior is the flat roofing company homeowners and businesses trust for flat roof repair, flat roof replacement, and energy-efficient flat-roof installations across Pennsylvania, New Jersey, and Delaware."
 };
@@ -56,8 +56,10 @@ export default async function Page() {
                 imgSrc="/images/roof-service/flat-roofing/flat-roof-info.webp"
                 imgAlt="Technician performing flat roof repair"
                 titleAs="h1"
-                title="Flat Roof Repair & Replacement Done Right"
-                mainContent="Flat roofs require specialized materials and skill. Our team repairs and replaces EPDM, TPO, and modified-bitumen systems, welding seams, replacing flashing, and eliminating ponding water to stop leaks for good. If repairs are no longer cost-effective, we’ll install a brand-new flat roof designed to handle Mid-Atlantic weather and save energy year-round."
+                title="Your Local Flat Roofing Company"
+                mainContent="Flat roofs require specialized materials and skill. 
+                Our team repairs and replaces EPDM, TPO, and modified-bitumen systems, welding seams, replacing flashing, and eliminating ponding water to stop leaks for good. If repairs are no longer cost-effective, we’ll install a brand-new flat 
+                roof designed to handle Mid-Atlantic weather and save energy year-round."
                 bottomContent="From emergency flat roof repair after storm damage to full flat roof replacement on aging commercial roofs, Paragon Exterior delivers honest assessments, clear pricing, and industry-leading warranties—so you can protect your building with confidence."
                 imagePosition="right"
             />

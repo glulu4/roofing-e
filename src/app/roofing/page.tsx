@@ -77,11 +77,18 @@ const services = [
         description: '24/7 emergency roof repair services for storm damage, active leaks, and urgent roofing needs. Immediate response with tarping and permanent repairs across PA, NJ, DE.',
         imageUrl: '/images/roof-service/emergency-roofing/roof-damage.webp',
     },
+    {
+        id: 7,
+        title: 'Metal Roofing',
+        href: '/roofing/metal-roofing',
+        description: 'Durable metal roofing installation and repair services. Choose from standing seam, corrugated, and architectural metal roofing systems for long-lasting protection.',
+        imageUrl: '/images/roof-service/metal/metal-roof-card.webp',
+        },
 ];
 
 
 export const metadata = {
-    title: "Roofing Services | Paragon Exterior",
+    title: "Trusted Roofing Contractor ",
     description: "Explore our expert roofing services, including roof repair, roof leak repair, residential roofing, and flat roofing solutions. Trust Paragon Exterior for quality craftsmanship and durable materials.",
 }
 
@@ -106,7 +113,7 @@ const Page = () => {
 
 
                 <HeaderText as="h1" variant='large'>
-                    Explore our Roofing Services
+                    Trusted Roofing Contractor for Quality Solutions
                 </HeaderText>
 
                 <div className='my-12'>
@@ -126,7 +133,7 @@ const Page = () => {
 
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
-                    mainText="Trusted Roofing Company for Quality Craftsmanship"
+                    mainText="Trusted Roofing Contractor for Quality Craftsmanship"
                     description="As the most trusted roofing company near you, Paragon Exterior delivers expert roof repair, residential roofing, tile roof repair, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
                     image="/images/roof-shingle2.webp"
                 />

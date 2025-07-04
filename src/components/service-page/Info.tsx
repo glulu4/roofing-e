@@ -9,9 +9,9 @@ interface InfoSectionProps {
 
     // Content props
     title: string;
-    mainContent: string;
+    mainContent: string | JSX.Element;
     titleAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-    bottomContent?: string;
+    bottomContent?: string | JSX.Element;
 
     // Styling props
     className?: string;
