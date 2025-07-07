@@ -58,19 +58,19 @@ export default function WindowReplacementPage() {
                     {
                         name: "Energy Efficiency Savings",
                         description: "New energy-efficient windows can reduce heating and cooling costs by up to 30% through improved insulation and reduced air infiltration.",
-                        imageSrc: "/images/windows/icons/energy-efficient.svg",
+                        imageSrc: "/images/window/window-replace/icons/windmill.svg",
                         imageAlt: "Energy-efficient window replacement benefits"
                     },
                     {
                         name: "Enhanced Home Value",
                         description: "Window replacement typically returns 70-80% of investment in increased home value while improving curb appeal and marketability.",
-                        imageSrc: "/images/windows/icons/home-value.svg",
+                        imageSrc: "/images/window/window-replace/icons/house-line.svg",
                         imageAlt: "Window replacement home value increase"
                     },
                     {
                         name: "Improved Comfort & Security",
                         description: "New windows eliminate drafts, reduce noise transmission, and provide enhanced security features for better home protection.",
-                        imageSrc: "/images/windows/icons/comfort-security.svg",
+                        imageSrc: "/images/window/window-replace/icons/shield-check.svg",
                         imageAlt: "Window replacement comfort and security benefits"
                     },
                 ]}
