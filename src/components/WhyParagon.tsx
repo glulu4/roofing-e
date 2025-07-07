@@ -13,7 +13,8 @@ interface WhyParagonReason {
 interface WhyParagonProps {
     title: string;
     subTitle?: string;
-    service?: 'roof-repair' | 'roof-replacement' | 'velux-skylights' | 'flat-roofing' | 'roof-leak-repair' | 'emergency-roof-repair' | 'roofing' | 'siding' | 'siding-installation' | 'siding-repair' | 'siding-replacement' | 'vertical-siding' | 'board-and-batten-siding' | 'general';
+    service?: keyof typeof serviceReasons; // Use keyof to restrict to valid service keys
+    // service?: 'roof-repair' | 'roof-replacement' | 'velux-skylights' | 'flat-roofing' | 'roof-leak-repair' | 'emergency-roof-repair' | 'roofing' | 'siding' | 'siding-installation' | 'siding-repair' | 'siding-replacement' | 'vertical-siding' | 'board-and-batten-siding' | 'general';
     customReasons?: WhyParagonReason[];
     className?: string;
     titleAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -300,7 +301,69 @@ const serviceReasons = {
             description: "We leverage the latest technology to deliver energy-efficient and sustainable solutions.",
             keywordPhrase: "innovative solutions"
         },
-    ]
+    ],
+    'window-repair': [
+        {
+            icon: FaTools,
+            title: "Expert Window Repair Specialists",
+            description: "Our window repair experts quickly diagnose and fix broken glass, damaged frames, seal failures, and hardware issues with precision and care.",
+            keywordPhrase: "expert window repair"
+        },
+        {
+            icon: FaClock,
+            title: "Fast Window Repair Response",
+            description: "When you need window repair services, we provide rapid response times to restore security and prevent further damage to your home.",
+            keywordPhrase: "fast window repair"
+        },
+        {
+            icon: FaShieldAlt,
+            title: "Reliable Window Repair Solutions",
+            description: "Our window repair services are backed by warranties and use quality materials for long-lasting repairs that restore function and efficiency.",
+            keywordPhrase: "reliable window repair"
+        },
+    ],
+    'window-replacement': [
+        {
+            icon: FaHome,
+            title: "Expert Window Replacement Contractors",
+            description: "Our window replacement specialists provide professional installation of energy-efficient windows with precise fitting and superior craftsmanship.",
+            keywordPhrase: "expert window replacement"
+        },
+        {
+            icon: FaAward,
+            title: "Quality Window Replacement Materials",
+            description: "We install premium vinyl, fiberglass, and wood windows from leading manufacturers with comprehensive warranties for lasting performance.",
+            keywordPhrase: "quality window replacement"
+        },
+        {
+            icon: FaStar,
+            title: "Complete Window Replacement Service",
+            description: "Our window replacement process includes consultation, professional installation, cleanup, and warranties for a hassle-free experience.",
+            keywordPhrase: "complete window replacement"
+        },
+    ],
+
+    'window-installation': [
+        {
+            icon: FaTools,
+            title: "Certified Window Installation Contractors",
+            description: "Our certified window installation specialists provide professional installation with precision fitting, proper weatherproofing, and building code compliance.",
+            keywordPhrase: "certified window installation"
+        },
+        {
+            icon: FaShieldAlt,
+            title: "Quality Window Installation Materials",
+            description: "We use professional-grade flashing, sealants, and fasteners for window installation that ensures lasting performance and energy efficiency.",
+            keywordPhrase: "quality window installation"
+        },
+        {
+            icon: FaClock,
+            title: "Efficient Window Installation Process",
+            description: "Our systematic window installation process minimizes disruption while ensuring precise installation and optimal window performance.",
+            keywordPhrase: "efficient window installation"
+        },
+    ],
+
 };
 
 export default function WhyParagon({
@@ -450,3 +513,14 @@ export const WhyParagonBoardAndBattenSiding = (props: Omit<WhyParagonProps, 'ser
 
 export const WhyParagonVerticalSiding = (props: Omit<WhyParagonProps, 'service'>) =>
     <WhyParagon {...props} service="vertical-siding" />;
+
+export const WhyParagonWindowRepair = (props: Omit<WhyParagonProps, 'service'>) =>
+    <WhyParagon {...props} service="window-repair" />;
+
+
+export const WhyParagonWindowReplacement = (props: Omit<WhyParagonProps, 'service'>) =>
+    <WhyParagon {...props} service="window-replacement" />;
+
+
+export const WhyParagonWindowInstallation = (props: Omit<WhyParagonProps, 'service'>) => 
+    <WhyParagon {...props} service="window-installation" />;
