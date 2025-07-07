@@ -121,7 +121,7 @@ const WindowRepairReasons = () => {
                         Common Window Repair Issues
                     </HeaderText>
                     <SecondaryText className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-                        Windows face constant exposure to weather, temperature changes, and daily use that can cause various problems requiring professional window repair. Understanding these common issues helps you identify when window repair services are needed to maintain your home's comfort, security, and energy efficiency.
+                        Windows face constant exposure to weather, temperature changes, and daily use that can cause various problems requiring professional window repair. Understanding these common issues helps you identify when window repair services are needed to maintain your home&apos;s comfort, security, and energy efficiency.
                     </SecondaryText>
                 </div>
 

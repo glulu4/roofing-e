@@ -134,7 +134,7 @@ export default function WindowReplacementPage() {
                     <HeaderText as="h2">Why Choose Paragon Exterior for Window Replacement?</HeaderText>
                     <SecondaryText>
                         Our expert window replacement contractors ensure precise installation, quality materials, and long-term performance.
-                        Whether you need single window replacement or whole-house window replacement, we deliver results that enhance your home's value and efficiency.
+                        Whether you need single window replacement or whole-house window replacement, we deliver results that enhance your home&apos;s value and efficiency.
                     </SecondaryText>
                 </div>
 
