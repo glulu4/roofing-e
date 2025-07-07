@@ -28,7 +28,7 @@ const posts = [
         title: "Commercial Roof Replacement & Repairs",
         description:
             "From aging roofs to storm-damaged systems, we provide expert commercial roof replacement with premium materials to ensure your building stays protected.",
-        imageUrl: "/images/commercial/commerical-roof3.png"
+        imageUrl: "/images/commercial/repair-commercial-roof.webp"
     },
 ];
 
