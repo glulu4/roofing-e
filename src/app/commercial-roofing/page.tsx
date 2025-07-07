@@ -35,7 +35,7 @@ const posts = [
 export type ThreeImageArrayType = typeof posts[number];
 
 export const metadata = {
-    title: "Local Commercial Roofing Experts",
+    title: "Local Commercial Roofing Services",
     description:
         "Paragon Exterior offers comprehensive commercial roofing services including commercial flat roofing, metal roofing, commercial roof replacement, and commercial roof repair. Serving Pennsylvania, New Jersey, and Delaware with quality craftsmanship and durable solutions."
 };
@@ -45,14 +45,14 @@ const Page = () => {
         <div>
             {/* HERO */}
             <Hero
-                mainText="Commercial Roofing Solutions"
+                mainText="Commercial Roofing Services Near You"
                 subText="Paragon Exterior provides professional commercial roofing services to protect your business. From commercial flat roofing to commercial roof installation to metal roof replacement, we deliver durable, energy-efficient solutions customized to your property."
                 imgSrc="/images/commercial/commercial-roof.webp"
                 imgAlt="Paragon Exterior commercial roofing project"
             />
 
             <div className="text-center mx-auto w-5/6 py-20">
-                <HeaderText>
+                <HeaderText as="h1">
                     Commercial Roofing Services You Can Trust
                 </HeaderText>
                 <SecondaryText>
@@ -94,7 +94,8 @@ const Page = () => {
             {/* QUALITY SECTION */}
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
-                    mainText="Superior Commercial Roofing Craftsmanship"
+                    
+                    mainText="Superior Commercial Roofing Services"
                     description="Our commercial roofing systems are built to withstand harsh weather, reduce maintenance costs, and extend your roof’s lifespan. Whether your project involves flat roofing, metal panels, or full commercial roof replacement, we ensure precision installation and long-term performance backed by warranty."
                     image="/images/commercial/commerical-roofing1.webp"
                 />
