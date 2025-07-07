@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 
 interface ServicesGridProps {
+    
     services: {
         id: number;
         title: string;
@@ -20,7 +21,7 @@ export default function ServicesGrid({
     services
 }: ServicesGridProps) {
     return (
-        <div className="mb-12">
+        <div className="my-12">
             <div className="mx-auto sm:w-5/6 px-8">
                 <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {services.map((service) => (
