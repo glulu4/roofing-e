@@ -46,21 +46,7 @@ export const SAMPLE_DATA = [
         img: "/images/window/window-types/rounded-top.jpg",
         href: "/windows/round-top",
     },
-    // {
-    //     name: "Patio Doors",
-    //     img: "/images/windows/patio-doors.png",
-    //     href: "/windows/patio-doors",
-    // },
-    // {
-    //     name: "Custom",
-    //     img: "/images/windows/custom.png",
-    //     href: "/windows/custom",
-    // },
-    // {
-    //     name: "Garden",
-    //     img: "/images/windows/garden.png",
-    //     href: "/windows/garden",
-    // }
+
 ];
   
 
@@ -95,11 +81,11 @@ export default function HorizontalSlider() {
     };
 
     return (
-        <div className="bg-slate-50">
+        <div className="bg-primaryblue">
             <div className="flex flex-col items-center w-5/6 mx-auto py-24 ">
 
                 <div className="flex flex-row items-center justify-between w-full ">
-                    <HeaderText variant="default" className=" mb-12  px-6">
+                    <HeaderText variant="default" className=" mb-12 text-white px-6">
                         Explore Window Varieties
                     </HeaderText>
                     <div className="flex items-center gap-4">
@@ -125,8 +111,16 @@ export default function HorizontalSlider() {
                     className="w-full overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-6 py-6"
                 >
                     {SAMPLE_DATA.map((item, idx) => (
-                        <a
-                            href={item.href}
+                        // <a
+                        //     href={item.href}
+                            // key={idx}
+                            // className={` bg-white snap-center shrink-0 rounded-3xl shadow-md flex flex-col items-center justify-around text-center p-6`}
+                            // style={{
+                            //     width: `${itemWidth}px`,
+                            //     height: itemHeight + "px",
+                            // }}
+                        // >
+                        <div
                             key={idx}
                             className={` bg-white snap-center shrink-0 rounded-3xl shadow-md flex flex-col items-center justify-around text-center p-6`}
                             style={{
@@ -152,8 +146,10 @@ export default function HorizontalSlider() {
                                 />
 
                             </div>
+                        </div>
 
-                        </a>
+
+                        // </a>
                     ))}
 
                 </div>
