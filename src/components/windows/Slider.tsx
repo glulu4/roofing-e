@@ -9,42 +9,42 @@ export const SAMPLE_DATA = [
     {
         name: "Casement",
         img: "/images/window/window-types/casement.avif",
-        href: "/windows/casement",
+        href: "/windows/casement-windows",
     },
     {
         name: "Double Hung",
         img: "/images/window/window-types/double.avif",
-        href: "/windows/double-hung",
+        href: "/windows/double-hung-windows",
     },
     {
         name: "Awning",
         img: "/images/window/window-types/awning.avif",
-        href: "/windows/awning",
+        href: "/windows/awning-windows",
     },
     {
         name: "Glider",
         img: "/images/window/window-types/glider.avif",
-        href: "/windows/glider",
+        href: "/windows/glider-windows",
     },
     {
         name: "Bay",
         img: "/images/window/window-types/bay.avif",
-        href: "/windows/bay",
+        href: "/windows/bay-windows",
     },
     {
         name: "Bow",
         img: "/images/window/window-types/bow-window.webp",
-        href: "/windows/bow",
+        href: "/windows/bow-windows",
     },
     {
         name: "Picture",
         img: "/images/window/window-types/picture-window.avif",
-        href: "/windows/picture",
+        href: "/windows/picture-windows",
     },
     {
         name: "Round Top",
         img: "/images/window/window-types/rounded-top.jpg",
-        href: "/windows/round-top",
+        href: "/windows/round-top-windows",
     },
 
 ];
