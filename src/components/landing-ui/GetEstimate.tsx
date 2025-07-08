@@ -12,8 +12,15 @@ export default function GetEstimate({
 }: GetEstimateProps) {
     const heading = location ? `Get Your Free Estimate in ${location}` : 'Get Your Free Estimate Today';
     const subText = location
-        ? `We’re ready to help homeowners in ${location} with a personalized, no-obligation estimate. Find out why locals trust Paragon Exterior for roofing and siding.`
-        : `We’re here to understand your needs and provide a personalized, no-obligation estimate – because we treat your home like it’s our own. Find out why homeowners trust Paragon Exterior as thier trusted roofing and siding contractor.`;
+        ? `Paragon Exterior is changing the game in roofing and siding in ${location}. We’re leading with quality, trust, and total transparency — and we’re not afraid to say it: the outdated, frustrating parts of this industry are going in the dumpster.
+At Paragon, we elevate everything that should matter: communication, craftsmanship, and care. Our mission is simple — to be the perfect partner for homeowners in ${location} before, during, and long after the project is complete.
+This is how roofing and siding should feel: comfortable, honest, and hassle-free.`
+        : `Paragon Exterior is changing the game in roofing and siding.
+We’re leading with quality, trust, and total transparency — and we’re not afraid to say it: the outdated, frustrating parts of this industry are going in the dumpster.
+
+At Paragon, we elevate everything that should matter: communication, craftsmanship, and care. Our mission is simple — to be the perfect partner for homeowners before, during, and long after the project is complete.
+
+This is how roofing and siding should feel: comfortable, honest, and hassle-free.`;
 
     return (
         <div className={`pb-16 md:pt-2 md:pb-4 sm:pb-10 ${className}`}>

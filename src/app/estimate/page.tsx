@@ -135,7 +135,14 @@ export default function Example() {
                             Get Your Free Estimate
                         </h2>
                         <p className="mt-6 text-xl text-gray-600">
-                            Take the first step towards a more energy-efficient and durable home. Our team of experts will provide a comprehensive assessment of your roofing or solar needs at no cost to you. Discover how you can save money, increase your home&apos;s value, and enjoy peace of mind with our professional solutions.
+                            Paragon Exterior is changing the game in roofing and siding. 
+                            We&apos;re leading with quality, trust, and total transparency — 
+                            and we&apos;re not afraid to say it: the outdated, 
+                            frustrating parts of this industry are going in the dumpster. At Paragon, we elevate 
+                            everything that should matter: communication, craftsmanship, and care. 
+                            Our mission is simple — to be the perfect partner for homeowners before, 
+                            during, and long after the project is complete. 
+                            This is how roofing and siding should feel: comfortable, honest, and hassle-free.
                         </p>
                         <dl className="mt-10 space-y-4 text-lg text-gray-600">
                             <div className="flex gap-x-4">

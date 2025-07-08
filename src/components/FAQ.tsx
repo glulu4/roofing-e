@@ -1,7 +1,7 @@
 import React from 'react'
 import FAQSection from './FAQSection';
 
-export default function FAQ({ locationName}: { locationName: string }) {
+export default function FAQ({locationName}: {locationName: string}) {
     const faqData = [
         {
             question: `Do you offer roof repair near me in ${locationName}?`,
@@ -35,20 +35,8 @@ export default function FAQ({ locationName}: { locationName: string }) {
     ];
 
     return (
-        <FAQSection 
-        title='Frequently Asked Questions'
-
-        faqs={faqData} />
-        // <section>
-        //     <HeaderText as="h2">Frequently Asked Questions</HeaderText>
-        //     <ul className="mt-4 space-y-4">
-        //         {faqData.map((faq, index) => (
-        //             <li key={index}>
-        //                 <HeaderText variant='small' as='h3'>{faq.question}</HeaderText>
-        //                 <SecondaryText>{faq.answer}</SecondaryText>
-        //             </li>
-        //         ))}
-        //     </ul>
-        // </section>
+        <FAQSection
+            title='Frequently Asked Questions'
+            faqs={faqData} />
     );
 }
