@@ -49,7 +49,7 @@ const serviceData = [
         id: "03",
         title: "Windows",
         description: "Upgrade your home's energy efficiency and curb appeal with our window services, including window installation, window replacement, and window repair.",
-        image: "/images/home/window-service-card.webp",
+        image: "/images/home/window-card.webp",
         slug: "/windows"
     },
     {

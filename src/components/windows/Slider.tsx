@@ -48,7 +48,7 @@ export const SAMPLE_DATA = [
     },
 
 ];
-  
+
 
 
 //1500;
@@ -111,16 +111,8 @@ export default function HorizontalSlider() {
                     className="w-full overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-6 py-6"
                 >
                     {SAMPLE_DATA.map((item, idx) => (
-                        // <a
-                        //     href={item.href}
-                            // key={idx}
-                            // className={` bg-white snap-center shrink-0 rounded-3xl shadow-md flex flex-col items-center justify-around text-center p-6`}
-                            // style={{
-                            //     width: `${itemWidth}px`,
-                            //     height: itemHeight + "px",
-                            // }}
-                        // >
-                        <div
+                        <a
+                            href={item.href}
                             key={idx}
                             className={` bg-white snap-center shrink-0 rounded-3xl shadow-md flex flex-col items-center justify-around text-center p-6`}
                             style={{
@@ -128,6 +120,7 @@ export default function HorizontalSlider() {
                                 height: itemHeight + "px",
                             }}
                         >
+
                             <div className="self-center text-center w-3/4 space-y-6">
                                 <HeaderText variant="small" className="text-primaryblue mb-12 text-center" >
                                     {item.name}
@@ -146,10 +139,8 @@ export default function HorizontalSlider() {
                                 />
 
                             </div>
-                        </div>
 
-
-                        // </a>
+                        </a>
                     ))}
 
                 </div>

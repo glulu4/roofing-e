@@ -27,7 +27,7 @@ export default function WindowRepairPage() {
             <Hero
                 mainText="Professional Window Repair Services"
                 subText="Expert window repair services for homes and businesses across Pennsylvania, New Jersey, and Delaware. From broken glass to damaged frames, our window repair specialists restore functionality and energy efficiency to your windows."
-                imgSrc="/images/window/window-repair/window-repair1.webp"
+                imgSrc="/images/window/window-repair/repair-hero.webp"
                 imgAlt="Professional window repair technician fixing damaged window"
             />
 

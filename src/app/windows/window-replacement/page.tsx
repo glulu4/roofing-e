@@ -201,7 +201,7 @@ export default function WindowReplacementPage() {
                     },
                 ]}
                 img={{
-                    src: '/images/window/window-replace/replacement6.webp',
+                    src: '/images/window/window-replace/replace6.webp',
                     alt: 'Benefits of professional window replacement services',
                 }}
             />
