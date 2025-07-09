@@ -62,13 +62,13 @@ export default function VerticalSidingPage() {
                 <Hero
                     mainText="Board and Batten Siding Installation"
                     subText="Break away from ordinary with stunning board and batten siding that transforms your home into a modern architectural masterpiece. Bold, contemporary, and undeniably striking."
-                    imgSrc="/images/siding/siding-service/vertical-siding/vertical-siding3.webp"
+                    imgSrc="/images/siding/engineered/hero.webp"
                     imgAlt="Modern home with dramatic board and batten siding installation"
                 />
 
                 {/* INFO SECTION */}
                 <InfoSection
-                    imgSrc="/images/siding/siding-service/vertical-siding/vertical-siding4.webp"
+                    imgSrc="/images/siding/engineered/eng1.webp"
                     imgAlt="board and batten siding installation"
                     titleAs="h1"
                     title="Board and Batten Siding: Where Architecture Meets Art"
@@ -87,7 +87,7 @@ export default function VerticalSidingPage() {
                     titleAs="h2"
                     mainContent="Vertical siding is more than just a trend—it's a transformative design choice that elevates your home's architecture. By drawing the eye upward, board and batten siding creates a sense of height and modernity that horizontal siding simply can't match. Whether you prefer the rustic charm of board-and-batten or the sleek lines of modern metal panels, board and batten siding adds a unique character that sets your home apart."
                     bottomContent="Our team specializes in board and batten siding installation, ensuring proper water management, structural integrity, and aesthetic appeal. With a wide range of materials and styles available, we can help you achieve the perfect board and batten siding look that enhances your home's curb appeal and architectural style."
-                    imgSrc="/images/siding/siding-service/vertical-siding/vertical-siding2.webp"
+                    imgSrc="/images/siding/engineered/eng2.webp"
                     imgAlt="Vertical siding installation on modern home"
                     imagePosition="right"
                 />

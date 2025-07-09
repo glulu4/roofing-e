@@ -2,8 +2,8 @@ import React from 'react';
 import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
 import Image from 'next/image';
-import {ArrowUpRight} from 'lucide-react';
 import Link from 'next/link';
+import {ArrowUpRight} from 'lucide-react';
 
 export default function SidingMaterial() {
     return (
@@ -26,7 +26,7 @@ export default function SidingMaterial() {
                                             width={1000}
                                             height={500}
                                             alt="Vinyl siding installation"
-                                            src="/images/siding/vinyl-siding.jpg"
+                                            src="/images/siding/vinyl-siding.webp"
                                             className="h-80 object-cover object-left"
                                         />
                                         <div className="p-10 pt-4">
@@ -37,7 +37,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
                                 </Link>
 
                                 {/* Aluminum Siding */}
@@ -48,7 +48,7 @@ export default function SidingMaterial() {
                                             width={5000}
                                             height={500}
                                             alt="Aluminum siding panels"
-                                            src="/images/siding/aluminum-siding.jpg"
+                                            src="/images/siding/aluminum-siding.webp"
                                             className="h-80 object-cover object-left lg:object-right"
                                         />
                                         <div className="p-10 pt-4">
@@ -59,7 +59,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-tr-[2rem]" />
-                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
 
                                 </Link>
 
@@ -71,7 +71,7 @@ export default function SidingMaterial() {
                                             width={500}
                                             height={500}
                                             alt="Fiber cement siding boards"
-                                            src="/images/siding/fiber-cement-siding.jpg"
+                                            src="/images/siding/fiber-cement-siding.webp"
                                             className="h-80 object-cover object-left"
                                         />
                                         <div className="p-10 pt-4">
@@ -82,7 +82,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-bl-[2rem]" />
-                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
 
                                 </Link>
 
@@ -94,7 +94,7 @@ export default function SidingMaterial() {
                                             width={500}
                                             height={500}
                                             alt="Cedar siding panels"
-                                            src="/images/siding/cedar-siding.png"
+                                            src="/images/siding/cedar-siding.webp"
                                             className="h-80 object-cover"
                                         />
                                         <div className="p-10 pt-4">
@@ -105,7 +105,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5" />
-                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
 
                                 </Link>
 
@@ -128,7 +128,7 @@ export default function SidingMaterial() {
                                         </div>
                                     </div>
                                     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                                    {/* <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" /> */}
+                                    <ArrowUpRight className="absolute bottom-6 right-6 h-8 w-8 text-gray-500 hover:text-gray-700 transition-colors" />
 
                                 </Link>
                             </div>

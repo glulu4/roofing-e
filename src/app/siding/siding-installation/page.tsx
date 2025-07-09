@@ -12,18 +12,18 @@ import {WhyParagonSidingInstallation} from '@/components/WhyParagon'
 
 // SEO Metadata export
 export const metadata: Metadata = {
-    title: 'Professional Siding Installation Services',
-    description: 'Expert siding installation services in the Mid Atlantic. Professional vinyl, fiber cement, and wood siding installation with 100% satisfaction guarantee. Get your free siding installation estimate today.',
-    keywords: 'siding installation, vinyl siding installation, siding replacement, home siding, exterior siding installation, siding contractors, Mid Atlantic siding installation, professional siding installation',
+    title: 'Expert Siding Installation Services',
+    description: 'Expert siding installation services in the Mid Atlantic. Expert vinyl, fiber cement, and wood siding installation with 100% satisfaction guarantee. Get your free siding installation estimate today.',
+    keywords: 'siding installation, vinyl siding installation, siding replacement, home siding, exterior siding installation, siding contractors, Mid Atlantic siding installation, Expert siding installation',
     openGraph: {
-        title: 'Professional Siding Installation Services | Paragon Exterior',
+        title: 'Expert Siding Installation Services | Paragon Exterior',
         description: 'Transform your home with expert siding installation. Energy-efficient, durable, and beautiful siding installation solutions with 100% satisfaction guarantee.',
         type: 'website',
         images: ['/images/siding/siding-service/siding-installation-page/siding-installation-hero.webp'],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Professional Siding Installation Services | Paragon Exterior',
+        title: 'Expert Siding Installation Services | Paragon Exterior',
         description: 'Transform your home with expert siding installation. Energy-efficient, durable, and beautiful siding installation solutions.',
     },
 
@@ -34,7 +34,7 @@ const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Siding Installation Services",
-    "description": "Professional siding installation services to upgrade and protect your home with energy-efficient, durable siding solutions.",
+    "description": "Expert siding installation services to upgrade and protect your home with energy-efficient, durable siding solutions.",
     "provider": {
         "@type": "Organization",
         "name": "Paragon Exterior",
@@ -60,9 +60,9 @@ export default function SidingInstallationPage() {
                 {/* HERO */}
                 <Hero
                     mainText="Siding Installation"
-                    subText="Professional siding installation services to enhance your home's protection and curb appeal. Expert installation of vinyl, fiber cement, and engineered wood siding with guaranteed quality."
+                    subText="Expert siding installation services to enhance your home's protection and curb appeal. Expert installation of vinyl, fiber cement, and engineered wood siding with guaranteed quality."
                     imgSrc="/images/siding/siding-service/siding-installation-page/siding-installation-hero.webp"
-                    imgAlt="Professional siding installation by Paragon Exterior"
+                    imgAlt="Expert siding installation by Paragon Exterior"
                 />
 
                 {/* INFO SECTION */}
@@ -70,9 +70,9 @@ export default function SidingInstallationPage() {
                     imgSrc="/images/siding/siding-service/siding-installation-page/siding-install1.webp"
                     imgAlt="Before and after siding installation"
                     titleAs="h1"
-                    title="Professional Siding Installation Services"
-                    mainContent="Don't let old, dull, damaged, or missing siding compromise the look or the integrity of your home. With professional siding installation services from Paragon Exterior, you can not only improve your home's protection, but you can also increase its energy efficiency, add curb appeal, and boost its overall value."
-                    bottomContent="Our expert siding installation team offers a variety of quality siding products that are perfect for any home in the Mid Atlantic and come with a 100% satisfaction guarantee. We're confident you'll love your new siding installation and the workmanship that's done to install it."
+                    title="Expert Siding Installation Services"
+                    mainContent="Don't let old, dull, damaged, or missing siding compromise the look or the integrity of your home. With expert siding installation services from Paragon Exterior, you can not only improve your home's protection, but you can also increase its energy efficiency, add curb appeal, and boost its overall value. Our skilled siding contractors use the latest techniques and premium materials to ensure your siding stands the test of time, even in the toughest weather conditions."
+                    bottomContent="Our expert siding contractors offer a variety of quality siding products that are perfect for any home and come with a 100% satisfaction guarantee. We're confident you'll love your new siding installation and the workmanship that's done to install it. From the initial consultation to the final walkthrough, we prioritize your satisfaction and peace of mind every step of the way."
                     imagePosition="right"
                 />
 
@@ -81,7 +81,7 @@ export default function SidingInstallationPage() {
                     className="py-16"
                     title="Expert Siding Installation: Beauty, Protection and Affordability"
                     titleAs="h2"
-                    subtitle="From traditional horizontal siding to board & batten siding to shake & shingle siding, our siding installation experts install a variety of beautiful siding styles to fit any home."
+                    subtitle="From traditional horizontal siding to board & batten siding to shake & shingle siding, our siding installation experts install a variety of beautiful siding styles to fit any home. "
                     heroImage={{
                         alt: "Professional siding installation team working on home exterior",
                         src: "/images/siding/siding-service/siding-installation-page/siding-install2.webp"
@@ -118,9 +118,9 @@ export default function SidingInstallationPage() {
                                     Benefits of Professional Siding Installation
                                 </HeaderText>
                                 <SecondaryText className="mb-6">
-                                    Vinyl siding is the most popular siding material in the country. With a professional siding installation
+                                    Vinyl siding is the most popular siding material in the country. With professional siding installation
                                     from Paragon Exterior, you can enjoy numerous benefits that make it the smart choice for homeowners
-                                    seeking quality siding installation services.
+                                    seeking quality vinyl siding installation services.
                                 </SecondaryText>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     {[

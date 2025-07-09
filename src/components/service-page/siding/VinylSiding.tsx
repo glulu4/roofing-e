@@ -31,7 +31,7 @@ const VinylSidingStyles = () => {
                 'Wide variety of textures and colors',
                 'Most cost-effective vinyl siding option'
             ],
-            image: '/images/siding/vinyl-styles/horizontal-vinyl.webp'
+            image: '/images/siding/vinyl/horzontil.webp'
         },
         {
             id: 'vertical',
@@ -46,7 +46,7 @@ const VinylSidingStyles = () => {
                 'Professional installation expertise required',
                 'Can be combined with horizontal siding'
             ],
-            image: '/images/siding/vinyl-styles/vertical-vinyl.webp'
+            image: '/images/siding/vinyl/vertical.webp'
         },
         {
             id: 'board-batten',
@@ -61,7 +61,7 @@ const VinylSidingStyles = () => {
                 'Low maintenance rustic beauty',
                 'Available in various board widths'
             ],
-            image: '/images/siding/vinyl-styles/board-batten-vinyl.webp'
+            image: '/images/siding/vinyl/board-batten.webp'
         },
         {
             id: 'shake-shingle',
@@ -76,7 +76,7 @@ const VinylSidingStyles = () => {
                 'Weather-resistant synthetic material',
                 'No splitting, warping, or insect damage'
             ],
-            image: '/images/siding/vinyl-styles/shake-shingle-vinyl.webp'
+            image: '/images/siding/vinyl/shake-shingle.jpg'
         }
     ];
 
@@ -207,3 +207,8 @@ const VinylSidingStyles = () => {
 };
 
 export default VinylSidingStyles;
+
+
+
+
+// Vinyl Siding FAQ Component
