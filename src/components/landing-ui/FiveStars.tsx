@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function FiveStars() {
   return (
-      <div className="flex gap-x-1 text-yellow-300">
+      <div className="flex gap-x-1 text-yellow-300 self-center flex-row justify-center items-center py-6">
           <StarIcon aria-hidden="true" className="size-10 flex-none" />
           <StarIcon aria-hidden="true" className="size-10 flex-none" />
           <StarIcon aria-hidden="true" className="size-10 flex-none" />

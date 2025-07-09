@@ -10,6 +10,7 @@ import TrustedBy from "@/components/landing-ui/TrustedBy";
 import Exceptional from "@/components/landing-ui/Exceptional";
 import {Metadata} from "next";
 import RoofingServices from "@/components/landing-ui/Services";
+import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 
 
 
@@ -54,13 +55,16 @@ const Page = () => {
       <Exceptional />
 
 
-
       {/* Reviews and Five Stars Section */}
       <Branding />
+      <FiveStars />
+
+      <GoogleReviews />
       <div className="flex flex-col justify-center items-center sm:py-16 md:py-20">
-        <FiveStars />
         <Review />
       </div>
+
+
 
 
 
