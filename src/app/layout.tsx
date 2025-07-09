@@ -36,7 +36,7 @@ const structuredData = {
       "name": "Paragon Exterior",
       "image": "https://www.paragonexterior.com/logo.png",
       "url": "https://www.paragonexterior.com",
-      "telephone": "+1-267-497-3183",
+      "telephone": "+1-215-799-7663",
       "email": "sales@paragonexterior.com",
       "address": {
         "@type": "PostalAddress",
@@ -47,7 +47,7 @@ const structuredData = {
         "addressCountry": "US"
       },
       "description":
-        "Paragon Exterior is the best roofing company near you offering expert roof repair, residential roofing, flat roofing, and licensed roofing contractor services throughout Greater Philadelphia.",
+        "Paragon Exterior is the best roofing company near you offering expert roof repair, roof replacements, siding repair and installation, metal roofing, and licensed roofing contractor services throughout Greater Philadelphia.",
       "areaServed": [
         {
           "@type": "Place",
