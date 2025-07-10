@@ -174,6 +174,7 @@ import {Metadata} from "next";
 import {serviceAreas} from "../../../../public/service-areas";
 import Image from "next/image";
 import {CheckIcon, HomeIcon, StarIcon} from "lucide-react";
+import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 
 // Enhanced services data for local area
 const localServices = [
@@ -333,7 +334,7 @@ export default async function ServiceAreaPage({params}: PageProps) {
                                 Why {location.name} Homeowners Choose Paragon Exterior
                             </HeaderText>
                             <SecondaryText className="max-w-4xl mx-auto">
-                                We know that choosing a roofing contractor can feel overwhelming. That's why at Paragon Exterior, we've made it our mission to keep the process simple, transparent, and stress-free—so you're 100% thrilled with the finished result. Experience what makes us {location.name}'s select roofing contractor.
+                                We know that choosing a roofing contractor can feel overwhelming. That&apos;s why at Paragon Exterior, we&apos;ve made it our mission to keep the process simple, transparent, and stress-free—so you&apos;re 100% thrilled with the finished result. Experience what makes us {location.name}&apos;s select roofing contractor.
                             </SecondaryText>
                         </div>
 
@@ -383,7 +384,7 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     mainContent={
                         <div>
                             <p>
-                                As {location.name}'s select roofing contractor, Paragon Exterior combines local expertise with industry-leading techniques to deliver exceptional roofing solutions. Our team understands the unique weather challenges facing {location.name} homes and provides tailored roofing services that stand the test of time.
+                                As {location.name}&apos;s select roofing contractor, Paragon Exterior combines local expertise with industry-leading techniques to deliver exceptional roofing solutions. Our team understands the unique weather challenges facing {location.name} homes and provides tailored roofing services that stand the test of time.
                             </p>
                             <p className="mt-4">
                                 From rapid estimate turnarounds to clear, proactive communication before, during, and after your project, plus our industry-leading workmanship, premium materials, and unbeatable warranties, we stand firmly behind every promise we make to {location.name} homeowners.
@@ -467,10 +468,10 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     description={
                         <div>
                             <p>
-                                As a locally-owned roofing contractor, we're proud to serve {location.name} and the surrounding communities. Our team knows the local area intimately and can respond quickly to emergency roofing situations anywhere in our service area.
+                                As a locally-owned roofing contractor, we&apos;re proud to serve {location.name} and the surrounding communities. Our team knows the local area intimately and can respond quickly to emergency roofing situations anywhere in our service area.
                             </p>
                             <p className="mt-4">
-                                Whether you're dealing with storm damage, need a routine roof inspection, or planning a complete roof replacement, our {location.name} roofing experts are ready to help. Contact us today for your free estimate and experience the difference local expertise makes.
+                                Whether you&apos;re dealing with storm damage, need a routine roof inspection, or planning a complete roof replacement, our {location.name} roofing experts are ready to help. Contact us today for your free estimate and experience the difference local expertise makes.
                             </p>
                         </div>
                     }
@@ -490,6 +491,8 @@ export default async function ServiceAreaPage({params}: PageProps) {
 
                 {/* Enhanced FAQ */}
                 <FAQ locationName={location.name} />
+
+                <GoogleReviews/>
 
                 {/* Final CTA */}
                 <GetEstimate location={location.name} />
