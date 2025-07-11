@@ -15,8 +15,8 @@ import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 
 
 export const metadata: Metadata = {
-  title: "Roofing Company & Exterior Experts | Paragon Exterior",
-  description: "Paragon Exterior is your trusted roofing company specializing in residential and commercial roofing, siding, and gutter services. Serving Philadelphia, New Jersey, and Delaware with quality craftsmanship.",
+  title: "Roofing, Siding, & Exterior Experts",
+  description: "Paragon Exterior is your trusted roofing company specializing in residential and commercial roofing, siding, gutter, and exterior services. Serving Philadelphia, New Jersey, and Delaware with quality craftsmanship.",
 };
 
 const Page = () => {

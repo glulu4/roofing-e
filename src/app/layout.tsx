@@ -191,6 +191,14 @@ const structuredData = {
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Do you offer roof financing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer flexible roof financing options to help you manage costs without compromising on quality. Contact us for details."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Where can I find roof repair near me?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -234,7 +242,7 @@ const structuredData = {
           "name": "What areas do you serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We serve a wide range of areas in Greater Philadelphia, including Feasterville-Trevose, Philadelphia, Germantown, Southampton, Bensalem, Langhorne, Yardley, Levittown, Bristol, Newtown, Richboro, Montgomeryville, Doylestown, and Willow Grove."
+            "text": "We serve a wide range of areas in Greater Philadelphia, including Feasterville-Trevose, Philadelphia, Germantown, Southampton, Bensalem, Langhorne, Yardley, Levittown, Bristol, Newtown, Richboro, Montgomeryville, Doylestown, and Willow Grove. We also serve parts of New Jersey and Delaware."
           }
         },
         {
@@ -242,7 +250,7 @@ const structuredData = {
           "name": "How can I contact Paragon Exterior for roofing services?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can contact us via phone at +1-267-497-3183 or email at sales@paragonexterior.com."
+            "text": "You can contact us via phone at +1-215-799-7663 or email at sales@paragonexterior.com."
           }
         },
         {
@@ -255,7 +263,157 @@ const structuredData = {
         },
 
       ]
-    }
+    },
+    {
+      "@type": "OfferCatalog",
+      "name": "Roofing, Siding, and Window Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Roof Repair",
+            "description": "Expert roof repair services for shingle, metal, and flat roofs. We fix leaks, damaged flashing, and storm-related roof damage throughout Pennsylvania, New Jersey, and Delaware.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Roof Replacement",
+            "description": "Professional roof replacement using asphalt shingles, metal panels, and flat roofing systems. Increase home value and improve protection with durable new roof installations.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Roof Installation",
+            "description": "New roof installation for residential and commercial properties, including architectural shingles, standing seam metal, and energy-efficient flat roofing systems.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Metal Roof Repair",
+            "description": "Specialized repair for metal roofing systems, including corrugated and standing seam panels. We address rust, fastener failures, and storm damage with precision.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Metal Roof Replacement",
+            "description": "Upgrade to long-lasting metal roofing with our expert replacement services. Choose from standing seam, corrugated, or ribbed panels for enhanced durability and curb appeal.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Flat Roof Services",
+            "description": "Installation, repair, and replacement of flat roofs using EPDM, TPO, and modified bitumen. Ideal for low-slope residential and commercial structures.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Standing Seam Metal Roofing",
+            "description": "Install sleek, weather-tight standing seam metal roofs with concealed fasteners. A premium choice for modern homes and commercial buildings in harsh climates.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Siding Installation",
+            "description": "Professional siding installation including vinyl siding, fiber cement, and wood-look panels. Improve insulation, energy efficiency, and curb appeal.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Siding Repair",
+            "description": "Siding repair for cracked panels, loose boards, and storm-damaged exterior walls. We restore vinyl, fiber cement, and wood siding with exact matches.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Siding Replacement",
+            "description": "Full siding replacement to enhance weather protection and home value. Choose from insulated vinyl siding, fiber cement, or LP SmartSide engineered wood.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fiber Cement Siding",
+            "description": "Durable, fire-resistant fiber cement siding installation. Mimics wood with less maintenance. Ideal for homeowners seeking long-term exterior performance.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Window Installation",
+            "description": "Energy-efficient window installation with custom vinyl, wood, and fiberglass frames. Boost comfort, reduce noise, and lower energy bills with modern windows.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Window Replacement",
+            "description": "Upgrade your home with high-performance window replacement. We install double-pane, triple-pane, and Low-E glass windows that meet ENERGY STAR® standards.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Window Repair",
+            "description": "Expert repair of broken window glass, seals, locks, and frames. Restore function and clarity to residential and commercial windows with affordable service.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Roof Repair",
+            "description": "Fast-response commercial roof repair for membrane, metal, and flat roofs. We fix leaks, flashing issues, and storm damage on warehouses, offices, and facilities.",
+            "areaServed": "PA, NJ, DE"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Roof Replacement",
+            "description": "Comprehensive commercial roof replacement using TPO, EPDM, PVC, and standing seam metal. Improve energy efficiency, drainage, and building performance.",
+            "areaServed": "PA, NJ, DE"
+          }
+        }
+      ]
+    }    
   ]
 };
 
@@ -265,11 +423,11 @@ export const metadata: Metadata = {
   title: {
     absolute: "Paragon Exterior",
     template: "%s | Paragon Exterior",
-    default: "Roof Repair & Flat Roofing Experts | Paragon Exterior",
+    default: "Roofing, Siding, & Exterior Experts",
   },
 
   description:
-    "Paragon Exterior is your trusted roofing contractor for expert roof repair, flat roof replacement, roof leak repair, siding repair, and emergency roofing services. Proudly serving Greater Philadelphia with quality craftsmanship and honest estimates.",
+    "Paragon Exterior is your trusted roofing and siding contractor for all your home's needs. Proudly serving Greater Philadelphia with quality craftsmanship, honest estimates, and fast, reliable service for roof repair, replacement, and siding installation.",
 
   keywords: [
     "roof repair",
