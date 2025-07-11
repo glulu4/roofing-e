@@ -1,20 +1,12 @@
 "use client"
 
 import {
-    HomeIcon,
-    MagnifyingGlassIcon,
-    ArrowPathIcon,
+
     ArrowUpRightIcon,
-    WrenchScrewdriverIcon,
-    ShieldCheckIcon,
-    BuildingOfficeIcon,
-    CogIcon,
-    ClipboardDocumentCheckIcon
+
 } from '@heroicons/react/24/outline';
-import {useState} from 'react';
 import HeaderText from '../HeaderText';
 import Image from 'next/image';
-import {ComponentType} from 'react';
 import Link from 'next/link';
 
 // 🔥 TypeScript Types
@@ -25,11 +17,6 @@ interface ServiceCategory {
     image: string;
     slug: string; // for routing to detail pages
 }
-
-// 🎯 Service data with proper typing
-
-// chimney
-// bay windows
 const serviceData = [
     {
         id: "01",
@@ -166,7 +153,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 // 🚀 Main Component
 const RoofingServices = () => {
     // const handleServiceClick = (slug: string) => {
-        
+
 
     // };
 
@@ -180,12 +167,12 @@ const RoofingServices = () => {
                         <div className="w-16 h-1 bg-amber-500 mb-6" />
                         <HeaderText className="text-4xl lg:text-5xl font-bold text-primaryblue leading-tight">
                             Residential and Commercial<br />
-                            Roofing and Exterior Services
+                            Roofing, Siding, and Exterior Services
                         </HeaderText>
                     </div>
                     <div className="mt-8 lg:max-w-md">
                         <p className="text-gray-600 text-lg leading-relaxed">
-                            Experience Top-Tier Roofing and Exterior Services, Designed to Withstand the Elements While Elevating Your Property&apos;s Aesthetic and Value.
+                            Experience Top-Tier Roofing, Siding, and Exterior Services, Designed to Withstand the Elements While Elevating Your Property&apos;s Aesthetic and Value.
                         </p>
                     </div>
                 </div>
@@ -201,7 +188,7 @@ const RoofingServices = () => {
                                 service={service}
                                 index={index}
                                 totalItems={serviceData.length}
-                                // onServiceClick={handleServiceClick}
+                            // onServiceClick={handleServiceClick}
                             />
                         ))}
                     </div>

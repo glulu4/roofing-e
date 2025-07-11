@@ -24,12 +24,17 @@ export default function Enrich() {
                                     Protect your home with durable, reliable roofing solutions designed to withstand the toughest elements. Our expert craftsmanship ensures a seamless finish that boosts your home’s value and curb appeal. Discover why homeowners trust us for quality that lasts.
                                 </SecondaryText> */}
 
-                                <HeaderText className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-7xl">
-                                    Why Homeowners Choose Paragon Exterior
+                                <HeaderText className="text-pretty font-semibold tracking-tight text-primaryblue ">
+                                    Why Homeowners Choose Paragon Exterior as Their Trusted Roofing and Siding Company
                                 </HeaderText>
 
                                 <SecondaryText className="text-gray-600">
-Paragon Exterior isn&apos;t just another roofing company — we&apos;re your neighbors, your problem solvers, and your go-to team for peace of mind when it matters most. Our commitment to quality, reliability, and customer satisfaction has made us one of the most trusted roofing contractors in the region. Whether you&apos;re dealing with an urgent roof repair or planning a full roof replacement, our team delivers top-tier craftsmanship, clear communication, and competitive pricing every time.
+                                    Paragon Exterior isn&apos;t just another roofing company — 
+                                    we&apos;re your neighbors, your problem solvers, and your go-to team for peace of mind when it matters most. 
+                                    Our commitment to quality, reliability, and customer satisfaction has made us one of the most trusted roofing and siding contractors in the PA, NJ, and DE regions. 
+                                    Whether you&apos;re dealing with an urgent roof repair, siding replacement, or planning a full roof replacement, 
+                                    our team delivers top-tier craftsmanship, clear communication, and competitive pricing every time.
+                                    We understand that your home is your sanctuary, and we treat it with the care and respect it deserves.
                                 </SecondaryText>
 
                             </div>

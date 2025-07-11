@@ -80,10 +80,11 @@ export default function Exceptional() {
                 <div className="flex flex-col items-center justify-center">
                     <div className="mx-auto max-w-2xl text-center">
                         <HeaderText className="text-neutral-50">
-                            What to expect from Paragon Exterior
+                            What to expect from Your Local Roofing and Siding Company
                         </HeaderText>
                         <SecondaryText className='text-neutral-50'>
-                            We know inviting a roofing crew to your home is a big decision. That&apos;s why at Paragon Exterior, you can expect professionalism from start to finish—clear communication, dependable craftsmanship, and a crew that respects your time and property. From small repairs to full replacements, we make the process smooth and stress-free.
+                            We know inviting a crew to your home is a big decision. That&apos;s why at Paragon Exterior, you can expect professionalism from start to finish—clear communication, dependable craftsmanship, and a crew that respects your time and property. 
+                            From small repairs to full replacements, we make the process smooth and stress-free. We ensure you know exactly what to expect and a clean job site when we leave.
                         </SecondaryText>
                     </div>
                 </div>
