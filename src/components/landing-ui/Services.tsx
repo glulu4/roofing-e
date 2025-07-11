@@ -41,18 +41,19 @@ const serviceData = [
     },
     {
         id: "04",
+        title: "Gutter Services",
+        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+        image: "/images/home/gutter-card.webp",
+        slug: "gutters"
+    },
+    {
+        id: "05",
         title: "Commercial Services",
         description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
         slug: "/commercial-roofing"
     }
-    // {
-    //     id: "03",
-    //     title: "Gutter Services",
-    //     description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
-    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-    //     slug: "gutters"
-    // },
+
     // {
     //     id: "04",
     //     title: "Windows",
