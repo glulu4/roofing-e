@@ -72,7 +72,7 @@ export default function VerticalSidingPage() {
                     imgAlt="board and batten siding installation"
                     titleAs="h1"
                     title="Board and Batten Siding: Where Architecture Meets Art"
-                    mainContent="Vertical siding isn't just a design choice—it's a statement. This bold architectural approach creates dramatic visual lines that draw the eye upward, making your home appear taller, more modern, and undeniably distinctive. From sleek contemporary designs to rustic board-and-batten charm, board and batten siding transforms ordinary homes into neighborhood showstoppers."
+                    mainContent={`Vertical siding serves as more than a mere design option; it’s a declaration of style. This striking architectural technique establishes impressive visual lines that lead the gaze upward, giving your residence a taller, more contemporary, and truly unique look. Ranging from chic modern aesthetics to charming rustic board-and-batten, this siding elevates typical homes into standout attractions in the community.`}
                     bottomContent="Our board and batten siding experts understand the unique installation requirements and design considerations that make vertical applications successful. Whether you're building new or updating existing siding, we'll help you choose the perfect board and batten siding solution that complements your home's architecture while creating the dramatic impact you're seeking."
                     imagePosition="left"
                 />
@@ -85,7 +85,9 @@ export default function VerticalSidingPage() {
                     className="py-16 bg-gradient-to-br from-slate-50 to-blue-50"
                     title="Why Board and Batten Siding Creates Extraordinary Homes"
                     titleAs="h2"
-                    mainContent="Vertical siding is more than just a trend—it's a transformative design choice that elevates your home's architecture. By drawing the eye upward, board and batten siding creates a sense of height and modernity that horizontal siding simply can't match. Whether you prefer the rustic charm of board-and-batten or the sleek lines of modern metal panels, board and batten siding adds a unique character that sets your home apart."
+                    mainContent="
+                    Vertical siding goes beyond being a mere trend—it's a design decision that can significantly enhance your home's architectural appeal. By directing the gaze upward, board and batten siding imparts a feeling of height and contemporary style that horizontal siding cannot achieve. Whether you are drawn to the rustic allure of board-and-batten or the clean lines of modern metal panels, this siding option infuses your home with a distinctive character that makes it stand out.
+                    "
                     bottomContent="Our team specializes in board and batten siding installation, ensuring proper water management, structural integrity, and aesthetic appeal. With a wide range of materials and styles available, we can help you achieve the perfect board and batten siding look that enhances your home's curb appeal and architectural style."
                     imgSrc="/images/siding/engineered/eng2.webp"
                     imgAlt="Vertical siding installation on modern home"
@@ -106,7 +108,7 @@ export default function VerticalSidingPage() {
 
                 <WhyParagonBoardAndBattenSiding
                     title='Why Choose Paragon Exterior as your Board and Batten Siding Expert?'
-                    subTitle='At Paragon Exterior, we pride ourselves on delivering top-notch Board and Batten Siding installation that combines beauty with durability. Our experienced team understands the intricacies of Board and Batten Siding, ensuring your home not only looks stunning but is also protected against the elements.'
+                    subTitle='At Paragon Exterior, we pride ourselves on delivering top-notch Board and Batten Siding installation that combines beauty with durability. Our experienced team understands the intricacies of Board and Batten Siding, which ensures that your home not only looks stunning but also stays protected against the elements.'
 
                 />
 

@@ -252,7 +252,7 @@ const serviceReasons = {
         {
             icon: FaHome,
             title: "Custom Board and Batten Designs",
-            description: "From wide boards to narrow battens, we create custom board and batten siding patterns that enhance your home's architectural character.",
+            description: "We make custom board and batten siding patterns.These patterns can be wide boards or narrow battens.They help improve your home's architectural style.",
             keywordPhrase: "custom board and batten"
         },
         {

@@ -12,7 +12,7 @@ import Image from "next/image";
 
 // SEO metadata with metal roofing keyword focus
 export const metadata: Metadata = {
-    title: "Metal Roofing Installation & Repair Services",
+    title: "Metal Roof Installation & Repair",
     description: "Professional metal roofing services in Philadelphia, NJ & Delaware. Get durable, energy-efficient metal roofing with 40+ year lifespan. Free metal roof estimates available.",
     keywords: "metal roofing, metal roof installation, metal roof repair, standing seam metal roof, steel roofing, aluminum roofing, metal roofing contractors",
     openGraph: {
@@ -220,8 +220,8 @@ export default function MetalRoofingPage() {
                         </p>
                         <p className="mb-4">
                             Consider that you may replace an asphalt roof 3-4 times over the lifespan of
-                            one metal roof. When factoring in energy savings of up to 40% and minimal
-                            maintenance requirements, metal roofing often costs less over its lifetime.
+                            one metal roof. When you consider energy savings of up to 40% and low maintenance needs, 
+                            metal roofing can cost less over time.
                         </p>
                         <p>
                             Our metal roofing experts provide transparent pricing and financing options
@@ -241,7 +241,8 @@ export default function MetalRoofingPage() {
                 imgAlt="Professional metal roofing installation process"
                 title="Expert Metal Roofing Installation Process"
                 titleAs="h2"
-                mainContent="Our certified metal roofing contractors follow a meticulous installation process to ensure your metal roof performs optimally for decades. We begin with thorough roof deck inspection and preparation, install proper underlayment and ventilation systems, then precisely install your chosen metal roofing system with attention to every detail. Our metal roofing installation includes comprehensive warranties on both materials and workmanship."
+                mainContent="Our certified metal roofing contractors follow a meticulous installation process to ensure your metal roof performs optimally for decades. 
+                We start with a careful inspection of the roof deck. Next, we prepare it and install the right underlayment and ventilation systems. Finally, we install your chosen metal roofing system, paying attention to every detail. Our metal roofing installation includes comprehensive warranties on both materials and workmanship."
                 bottomContent="From initial consultation to final inspection, we handle every aspect of your metal roofing project. Our team works efficiently to minimize disruption while delivering the highest quality metal roof installation in the region."
                 className="bg-white"
             />
@@ -253,8 +254,7 @@ export default function MetalRoofingPage() {
                         Comprehensive Metal Roofing Services
                     </HeaderText>
                     <SecondaryText className="mt-4 max-w-3xl mx-auto">
-                        From new metal roof installation to repair and maintenance, our metal roofing
-                        experts provide complete solutions for residential and commercial properties.
+                        Our metal roofing experts offer full services for homes and businesses. We handle new roof installation, repairs, and maintenance.
                     </SecondaryText>
                 </div>
                 <ServicesGrid services={metalRoofingServices} />
@@ -264,7 +264,7 @@ export default function MetalRoofingPage() {
             <IncentivesSection
                 title="The Paragon Exterior Metal Roofing Advantage"
                 titleAs="h2"
-                subtitle="Choose Paragon Exterior for professional metal roofing installation backed by expertise, quality materials, and comprehensive warranties. Our metal roofing contractors deliver superior craftsmanship with attention to every detail."
+                subtitle="Choose Paragon Exterior for professional metal roofing installation backed by expertise, quality materials, and comprehensive warranties. Our metal roofing contractors are certified by the factory. They have experience with all types of metal roofs, including standing seam and corrugated panels."
                 heroImage={{
                     src: "/images/roof-service/metal/metal1.webp",
                     alt: "Paragon Exterior metal roofing installation team"
@@ -287,7 +287,7 @@ export default function MetalRoofingPage() {
                     {
                         icon: require('@heroicons/react/24/solid').ShieldCheckIcon,
                         title: "Premium Metal Roofing Materials",
-                        description: "We partner with leading metal roofing manufacturers to provide the highest quality steel, aluminum, and copper roofing materials with comprehensive warranties.",
+                        description: "We work with top metal roofing manufacturers. This allows us to offer high-quality steel, aluminum, and copper roofing materials. All our products come with strong warranties.",
                         keywordPhrase: "premium metal roofing materials"
                     },
                     {

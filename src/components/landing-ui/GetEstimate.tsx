@@ -12,17 +12,16 @@ export default function GetEstimate({
 }: GetEstimateProps) {
     const heading = location ? `Get Your Free Estimate in ${location}` : 'Get Your Free Estimate Today';
     const subText = location
-        ? `Paragon Exterior is changing the game in roofing and siding in ${location}. We’re leading with quality, trust, and total transparency — and we’re not afraid to say it: the outdated, frustrating parts of this industry are going in the dumpster.
-At Paragon, we elevate everything that should matter: communication, craftsmanship, and care. Our mission is simple — to be the perfect partner for homeowners in ${location} before, during, and long after the project is complete.
-This is how roofing and siding should feel: comfortable, honest, and hassle-free.`
-        : `Paragon Exterior is changing the game in roofing and siding.
-We’re leading with quality, trust, and total transparency — and we’re not afraid to say it: the outdated, frustrating parts of this industry are going in the dumpster.
+        ? `Paragon Exterior is changing the game in roofing and siding in ${location}. We’re leading with quality, 
+        trust, and total transparency — and we’re not afraid to say it: the outdated, frustrating parts of this 
+        industry are going in the dumpster.
+        At Paragon, we elevate everything that should matter: communication, craftsmanship, and care. Our mission is simple — 
+        to be the perfect partner for homeowners in ${location} before, during, and long after the project is complete.
+        This is how roofing and siding should feel: comfortable, honest, and hassle-free.`
+        : 
+            `Paragon Exterior is revolutionizing the roofing and siding industry. We prioritize quality, trust, and complete transparency — and we’re proud to declare it: the outdated, frustrating aspects of this field are being discarded. At Paragon, we enhance everything that truly matters: communication, craftsmanship, and care. Our mission is straightforward — to be the ideal partner for homeowners before, during, and long after the project is finished. This is how roofing and siding should be: comfortable, honest, and stress-free.`;
 
-At Paragon, we elevate everything that should matter: communication, craftsmanship, and care. Our mission is simple — to be the perfect partner for homeowners before, during, and long after the project is complete.
-
-This is how roofing and siding should feel: comfortable, honest, and hassle-free.`;
-
-    return (
+    return(
         <div className={`pb-16 md:pt-2 md:pb-4 sm:pb-10 ${className}`}>
             <div className="px-6 sm:px-6 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
