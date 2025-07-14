@@ -29,7 +29,21 @@ export default function GetEstimate({
                     <SecondaryText className="font-secondary mx-auto mt-6 max-w-xl text-gray-600">
                         {subText}
                     </SecondaryText>
-                    <div className="mt-10 flex items-center justify-center gap-x-6">
+                    <div className="grid md:grid-cols-2 gap-6 pt-20">
+                        <a
+                            href="tel:2157997663"
+                            className="bg-primaryblue hover:bg-blue-700 text-white px-6 py-4 text-lg font-semibold rounded-lg transition-colors duration-200 block"
+                        >
+                            Call: (215) 799-7663
+                        </a>
+                        <a
+                            href="/estimate"
+                            className="bg-amber-500 hover:bg-amber-600 text-primaryblue px-8 py-4 text-lg font-semibold rounded-lg transition-colors duration-200 block"
+                        >
+                            Free Gutter Estimate
+                        </a>
+                    </div>
+                    {/* <div className="mt-10 flex items-center justify-center gap-x-6">
                         <a
                             href="/estimate"
                             className="font-secondary rounded-md bg-primaryblue px-8 py-7 text-lg font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -37,7 +51,7 @@ export default function GetEstimate({
                             Free Estimate
                         </a>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
