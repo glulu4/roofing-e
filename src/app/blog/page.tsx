@@ -1,6 +1,8 @@
 import {BlogPostsPreview} from "@/components/wisp/BlogPostPreview";
 import {wisp} from "@/lib/wisp";
 import {BlogPostsPagination} from "@/components/wisp/BlogPostPagination";
+import HeaderText from "@/components/HeaderText";
+import SecondaryText from "@/components/SecondaryText";
 
 
 export const metadata = {
@@ -19,6 +21,17 @@ const Page = async ({
     const result = await wisp.getPosts({limit: "all", page});
     return (
         <div className="container mx-auto px-5 mb-10">
+
+            <HeaderText className="text-center mt-10 mb-5">
+                Explore Our Blog
+            </HeaderText>
+            <SecondaryText className="text-center mb-10">
+                Discover expert insights on roofing, siding, windows, gutters, and home improvement. Stay informed with Paragon Exterior&apos;s latest tips and trends.
+            </SecondaryText>
+
+
+
+
             <BlogPostsPreview posts={result.posts} />
             <BlogPostsPagination pagination={result.pagination} />
         </div>
