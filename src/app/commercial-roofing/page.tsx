@@ -13,142 +13,137 @@ const posts = [
         id: 1,
         title: "Durable Flat Roofing Systems",
         description:
-            "We specialize in commercial flat roofing solutions for warehouses, retail buildings, schools, and office complexes. Our commercial flat roofs are engineered for long-term durability, water resistance, and energy efficiency—even on the largest structures.",
-        imageUrl: "/images/commercial/commerical-roof2.webp"
+            "We install and repair commercial flat roofs built to handle tough weather and reduce energy costs. Perfect for warehouses, offices, schools, and retail spaces.",
+        imageUrl: "/images/commercial/commerical-roof2.webp",
     },
     {
         id: 2,
         title: "Metal Roofing for Commercial Buildings",
         description:
-            "Protect your business with premium commercial metal roofing designed for unmatched strength, wind resistance, fire protection, and minimal maintenance. Get a long-lasting investment with standing seam, ribbed panels, or architectural metal systems tailored to your building.",
-        imageUrl: "/images/commercial/commercial-roof-metal.webp"
+            "Our commercial metal roofs offer unbeatable durability, low maintenance, and protection from wind, fire, and leaks. Choose from standing seam, ribbed panels, and more.",
+        imageUrl: "/images/commercial/commercial-roof-metal.webp",
     },
     {
         id: 3,
         title: "Commercial Roof Replacement & Repairs",
         description:
-            "From aging or leaking commercial roofs to urgent storm damage, our experienced crews provide complete commercial roof replacement and repairs. We use industry-leading materials to restore full weather protection and value to your property with minimal disruption.",
-        imageUrl: "/images/commercial/repair-commercial-roof.webp"
+            "If your roof is leaking or aging, we provide fast, expert replacement and repairs. We use top materials and minimize disruption to your business.",
+        imageUrl: "/images/commercial/repair-commercial-roof.webp",
     },
 ];
-
-export type ThreeImageArrayType = typeof posts[number];
 
 export const metadata = {
     title: "Local Commercial Roofing Services",
     description:
-        "Paragon Exterior offers comprehensive commercial roofing services including commercial flat roofing, metal roofing, commercial roof replacement, and commercial roof repair. Serving Pennsylvania, New Jersey, and Delaware with quality craftsmanship and durable solutions."
+        "Paragon Exterior provides expert commercial roofing in PA, NJ, and DE. We install and repair flat roofs, metal roofs, and commercial roof systems that last.",
 };
 
 const Page = () => {
     return (
         <div>
-            {/* HERO */}
             <Hero
-                mainText="Commercial Roofing Services Near You"
-                subText="Paragon Exterior delivers expert commercial roofing services that protect your business investment. From energy-efficient commercial flat roofing to metal roof replacement, we provide customized solutions with guaranteed quality and long-term performance."
+                mainText="Commercial Roofing Services"
+                subText="Protect your building with expert commercial roofing. We install flat, metal, and energy-efficient roofs for businesses across PA, NJ, and DE."
                 imgSrc="/images/commercial/commercial-roof.webp"
                 imgAlt="Paragon Exterior commercial roofing project"
             />
 
             <div className="text-center mx-auto w-5/6 py-20">
-                <HeaderText as="h1">
-                    Commercial Roofing Services You Can Trust
-                </HeaderText>
+                <HeaderText as="h1">Commercial Roofing You Can Count On</HeaderText>
                 <SecondaryText>
-                    As the region’s leading commercial roofing contractor, Paragon Exterior understands what’s at stake when you need a new roof or urgent repairs for your business, warehouse, or investment property.
-                    <br /><br />
-                    We specialize in commercial roof installation, roof replacement, and flat roof repair for retail buildings, schools, manufacturing plants, and office complexes across Pennsylvania, New Jersey, and Delaware. Our expert team assesses your property, recommends the ideal system for your needs and budget, and delivers high-quality commercial roofing with a focus on durability, energy efficiency, and cost savings.
+                    When your business needs a roof repair or replacement, you can’t afford delays or poor work. At Paragon Exterior, we install durable, low-maintenance commercial roofing that keeps your building safe and dry year-round.
                 </SecondaryText>
                 <SecondaryText>
-                    Paragon Exterior is fully licensed, insured, and committed to safety on every job site. Our commercial roofing professionals have decades of hands-on experience and are certified to install leading brands such as Firestone, Carlisle, GAF, and more. From new construction to emergency leak repairs, we handle projects of any size with precision and pride.
+                    We work on flat roofs, metal roofs, and specialty commercial systems for offices, warehouses, schools, and more. Our team is fully licensed, insured, and certified to install top brands like GAF, Firestone, and Carlisle. Whether it’s a new build or an urgent repair, we’ll get the job done right.
                 </SecondaryText>
             </div>
 
-            {/* SERVICES GRID */}
             <ServicesGrid
                 services={[
                     {
                         id: 1,
                         title: "Commercial Flat Roofing",
-                        description: "Expert installation and repair of single-ply, modified bitumen, and built-up flat roofing systems for commercial buildings. We ensure long-term waterproofing, energy savings, and low maintenance costs.",
+                        description:
+                            "EPDM, TPO, and built-up flat roofs for business buildings. Waterproof, energy-efficient, and built to last.",
                         imageUrl: "/images/commercial/flat-commerical.webp",
-                        href: "/commercial-roofing/flat-roofing"
+                        href: "/commercial-roofing/flat-roofing",
+                    },
+                    {
+                        id: 2,
+                        title: "Commercial Roof Replacement",
+                        description:
+                            "Upgrade your roof with high-performance materials that prevent leaks and save on long-term repairs.",
+                        imageUrl: "/images/commercial/replacement-commercial.webp",
+                        href: "/commercial-roofing/roof-replacement",
                     },
                     {
                         id: 3,
-                        title: "Commercial Roof Replacement",
-                        description: "Full commercial roof replacement services to upgrade your building’s protection, enhance energy efficiency, and eliminate leaks or costly repairs. We use premium materials and proven installation methods.",
-                        imageUrl: "/images/commercial/replacement-commercial.webp",
-                        href: "/commercial-roofing/roof-replacement"
-                    },
-                    {
-                        id: 4,
                         title: "Commercial Roof Repair",
-                        description: "Fast, reliable commercial roof repair services for all roof types—EPDM, TPO, PVC, metal, and more. Emergency leak response and preventative maintenance available to keep your business safe and dry.",
+                        description:
+                            "Fix leaks and damage fast. We offer emergency repairs and long-term maintenance for all roof types.",
                         imageUrl: "/images/commercial/repair-commercial-roof.webp",
-                        href: "/commercial-roofing/roof-repair"
-                    }
+                        href: "/commercial-roofing/roof-repair",
+                    },
                 ]}
             />
 
-            {/* QUALITY SECTION */}
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
-                    mainText="Superior Commercial Roofing Solutions"
-                    description="Every Paragon Exterior commercial roofing system is built to outlast the elements and stand up to the demands of business. We use only top-tier products and advanced installation techniques to maximize weather resistance, minimize downtime, and extend your roof’s lifespan. From seamless TPO and EPDM membranes to robust metal panels, we guarantee long-term performance—backed by industry-leading warranties and responsive service."
+                    mainText="Built to Withstand the Elements"
+                    description="Our commercial roofing systems are made to last. We use quality materials, expert techniques, and back our work with warranties. Whether it's flat roofing or metal, we build roofs that protect your property and reduce costly repairs."
                     image="/images/commercial/commerical-roofing1.webp"
                 />
             </div>
 
-            {/* PROJECT TYPES / FEATURES */}
             <ThreeImage posts={posts} />
 
-            {/* BENEFITS SECTION */}
             <Benefits
-                title="Why Choose Paragon Exterior for Your Commercial Roofing?"
-                description="Your commercial property deserves the best protection and value. Paragon Exterior delivers more than just a new roof—we provide peace of mind. Our extensive experience with flat roofing, metal roofing, commercial roof replacements, and repairs means you get a partner who understands local building codes, project timelines, and your business priorities."
+                title="Why Choose Paragon Exterior?"
+                description="We help businesses get reliable, cost-effective roofing that holds up to the weather and works with your building. Our experienced team handles every detail from inspection to installation—and we do it on time, on budget, and with safety first."
                 titleAs="h2"
                 img1={{
                     src: "/images/commercial/commerial-roof-4.webp",
-                    alt: "Durable commercial roofing installed by Paragon Exterior"
+                    alt: "Durable commercial roofing installed by Paragon Exterior",
                 }}
                 img2={{
                     src: "/images/commercial/commerial-roof5.webp",
-                    alt: "Energy-efficient commercial roof system on office building"
+                    alt: "Energy-efficient commercial roof system on office building",
                 }}
-                text1="Our durable, energy-efficient commercial roofing systems are engineered to withstand the harshest weather, reduce operating costs, and require minimal upkeep—helping your business stay protected and profitable year after year."
-                text2="From precision installation of standing seam metal and single-ply membranes to emergency flat roof repairs, our certified team delivers flawless results on every project. We offer competitive pricing, clear communication, and warranties you can count on."
+                text1="Our roofs are designed to handle storms, temperature swings, and daily wear. They save energy and lower your long-term costs."
+                text2="We work with all types of commercial roofs—from metal and TPO to modified bitumen. Count on us for clean installs, clear communication, and long-term warranties."
             />
 
-            {/* FAQ SECTION */}
             <FAQSection
-                title="Frequently Asked Questions About Commercial Roofing"
+                title="Commercial Roofing FAQ"
                 faqs={[
                     {
                         question: "What is commercial roofing?",
-                        answer: "Commercial roofing covers all roofing materials and installation methods designed for business properties—such as warehouses, offices, retail centers, and factories. These systems are engineered for larger spans, long-term durability, and energy efficiency."
+                        answer:
+                            "It’s roofing designed for business properties—like warehouses, offices, and retail spaces. These systems are made for durability, energy savings, and easy maintenance.",
                     },
                     {
-                        question: "Why do commercial buildings have flat roofs?",
-                        answer: "Flat roofs are standard for commercial buildings because they are cost-effective to install and maintain, allow for HVAC units or solar panels, and simplify drainage over wide areas. Modern flat roof materials deliver exceptional waterproofing and reflectivity."
+                        question: "Why do most commercial roofs look flat?",
+                        answer:
+                            "Flat roofs are cost-effective and practical. They support HVAC units, solar panels, and drain water efficiently when installed properly.",
                     },
                     {
-                        question: "What is the best commercial roofing material?",
-                        answer: "The best material depends on your building’s needs, budget, and climate. TPO and EPDM are popular for flat roofs, while standing seam metal roofing is chosen for durability and longevity. We’ll recommend the right system for your property after a thorough assessment."
+                        question: "What type of roof is best for my building?",
+                        answer:
+                            "It depends on your budget, climate, and building type. TPO and EPDM work well on flat roofs. Metal roofs last the longest. We’ll help you choose the best fit.",
                     },
                     {
-                        question: "How much does it cost to replace a commercial roof?",
-                        answer: "Commercial roof replacement costs typically range from $5 to $12 per square foot, depending on the material, size, and complexity. We provide detailed, written estimates after inspecting your property so there are no surprises."
+                        question: "How much does a commercial roof cost?",
+                        answer:
+                            "Costs range from $5 to $12 per square foot. After inspecting your building, we’ll give you a clear estimate with no surprises.",
                     },
                     {
-                        question: "How do I choose the best commercial roofing contractor?",
-                        answer: "Choose a contractor with proven experience, local references, proper licensing and insurance, and strong manufacturer warranties. Paragon Exterior is trusted by businesses throughout Pennsylvania, New Jersey, and Delaware for quality, safety, and value."
-                    }
+                        question: "How do I hire the right commercial roofer?",
+                        answer:
+                            "Look for experience, local reviews, proper licenses, and solid warranties. Paragon Exterior is trusted by businesses across PA, NJ, and DE for reliable work and great service.",
+                    },
                 ]}
             />
 
-            {/* FINAL CTA */}
             <div className="pb-16 pt-16 sm:pt-0 md:pt-2 md:pb-4 sm:pb-10">
                 <GetEstimate />
             </div>

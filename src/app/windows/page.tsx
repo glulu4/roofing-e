@@ -7,106 +7,105 @@ import Hero from '@/components/service-page/Hero';
 import ServicesGrid from '@/components/service-page/Services';
 import WhyParagon from '@/components/WhyParagon';
 import HorizontalSlider from '@/components/windows/Slider';
-import React from 'react'
-
+import React from 'react';
 
 const services = [
   {
     id: 1,
     title: 'Window Installation',
     href: '/windows/window-installation',
-    description: 'Professional window installation services for energy-efficient and stylish windows. Upgrade your home with our expert team.',
+    description: 'Professional window installation for better comfort, energy savings, and style.',
     imageUrl: '/images/window/window-installation-card.avif',
   },
   {
     id: 2,
     title: 'Window Replacement',
     href: '/windows/window-replacement',
-    description: 'Complete window replacement services to enhance your home’s energy efficiency and aesthetics. Choose from a variety of styles and materials.',
+    description: 'Replace outdated windows to improve your home’s energy efficiency and curb appeal.',
     imageUrl: '/images/window/window-replacement.webp',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Window Repair',
     href: '/windows/window-repair',
-    description: 'Complete window replacement services to enhance your home’s energy efficiency and aesthetics. Choose from a variety of styles and materials.',
+    description: 'Fix broken glass, drafts, and stuck windows quickly and affordably.',
     imageUrl: '/images/window/window-repair-card.webp',
   },
-
 ];
-
 
 const faqData = [
   {
     question: "How do I know if I need window replacement or just repair?",
-    answer: "If your windows are drafty, hard to open, have visible damage, or your energy bills are rising, it may be time for replacement. Minor issues like broken locks or cracked glass often just require repair. We provide a thorough assessment and honest recommendations for your home."
+    answer: "If your windows are drafty, foggy, or hard to open, replacement might be best. Small issues like broken locks or cracked glass can often be repaired. We’ll inspect your windows and recommend the right fix.",
   },
   {
     question: "What types of windows do you install?",
-    answer: "We install all major window types, including vinyl, fiberglass, wood, and composite windows. Choose from popular styles like double-hung, casement, sliding, bay, and custom shapes to match your home's design and needs."
+    answer: "We install vinyl, fiberglass, wood, and composite windows. Popular styles include double-hung, casement, sliding, bay, and more.",
   },
   {
     question: "Are your windows energy efficient?",
-    answer: "Yes! We offer ENERGY STAR® certified windows designed to reduce heat loss, block UV rays, and help lower your utility bills. Our team helps you select the best options for energy savings in PA, NJ, and DE climates."
+    answer: "Yes! We install ENERGY STAR® rated windows that help lower energy bills and keep your home comfortable year-round.",
   },
   {
     question: "How long does window installation take?",
-    answer: "Most window installations are completed in 1-2 days, depending on the number of windows and complexity. Our team works efficiently to minimize disruption to your home."
+    answer: "Most jobs take 1 to 2 days depending on how many windows you need replaced. We work quickly and cleanly.",
   },
   {
     question: "Do you offer financing or free estimates?",
-    answer: "Absolutely! We provide free, no-obligation estimates and offer flexible financing options to make your window project affordable."
+    answer: "Yes. We offer free estimates and flexible financing options to fit your budget.",
   },
 ];
 
-
 export const metadata = {
   title: 'Window Repair & Installation | Paragon Exterior',
-  description: 'Upgrade your home with our premium window installation services. From energy-efficient windows to stylish designs, we offer solutions that improve comfort and curb appeal.',
-}
-function page() {
+  description: 'Professional window repair and installation services in PA, NJ, and DE. Replace or upgrade your windows to improve comfort, lower energy bills, and add style to your home.',
+};
+
+function Page() {
   return (
     <div>
       <Hero
-        mainText="Windows That Enhance Your Home's Beauty and Efficiency"
-        subText="Upgrade your home with our premium window installation services. From energy-efficient windows to stylish designs, we offer solutions that improve comfort and curb appeal."
+        mainText="Window Installation & Replacement Services"
+        subText="Make your home more energy efficient, quiet, and beautiful with new windows installed by local experts."
         imgSrc="/images/window/window-hero2.webp"
         imgAlt="Paragon Exterior window installation project"
       />
+
       <div className="flex flex-col justify-center sm:text-center items-center sm:w-5/6 mx-auto text-left px-8 py-32">
-        <HeaderText as="h1" variant='large'>
-          Trusted Window Contractor for Quality Solutions
+        <HeaderText as="h1" variant="large">
+          Trusted Window Contractor in PA, NJ & DE
         </HeaderText>
-        <div className='my-12'>
+        <div className="my-12">
           <SecondaryText>
-            Choosing the right windows is essential for improving your home’s comfort, energy efficiency, and curb appeal. Well-designed windows help insulate your home, reduce energy loss, and ease the burden on your HVAC system in both hot summers and cold winters. Whether you’re upgrading outdated windows or looking for new window installations, Paragon Exterior will guide you in selecting stylish, durable solutions that enhance your home and help lower utility bills.
+            Old windows can let in drafts, drive up energy bills, and make your home feel less comfortable. At Paragon Exterior, we help homeowners replace or repair their windows with options that improve efficiency and fit their style.
           </SecondaryText>
           <SecondaryText>
-            At Paragon Exterior®, we’re more than just a window installation company — we’re your trusted partner in exterior improvement. From window replacement to custom window solutions, we help homeowners across Pennsylvania, New Jersey, and Delaware find high-quality products that provide natural light, fresh air, and superior protection from the elements. Let our expert team make the process simple and deliver results that transform your home’s look and performance.
+            Whether you need a single window replaced or want to upgrade every window in your home, our expert team makes the process easy. We install high-quality, energy-saving windows that look great and perform well in all seasons.
           </SecondaryText>
         </div>
       </div>
-      <div className='pb-12'>
+
+      <div className="pb-12">
         <ServicesGrid services={services} />
       </div>
-      <HorizontalSlider />
 
+      <HorizontalSlider />
 
       <FAQSection
         title="Frequently Asked Questions About Window Services"
         faqs={faqData}
       />
 
-      <GoogleReviews/>
-      <WhyParagon
-        title='Why Choose Paragon Exterior for Your Window Needs?'
-        subTitle='At Paragon Exterior, we take pride in being your trusted window contractor. Our team of experts is dedicated to providing top-notch window installation, replacement, and repair services. We understand that windows are a crucial part of your home’s exterior, and we strive to deliver solutions that enhance both aesthetics and energy efficiency. With our commitment to quality craftsmanship and customer satisfaction, you can trust us to transform your home with beautiful, functional windows.'
-      />
+      <GoogleReviews />
 
+      <WhyParagon
+        title="Why Choose Paragon Exterior for Your Window Project?"
+        subTitle="We specialize in window installation, replacement, and repair for homes across Pennsylvania, New Jersey, and Delaware. Our team focuses on honest advice, quality work, and customer satisfaction—so you get windows that last and look great."
+      />
 
       <GetEstimate />
     </div>
-  )
+  );
 }
 
-export default page;
+export default Page;

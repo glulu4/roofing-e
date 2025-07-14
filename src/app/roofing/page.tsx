@@ -1,4 +1,3 @@
-
 import HeroVideo from "@/components/landing-ui/HeroVideo";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import RoofOptionsSection from "@/components/RoofOptionsSection";
@@ -13,151 +12,131 @@ const posts = [
         id: 1,
         title: 'Roof Repair and Protection for Your Home',
         description:
-            "Your roof is your home's first defense against the elements. As a trusted roofing company, Paragon Exterior delivers expert roof repair and residential roofing services using high-quality materials and skilled craftsmanship. Protect your home with a roof that’s built to last and elevate curb appeal.",
+            "Your roof shields your home from storms, wind, and sun. We offer expert roof repair and replacement using long-lasting materials and expert installation.",
         imageUrl: "/images/house7.jpeg",
     },
     {
         id: 2,
         title: 'Solar-Ready Roofing from Top Roofing Contractors',
         description:
-            "Combine modern roof design with solar power. Our expert roofing contractors specialize in integrating solar panels into durable, energy-efficient roofing systems. Whether you're upgrading your existing roof or starting fresh, Paragon Exterior is the roofing company that builds smarter, greener homes.",
-        imageUrl: "/images/house6.webp"
+            "Get a roof that's built for solar power. Our team installs durable, energy-efficient roofing systems that are ready for panels—now or later.",
+        imageUrl: "/images/house6.webp",
     },
     {
         id: 3,
         title: 'Residential Roofing with Style and Heritage',
         description:
-            "Paragon Exterior proudly serves diverse communities with residential roofing solutions that honor cultural preferences and architectural beauty. Whether you want traditional shingles or custom roofing designs, our team delivers expert craftsmanship with the protection your family deserves.",
-        imageUrl: "/images/house10.jpeg"
+            "We serve homeowners with beautiful roofing that fits your home’s look and your family’s needs. Choose from traditional or custom styles with confidence.",
+        imageUrl: "/images/house10.jpeg",
     },
 ];
-
-
 
 const services = [
     {
         id: 1,
         title: 'Roof Repair',
         href: '/roofing/roof-repair',
-        description: 'Professional roof repair services for storm damage, missing shingles, leaks, and flashing issues. Licensed roofers serving PA, NJ, and DE with fast, reliable repairs.',
+        description: 'Fix leaks, missing shingles, storm damage, and more with fast, reliable roof repair.',
         imageUrl: '/images/roof-service/roof-repair/roof-repair4.jpg',
     },
     {
         id: 2,
         title: 'Roof Replacement',
         href: '/roofing/roof-replacement',
-        description: 'Complete roof replacement services using premium asphalt shingles, metal roofing, and architectural materials. Expert installation with warranties for lasting protection.',
+        description: 'Get a new roof that lasts. We install asphalt, metal, and architectural roofing systems.',
         imageUrl: '/images/roof-service/roof-replacement/roof-replacement.avif',
     },
     {
         id: 3,
         title: 'Velux Skylights',
         href: '/roofing/velux-skylights',
-        description: 'Professional Velux skylight installation and repair services. Add natural light and ventilation to your home with energy-efficient, leak-proof skylight solutions.',
+        description: 'Add light and airflow to your home with professional Velux skylight installation.',
         imageUrl: '/images/roof-service/skylight/skylight.jpg',
     },
     {
         id: 4,
         title: 'Flat Roofing',
         href: '/roofing/flat-roofing',
-        description: 'Specialized flat roof installation, repair, and maintenance using EPDM, TPO, and modified bitumen systems. Commercial and residential flat roofing experts.',
+        description: 'We install and repair EPDM, TPO, and other flat roofing systems for homes and businesses.',
         imageUrl: '/images/roof-service/flat-roofing/flat-roof.jpg',
     },
     {
         id: 5,
         title: 'Roof Leak Repair',
         href: '/roofing/roof-leak-repair',
-        description: 'Fast roof leak detection and repair services. Stop water damage with expert leak repairs for all roof types. Emergency leak repair available 24/7 in PA, NJ, DE.',
+        description: 'Stop water damage fast. We find and fix roof leaks on all types of roofs.',
         imageUrl: '/images/roof-service/roof-leak/roof-leak.jpg',
     },
     {
         id: 6,
         title: 'Emergency Roof Repair',
         href: '/roofing/emergency-roof-repair',
-        description: '24/7 emergency roof repair services for storm damage, active leaks, and urgent roofing needs. Immediate response with tarping and permanent repairs across PA, NJ, DE.',
+        description: 'Need help now? We offer 24/7 emergency roof repair for leaks, damage, and storm issues.',
         imageUrl: '/images/roof-service/emergency-roofing/roof-damage.webp',
     },
     {
         id: 7,
         title: 'Metal Roofing',
         href: '/roofing/metal-roofing',
-        description: 'Durable metal roofing installation and repair services. Choose from standing seam, corrugated, and architectural metal roofing systems for long-lasting protection.',
+        description: 'Tough, long-lasting metal roofs in standing seam, corrugated, and custom profiles.',
         imageUrl: '/images/roof-service/metal/metal-roof-card.webp',
-        },
+    },
 ];
 
-
 export const metadata = {
-    title: "Trusted Roofing Contractor ",
-    description: "Explore our expert roofing services, including roof repair, roof leak repair, residential roofing, and flat roofing solutions. Trust Paragon Exterior for quality craftsmanship and durable materials.",
-}
+    title: "Trusted Roofing Contractor",
+    description:
+        "Roofing services you can trust. We repair, replace, and install all roof types including asphalt, metal, and flat roofs. Serving PA, NJ, and DE.",
+};
 
 const Page = () => {
     return (
         <div>
             <div className="flex w-full">
                 <HeroVideo
-
                     videos={[
                         "/videos/house1.mp4",
                         "/videos/house2.mp4",
                         "/videos/house3.mp4",
                     ]}
                     text="Roofing Services"
-                    secText="Tailored Expertise, Exceptional Durability, Unmatched Value"
+                    secText="Reliable Repairs. Lasting Roofs. Local Experts."
                 />
             </div>
 
-
             <div className="flex flex-col justify-center sm:text-center items-center sm:w-5/6 mx-auto text-left px-8 py-32">
-
-
-                <HeaderText as="h1" variant='large'>
-                    Trusted Roofing Contractor for Quality Solutions
+                <HeaderText as="h1" variant="large">
+                    Roofing Services That Protect What Matters Most
                 </HeaderText>
 
-                <div className='my-12'>
+                <div className="my-12">
                     <SecondaryText>
-                        Choosing the right roofing solution is crucial for protecting your home and enhancing its curb appeal. Quality roofing works hand-in-hand with siding to create a protective shield against the elements. It boosts energy efficiency, reduces utility bills, and improves your home’s overall comfort and aesthetic. Whether you’re upgrading your roof or working with one of the best roofing companies near you, we’ll guide you through selecting the perfect solution that lasts.
+                        Your roof keeps your family safe from wind, rain, and heat. When it’s damaged or aging, it can lead to leaks, mold, and high energy bills. We help homeowners across PA, NJ, and DE fix roof problems fast—and replace old roofs with options that last.
                     </SecondaryText>
 
                     <SecondaryText>
-                        At Paragon Exterior®, we’re more than a roofing company — we’re your trusted partner in exterior transformation. From roof repair to new installations, we help homeowners in humid continental climates like Pennsylvania find long-lasting materials that withstand hot summers, harsh winters, and year-round weather. Let our expert roofing contractors simplify the process and deliver results you’ll love.
+                        At Paragon Exterior, we make the roofing process simple. Whether you need a quick repair or a full replacement, our experienced team uses top-quality materials and delivers honest, expert service every time.
                     </SecondaryText>
                 </div>
-
-
             </div>
 
-            <ServicesGrid services={services}/>
+            <ServicesGrid services={services} />
 
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
-                    mainText="Trusted Roofing Contractor for Quality Craftsmanship"
-                    description="As the most trusted roofing company near you, Paragon Exterior delivers expert roof repair, residential roofing, tile roof repair, and flat roofing services with unmatched quality and precision. Our roofing contractors use premium materials to ensure durability, protection, and aesthetic appeal. Whether you’re searching for roof repair near me or a reliable roofing company for your home, we build roofs that last and perform for years to come."
+                    mainText="Local Roofers Who Get the Job Done Right"
+                    description="We’re your local roofing company for repairs, replacements, and everything in between. From emergency fixes to full roof installations, we use quality materials and proven methods that protect your home from the elements—season after season."
                     image="/images/roof-shingle2.webp"
                 />
-
             </div>
 
-            <div >
+            <ThreeImageLayout posts={posts} />
 
-                <ThreeImageLayout
-                    posts={posts}
-                />
-            </div>
-
-            <div className="">
-                <RoofOptionsSection />
-            </div>
+            <RoofOptionsSection />
 
             <div className="pb-16 pt-16 sm:pt-0 md:pt-2 md:pb-4 sm:pb-10">
                 <GetEstimate />
             </div>
-
-
-
-
         </div>
     );
 };
