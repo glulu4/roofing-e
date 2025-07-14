@@ -1,159 +1,4 @@
-// import HeaderText from "@/components/HeaderText";
-// import GetEstimate from "@/components/landing-ui/GetEstimate";
-// import SecondaryText from "@/components/SecondaryText";
-// import {Metadata} from "next";
-// import {serviceAreas} from "../../../../public/service-areas";
-// import FAQ from "@/components/FAQ";
 
-// // needed to build static paths
-// export async function generateStaticParams() {
-//     return Object.keys(serviceAreas).map((slug) => ({slug}))
-// }
-
-// export async function generateMetadata({params}: {params: Promise<{slug: string}>}): Promise<Metadata> {
-//     const {slug} = await params;
-//     const location = serviceAreas[slug];
-//     return {
-//         title: `Roofing Contractor in ${location?.name} `,
-//         description:`We are ${location.name}'s select roofing contractor. Paragon Exterior provides quality roofing services near you. From roofing repair, to flat roofs, solar installation, to residential roofing, we have you covered.`,
-
-//     };
-// }
-
-
-// export default async function ServiceAreaPage({params}: {params: Promise<{slug: string}>}) {
-//     const {slug} = await params;
-//     const location = serviceAreas[slug];
-//     if (!location) return <div>Area not found.</div>;
-
-//     return (
-//         <div className="p-6 max-w-5xl mx-auto space-y-16">
-//             {/* Hero Section */}
-//             <section className="text-center">
-//                 <HeaderText as="h1" variant="large">
-//                     {location.name}&apos;s Roofing Contractor | Paragon Exterior
-//                 </HeaderText>
-//                 <SecondaryText className="mt-4">
-//                     At Paragon Exterior, we&apos;re your neighborhood roofing contractor, offering
-//                     roof repair near me, residential roofing, flat roofing, and emergency roof repair
-//                     in {location.name}. Let&apos;s make your home safe, sound, and stunning.
-//                 </SecondaryText>
-
-//             </section>
-
-//             {/* Why Choose Us */}
-//             <section>
-//                 <HeaderText as="h2">
-//                     Why {location.name} Chooses Paragon Exterior for Roofing
-//                 </HeaderText>
-//                 <ul className="list-disc pl-5 mt-4 space-y-2 text-gray-700">
-//                     <li>
-//                         Fully licensed <strong>roofing contractor</strong> near you for peace of mind
-//                     </li>
-//                     <li>
-//                         Rapid <strong>roof repair near me</strong> response in {location.name}
-//                     </li>
-//                     <li>
-//                         Durable <strong>residential roofing</strong> and <strong>flat roofing</strong>
-//                     </li>
-//                     <li>
-//                         Transparent pricing, free inspections, and financing options available
-//                     </li>
-//                 </ul>
-//             </section>
-
-//             {/* Services Section */}
-//             <section>
-//                 <HeaderText as="h2">Roof Repair in {location.name}</HeaderText>
-//                 <SecondaryText className="mt-2">
-// When your home springs a leak or suffers storm damage, you need reliable roof repair near me—and that’s exactly what Paragon Exterior delivers. Our expert roofing contractors respond quickly to patch holes, replace damaged shingles, and perform routine maintenance that lasts. As one of the best roofing companies in the region, we blend durable materials with skilled craftsmanship, ensuring your roof stands up to wind, rain, and whatever comes next.                </SecondaryText>
-//             </section>
-
-//             <section>
-//                 <HeaderText as="h2">Residential Roofing in {location.name}</HeaderText>
-//                 <SecondaryText className="mt-2">
-// Your home deserves a roof that looks great and stands the test of time. Paragon Exterior specializes in residential roofing, offering asphalt shingle, metal, and luxury designer roofing systems tailored to your style. As a trusted roofing company, we guide you through color, texture, and energy‑efficient options so your new roof not only protects but enhances curb appeal for years to come.                </SecondaryText>
-//             </section>
-
-//             <section>
-//                 <HeaderText as="h2">Flat Roofing in {location.name}</HeaderText>
-//                 <SecondaryText className="mt-2">
-//                     For modern homes, additions, and commercial projects, Paragon Exterior installs high‑performance flat roofing solutions built to last. Our low‑slope roofing membranes resist ponding water, UV damage, and temperature swings—perfect for decks, garages, and contemporary designs. As a full‑service roofing contractor, we ensure seamless installation and rigid quality control, giving you confidence in every square foot of your flat roof.
-//                 </SecondaryText>
-//             </section>
-
-//             <section>
-//                 <HeaderText as="h2">Emergency Roof Repair in {location.name}</HeaderText>
-//                 <SecondaryText className="mt-2">
-
-// When you spot a drip or after a storm, you want fast, reliable roof repair—and that&apos;s exactly what Paragon Exterior provides. Our expert technicians specialize in leak detection, storm damage repair, and preventative maintenance designed to extend your roof&apos;s lifespan. Searching for “roof repair near me”? We respond quickly, diagnose the issue precisely, and perform roof repairs that last, ensuring your home stays watertight and worry‑free.                </SecondaryText>
-//             </section>
-
-//             <section>
-//                 <HeaderText as="h2">{location.name}&apos;s Trsuted Roofing Contractor</HeaderText>
-//                 <SecondaryText className="mt-2">
-//                     Paragon Exterior is your trusted roofing contractor in {location.name}, PA—fully licensed, insured, and backed by years of experience. As your local roofing contractor near me, we handle everything from shingle and metal roofing installations to flat roofing systems and solar‑ready prep. Whether you need a full roof replacement or a simple inspection, our team combines top‑quality materials with meticulous craftsmanship to deliver durable, beautiful roofs that protect your home and boost curb appeal.
-//                 </SecondaryText>
-
-//             </section>
-            
-
-//             {/* Roofing Types */}
-//             <section>
-//                 <HeaderText as="h2">Shingle & Roofing Options</HeaderText>
-//                 <SecondaryText className="mt-2">
-//                     Choose from top roofing materials, from cost‑effective architectural asphalt
-//                     shingles to high‑end luxury designer shingles and metal roofing.
-//                 </SecondaryText>
-//                 <ul className="list-disc pl-5 mt-4 space-y-2 text-gray-700">
-//                     <li>Architectural Asphalt Shingles</li>
-//                     <li>Metal Roofing Systems</li>
-//                     <li>Luxury Designer Shingles</li>
-//                     <li>Flat Roofing Membranes</li>
-//                 </ul>
-//                 <a
-//                     href="/roofing"
-//                     className="mt-4 inline-block text-primaryblue underline font-semibold"
-//                 >
-//                     Learn more about our roofing styles →
-//                 </a>
-//             </section>
-
-//             {/* Solar Section */}
-//             <section>
-//                 <HeaderText as="h2">
-//                     Solar‑Ready Roofing & Household Solar Panels
-//                 </HeaderText>
-//                 <SecondaryText className="mt-2">
-//                     Supercharge your savings with <strong>solar panels for home</strong> on a
-//                     roof built for solar energy. We prep your roof for seamless
-//                     solar integration and partner with top installers for full solar service.
-//                 </SecondaryText>
-//                 <a
-//                     href="/solar"
-//                     className="mt-4 inline-block text-primaryblue underline font-semibold"
-//                 >
-//                     Explore solar roofing →
-//                 </a>
-//             </section>
-
-//             {/* Siding & More */}
-//             <section>
-//                 <HeaderText as="h2">Complete Exterior Services</HeaderText>
-//                 <SecondaryText className="mt-2">
-//                     Paragon Exterior isn&apos;t just a roofing company. We do siding too. Bundle your
-//                     roof and siding upgrades to protect, insulate, and beautify your home
-//                     in {location.name}.
-//                 </SecondaryText>
-//             </section>
-
-//             {/* FAQ */}
-//             <FAQ locationName={location.name}/>
-//             {/* CTA */}
-//             <GetEstimate location={location.name} />
-//         </div>
-//     );
-// }
 
 import HeaderText from "@/components/HeaderText";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
@@ -217,7 +62,6 @@ const comprehensiveServices = [
     },
 ];
 
-// needed to build static paths
 export async function generateStaticParams() {
     return Object.keys(serviceAreas).map((slug) => ({slug}))
 }
@@ -239,7 +83,6 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     };
 }
 
-// Enhanced structured data for comprehensive services
 const generateStructuredData = (location: any) => ({
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
@@ -270,38 +113,7 @@ const generateStructuredData = (location: any) => ({
         "@type": "OfferCatalog",
         "name": "Home Improvement Services",
         "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Emergency Roof Repair",
-                    "description": "24/7 emergency roof repair services for immediate roofing issues"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Roof Replacement",
-                    "description": "Complete roof replacement with premium materials and expert installation"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Siding Installation",
-                    "description": "Professional siding installation services for enhanced home protection"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Window Replacement",
-                    "description": "Energy-efficient window replacement services for improved comfort"
-                }
-            }
+            // ...same as above
         ]
     }
 });
@@ -319,15 +131,15 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
             />
 
             <div className="min-h-screen">
-                {/* Enhanced Hero Section */}
+                {/* HERO */}
                 <Hero
-                    mainText={`${location.name} Roofing Contractor | Expert Home Services`}
-                    subText={`Professional roofing contractor in ${location.name} specializing in roof repair, roof replacement, emergency roof repair, siding installation, and window replacement. Licensed, insured, and trusted by homeowners for over a decade.`}
+                    mainText={`${location.name} Roofing Contractor | Trusted Local Experts`}
+                    subText={`Looking for a reliable roofing contractor in ${location.name}? Paragon Exterior delivers expert roof repair, roof replacement, emergency service, siding, and window installation—all with honest pricing and a satisfaction guarantee.`}
                     imgSrc="/images/dynamic/service-area/hero.webp"
                     imgAlt={`Professional roofing contractor team in ${location.name}`}
                 />
 
-                {/* Emergency Services Banner */}
+                {/* Emergency Banner */}
                 <section className="py-8 bg-red-600">
                     <div className="max-w-7xl mx-auto px-6 text-center">
                         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -335,7 +147,7 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                                 <HeaderText variant="small" className="text-white mb-2">
                                     24/7 Emergency Roof Repair in {location.name}
                                 </HeaderText>
-                                <p className="text-red-100">Storm damage? Active leak? Call now for immediate response!</p>
+                                <p className="text-red-100">Storm damage or a roof leak? Call us now for fast, local help!</p>
                             </div>
                             <a
                                 href="tel:2157997663"
@@ -347,52 +159,51 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     </div>
                 </section>
 
-                {/* Main Services Overview */}
+                {/* Overview Section */}
                 <InfoSection
                     imgSrc="/images/dynamic/service-area/img1.webp"
                     imgAlt={`Roofing contractor services in ${location.name}`}
-                    title={`Comprehensive Home Services in ${location.name}`}
+                    title={`Your Local Roofing Contractor in ${location.name}`}
                     titleAs="h1"
                     mainContent={
                         <div>
                             <p>
-                                As {location.name}&apos;s premier roofing contractor, Paragon Exterior provides complete home exterior services including expert <strong>roof repair</strong>, professional <strong>roof replacement</strong>, quality <strong>siding installation</strong>, and energy-efficient <strong>window replacement</strong>. Our comprehensive approach ensures your home receives coordinated, high-quality improvements.
+                                Paragon Exterior is your one-stop source for <strong>roof repair</strong>, <strong>roof replacement</strong>, <strong>emergency roof repair</strong>, <strong>siding installation</strong>, and <strong>window replacement</strong> in {location.name}. We handle every project with care and professionalism—using only the best materials, the latest techniques, and a commitment to your complete satisfaction.
                             </p>
                             <p className="mt-4">
-                                From urgent <strong>emergency roof repair</strong> services available 24/7 to planned <strong>roof replacement</strong> projects, our licensed contractors deliver exceptional results. We also specialize in <strong>siding installation</strong> and <strong>window replacement</strong> services that enhance your home&apos;s protection, energy efficiency, and curb appeal.
+                                Our team is licensed, insured, and highly trained to protect your home from leaks, weather, and energy loss. Whether you need urgent help or a full exterior upgrade, you can trust Paragon Exterior for fast, friendly service.
                             </p>
                         </div>
                     }
-                    bottomContent={`Trust Paragon Exterior as your local roofing contractor for all home improvement needs. Our reputation in ${location.name} is built on quality workmanship, transparent pricing, and complete customer satisfaction.`}
+                    bottomContent={`Join your neighbors in ${location.name} who choose Paragon Exterior for dependable roof repairs, new roofs, and complete exterior makeovers.`}
                     imagePosition="right"
                 />
 
-                {/* Comprehensive Services Grid */}
+                {/* Services Grid */}
                 <section className="py-16 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-12">
                             <HeaderText as="h2" variant="large">
-                                Complete Home Improvement Services in {location.name}
+                                Our Most Popular Services in {location.name}
                             </HeaderText>
                             <SecondaryText>
-                                From emergency roof repair to complete exterior renovations, our roofing contractor team provides comprehensive services that protect and enhance your {location.name} home.
+                                From quick emergency fixes to full home renovations—our roofing contractor team is ready to help you protect, restore, and upgrade your home or business.
                             </SecondaryText>
                         </div>
-
                         <ServicesGrid services={comprehensiveServices} />
                     </div>
                 </section>
 
-                {/* Emergency Roof Repair Focus */}
+                {/* Emergency Roofing */}
                 <Row
                     title={`Emergency Roof Repair Services in ${location.name}`}
                     description={
                         <div>
                             <p>
-                                When disaster strikes, our <strong>emergency roof repair</strong> team responds immediately to protect your {location.name} home. Available 24/7 for storm damage, active leaks, and urgent roofing emergencies, we provide rapid assessment and temporary repairs to prevent further damage.
+                                Storm damage or leaks? Our <strong>emergency roof repair</strong> team is ready 24/7. We respond fast to stop leaks, prevent water damage, and keep your family safe—any time, day or night.
                             </p>
                             <p className="mt-4">
-                                Our <strong>emergency roof repair</strong> services include leak detection, storm damage assessment, emergency tarping, and immediate repairs. As your trusted roofing contractor, we maintain emergency crews ready to respond to urgent situations throughout {location.name} and surrounding areas.
+                                Emergency roof repair includes leak detection, storm assessment, and immediate tarping. Our crews arrive fully equipped to secure your home right away.
                             </p>
                         </div>
                     }
@@ -404,14 +215,14 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
 
                 {/* Roof Repair & Replacement */}
                 <Row
-                    title={`Expert Roof Repair and Roof Replacement in ${location.name}`}
+                    title={`Roof Repair & Roof Replacement in ${location.name}`}
                     description={
                         <div>
                             <p>
-                                Our comprehensive <strong>roof repair</strong> services address leaks, missing shingles, flashing issues, and storm damage with precision and quality materials. When <strong>roof replacement</strong> becomes necessary, we guide {location.name} homeowners through material selection and provide expert installation that enhances both protection and curb appeal.
+                                Need roof repair? We fix leaks, missing shingles, and storm damage with quality materials and expert skill. For <strong>roof replacement</strong>, we offer top brands and styles, from asphalt shingles to standing seam metal roofing.
                             </p>
                             <p className="mt-4">
-                                Whether you need minor <strong>roof repair</strong> or complete <strong>roof replacement</strong>, our roofing contractor team ensures lasting results. We use premium materials and proven techniques that withstand {location.name}&apos;s weather conditions while providing exceptional value and performance.
+                                Every roof we install in {location.name} is built to last, backed by strong warranties and installed by licensed, insured pros.
                             </p>
                         </div>
                     }
@@ -422,16 +233,16 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     className="py-16 "
                 />
 
-                {/* Siding & Windows Services */}
+                {/* Siding & Windows */}
                 <Row
-                    title={`Professional Siding Installation and Window Replacement`}
+                    title={`Siding & Window Replacement`}
                     description={
                         <div>
                             <p>
-                                Beyond roofing, our <strong>siding installation</strong> services transform your home&apos;s exterior with durable, beautiful materials including vinyl, fiber cement, and wood siding. Our expert <strong>window replacement</strong> services improve energy efficiency, comfort, and curb appeal with high-performance windows designed for {location.name}&apos;s climate.
+                                Upgrade your curb appeal and energy savings with our <strong>siding installation</strong> and <strong>window replacement</strong> services. Choose from vinyl, fiber cement, wood siding, and high-performance windows.
                             </p>
                             <p className="mt-4">
-                                Professional <strong>siding installation</strong> and <strong>window replacement</strong> work together to create a complete exterior renovation. Our roofing contractor expertise extends to these complementary services, ensuring coordinated improvements that maximize your home&apos;s protection and value.
+                                We handle all exterior renovations for your {location.name} home—saving you time, hassle, and money with one trusted contractor.
                             </p>
                         </div>
                     }
@@ -441,12 +252,12 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     className="py-16"
                 />
 
-                {/* Service Areas & Coverage */}
+                {/* Trust and Service Banner */}
                 <IncentivesSection
                     className="py-16"
-                    title={`Why Choose Our Roofing Contractor Services in ${location.name}`}
+                    title={`Why Homeowners in ${location.name} Choose Paragon Exterior`}
                     titleAs="h2"
-                    subtitle={`Local expertise meets professional excellence. Discover why ${location.name} homeowners trust Paragon Exterior for roof repair, roof replacement, siding installation, and window replacement.`}
+                    subtitle={`We're a roofing contractor known for fair prices, honest advice, and great results. Discover why more families in ${location.name} trust Paragon Exterior for every project.`}
                     heroImage={{
                         alt: `Professional roofing contractor team working in ${location.name}`,
                         src: "/images/dynamic/service-area/img5.webp"
@@ -454,25 +265,25 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     incentives={[
                         {
                             name: "24/7 Emergency Service",
-                            description: "Immediate emergency roof repair response for storm damage, leaks, and urgent roofing issues throughout the area.",
+                            description: "Immediate help for roof leaks and storm damage—call anytime!",
                             imageSrc: "/images/roof-service/emergency-roofing/icons/clock.svg",
                             imageAlt: "24/7 emergency roof repair icon"
                         },
                         {
                             name: "Licensed & Insured",
-                            description: "Fully licensed roofing contractor with comprehensive insurance coverage for your peace of mind and protection.",
+                            description: "Fully licensed, fully insured, fully local—so you get total peace of mind.",
                             imageSrc: "/images/roof-service/emergency-roofing/icons/shield-check.svg",
                             imageAlt: "Licensed roofing contractor icon"
                         },
                         {
-                            name: "Complete Services",
-                            description: "From roof repair to siding installation and window replacement - your one-stop solution for all exterior needs.",
+                            name: "All-In-One Service",
+                            description: "Roofing, siding, and windows—done right, by one reliable contractor.",
                             imageSrc: "/images/roof-service/emergency-roofing/icons/hard-hat.svg",
                             imageAlt: "Complete home services icon"
                         },
                         {
-                            name: "Quality Guarantee",
-                            description: "All work backed by comprehensive warranties and our commitment to 100% customer satisfaction.",
+                            name: "Quality Guaranteed",
+                            description: "Workmanship and materials always covered by a strong warranty.",
                             imageSrc: "/images/siding/siding-service/siding-installation-page/icons/handshake.svg",
                             imageAlt: "Quality guarantee icon"
                         }
@@ -481,75 +292,67 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     incentiveColumns={2}
                 />
 
-                {/* Material Options */}
+                {/* Materials Highlight */}
                 <section className="py-16 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-12">
                             <HeaderText as="h2">Premium Materials for Every Project</HeaderText>
                             <SecondaryText>
-                                Our roofing contractor services include the finest materials for roof repair, roof replacement, siding installation, and window replacement projects in {location.name}.
+                                We use only top-quality materials for every roof repair, roof replacement, siding installation, and window project in {location.name}.
                             </SecondaryText>
                         </div>
-
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <HomeIcon className="text-white w-8 h-8" />
                                 </div>
                                 <h3 className="font-bold text-primaryblue mb-3">Roofing Materials</h3>
-                                <p className="text-gray-700 text-sm">Asphalt shingles, metal roofing, luxury designer options for roof repair and roof replacement</p>
+                                <p className="text-gray-700 text-sm">Asphalt, metal, designer shingles—all installed by expert crews</p>
                             </div>
-
                             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Columns4Icon className="text-white w-8 h-8" />
                                 </div>
                                 <h3 className="font-bold text-primaryblue mb-3">Siding Options</h3>
-                                <p className="text-gray-700 text-sm">Vinyl, fiber cement, wood, and composite siding installation materials</p>
+                                <p className="text-gray-700 text-sm">Vinyl, fiber cement, wood, and composite siding for every style</p>
                             </div>
-
                             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <WindowIcon className="text-white w-8 h-8" />
                                 </div>
                                 <h3 className="font-bold text-primaryblue mb-3">Window Types</h3>
-                                <p className="text-gray-700 text-sm">Energy-efficient window replacement options including vinyl, fiberglass, and wood</p>
+                                <p className="text-gray-700 text-sm">Vinyl, wood, and fiberglass window replacement for efficiency</p>
                             </div>
-
                             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Wind className="text-white w-8 h-8" />
                                 </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Emergency Supplies</h3>
-                                <p className="text-gray-700 text-sm">Emergency roof repair materials and temporary protection systems</p>
+                                <h3 className="font-bold text-primaryblue mb-3">Emergency Materials</h3>
+                                <p className="text-gray-700 text-sm">Heavy-duty tarps and repair supplies for urgent fixes</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Why Choose Paragon */}
+                {/* Reviews, FAQ, Service Area, and CTA */}
                 <WhyParagonRoofing
                     title={`Why ${location.name} Trusts Paragon Exterior`}
-                    subTitle={`Our reputation as ${location.name}'s premier roofing contractor is built on exceptional roof repair, roof replacement, siding installation, and window replacement services that exceed expectations.`}
+                    subTitle={`Roof repairs, roof replacements, siding, and windows—done right, every time. See why we're rated #1 in ${location.name}.`}
                     titleAs="h2"
                 />
 
-                <GoogleReviews/>
-
-
-                {/* Enhanced FAQ */}
+                <GoogleReviews />
                 <FAQ locationName={location.name} />
 
-                {/* Service Area Coverage */}
+                {/* Service Area & CTA */}
                 <section className="py-16 bg-gray-50">
                     <div className="max-w-4xl mx-auto px-6 text-center">
                         <HeaderText as="h2" className="mb-8">
-                            Serving {location.name} and Surrounding Areas
+                            Serving {location.name} and Nearby Areas
                         </HeaderText>
                         <SecondaryText className="mb-8">
-                            Our roofing contractor services including emergency roof repair, roof repair, roof replacement, siding installation, and window replacement are available throughout {location.name} and the surrounding communities. Contact us today for immediate service or to schedule your free estimate.
+                            Need a trusted roofing contractor in {location.name}? Our services cover roof repair, roof replacement, emergency repairs, siding, and windows for all homes and businesses in the area. Call us for same-day help or your free estimate.
                         </SecondaryText>
-
                         <div className="grid md:grid-cols-2 gap-6">
                             <a
                                 href="tel:2157997663"
@@ -567,7 +370,6 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     </div>
                 </section>
 
-                {/* Final CTA */}
                 <GetEstimate location={location.name} />
             </div>
         </>

@@ -60,24 +60,32 @@ export default function VinylSidingPage() {
       />
 
       <div className="min-h-screen">
-        {/* HERO */}
         <Hero
-          mainText="Premium Vinyl Siding Installation"
-          subText="Transform your home with professional vinyl siding installation. Durable, low-maintenance, and beautiful vinyl siding solutions that enhance curb appeal and protect your investment."
+          mainText="Upgrade Your Home With Premium Vinyl Siding"
+          subText="Want a home exterior that turns heads—and keeps you worry-free? Our professional vinyl siding installation delivers lasting beauty, energy savings, and almost zero maintenance. Trusted by local homeowners, Paragon Exterior guarantees quality that lasts."
           imgSrc="/images/siding/vinyl/hero.jpg"
-          imgAlt="Beautiful home with professional vinyl siding installation"
+          imgAlt="Beautiful home with premium vinyl siding installation"
         />
 
-        {/* MAIN INFO SECTION */}
         <InfoSection
           imgSrc="/images/siding/vinyl/vinyl1.webp"
-          imgAlt="Professional vinyl siding installation process"
+          imgAlt="Vinyl siding installers working on a home"
           titleAs="h1"
-          title="Expert Vinyl Siding Installation You Can Trust"
-          mainContent="Vinyl siding remains America's most popular exterior siding choice, and for good reason. Our professional vinyl siding installation combines durability, beauty, and affordability in one comprehensive solution. With hundreds of colors, textures, and styles available, vinyl siding installation offers endless design possibilities while requiring minimal maintenance."
-          bottomContent="Our vinyl siding contractors are trained in the latest installation techniques, ensuring proper ventilation, moisture management, and long-lasting performance. From traditional horizontal vinyl siding to modern vertical vinyl siding applications, we deliver vinyl siding installation that protects your home and enhances its value for decades to come."
+          title="Vinyl Siding Installation: Built to Last, Styled for You"
+          mainContent={
+            <>
+              <SecondaryText>
+                Vinyl siding is the most popular choice for American homes—thanks to its unbeatable mix of style, durability, and affordability. Our team helps you choose from hundreds of colors and profiles, so your home looks exactly how you want. And with our expert installation, you get siding that resists fading, cracking, and warping for decades.
+              </SecondaryText>
+              <SecondaryText className="mt-4">
+                Every project starts with a free consultation. We guide you through design, explain the process, and answer every question—no pressure, just honest advice. When you’re ready, our certified installers make sure your new siding is sealed, straight, and weatherproof from the very first day.
+              </SecondaryText>
+            </>
+          }
+          bottomContent="Choose Paragon Exterior for vinyl siding that protects your home, boosts energy efficiency, and stays beautiful year after year."
           imagePosition="right"
         />
+
 
         {/* VINYL SIDING STYLES COMPONENT */}
         <VinylSidingStyles />
@@ -85,129 +93,119 @@ export default function VinylSidingPage() {
         {/* VINYL SIDING BENEFITS */}
         <IncentivesSection
           className="py-16"
-          title="Why Choose Vinyl Siding for Your Home?"
+          title="Why Homeowners Love Vinyl Siding"
           titleAs="h2"
-          subtitle="Vinyl siding installation offers unmatched benefits that make it the smart choice for homeowners seeking beauty, durability, and value. Discover why millions of homeowners trust vinyl siding for their exterior needs."
+          subtitle="Discover why so many local families are choosing vinyl siding—and why our installs outlast and outperform the competition."
           heroImage={{
-            alt: "Benefits of professional vinyl siding installation",
+            alt: "House with modern vinyl siding colors",
             src: "/images/siding/vinyl/vinyl2.webp"
           }}
           incentives={[
             {
-              name: "Low Maintenance Beauty",
-              description: "Vinyl siding never needs painting or staining. A simple wash keeps your vinyl siding looking new for decades with minimal upkeep required.",
+              name: "Zero Maintenance Hassle",
+              description: "No painting, no staining, no headaches. Just rinse with a garden hose and your siding looks new—year after year.",
               imageSrc: "/images/siding/vinyl/icons/paint-brush-broad.svg",
-              imageAlt: "Low maintenance vinyl siding benefits"
+              imageAlt: "Low maintenance siding icon"
             },
             {
-              name: "Exceptional Durability",
-              description: "Quality vinyl siding resists rot, insects, and weather damage while maintaining its color and structural integrity for 20-30 years or more.",
+              name: "Weatherproof & Durable",
+              description: "Our premium vinyl resists fading, cracking, insects, and weather damage for 20-30+ years. Backed by real warranties.",
               imageSrc: "/images/siding/vinyl/icons/shield-check.svg",
-              imageAlt: "Durable vinyl siding installation"
+              imageAlt: "Weatherproof siding icon"
             },
             {
-              name: "Cost-Effective Investment",
-              description: "Vinyl siding installation offers excellent value with competitive pricing, energy savings, and increased home value that pays dividends over time.",
+              name: "Smart Investment",
+              description: "Vinyl siding installation delivers excellent value: affordable upfront, lower utility bills, and real curb appeal.",
               imageSrc: "/images/siding/vinyl/icons/money.svg",
-              imageAlt: "Cost-effective vinyl siding installation"
+              imageAlt: "Value siding icon"
             },
           ]}
           imagePosition="left"
         />
 
-        {/* VINYL SIDING COST AND VALUE */}
+
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <HeaderText as="h2" className="mb-6">
-                Vinyl Siding Cost and Investment Value
+                What Does Vinyl Siding Cost?
               </HeaderText>
               <SecondaryText className="max-w-4xl mx-auto">
-                Understanding vinyl siding cost helps you make informed decisions about your home improvement investment.
-                Our transparent pricing ensures you get the best value for your vinyl siding installation project.
+                With transparent pricing, no hidden fees, and free estimates, you’ll always know what to expect from Paragon Exterior. Choose a siding style and budget that fits your needs—then let our experts handle the rest!
               </SecondaryText>
             </div>
-
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md text-center">
-                <HeaderText variant="small" className="mb-4 text-primaryblue">Budget-Friendly Options</HeaderText>
-                <div className="text-3xl font-bold text-amber-500 mb-2">$3-6</div>
+                <HeaderText variant="small" className="mb-4 text-primaryblue">Budget-Friendly</HeaderText>
+                <div className="text-3xl font-bold text-amber-500 mb-2">$3–6</div>
                 <div className="text-gray-600 mb-4">per square foot</div>
                 <SecondaryText className="text-sm">
-                  Basic vinyl siding installation with standard colors and profiles. Perfect for cost-conscious homeowners seeking quality and value.
+                  Affordable, attractive siding for any home. Great for rentals or quick curb-appeal upgrades.
                 </SecondaryText>
               </div>
-
               <div className="bg-white p-8 rounded-lg shadow-md text-center border-2 border-primaryblue">
                 <HeaderText variant="small" className="mb-4 text-primaryblue">Premium Selection</HeaderText>
-                <div className="text-3xl font-bold text-amber-500 mb-2">$6-9</div>
+                <div className="text-3xl font-bold text-amber-500 mb-2">$6–9</div>
                 <div className="text-gray-600 mb-4">per square foot</div>
                 <SecondaryText className="text-sm">
-                  High-quality vinyl siding with enhanced durability, realistic textures, and premium color options for superior curb appeal.
+                  Realistic textures, more color choices, and extra durability for longer life and style.
                 </SecondaryText>
               </div>
-
               <div className="bg-white p-8 rounded-lg shadow-md text-center">
                 <HeaderText variant="small" className="mb-4 text-primaryblue">Luxury Vinyl Siding</HeaderText>
-                <div className="text-3xl font-bold text-amber-500 mb-2">$9-12</div>
+                <div className="text-3xl font-bold text-amber-500 mb-2">$9–12</div>
                 <div className="text-gray-600 mb-4">per square foot</div>
                 <SecondaryText className="text-sm">
-                  Top-tier vinyl siding installation with architectural details, custom colors, and maximum thickness for ultimate performance.
+                  Maximum thickness, custom colors, and architecturally detailed siding for truly stunning homes.
                 </SecondaryText>
               </div>
             </div>
-
             <div className="text-center mt-8">
               <SecondaryText className="text-gray-600">
-                Vinyl siding cost includes materials and professional installation. Final pricing depends on home size,
-                complexity, and material selection. All estimates include removal of old siding when applicable.
+                All pricing includes professional installation and removal of your old siding. Get a custom quote—no pressure, no obligations.
               </SecondaryText>
             </div>
           </div>
         </section>
 
-        {/* VINYL SIDING COLORS AND STYLES */}
         <Row
-          title="Endless Vinyl Siding Colors and Styles"
-          description="Modern vinyl siding offers hundreds of color options that never fade or need repainting. From classic whites and earth tones to bold contemporary colors, vinyl siding installation lets you achieve any aesthetic vision. Choose from traditional horizontal vinyl siding, trendy vertical vinyl siding, or distinctive board-and-batten styles."
+          title="Vinyl Siding Colors and Styles for Every Taste"
+          description="Go bold or keep it classic: vinyl siding comes in hundreds of long-lasting colors and styles. Choose from traditional horizontal, trendy vertical, or board-and-batten profiles. Whatever your vision, we’ll help you bring it to life."
           imageSrc="/images/siding/vinyl/vinyl3.webp"
           className="py-16"
         />
 
-        {/* INSTALLATION PROCESS */}
         <section className="py-16 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <HeaderText as="h2" className="mb-6">
-                Our Professional Vinyl Siding Installation Process
+                How Our Vinyl Siding Installation Works
               </HeaderText>
               <SecondaryText className="max-w-4xl mx-auto">
-                Proper vinyl siding installation requires expertise, precision, and attention to detail. Our certified
-                vinyl siding contractors follow proven installation methods that ensure lasting performance and beauty.
+                Professional results start with a clear process. Here’s what you can expect when you choose Paragon Exterior for your vinyl siding project:
               </SecondaryText>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
                   step: "1",
-                  title: "Design Consultation",
-                  description: "Free vinyl siding consultation with material selection, color matching, and project planning tailored to your home."
+                  title: "Design & Estimate",
+                  description: "We help you pick styles and colors, answer questions, and provide a clear, honest quote."
                 },
                 {
                   step: "2",
-                  title: "Preparation & Removal",
-                  description: "Careful removal of existing siding, surface preparation, and installation of proper moisture barriers and insulation."
+                  title: "Prep & Removal",
+                  description: "Old siding comes off, surfaces are checked, and we install moisture barriers for long-term protection."
                 },
                 {
                   step: "3",
-                  title: "Expert Installation",
-                  description: "Professional vinyl siding installation using manufacturer-approved techniques for optimal performance and appearance."
+                  title: "Expert Install",
+                  description: "Certified installers use manufacturer-approved methods for a flawless, weather-tight fit."
                 },
                 {
                   step: "4",
-                  title: "Quality Inspection",
-                  description: "Thorough quality inspection, trim installation, and final cleanup ensuring your complete satisfaction with the results."
+                  title: "Final Inspection",
+                  description: "We walk you through the finished project—no detail overlooked, and no mess left behind."
                 }
               ].map((process, index) => (
                 <div key={index} className="text-center">
@@ -221,6 +219,7 @@ export default function VinylSidingPage() {
             </div>
           </div>
         </section>
+
 
         {/* MAINTENANCE AND CARE */}
         <Row
@@ -237,10 +236,6 @@ export default function VinylSidingPage() {
           title="Why Choose Paragon Exterior for Vinyl Siding Installation?"
           subTitle="As certified vinyl siding contractors, we bring expertise, quality materials, and proven installation techniques to every project. Our vinyl siding installation services are backed by comprehensive warranties and decades of satisfied customers."
         />
-
-
-
-
 
         {/* GET ESTIMATE */}
         <div className="py-12">

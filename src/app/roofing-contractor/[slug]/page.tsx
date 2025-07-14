@@ -1,165 +1,3 @@
-// import HeaderText from "@/components/HeaderText";
-// import GetEstimate from "@/components/landing-ui/GetEstimate";
-// import SecondaryText from "@/components/SecondaryText";
-// import {Metadata} from "next";
-// import {serviceAreas} from "../../../../public/service-areas";
-// import TextImgRow from "@/components/TextImgRow";
-// import ThreeImageLayout from "@/components/solar/ThreeImage";
-// import FAQ from "@/components/FAQ";
-
-
-// const posts = [
-//     {
-//         id: 1,
-//         title: 'Roof Repair',
-//         description:`
-//         Our roofing company specializes in roof repairs, such as leak fixes, storm damage repair, and routine maintenance. 
-//         Our roofing contractors offer the best, fast, and reliable roof repair.`,
-//         imageUrl: "/images/slug-images/roof-contractor.jpg"
-//     },
-//     {
-//         id: 2,
-//         title: 'Residential Roofing',
-//         description:
-//             `Our roofing company offers all sorts of residential roofing solutions. 
-//             Paragon Exterior uses quality materials to ensure you're home is stylish and durable.
-//             Trust Paragon Exterior, your local roofing company, to boost curb appeal and protect your home.`,
-//         imageUrl: "/images/slug-images/roofing-contractors-near-you.jpg"
-//     },
-//     {
-//         id: 3,
-//         title: 'Flat Roofs',
-//         description:
-//             `At Paragon Exterior, we also offer flat roofs. Our roofing company specializes in low-slope solutions, such as flat roofs, for modern homes.
-//             We’re the roofing contractor near you with a fast response time.`,
-//         imageUrl: "/images/slug-images/roofing-contractors.jpg"
-//     },
-// ];
-
-
-
-// export async function generateStaticParams() {
-//     return Object.keys(serviceAreas).map((slug) => ({slug}));
-// }
-
-// export async function generateMetadata({params}: {params: Promise<{slug: string}>}): Promise<Metadata> {
-//     const {slug} = await params;
-//     const location = serviceAreas[slug];
-//     return {
-//         title: `${location?.name}'s Roofing Contractor`,
-//         description:`We are ${location.name}'s select roofing contractor. Paragon Exterior provides quality roofing services near you. From roofing repair, to flat roofs, solar installation, to residential roofing, we have you covered.`,
-//         alternates: { canonical: `https://www.paragonexterior.com/roofing-contractor/${slug}` },
-//     };
-// }
-
-
-
-
-// interface PageProps {
-//     params: Promise<{slug: string}>;
-// }
-
-// export default async function ServiceAreaPage({params}: PageProps) {
-//     const {slug} = await params;
-
-//     const location = serviceAreas[slug];
-//     if (!location) return <div>Area not found.</div>;
-
-
-//     const sectiontext = `
-// We know that choosing a roofing contractor can feel overwhelming. That’s why at Paragon Exterior, we’ve made it our mission to keep the process simple, transparent, and stress-free—so you’re 100% thrilled with the finished result.
-
-// From rapid estimate turnarounds to clear, proactive communication before, during, and after your project, plus our industry-leading workmanship, premium materials, and unbeatable warranties, we stand firmly behind every promise we make.
-
-// Experience what makes Paragon Exterior the select roofing contractor of ${location.name}. See why homeowners in ${location.name} trust us as the area’s Top Rated Roofing Contractor!
-// `
-
-//     return (
-//         <div className="p-6 max-w-7xl mx-auto space-y-16 pt-24">
-//             {/* Hero Section */}
-//             <section className="text-center">
-//                 <HeaderText as="h1" variant="large">
-//                     {location.name}&apos;s Trusted Roofing Contractor
-//                 </HeaderText>
-//                 <SecondaryText as="h2" className="mt-4">
-//                     Paragon Exterior is {location.name}&apos;s select roofing contractor, offering
-//                     roof repairs, flexible pricing, residential roofing, flat roofing, and even solar panels. 
-//                     <a href="/solar" className="text-blue-700">
-//                         &nbsp;Learn more about solar.&nbsp;
-//                         </a>
-//                     As one of the top roofing companies in {location.name}, we&apos;d love to make your home safe, sound, and stunning.
-//                 </SecondaryText>
-//                 <div className="py-12">
-//                     <a href="/estimate" className="mt-6 bg-primaryblue text-white px-6 py-3 my-6 rounded">
-//                         Get Your Free Estimate
-//                     </a>
-//                 </div>
-
-//             </section>
-//             <section>
-//                 <SecondaryText className="mt-4">
-//                     {sectiontext}
-//                 </SecondaryText>
-                
-//             </section>
-
-//             {/* Why Choose Us */}
-//             <section>
-
-
-//                 <TextImgRow
-//                     title={`Why ${location.name} Chooses Paragon Exterior for Roofing`}
-//                     description="We’re a local roofing contractor with a reputation for quality and reliability. Our licensed roofing contractors are experts in roof repair, residential roofing, and flat roofing systems. We offer transparent pricing, free inspections, and financing options to make your roofing project easy and affordable."
-//                     imageSrc="/images/slug-images/roofing-contractor.jpg"
-//                     imageAlt={`Roofing Contractor in ${location.name}`}
-//                 />
-//             </section>
-
-//             {/* Services Section */}
-//             <section className="text-center">
-
-//                 <ThreeImageLayout posts={posts} />
-
-//             </section>
-
-
-//             <section>
-//                 <HeaderText variant="large" as="h2">We Are Experienced Roofing Experts</HeaderText>
-//                 <div className="mt-6 space-y-4">
-//                     <details>
-//                         <summary className="text-lg font-semibold cursor-pointer">Why Work With Local Roofers?</summary>
-//                         <SecondaryText as="p" className="mt-2">
-//                             Working with a local roofing company means you get faster response times, personalized service, and peace of mind. 
-//                             At Paragon Exterior, you&apos;re not just another customer — you&apos;re our neighbor.
-//                         </SecondaryText>
-//                     </details>
-
-//                     <details>
-//                         <summary className="text-lg font-semibold cursor-pointer">Roof Repair and Installation in the {location.name}</summary>
-//                         <SecondaryText as="p" className="mt-2">
-//                             From minor leaks to full replacements, our expert roofing company handle every project with precision. We install residential roofs that are beautiful, durable, and solar ready.
-//                             Our roofing company guarantees top-quality roof repairs and installations near you.
-//                         </SecondaryText>
-//                     </details>
-
-//                     <details open>
-//                         <summary className="text-lg font-semibold text-primaryGreenDark cursor-pointer">
-//                             Advantages of Choosing Paragon Exterior
-//                         </summary>
-//                         <SecondaryText as="p" className="mt-2">
-//                             We provide free estimates, transparent pricing, and all our work is backed by warranty. Having served the {location.name} area years on end, we’re your trusted roofing company for repairs, and installation.
-//                         </SecondaryText>
-//                     </details>
-//                 </div>
-//             </section>
-
-//             <FAQ locationName={location.name} />
-//             {/* CTA */}
-//             <GetEstimate location={location.name} />
-//         </div>
-//     );
-// }
-
 import HeaderText from "@/components/HeaderText";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import SecondaryText from "@/components/SecondaryText";
@@ -172,7 +10,6 @@ import FAQ from "@/components/FAQ";
 import {WhyParagonRoofing} from "@/components/WhyParagon";
 import {Metadata} from "next";
 import {serviceAreas} from "../../../../public/service-areas";
-import Image from "next/image";
 import {CheckIcon, HomeIcon, StarIcon} from "lucide-react";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 
@@ -318,15 +155,14 @@ export default async function ServiceAreaPage({params}: PageProps) {
             />
 
             <div className="min-h-screen">
-                {/* Enhanced Hero Section */}
                 <Hero
                     mainText={`${location.name}'s Trusted Roofing Contractor`}
-                    subText={`Professional roofing services in ${location.name} including emergency roof repair, residential roofing installation, and commercial roofing solutions. Licensed, insured, and locally trusted for over a decade.`}
+                    subText={`Need roofing help in ${location.name}? Paragon Exterior provides expert roof repairs, full roof replacements, and fast emergency service for homes and businesses. Our local roofing company is licensed, insured, and trusted for over 10 years.`}
                     imgSrc="/images/dynamic/roofing-contractor/hero.webp"
                     imgAlt={`Professional roofing contractor working in ${location.name}`}
                 />
 
-                {/* Local Trust Section */}
+
                 <section className="py-16">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-12">
@@ -334,10 +170,9 @@ export default async function ServiceAreaPage({params}: PageProps) {
                                 Why {location.name} Homeowners Choose Paragon Exterior
                             </HeaderText>
                             <SecondaryText className="max-w-4xl mx-auto">
-                                We know that choosing a roofing contractor can feel overwhelming. That&apos;s why at Paragon Exterior, we&apos;ve made it our mission to keep the process simple, transparent, and stress-free—so you&apos;re 100% thrilled with the finished result. Experience what makes us {location.name}&apos;s select roofing contractor.
+                                Choosing the right roofing contractor shouldn’t be stressful. At Paragon Exterior, we keep everything simple, honest, and clear—from your first estimate to final cleanup. Enjoy quick turnarounds, friendly service, and strong warranties—plus constant updates, so you’re never left in the dark. See why your neighbors in {location.name} trust us as their go-to roofing company.
                             </SecondaryText>
                         </div>
-
                         {/* Trust Indicators */}
                         <div className="grid md:grid-cols-4 gap-6 mb-16">
                             <div className="text-center p-6 bg-white rounded-lg shadow-md">
@@ -345,37 +180,34 @@ export default async function ServiceAreaPage({params}: PageProps) {
                                     <CheckIcon className="text-white font-bold text-xl" />
                                 </div>
                                 <h3 className="font-bold text-primaryblue mb-2">Licensed & Insured</h3>
-                                <p className="text-gray-600 text-sm">Fully licensed roofing contractor in {location.name}</p>
+                                <p className="text-gray-600 text-sm">Your project is safe with a fully licensed, insured roofing contractor.</p>
                             </div>
-
                             <div className="text-center p-6 bg-white rounded-lg shadow-md">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-white font-bold text-xl">24/7</span>
                                 </div>
                                 <h3 className="font-bold text-primaryblue mb-2">Emergency Service</h3>
-                                <p className="text-gray-600 text-sm">Fast response for urgent roofing needs</p>
+                                <p className="text-gray-600 text-sm">Call anytime for emergency roof repairs or storm damage help.</p>
                             </div>
-
                             <div className="text-center p-6 bg-white rounded-lg shadow-md">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <StarIcon className="text-white font-bold text-xl" />
                                 </div>
-                                <h3 className="font-bold text-primaryblue mb-2">5-Star Rated</h3>
-                                <p className="text-gray-600 text-sm">Top-rated roofing company in {location.name}</p>
+                                <h3 className="font-bold text-primaryblue mb-2">5-Star Reviews</h3>
+                                <p className="text-gray-600 text-sm">Homeowners in {location.name} love our work and recommend us.</p>
                             </div>
-
                             <div className="text-center p-6 bg-white rounded-lg shadow-md">
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <HomeIcon className="text-white font-bold text-xl" />
                                 </div>
-                                <h3 className="font-bold text-primaryblue mb-2">Local Experts</h3>
-                                <p className="text-gray-600 text-sm">Serving {location.name} for over 10 years</p>
+                                <h3 className="font-bold text-primaryblue mb-2">Local Roofing Experts</h3>
+                                <p className="text-gray-600 text-sm">Based right here—serving {location.name} and nearby for over 10 years.</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Enhanced Info Section */}
+
                 <InfoSection
                     imgSrc="/images/dynamic/roofing-contractor/img1.webp"
                     imgAlt={`Paragon Exterior roofing team in ${location.name}`}
@@ -384,59 +216,58 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     mainContent={
                         <div>
                             <p>
-                                As {location.name}&apos;s select roofing contractor, Paragon Exterior combines local expertise with industry-leading techniques to deliver exceptional roofing solutions. Our team understands the unique weather challenges facing {location.name} homes and provides tailored roofing services that stand the test of time.
+                                Looking for a reliable roofer in {location.name}? Paragon Exterior brings years of local experience, high-quality materials, and a commitment to craftsmanship. Our roofing specialists know the unique weather and roofing needs in {location.name}, so your roof will stand strong in every season.
                             </p>
                             <p className="mt-4">
-                                From rapid estimate turnarounds to clear, proactive communication before, during, and after your project, plus our industry-leading workmanship, premium materials, and unbeatable warranties, we stand firmly behind every promise we make to {location.name} homeowners.
+                                We believe in fast estimates, honest communication, and top-notch workmanship—backed by industry-leading warranties. When you choose Paragon Exterior, you get a roofing partner you can trust for the long haul.
                             </p>
                         </div>
                     }
-                    bottomContent={`Experience what makes Paragon Exterior the premier roofing contractor in ${location.name}. See why homeowners throughout the area trust us as their go-to roofing company for all residential and commercial roofing needs.`}
+                    bottomContent={`Join your neighbors who choose Paragon Exterior as their #1 roofing company in ${location.name}. Let us show you the difference true local service makes.`}
                     imagePosition="right"
                 />
 
-                {/* Local Services Showcase */}
+
                 <section className="py-16 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-12">
                             <HeaderText as="h2" variant="large">
-                                Comprehensive Roofing Services in {location.name}
+                                Full-Service Roofing in {location.name}
                             </HeaderText>
                             <SecondaryText>
-                                Our full-service roofing company provides complete roofing solutions for {location.name} residents and businesses. From emergency repairs to complete roof replacements, we handle every project with expertise and care.
+                                We handle everything from roof repairs to new installations—serving homes and businesses across {location.name}. No job too big or small! Explore our most popular services below:
                             </SecondaryText>
                         </div>
-
                         <ServicesGrid services={localServices} />
                     </div>
                 </section>
 
-                {/* Local Advantages */}
+
                 <IncentivesSection
                     className="py-16"
                     title={`The Paragon Exterior Advantage in ${location.name}`}
                     titleAs="h2"
-                    subtitle={`Local expertise meets professional excellence. Discover why ${location.name} homeowners consistently choose Paragon Exterior for their roofing needs.`}
+                    subtitle={`Get more for your money! Our local expertise, fast service, and quality materials make us the first choice for roofing in ${location.name}.`}
                     heroImage={{
-                        alt: `Satisfied homeowner in ${location.name} with new roof installation`,
+                        alt: `Happy homeowner in ${location.name} with new roof installation`,
                         src: "/images/dynamic/roofing-contractor/img2.webp"
                     }}
                     incentives={[
                         {
                             name: "Local Knowledge",
-                            description: `Deep understanding of ${location.name} weather patterns, building codes, and architectural styles ensures optimal roofing solutions.`,
+                            description: `We understand ${location.name} weather, codes, and building styles—so your roof is built to last.`,
                             imageSrc: "/images/roof-service/emergency-roofing/icons/hard-hat.svg",
                             imageAlt: "Local roofing expertise icon"
                         },
                         {
-                            name: "Fast Response",
-                            description: "Emergency roofing services available 24/7 with rapid response times throughout the local area.",
+                            name: "Rapid Response",
+                            description: "Get emergency roofing help 24/7—plus flexible scheduling for all projects.",
                             imageSrc: "/images/roof-service/emergency-roofing/icons/clock.svg",
                             imageAlt: "Fast emergency response icon"
                         },
                         {
-                            name: "Quality Guarantee",
-                            description: "All roofing work backed by comprehensive warranties and our commitment to 100% customer satisfaction.",
+                            name: "Guaranteed Quality",
+                            description: "Every job comes with a full warranty and our personal commitment to quality.",
                             imageSrc: "/images/roof-service/emergency-roofing/icons/shield-check.svg",
                             imageAlt: "Quality guarantee icon"
                         }
@@ -444,16 +275,15 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     imagePosition="left"
                 />
 
-                {/* Process Overview */}
                 <Row
                     title={`Our Proven Roofing Process in ${location.name}`}
                     description={
                         <div>
                             <p>
-                                Our systematic approach ensures every roofing project in {location.name} exceeds expectations. From initial consultation to final cleanup, we maintain clear communication and professional standards throughout the entire process.
+                                From your first call to final inspection, our team makes roofing easy. We offer free inspections, clear estimates, and flexible scheduling. Our crews keep the work area clean and treat your property like it’s our own.
                             </p>
                             <p className="mt-4">
-                                As your local roofing contractor, we provide free inspections, detailed estimates, and flexible scheduling that works with your timeline. Our commitment to quality and customer satisfaction has made us the most trusted roofing company in {location.name}.
+                                Our attention to detail and honest advice have made us the top roofing contractor in {location.name}. See for yourself why so many homeowners recommend Paragon Exterior!
                             </p>
                         </div>
                     }
@@ -462,16 +292,16 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     bodyColor="text-gray-700"
                 />
 
-                {/* Local Coverage Area */}
+
                 <Row
-                    title={`Proudly Serving ${location.name} and Surrounding Areas`}
+                    title={`Proudly Serving ${location.name} and Nearby Areas`}
                     description={
                         <div>
                             <p>
-                                As a locally-owned roofing contractor, we&apos;re proud to serve {location.name} and the surrounding communities. Our team knows the local area intimately and can respond quickly to emergency roofing situations anywhere in our service area.
+                                As a local roofing company, we’re proud to serve {location.name} and the surrounding area. We respond quickly to emergencies, offer same-day estimates, and know your neighborhood inside and out.
                             </p>
                             <p className="mt-4">
-                                Whether you&apos;re dealing with storm damage, need a routine roof inspection, or planning a complete roof replacement, our {location.name} roofing experts are ready to help. Contact us today for your free estimate and experience the difference local expertise makes.
+                                Whether you need storm repairs, a routine roof inspection, or a full replacement, our {location.name} roofing experts are ready to help. Get your free estimate today—let’s make your home safer and more beautiful.
                             </p>
                         </div>
                     }
@@ -482,12 +312,13 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     className="py-16 "
                 />
 
-                {/* Why Choose Paragon */}
+
                 <WhyParagonRoofing
                     title={`Why ${location.name} Chooses Paragon Exterior`}
-                    subTitle={`Our reputation as ${location.name}'s premier roofing contractor is built on years of exceptional service, quality workmanship, and unwavering commitment to customer satisfaction.`}
+                    subTitle={`Discover why more homeowners in ${location.name} recommend us for roof repair, installation, and peace of mind. Honest advice, expert crews, and local experience—every time.`}
                     titleAs="h2"
                 />
+
 
                 {/* Enhanced FAQ */}
                 <FAQ locationName={location.name} />

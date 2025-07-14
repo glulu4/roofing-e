@@ -1,27 +1,21 @@
 import GetEstimate from '@/components/landing-ui/GetEstimate';
 import Hero from '@/components/service-page/Hero';
-import Info from '@/components/service-page/Info';
-import React from 'react'
-import RoofRepairReasons from '@/components/service-page/roof/RoofRepairReasons';
 import InfoSection from '@/components/service-page/Info';
+import RoofRepairReasons from '@/components/service-page/roof/RoofRepairReasons';
 import {WhyParagonRoofRepair} from '@/components/WhyParagon';
-
-
-
+import React from 'react';
 
 export const metadata = {
     title: 'Local Roof Repair Contractors',
-    description: 'Professional roof repair services for homes and businesses. Our expert team specializes in roof leak repair, shingle replacement, and long-lasting roofing solutions. Restore your roof’s integrity and protect your property with Paragon Exterior.'
-}
+    description: 'Reliable roof repair for homes and businesses in PA, NJ, and DE. Our experts fix leaks, replace shingles, and provide long-lasting solutions. Trust Paragon Exterior to protect your property.'
+};
 
 export default async function page() {
-
     return (
-
         <div className='min-h-screen'>
             <Hero
-                mainText={`Roof Repair`}
-                subText="Explore our expert roofing services, including roof repair, roof leak repair, residential roofing, and flat roofing solutions. Trust Paragon Exterior for quality craftsmanship and durable materials."
+                mainText="Roof Repair"
+                subText="Paragon Exterior provides reliable roof repairs, including leak fixes, shingle replacement, flat roofing, and storm damage solutions. Protect your home with experienced professionals."
                 imgSrc="/images/roof-service/roof-repair/roof-repair.jpg"
                 imgAlt="Paragon Exterior roofing company"
             />
@@ -29,26 +23,23 @@ export default async function page() {
             <InfoSection
                 imgSrc="/images/roof-service/roof-repair/roof-repair3.jpg"
                 imgAlt="Professional roof repair technician working on damaged roof"
-                title="Roof Repair You Can Count On"
+                title="Dependable Roof Repair Services"
                 titleAs='h1'
-                mainContent="Whether it's storm damage, age-related wear, or unexpected leaks, Paragon Exterior is ready to provide fast, reliable roof repair when you need it most. Our experienced roofing specialists proudly serve Pennsylvania, New Jersey, and Delaware with expert craftsmanship and honest service. We've built a dedicated roof repair team that focuses on diagnosing and fixing all types of roofing problems — from missing shingles and damaged flashing to leaks and structural concerns. Our trained and professional technicians arrive ready to assess the damage and fix it right the first time, ensuring your home stays protected."
-                bottomContent="Severe storms can cause sudden damage — torn shingles, damaged gutters, or dangerous leaks. Our emergency roof repair team responds quickly to secure your roof, prevent further damage, and restore your peace of mind. After a storm, don't wait — let our experts inspect your roof and address issues before they escalate."
+                mainContent="When your roof faces damage from storms, aging materials, or leaks, Paragon Exterior delivers fast, reliable solutions. Serving homeowners and businesses across Pennsylvania, New Jersey, and Delaware, our skilled roofers quickly identify problems and perform repairs that last. We fix all common roof issues, including leaks, missing or broken shingles, damaged flashing, and flat-roof deterioration. With detailed inspections and straightforward advice, our technicians ensure your roof repair is done right, protecting your home or business from further damage."
+                bottomContent="Storm damage can strike suddenly, leading to urgent roofing issues like torn shingles, gutter problems, and leaks. Paragon Exterior's emergency repair team provides immediate assistance to secure your roof, prevent additional damage, and keep your property safe. Don’t wait for minor issues to turn major—schedule a free inspection today."
                 imagePosition="right"
             />
-
 
             <RoofRepairReasons />
 
             <WhyParagonRoofRepair
-            title='Why Choose Paragon Exterior for Roof Repair?'
-            titleAs='h2'
+                title='Why Choose Paragon Exterior for Roof Repairs?'
+                titleAs='h2'
             />
 
             <div className="py-12 pt-20 sm:pt-0">
                 <GetEstimate />
             </div>
         </div>
-
-    )
+    );
 }
-

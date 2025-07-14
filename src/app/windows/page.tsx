@@ -1,5 +1,7 @@
+import FAQSection from '@/components/FAQSection';
 import HeaderText from '@/components/HeaderText';
 import GetEstimate from '@/components/landing-ui/GetEstimate';
+import GoogleReviews from '@/components/landing-ui/GoogleReviews';
 import SecondaryText from '@/components/SecondaryText';
 import Hero from '@/components/service-page/Hero';
 import ServicesGrid from '@/components/service-page/Services';
@@ -33,6 +35,31 @@ const services = [
 
 ];
 
+
+const faqData = [
+  {
+    question: "How do I know if I need window replacement or just repair?",
+    answer: "If your windows are drafty, hard to open, have visible damage, or your energy bills are rising, it may be time for replacement. Minor issues like broken locks or cracked glass often just require repair. We provide a thorough assessment and honest recommendations for your home."
+  },
+  {
+    question: "What types of windows do you install?",
+    answer: "We install all major window types, including vinyl, fiberglass, wood, and composite windows. Choose from popular styles like double-hung, casement, sliding, bay, and custom shapes to match your home's design and needs."
+  },
+  {
+    question: "Are your windows energy efficient?",
+    answer: "Yes! We offer ENERGY STAR® certified windows designed to reduce heat loss, block UV rays, and help lower your utility bills. Our team helps you select the best options for energy savings in PA, NJ, and DE climates."
+  },
+  {
+    question: "How long does window installation take?",
+    answer: "Most window installations are completed in 1-2 days, depending on the number of windows and complexity. Our team works efficiently to minimize disruption to your home."
+  },
+  {
+    question: "Do you offer financing or free estimates?",
+    answer: "Absolutely! We provide free, no-obligation estimates and offer flexible financing options to make your window project affordable."
+  },
+];
+
+
 export const metadata = {
   title: 'Window Repair & Installation | Paragon Exterior',
   description: 'Upgrade your home with our premium window installation services. From energy-efficient windows to stylish designs, we offer solutions that improve comfort and curb appeal.',
@@ -63,10 +90,19 @@ function page() {
         <ServicesGrid services={services} />
       </div>
       <HorizontalSlider />
+
+
+      <FAQSection
+        title="Frequently Asked Questions About Window Services"
+        faqs={faqData}
+      />
+
+      <GoogleReviews/>
       <WhyParagon
         title='Why Choose Paragon Exterior for Your Window Needs?'
         subTitle='At Paragon Exterior, we take pride in being your trusted window contractor. Our team of experts is dedicated to providing top-notch window installation, replacement, and repair services. We understand that windows are a crucial part of your home’s exterior, and we strive to deliver solutions that enhance both aesthetics and energy efficiency. With our commitment to quality craftsmanship and customer satisfaction, you can trust us to transform your home with beautiful, functional windows.'
       />
+
 
       <GetEstimate />
     </div>

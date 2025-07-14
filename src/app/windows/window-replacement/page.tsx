@@ -28,7 +28,7 @@ export default function WindowReplacementPage() {
             {/* HERO */}
             <Hero
                 mainText="Professional Window Replacement Services"
-                subText="Transform your home with energy-efficient window replacement from Paragon Exterior. Our expert window replacement contractors serve Pennsylvania, New Jersey, and Delaware with quality windows and professional installation that enhances comfort and reduces energy costs."
+                subText="Upgrade your home’s comfort, efficiency, and value with energy-efficient window replacement from Paragon Exterior. Our certified window replacement contractors serve Pennsylvania, New Jersey, and Delaware with the region’s best products and installation practices—guaranteed to deliver results that last."
                 imgSrc="/images/window/window-replace/hero.webp"
                 imgAlt="Professional window replacement installation team installing new energy-efficient windows"
             />
@@ -39,8 +39,23 @@ export default function WindowReplacementPage() {
                 imgAlt="Window replacement contractor installing new vinyl windows"
                 titleAs="h1"
                 title="Window Replacement That Transforms Your Home"
-                mainContent="When your windows are outdated, inefficient, or beyond repair, professional window replacement delivers immediate benefits in comfort, energy savings, and home value. Paragon Exterior specializes in complete window replacement services throughout the Greater Philadelphia area, installing energy-efficient windows that reduce utility costs and enhance your home's appearance. Our experienced window replacement contractors handle every aspect of your project, from helping you select the perfect windows to professional installation and cleanup."
-                bottomContent="Whether you're planning a single window replacement or whole-house window replacement, our team ensures proper sizing, weatherproofing, and installation techniques that maximize performance and longevity. We work with leading window manufacturers to offer a wide selection of styles, materials, and energy ratings to meet your specific needs and budget."
+                mainContent={
+                    <>
+                        <p>
+                            Old, drafty, or broken windows aren’t just an eyesore—they can drain your wallet through higher energy bills and allow costly weather damage to your home. Paragon Exterior offers full-service window replacement that goes beyond “just new glass.” Our expert team guides you through every step, from window selection to custom measurement, precision installation, and final walkthrough. We install energy-efficient windows that <strong>reduce utility costs, eliminate drafts, block noise, and boost your curb appeal</strong>.
+                        </p>
+                        <p className="mt-4">
+                            Whether you’re replacing one window or upgrading your entire home, our window replacement process is built for <strong>maximum performance and long-term value</strong>. We carry all major brands and window types, including <strong>vinyl, fiberglass, wood, and composite</strong>. Let us help you select the perfect style, finish, and features to match your needs and your budget.
+                        </p>
+                    </>
+                }
+                bottomContent={
+                    <>
+                        <p>
+                            Every project is backed by our industry-leading warranties and meticulous attention to detail. From insulated glass to custom trim, Paragon Exterior delivers a seamless, stress-free window replacement experience for homeowners throughout the Greater Philadelphia region, South Jersey, and Delaware.
+                        </p>
+                    </>
+                }
                 imagePosition="right"
             />
 
@@ -49,27 +64,27 @@ export default function WindowReplacementPage() {
                 className="py-16"
                 title="Benefits of Professional Window Replacement"
                 titleAs="h2"
-                subtitle="Window replacement offers immediate and long-term benefits that enhance your home's comfort, efficiency, and value. Discover why homeowners throughout PA, NJ, and DE choose professional window replacement services."
+                subtitle="Enjoy immediate and long-term rewards when you invest in new, energy-efficient windows. Discover why thousands of homeowners throughout PA, NJ, and DE trust Paragon Exterior for window replacement."
                 heroImage={{
                     alt: "Benefits of professional window replacement installation",
                     src: "/images/window/window-replace/replacement2.webp"
                 }}
                 incentives={[
                     {
-                        name: "Energy Efficiency Savings",
-                        description: "New energy-efficient windows can reduce heating and cooling costs by up to 30% through improved insulation and reduced air infiltration.",
+                        name: "Lower Utility Bills",
+                        description: "Energy-efficient windows can reduce heating and cooling costs by up to 30%, thanks to advanced glass, insulated frames, and precision installation that stops drafts and leaks.",
                         imageSrc: "/images/window/window-replace/icons/windmill.svg",
                         imageAlt: "Energy-efficient window replacement benefits"
                     },
                     {
                         name: "Enhanced Home Value",
-                        description: "Window replacement typically returns 70-80% of investment in increased home value while improving curb appeal and marketability.",
+                        description: "Window replacement is one of the highest-ROI home improvements, returning 70-80% of your investment and making your home more attractive to buyers.",
                         imageSrc: "/images/window/window-replace/icons/house-line.svg",
                         imageAlt: "Window replacement home value increase"
                     },
                     {
-                        name: "Improved Comfort & Security",
-                        description: "New windows eliminate drafts, reduce noise transmission, and provide enhanced security features for better home protection.",
+                        name: "Greater Comfort & Security",
+                        description: "Say goodbye to cold spots, hot rooms, and outside noise. Our new windows are built for year-round comfort and come standard with secure locking systems for peace of mind.",
                         imageSrc: "/images/window/window-replace/icons/shield-check.svg",
                         imageAlt: "Window replacement comfort and security benefits"
                     },
@@ -77,7 +92,7 @@ export default function WindowReplacementPage() {
                 imagePosition="left"
             />
 
-            {/* WINDOW REPLACEMENT COST AND VALUE */}
+            {/* COST AND VALUE SECTION */}
             <section className="py-16 px-4 bg-gray-50">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
@@ -85,119 +100,106 @@ export default function WindowReplacementPage() {
                             Window Replacement Cost and Investment Value
                         </HeaderText>
                         <SecondaryText className="max-w-4xl mx-auto">
-                            Understanding window replacement cost helps you make informed decisions about your home improvement investment.
-                            Our transparent pricing ensures you get the best value for your window replacement project.
+                            <strong>How much does window replacement cost?</strong> Most homeowners invest $300-1,500 per window, depending on size, style, and material. Our transparent pricing ensures you know exactly what you’re getting with no surprises—and every quote includes installation, removal, cleanup, and warranty.
                         </SecondaryText>
                     </div>
-
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white p-8 rounded-lg shadow-md text-center">
                             <HeaderText variant="small" className="mb-4 text-primaryblue">Standard Windows</HeaderText>
                             <div className="text-3xl font-bold text-amber-500 mb-2">$300-600</div>
                             <div className="text-gray-600 mb-4">per window installed</div>
                             <SecondaryText className="text-sm">
-                                Quality vinyl and fiberglass windows with standard energy efficiency features. Perfect for budget-conscious homeowners seeking reliable window replacement.
+                                High-quality vinyl or fiberglass windows. Perfect for homeowners who want modern energy savings and reliability at a reasonable price.
                             </SecondaryText>
                         </div>
-
                         <div className="bg-white p-8 rounded-lg shadow-md text-center border-2 border-primaryblue">
                             <HeaderText variant="small" className="mb-4 text-primaryblue">Premium Windows</HeaderText>
                             <div className="text-3xl font-bold text-amber-500 mb-2">$600-900</div>
                             <div className="text-gray-600 mb-4">per window installed</div>
                             <SecondaryText className="text-sm">
-                                High-performance windows with advanced energy features, superior materials, and enhanced warranties for maximum value and comfort.
+                                Advanced glass, composite or premium vinyl, enhanced warranties, and more custom options for beauty, durability, and maximum performance.
                             </SecondaryText>
                         </div>
-
                         <div className="bg-white p-8 rounded-lg shadow-md text-center">
                             <HeaderText variant="small" className="mb-4 text-primaryblue">Luxury Windows</HeaderText>
                             <div className="text-3xl font-bold text-amber-500 mb-2">$900-1500</div>
                             <div className="text-gray-600 mb-4">per window installed</div>
                             <SecondaryText className="text-sm">
-                                Premium wood, fiberglass, or specialty windows with custom features, superior energy ratings, and architectural design elements.
+                                Custom wood, high-end fiberglass, or specialty architectural windows for luxury homes. Top-tier energy ratings and curb appeal.
                             </SecondaryText>
                         </div>
                     </div>
-
                     <div className="text-center mt-8">
                         <SecondaryText className="text-gray-600">
-                            *Window replacement cost includes professional installation, disposal of old windows, and basic trim work.
-                            Final pricing depends on window size, style, and installation complexity.
+                            *Window replacement cost includes professional installation, removal of old windows, and basic trim. Price can vary based on unique installation needs, custom sizes, or specialty finishes. Ask for a free, no-pressure estimate!
                         </SecondaryText>
                     </div>
                 </div>
             </section>
 
-            {/* MAIN CONTENT ROWS */}
+            {/* PROCESS & SELECTION */}
             <div className="mx-auto w-5/6 py-10 lg:py-20">
                 <div className="mb-32 text-center">
                     <HeaderText as="h2">Why Choose Paragon Exterior for Window Replacement?</HeaderText>
                     <SecondaryText>
-                        Our expert window replacement contractors ensure precise installation, quality materials, and long-term performance.
-                        Whether you need single window replacement or whole-house window replacement, we deliver results that enhance your home&apos;s value and efficiency.
+                        From first call to final walkthrough, our certified window replacement contractors deliver professional service, exceptional products, and a satisfaction guarantee on every window we install. Our clients enjoy industry-best warranties and responsive support—even after the job is done.
                     </SecondaryText>
                 </div>
-
-                {/* Window Replacement Process Row */}
                 <Row
-                    title="Our Professional Window Replacement Process"
-                    description="From initial consultation to final inspection, our window replacement process ensures quality results. We handle measurements, permits, professional installation, and cleanup with attention to detail that guarantees proper fit and performance."
+                    title="Our Proven Window Replacement Process"
+                    description="Every project starts with a thorough consultation and measurement. We help you select the best windows for your needs, secure any necessary permits, and install your new windows with careful attention to detail—leaving your home spotless and more comfortable than ever."
                     imageSrc="/images/window/window-replace/replacement3.webp"
                 />
-
-                {/* Window Selection Row */}
                 <Row
-                    title="Choosing the Right Windows for Replacement"
-                    description="Our window replacement experts help you select windows that match your home's style, energy goals, and budget. We offer vinyl, fiberglass, wood, and composite windows with various energy ratings and features to optimize comfort and efficiency."
+                    title="Find the Perfect Windows for Your Home"
+                    description="We offer a full selection of window styles and materials: double-hung, casement, sliding, picture, bay and bow, as well as specialty and custom shapes. Choose from leading brands in vinyl, fiberglass, wood, and composite for a look that’s uniquely yours."
                     imageSrc="/images/window/window-replace/replacement4.webp"
                     reverse
                     className="pt-12 lg:pt-24"
                 />
-
-                {/* Energy Efficiency Row */}
                 <Row
-                    title="Energy-Efficient Window Replacement Benefits"
-                    description="Modern window replacement can dramatically improve your home's energy efficiency. New windows with low-E coatings, gas fills, and advanced frames reduce heat transfer, eliminate drafts, and lower utility bills year-round."
+                    title="Energy-Efficient Window Technology"
+                    description="Today’s windows use advanced glazing, Low-E coatings, argon or krypton gas fills, and insulated frames to deliver unmatched energy savings and comfort. Ask about ENERGY STAR® rated options for maximum rebates and year-round efficiency."
                     imageSrc="/images/window/window-replace/replacement5.webp"
                     className="pt-12 lg:pt-24"
                 />
             </div>
 
-            {/* WINDOW REPLACEMENT REASONS */}
+            {/* REASONS SECTION */}
             <Reasons
-                title="6 Key Reasons to Invest in Window Replacement"
-                description="Window replacement is more than just improving appearance—it's an investment in comfort, efficiency, and home value. Here's why homeowners across Pennsylvania, New Jersey, and Delaware choose professional window replacement services."
+                title="6 Reasons Homeowners Choose Window Replacement"
+                description="Professional window replacement is about more than appearance—it’s an investment in comfort, efficiency, and long-term value. Here’s why so many local homeowners trust Paragon Exterior."
                 titleAs="h2"
                 reasons={[
                     {
                         name: 'Dramatic Energy Savings',
                         description:
-                            'Energy-efficient window replacement can reduce heating and cooling costs by 20-30% through improved insulation and reduced air leakage.',
+                            'ENERGY STAR® certified window replacement can cut heating and cooling costs by 20-30% or more.',
                     },
                     {
-                        name: 'Enhanced Home Comfort',
+                        name: 'All-Season Comfort',
                         description:
-                            'New windows eliminate drafts, reduce hot spots and cold zones, and maintain consistent indoor temperatures throughout your home.',
+                            'Say goodbye to cold drafts in winter and stifling rooms in summer with tight-sealing new windows.',
                     },
                     {
-                        name: 'Increased Property Value',
+                        name: 'Real Estate Value',
                         description:
-                            'Window replacement typically returns 70-80% of investment in home value while improving curb appeal and buyer attraction.',
+                            'Window replacement remains one of the most cost-effective upgrades for resale value and buyer appeal.',
                     },
                     {
-                        name: 'Better Security & Safety',
+                        name: 'Improved Security',
                         description:
-                            'Modern windows feature advanced locking mechanisms, impact-resistant glass options, and easier emergency egress capabilities.',
+                            'New windows offer enhanced locks, shatter-resistant glass, and safer emergency exits.',
                     },
                     {
-                        name: 'Reduced Maintenance',
+                        name: 'Low Maintenance',
                         description:
-                            'New windows require minimal maintenance compared to older windows that may need frequent painting, caulking, or hardware repairs.',
+                            'Modern windows require little upkeep, resist rot and corrosion, and look great for decades.',
                     },
                     {
-                        name: 'Professional Installation Warranty',
+                        name: 'Warranty Peace of Mind',
                         description:
-                            'Our window replacement services include comprehensive warranties on both materials and installation for long-term peace of mind.',
+                            'Comprehensive warranties on both products and installation are included with every window replacement job.',
                     },
                 ]}
                 img={{
@@ -206,26 +208,26 @@ export default function WindowReplacementPage() {
                 }}
             />
 
-            {/* WINDOW TYPES SECTION */}
+            {/* WINDOW TYPES */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <HeaderText as="h2" className="text-center mb-12">Window Replacement Options</HeaderText>
+                    <HeaderText as="h2" className="text-center mb-12">Types of Windows We Replace & Install</HeaderText>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Vinyl Window Replacement</h3>
-                            <p className="text-gray-600">Energy-efficient vinyl windows offer excellent value, low maintenance, and superior insulation for long-lasting performance.</p>
+                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Vinyl Windows</h3>
+                            <p className="text-gray-600">Vinyl windows are America’s #1 choice for energy efficiency, value, and maintenance-free performance. Available in dozens of colors and styles to suit any home.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Fiberglass Window Replacement</h3>
-                            <p className="text-gray-600">Premium fiberglass windows provide superior durability, energy efficiency, and can be painted to match any home style.</p>
+                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Fiberglass Windows</h3>
+                            <p className="text-gray-600">Our fiberglass windows offer premium strength, energy savings, and design flexibility. They resist warping and last for decades, even in harsh weather.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Wood Window Replacement</h3>
-                            <p className="text-gray-600">Classic wood windows offer timeless beauty and excellent insulation with proper maintenance and care.</p>
+                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Wood Windows</h3>
+                            <p className="text-gray-600">Classic wood windows add timeless beauty and warmth. With today’s treatments, wood windows deliver impressive insulation and longevity.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Composite Window Replacement</h3>
-                            <p className="text-gray-600">Advanced composite windows combine the beauty of wood with the durability of modern materials for optimal performance.</p>
+                            <h3 className="text-xl font-semibold mb-4 text-gray-800">Composite Windows</h3>
+                            <p className="text-gray-600">Composite windows offer the natural look of wood with the toughness of modern materials, giving you the best of both worlds for performance and aesthetics.</p>
                         </div>
                     </div>
                 </div>
@@ -233,43 +235,43 @@ export default function WindowReplacementPage() {
 
             {/* FAQ SECTION */}
             <FAQSection
-                title="Frequently Asked Questions About Window Replacement"
+                title="Window Replacement FAQ"
                 faqs={[
                     {
                         question: "How much does window replacement cost?",
-                        answer: "Window replacement costs typically range from $300-1500 per window installed, depending on window type, size, and features. We provide free estimates that include all installation costs and material options."
+                        answer: "Window replacement costs range from $300 to $1,500 per window, installed. Pricing varies by size, style, material, and features. All Paragon Exterior estimates include installation, old window removal, cleanup, and warranty.",
                     },
                     {
                         question: "How long does window replacement take?",
-                        answer: "Most window replacement projects are completed in 1-2 days for an average home. Each window typically takes 1-2 hours to install, depending on size and complexity. We work efficiently to minimize disruption."
+                        answer: "Most window replacement projects are completed in 1-2 days. We strive to minimize disruption and leave your home spotless.",
                     },
                     {
-                        question: "What are the best windows for replacement?",
-                        answer: "The best replacement windows depend on your budget, style preferences, and energy goals. We offer vinyl, fiberglass, wood, and composite windows with various energy ratings to meet your specific needs."
+                        question: "What are the most energy-efficient replacement windows?",
+                        answer: "We install ENERGY STAR® rated vinyl, fiberglass, and composite windows with Low-E glass and gas fills for best-in-class efficiency. We’ll help you compare options for your home and budget.",
                     },
                     {
-                        question: "Do I need permits for window replacement?",
-                        answer: "Most window replacement projects don't require permits when replacing existing windows with similar sizes. We handle any necessary permits and ensure all work meets local building codes."
+                        question: "Is financing available for window replacement?",
+                        answer: "Yes! We offer flexible financing options and accept all major credit cards, making it easy to invest in energy-saving new windows.",
                     },
                     {
-                        question: "Will window replacement improve energy efficiency?",
-                        answer: "Yes, modern window replacement can significantly improve energy efficiency. New windows with low-E coatings, gas fills, and advanced frames can reduce energy costs by 20-30% compared to older windows."
+                        question: "Do I need a permit for window replacement?",
+                        answer: "Most like-for-like window replacement projects do not require permits, but we handle any paperwork or inspection needs for you.",
                     },
                     {
-                        question: "What's included in window replacement services?",
-                        answer: "Our window replacement services include measurement, professional installation, disposal of old windows, basic trim work, cleanup, and warranties on both materials and installation."
+                        question: "Do you handle whole-home window replacement?",
+                        answer: "Absolutely. We specialize in both single window upgrades and complete home window replacement projects.",
                     }
                 ]}
             />
 
             {/* WHY PARAGON WINDOW REPLACEMENT */}
             <WhyParagonWindowReplacement
-                title="Why Choose Paragon Exterior for Window Replacement?"
+                title="Why Homeowners Trust Paragon Exterior for Window Replacement"
                 titleAs="h2"
-                subTitle="At Paragon Exterior, we combine years of exterior expertise with specialized window replacement knowledge to deliver superior results. Our window replacement contractors use quality materials, proven installation techniques, and attention to detail that ensures optimal performance and customer satisfaction."
+                subTitle="With decades of exterior expertise, factory-certified installers, and a true commitment to your satisfaction, Paragon Exterior is the window replacement contractor that local homeowners recommend to family and friends. We’re not finished until you’re delighted with your new windows."
             />
 
-            {/* CTA */}
+            {/* FINAL CTA */}
             <div className="py-12 pt-20 sm:pt-0">
                 <GetEstimate />
             </div>

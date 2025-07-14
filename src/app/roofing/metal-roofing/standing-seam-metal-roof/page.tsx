@@ -32,20 +32,22 @@ export default function StandingSeamMetalRoofPage() {
                 title="What Is a Standing Seam Metal Roof?"
                 mainContent={
                     <>
-                        A standing seam metal roof features long, vertical panels with raised seams that interlock to form a continuous, watertight surface. The hidden fasteners beneath each seam eliminate exposed screws, reducing leak potential and ensuring sleek lines. Available in galvanized steel, aluminum, and copper, these panels come with factory-applied finishes that resist corrosion, UV degradation, and fading.
+                        A standing seam metal roof uses long panels that run from top to bottom. Each panel has raised seams that
+                        lock together, creating a watertight barrier. All the screws and fasteners are hidden under the seams—so
+                        you don’t have to worry about exposed hardware or leaks. You can choose from galvanized steel, aluminum, or
+                        copper panels, all with special finishes that protect against rust and fading.
                     </>
                 }
                 bottomContent={
                     <>
-                        Ideal for both commercial and high-end residential applications, standing seam systems withstand high winds, shed snow and debris, and deliver a service life of 40–70 years. Pair it with our insulation upgrades to maximize energy savings and indoor comfort.
-                    </>
+Standing seam roofs work great for both homes and businesses. They’re tough enough to handle high winds and easily shed snow or debris. With the right care, these roofs can last 40 to 70 years. Want better energy savings? Pair your new roof with our insulation upgrades for even more comfort.                    </>
                 }
                 imagePosition="right"
             />
 
             <StandingSeamTabs
-            
-            className="w-5/6 mx-auto mt-12 mb-16 sm:mb-24 lg:mb-32"
+
+                className="w-5/6 mx-auto mt-12 mb-16 sm:mb-24 lg:mb-32"
             />
 
             {/* KEY BENEFITS */}
@@ -61,8 +63,8 @@ export default function StandingSeamMetalRoofPage() {
                     src: "/images/roof-service/metal/standing-seam/seam3.webp",
                     alt: 'Close-up of metal roof seam interlock',
                 }}
-                text1="Concealed fasteners eliminate corrosion points and leaks, ensuring a watertight, low-maintenance roof."
-                text2="Reflective metal finishes reduce solar heat gain, cutting HVAC costs and boosting energy efficiency."
+                text1="No Leaks or Rust: With hidden fasteners, there are no exposed screws to cause leaks or rust. Your roof stays watertight and easy to maintain."
+                text2="Saves Energy: The metal finish reflects sunlight, which helps keep your building cooler and lowers your air conditioning bills."
             />
 
             <div className="mt-16 mx-auto w-5/6">
@@ -72,27 +74,28 @@ export default function StandingSeamMetalRoofPage() {
                 <SecondaryText>
                     <ul className="list-disc list-inside space-y-2">
                         <li>
-                            <strong>Exceptionally Long Lifespan:</strong> Properly installed standing seam metal roofs can last <em>40–70 years</em>, far longer than most shingle systems.
+                            <strong>Lasts Decades:</strong> With proper care, these roofs can last **40–70 years**—much longer than regular shingles.
                         </li>
                         <li>
-                            <strong>Hidden Fasteners:</strong> The interlocking seams conceal all screws and nails underneath the panels, eliminating corrosion points and dramatically reducing leak potential.
+                            <strong>No Exposed Screws:</strong> All fasteners are hidden, so there’s less chance of leaks or rust.
                         </li>
                         <li>
-                            <strong>High Wind Resistance:</strong> Engineered to withstand gusts over <em>140 mph</em>, these roofs are a top choice in hurricane- and tornado-prone regions.
+                            <strong>Strong in Storms:</strong> Built to stand up to winds over **140 mph**—great for tough weather.
                         </li>
                         <li>
-                            <strong>Outstanding Energy Efficiency:</strong> Reflective metal finishes can lower roof surface temperatures by up to <em>50°F</em>, reducing cooling loads and cutting HVAC costs.
+                            <strong>Cuts Cooling Costs:</strong> Reflective metal can lower your roof’s temperature by up to **50°F**, which means you’ll pay less for air conditioning.
                         </li>
                         <li>
-                            <strong>Near-Zero Maintenance:</strong> Smooth, durable metal panels shed debris and snow naturally, so you avoid frequent cleaning or patch repairs.
+                            <strong>Low Maintenance:</strong> Metal panels shed debris and snow, so you spend less time cleaning or repairing your roof.
                         </li>
                         <li>
-                            <strong>Sustainable & Recyclable:</strong> Most standing seam systems are made of <em>85–100% recycled metal</em> and are fully recyclable at end of life—an eco-friendly roofing solution.
+                            <strong>Eco-Friendly:</strong> Made from mostly recycled metal, and fully recyclable when it’s time to replace.
                         </li>
                         <li>
-                            <strong>Versatile Material Options:</strong> Available in aluminum, galvanized steel, and copper, with dozens of factory-applied colors and low-VOC finishes.
+                            <strong>Lots of Choices:</strong> Available in different metals and many colors to match your style.
                         </li>
                     </ul>
+
                 </SecondaryText>
             </div>
 

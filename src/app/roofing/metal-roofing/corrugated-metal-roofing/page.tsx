@@ -9,26 +9,6 @@ import ProCon from '@/components/service-page/ProCon';
 import FAQSection from '@/components/FAQSection';
 
 
-
-const benefits = [
-    {title: 'Durability and Longevity', content: 'Corrugated metal roofs are known for their long lifespan, often lasting 30-50 years or more with proper maintenance. They are resistant to weather damage, including wind, hail, and fire.'},
-    {title: 'Cost-Effectiveness', content: 'While the initial cost can be higher than some other roofing materials like asphalt shingles, corrugated metal is often more affordable than other metal roofing options like standing seam.'},
-    {title: 'Energy Efficiency', content: 'Corrugated metal roofs can be coated with reflective paints that help reflect sunlight and reduce cooling costs, making them a more energy-efficient choice.'},
-    {title: 'Low Maintenance', content: 'Compared to other roofing materials, corrugated metal generally requires less maintenance.'},
-    {title: 'Recyclability', content: 'Metal roofing, including corrugated metal, is recyclable, making it an environmentally friendly option.'},
-    {title: 'Lightweight', content: 'The lightweight nature of corrugated metal makes installation easier and can reduce the need for extensive structural support.'},
-    {title: 'Variety of Styles', content: 'Corrugated metal roofing comes in a wide range of colors and finishes, allowing for customization to match different architectural styles.'}
-];
-
-const drawbacks = [
-    {title: 'Noise', content: 'Rain or hail on a corrugated metal roof can be noisy, especially if not properly insulated.'},
-    {title: 'Potential for Denting', content: 'While durable, corrugated metal can be dented by hail or falling debris.'},
-    {title: 'Expansion and Contraction', content: 'Metal expands and contracts with temperature changes, which can cause issues with fasteners and trim over time if not installed correctly.'},
-    {title: 'Requires Proper Installation', content: 'To ensure longevity and prevent leaks, corrugated metal roofing needs to be installed correctly with appropriate underlayment and flashing.'},
-    {title: 'Potential for Rust and Corrosion', content: 'While modern corrugated metal is treated to resist rust and corrosion, it can still be an issue in coastal areas or areas with high humidity.'},
-    {title: 'Can Look Industrial', content: 'The look of corrugated metal may not be suitable for all architectural styles.'}
-];
-
 export const metadata = {
     title: 'Corrugated Metal Roofing Installation and Repair',
     description:
@@ -36,44 +16,18 @@ export const metadata = {
 };
 
 export default function CorrugatedMetalRoofPage() {
-    const facts = [
-        {
-            title: 'Cost-effective',
-            content: 'Corrugated metal typically costs ~50% less than standing seam roofing.',
-        },
-        {
-            title: 'Easy to install',
-            content: 'The exposed fastener design makes it simpler and faster for both pros and DIYers.',
-        },
-        {
-            title: 'Good, but not perfect weather-tightness',
-            content: 'Exposed screws can loosen over time — regular inspections help prevent leaks.',
-        },
-        {
-            title: 'Material variety',
-            content: 'Available in galvanized steel, aluminum (ideal for coastal areas), and copper for premium looks.',
-        },
-        {
-            title: 'Climate suitability',
-            content: 'Needs a minimum roof slope and proper underlay to avoid warping in extreme temperature swings.',
-        },
-        {
-            title: 'Noise & insulation',
-            content: 'Metal can be noisy in rain — adding underlayment can greatly reduce sound levels.',
-        },
-    ];
+
 
     return (
         <div className="min-h-screen">
-            {/* HERO */}
             <Hero
-                mainText="Corrugated Metal Roofing"
-                subText="Paragon Exterior specializes in corrugated metal roofing installation across Pennsylvania, New Jersey, and Delaware. Discover affordable durability, weather protection, and energy efficiency for your home or business."
+                mainText="Corrugated Metal Roofing Installation & Repair"
+                subText="Paragon Exterior is your local expert for corrugated metal roofing in Pennsylvania, New Jersey, and Delaware. Enjoy affordable durability, energy savings, and all-weather protection for your home or business. From new installs to fast repairs, we deliver top-rated results you can trust."
                 imgSrc="/images/roof-service/metal/corrugated/corrugated-panel-hero.webp"
                 imgAlt="Installation of corrugated metal roofing panels"
             />
 
-            {/* WHAT IS */}
+
             <InfoSection
                 titleAs="h1"
                 imgSrc="/images/roof-service/metal/corrugated/corrugated-metal-roof1.webp"
@@ -81,25 +35,23 @@ export default function CorrugatedMetalRoofPage() {
                 title="What Is Corrugated Metal Roofing?"
                 mainContent={
                     <>
-                        Corrugated metal roofing consists of wavy steel, aluminum, or copper sheets secured with exposed fasteners.
-                        The design strengthens the panels, providing a lightweight yet durable roof that handles high winds, rain, and snow.
-                        Popular in both residential and commercial applications in PA, NJ, and DE, corrugated metal is a cost-effective solution
-                        that offers 30–50 years of service life with proper care.
+                        Corrugated metal roofing is made from strong, wavy sheets of steel, aluminum, or copper, installed with exposed fasteners.
+                        The unique corrugated design gives these panels extra strength, so they can stand up to heavy winds, rain, hail, and snow across PA, NJ, and DE.
+                        This roofing is a smart, affordable choice for both homes and businesses, and—with proper care—can last 30 to 50 years or more.
                     </>
                 }
                 bottomContent={
                     <>
-                        Its reflective coatings help reduce cooling costs in summer, while its rugged design sheds debris easily.
-                        It’s ideal for barns, homes, workshops, and commercial buildings across the tri-state region.
+                        Corrugated metal roofs are lightweight, shed debris easily, and reflect the sun’s heat to help lower cooling costs in summer.
+                        It’s a great option for barns, houses, workshops, and commercial buildings throughout the tri-state region.
                     </>
                 }
                 imagePosition="right"
             />
 
-            {/* KEY BENEFITS */}
             <Benefits
                 title="Benefits of Corrugated Metal Roofing"
-                description="From affordability to resilience, corrugated metal roofing delivers reliable performance across PA, NJ, and DE."
+                description="Corrugated metal roofing offers a great balance of affordability, durability, and energy efficiency—making it a popular choice in Pennsylvania, New Jersey, and Delaware."
                 titleAs="h2"
                 img1={{
                     src: "/images/roof-service/metal/corrugated/corrugated-metal-roof2.webp",
@@ -109,9 +61,10 @@ export default function CorrugatedMetalRoofPage() {
                     src: "/images/roof-service/metal/corrugated/corrugated-metal-roof3.webp",
                     alt: 'Side view of corrugated metal roofing edge',
                 }}
-                text1="Long lifespan of 30–50+ years with basic maintenance."
-                text2="Reflective coatings help reduce energy costs in hot summers common across the Northeast."
+                text1="✔ Lasts 30 to 50+ years with simple care and maintenance."
+                text2="✔ Reflective coatings can lower your energy bills during hot Northeast summers."
             />
+
 
             <div className="mt-16 mx-auto w-5/6">
                 <HeaderText className="text-center mb-8">
@@ -119,11 +72,12 @@ export default function CorrugatedMetalRoofPage() {
                 </HeaderText>
                 <SecondaryText>
                     <ul className="list-disc list-inside space-y-2">
-                        {facts.map((fact, index) => (
-                            <li key={index}>
-                                <strong>{fact.title}:</strong> {fact.content}
-                            </li>
-                        ))}
+                        <li><strong>Cost-effective:</strong> Corrugated metal roofing is usually about 50% less expensive than standing seam metal roofs.</li>
+                        <li><strong>Quick to install:</strong> The exposed fastener system makes installation faster and easier for both professionals and DIYers.</li>
+                        <li><strong>Weather resistance:</strong> Corrugated panels are tough, but exposed screws may loosen over time—regular inspections help prevent leaks.</li>
+                        <li><strong>Material options:</strong> Choose galvanized steel, lightweight aluminum for coastal areas, or copper for a premium look.</li>
+                        <li><strong>Great for many climates:</strong> Needs the right slope and proper underlayment to avoid leaks or warping in extreme weather.</li>
+                        <li><strong>Sound & insulation:</strong> Metal can be noisy in rain, but added underlayment or insulation can keep things quiet and comfortable.</li>
                     </ul>
                 </SecondaryText>
             </div>
@@ -131,41 +85,51 @@ export default function CorrugatedMetalRoofPage() {
 
 
 
+
             <ProCon
                 title="Benefits and Drawbacks of Corrugated Metal Roofing"
-                benefits={benefits}
-                drawbacks={drawbacks}
+                benefits={[
+                    {title: 'Durability & Longevity', content: 'Corrugated metal roofs are built to last 30–50 years or more. They’re highly resistant to wind, hail, and fire.'},
+                    {title: 'Affordable Option', content: 'Corrugated metal is less expensive than standing seam and many other roofing types, making it great for budget-friendly projects.'},
+                    {title: 'Energy Efficiency', content: 'Reflective coatings help cut down on heat and lower your cooling bills.'},
+                    {title: 'Low Maintenance', content: 'Needs little upkeep compared to other materials—just routine checks and occasional cleaning.'},
+                    {title: 'Eco-Friendly', content: 'Corrugated metal roofing is recyclable, making it an environmentally friendly roofing choice.'},
+                    {title: 'Lightweight & Versatile', content: 'Easier to install, and works on many types of structures from homes to barns.'},
+                    {title: 'Custom Styles', content: 'Available in many colors and finishes to match different buildings and tastes.'}
+                ]}
+                drawbacks={[
+                    {title: 'Noise', content: 'Rain or hail can be loud on a metal roof, especially without proper insulation.'},
+                    {title: 'Prone to Dents', content: 'Corrugated panels can dent from hail or falling branches.'},
+                    {title: 'Expansion/Contraction', content: 'Temperature swings cause metal to expand and contract, so correct installation is important.'},
+                    {title: 'Installation Matters', content: 'Proper installation and good underlayment are key to prevent leaks and make the roof last.'},
+                    {title: 'Potential for Rust', content: 'Even treated metal can rust in harsh or coastal climates if not maintained.'},
+                    {title: 'Industrial Look', content: 'Some may find the wavy, industrial style doesn’t fit every home or neighborhood.'}
+                ]}
             />
 
 
-            {/* <div className='py-24'>
-                <HeaderText className='text-center mb-16 text-primaryblue'>
-                    Frequently Asked Questions About Corrugated Metal Roofing
-                </HeaderText> */}
-
-                <FAQSection
+            <FAQSection
                 title='Frequently Asked Questions About Corrugated Metal Roofing'
-                    faqs={[
-                        {
-                            question: "Is corrugated metal roofing good?",
-                            answer: "Corrugated metal roofing is generally considered a good roofing option, offering benefits like durability, weather resistance, and energy efficiency. However, it's not without its drawbacks, including potential noise issues and the possibility of denting."
-                        },
-                        {
-                            question: "How long does a corrugated metal roof last?",
-                            answer: "A corrugated metal roof typically lasts between 30 and 45 years, and sometimes even longer with proper maintenance. Factors like the type of metal used, installation quality, and environmental conditions can affect the lifespan."
-                        },
-                        {
-                            question: "Is corrugated metal roofing expensive?",
-                            answer: "Corrugated metal roofing typically costs between $4 and $14 per square foot installed. That means for a 2,000-square-foot roof, homeowners can expect to pay between $8,000 and $28,000, depending on the material, style, labor rates, and regional pricing differences."
-                        },
-                        {
-                            question: "Is corrugated metal roofing cheaper than shingles?",
-                            answer: "Metal roofing generally costs between $4 and $30 per square foot, while asphalt shingles cost between $4 and $20 per square foot. Metal roofs are more expensive but are durable, energy-efficient, and last longer—often over 50 years, compared to 20-30 years for asphalt shingles."
-                        }
-                    ]}
-                />
-            {/* </div>  */}
-            {/* CTA */}
+                faqs={[
+                    {
+                        question: "Is corrugated metal roofing good?",
+                        answer: "Yes! Corrugated metal roofing is durable, weather-resistant, and energy-efficient. It's popular for both homes and businesses. The main drawbacks are potential noise and denting, but both can be minimized with proper installation."
+                    },
+                    {
+                        question: "How long does a corrugated metal roof last?",
+                        answer: "With routine care, most corrugated metal roofs last 30 to 45 years, and some go even longer. Lifespan depends on the metal, installation quality, and local climate."
+                    },
+                    {
+                        question: "Is corrugated metal roofing expensive?",
+                        answer: "Corrugated metal roofing is affordable—typically $4 to $14 per square foot installed. Actual cost depends on roof size, metal type, and local labor."
+                    },
+                    {
+                        question: "Is corrugated metal roofing cheaper than shingles?",
+                        answer: "Metal roofing costs more upfront than asphalt shingles, but lasts much longer—often over 50 years. Shingles usually last 20–30 years. Over time, metal is often the better investment."
+                    }
+                ]}
+            />
+
             <div className="py-16 text-center">
                 <GetEstimate />
             </div>

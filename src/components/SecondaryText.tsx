@@ -10,7 +10,7 @@ interface SecondaryTextProps {
 export default function SecondaryText({
     children, 
     className = "", 
-    as: Tag = 'h2' // default to <h2>
+    as: Tag = 'p' // default to <h2>
 }: SecondaryTextProps) {
     return (
         <Tag

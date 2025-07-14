@@ -26,7 +26,7 @@ export default function Page() {
     <div className="min-h-screen">
       <Hero
         mainText="Professional Cedar Siding Installation"
-        subText="Experience the timeless beauty and natural performance of cedar siding. Our expert installation services deliver eco-friendly wood siding that provides superior insulation, natural pest resistance, and stunning curb appeal that enhances any architectural style."
+        subText="Experience the timeless beauty and lasting protection of authentic cedar siding. Our expert installation team delivers eco-friendly wood siding that offers superior insulation, natural pest resistance, and a level of curb appeal that only real wood can provide."
         imgSrc="/images/siding/cedar/hero.webp"
         imgAlt="Beautiful home featuring professionally installed cedar siding"
       />
@@ -34,18 +34,16 @@ export default function Page() {
       <div className="w-5/6 mx-auto py-16 text-center">
         <HeaderText as="h1">Expert Cedar Siding Installation Services</HeaderText>
         <SecondaryText>
-          Transform your home with professional <strong>cedar siding installation</strong> that combines natural beauty with exceptional performance. Our skilled contractors specialize in <strong>cedar siding</strong> solutions that provide superior insulation, natural pest resistance, and the rich, warm appearance that only authentic wood can deliver.
-          <br />
-          <br />
-          We use only premium-grade cedar and proven installation techniques to ensure your siding stands the test of time. From initial consultation to final inspection, our team is committed to delivering outstanding craftsmanship and customer satisfaction on every project.
+          Transform your home’s exterior with the warmth, depth, and natural character of professionally installed <strong>cedar siding</strong>. At Paragon Exterior, we combine artisan-level craftsmanship with advanced wood preservation techniques to deliver cedar siding installations that last for decades—even in the challenging Mid-Atlantic climate.
+          <br /><br />
+          Our skilled siding specialists use only premium-grade cedar and pay meticulous attention to every detail, from moisture control to flawless finishing. Every cedar siding project is tailored to highlight your home’s unique architecture, increase energy efficiency, and create a truly inviting appearance that makes a statement.
         </SecondaryText>
 
-        <HeaderText as="h2" className="mt-12">Natural Benefits of Cedar Siding</HeaderText>
+        <HeaderText as="h2" className="mt-12">Why Cedar Siding Stands Out</HeaderText>
         <SecondaryText>
-          <strong>Cedar siding</strong> represents naturesiding&apos;ss perfect building material, offering eco-friendly construction with built-in insulation properties and natural resistance to decay and insects. Known for its rustic charm and versatility, <strong>cedar siding</strong> can be stained, painted, or left natural to develop a beautiful weathered patina over time.
-          <br />
-          <br />
-          Choose cedar siding for a sustainable, low-carbon footprint solution that enhances your homesiding&apos;ss curb appeal and value. Its unique grain patterns and warm tones create a welcoming exterior that complements any architectural style.
+          <strong>Cedar siding</strong> is nature’s original building material—offering not only unrivaled beauty, but also eco-friendly construction, built-in insulation, and impressive durability. With its natural oils, cedar is highly resistant to decay, rot, and insects, making it one of the most reliable choices for exterior cladding.
+          <br /><br />
+          Whether you prefer a crisp painted finish, a rustic stained look, or a naturally weathered patina, cedar siding adapts to any design vision. Choosing cedar means investing in a renewable, low-carbon product that elevates your home’s value and sustainability profile.
         </SecondaryText>
       </div>
 
@@ -57,27 +55,27 @@ export default function Page() {
         mainContent={
           <div>
             <p>
-              Professional <strong>cedar siding installation</strong> harnesses naturesiding&apos;ss own building technology. <strong>Cedar siding</strong> provides rich texture and natural insulation that helps regulate indoor temperatures while delivering timeless curb appeal that enhances property value and architectural character.
+              Our professional <strong>cedar siding installation</strong> process harnesses the best of nature and modern building science. <strong>Cedar siding</strong> brings a rich, organic texture and natural insulating value that can help regulate your home’s indoor temperature while dramatically boosting curb appeal.
             </p>
             <p className="mt-4">
-              The unique cellular structure of <strong>cedar siding</strong> offers excellent thermal properties and moisture management. Our expert installation techniques ensure proper ventilation and sealing that maximizes cedarsiding&apos;ss natural resistance to decay, insects, and weather damage.
+              Cedar’s unique cellular structure provides superior thermal properties and excellent moisture management. Paragon Exterior’s expert installation team ensures proper ventilation and flashing to maximize cedar’s resistance to decay, warping, and weather damage—delivering lasting performance, season after season.
             </p>
           </div>
         }
-        bottomContent="Properly installed and maintained cedar siding develops a beautiful patina over time while maintaining its structural integrity. Whether stained to highlight the natural grain or painted to match your design vision, cedar siding provides unmatched warmth and character."
+        bottomContent="Properly installed and maintained cedar siding matures gracefully, developing a beautiful silvery patina or holding vibrant stains for years. Whether your vision is modern or classic, cedar siding delivers warmth, texture, and authenticity unmatched by synthetic materials."
         imagePosition="right"
       />
 
       {/* First Row Component - Installation Excellence */}
       <Row
-        title="Professional Cedar Siding Installation Process"
+        title="Our Proven Cedar Siding Installation Process"
         description={
           <div>
             <p>
-              Expert <strong>cedar siding installation</strong> requires specialized knowledge of wood properties and moisture management. Our certified installers understand how <strong>cedar siding</strong> expands and contracts with seasonal changes, ensuring proper spacing and fastening techniques that prevent splitting and warping.
+              Installing <strong>cedar siding</strong> right takes real wood expertise. Our certified installers understand how cedar expands, contracts, and responds to moisture—ensuring proper board spacing and advanced fastening techniques that prevent splitting, cupping, or warping for the long haul.
             </p>
             <p className="mt-4">
-              Professional <strong>cedar siding installation</strong> includes proper vapor barriers, strategic ventilation, and premium sealants that protect your investment. We source high-grade <strong>cedar siding</strong> materials and apply proven installation methods that maximize durability and performance in all climate conditions.
+              Every Paragon Exterior project includes installation of vapor barriers, ventilated rain screens, and premium sealants. We carefully select each piece of cedar for visual consistency and strength, so your home looks stunning from every angle and remains protected for decades.
             </p>
           </div>
         }
@@ -90,14 +88,14 @@ export default function Page() {
 
       {/* Second Row Component - Sustainability and Maintenance */}
       <Row
-        title="Sustainable Cedar Siding Solutions"
+        title="Sustainable & Low-Impact Cedar Siding Solutions"
         description={
           <div>
             <p>
-              <strong>Cedar siding</strong> represents the ultimate in sustainable building materials, sourced from renewable forests and requiring minimal processing. Unlike synthetic alternatives, <strong>cedar siding</strong> is completely biodegradable and contributes to improved indoor air quality through natural moisture regulation.
+              <strong>Cedar siding</strong> is one of the most sustainable cladding options available—sourced from responsibly managed forests and fully biodegradable at end-of-life. Unlike vinyl or fiber cement, cedar requires minimal processing, reducing its environmental footprint and improving your home’s overall sustainability.
             </p>
             <p className="mt-4">
-              While <strong>cedar siding</strong> requires periodic maintenance to preserve its appearance, proper care ensures decades of performance. Our maintenance guidance helps you protect your <strong>cedar siding</strong> investment with appropriate cleaning, staining, and sealing schedules that maintain both beauty and durability.
+              While <strong>cedar siding</strong> does require regular care (like staining or sealing every few years), our experts will help you set up a maintenance routine to keep your siding strong and beautiful. With proper upkeep, cedar siding can easily last 30 to 50 years—making it a smart, high-value investment.
             </p>
           </div>
         }
@@ -109,8 +107,8 @@ export default function Page() {
       <CedarSidingFAQ />
 
       <WhyParagon
-      title='Why Choose Paragon Exterior for Your Cedar Siding Installation?'
-      subTitle='At Paragon Exterior, we specialize in cedar siding installation that combines the natural beauty of wood with expert craftsmanship. Our experienced team ensures your siding not only looks stunning but also provides long-lasting protection against the elements. We use only premium-grade cedar and proven installation techniques to deliver exceptional results that enhance your home’s curb appeal and value.'
+        title='Why Choose Paragon Exterior for Cedar Siding Installation?'
+        subTitle='At Paragon Exterior, we combine deep experience with a commitment to superior materials and customer care. Every cedar siding installation is handled by true craftsmen—delivering not just lasting protection, but a finished product that makes your home the envy of the neighborhood. Enjoy peace of mind knowing your cedar siding project is backed by transparent warranties and 5-star local support.'
       />
 
       <div className="py-12">
@@ -124,36 +122,28 @@ export default function Page() {
 function CedarSidingFAQ() {
   const cedarSidingFaqData = [
     {
-      question: "Is cedar siding good?",
-      answer: "Yes, cedar siding is an excellent choice for homeowners seeking natural beauty, superior insulation, and eco-friendly materials. Cedar siding offers natural pest resistance, excellent thermal properties, and can last 30+ years with proper maintenance."
+      question: "Is cedar siding a good investment?",
+      answer: "Absolutely. Cedar siding is prized for its natural beauty, durability, and eco-friendliness. It offers superior insulation, resists pests and moisture, and significantly enhances curb appeal. With proper maintenance, cedar siding provides outstanding long-term value for your home."
     },
     {
       question: "How long does cedar siding last?",
-      answer: "High-quality cedar siding can last 30-50 years with proper installation and maintenance. The lifespan depends on climate conditions, maintenance frequency, and the grade of cedar used. Premium cedar siding with regular care often exceeds 40 years of service life."
+      answer: "Premium cedar siding professionally installed and regularly maintained can last 30–50 years or longer. The key factors are proper installation, frequent inspections, and timely re-staining or sealing."
     },
     {
-      question: "What are the disadvantages of cedar siding?",
-      answer: "Cedar siding requires more maintenance than synthetic materials, including periodic staining or sealing every 3-5 years. It's also more expensive initially than vinyl or aluminum, and improper installation can lead to moisture issues or insect damage."
+      question: "Does cedar siding require a lot of maintenance?",
+      answer: "Cedar siding needs more upkeep than vinyl or fiber cement, including cleaning and re-staining every 3–5 years. However, its maintenance is straightforward and ensures decades of beautiful performance."
     },
     {
-      question: "What is the cedar siding cost per square foot?",
-      answer: "Cedar siding installation typically costs $8-15 per square foot, including materials and labor. The price varies based on cedar grade, installation complexity, and regional labor costs. While more expensive than vinyl, cedar siding offers superior longevity and natural beauty."
+      question: "Is cedar siding expensive?",
+      answer: "Cedar siding is more expensive up front compared to vinyl or aluminum, generally ranging from $8–$15 per square foot installed. However, it pays off in natural aesthetics, longevity, and value."
     },
     {
-      question: "What are the downsides of cedar siding?",
-      answer: "The main downsides include higher initial cost, regular maintenance requirements, potential for moisture damage if not properly sealed, and susceptibility to fire compared to non-combustible materials. However, proper installation and maintenance minimize these concerns."
+      question: "How does cedar siding compare to other siding materials?",
+      answer: "Cedar siding offers unmatched warmth and character. It’s naturally resistant to decay and insects, insulates well, and is completely renewable. While it requires more maintenance than some alternatives, many homeowners find its authentic appearance and performance worth the investment."
     },
     {
-      question: "Is cedar good for exterior siding?",
-      answer: "Cedar is excellent for exterior siding due to its natural weather resistance, insulation properties, and aesthetic appeal. Cedar contains natural oils that resist decay and insects, making it ideal for exterior applications when properly installed and maintained."
-    },
-    {
-      question: "What is the life expectancy of cedar siding?",
-      answer: "Cedar siding life expectancy ranges from 30-50 years depending on installation quality, maintenance practices, and environmental conditions. Premium cedar with professional installation and regular maintenance often lasts 40+ years while maintaining its structural integrity and appearance."
-    },
-    {
-      question: "What is behind cedar siding?",
-      answer: "Behind cedar siding, proper installation includes house wrap or vapor barrier, insulation (if applicable), and sheathing over the home's structural frame. Professional installation ensures proper ventilation and moisture management to protect both the cedar siding and underlying structure."
+      question: "What is installed behind cedar siding?",
+      answer: "Professional cedar siding installation includes a vapor barrier or house wrap, insulation if desired, and proper sheathing over your home’s structure. This layered system ensures moisture management and long-term durability."
     }
   ];
 

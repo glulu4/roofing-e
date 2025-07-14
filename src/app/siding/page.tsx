@@ -54,28 +54,24 @@ export default function page() {
     <div>
 
       <SidingHeader />
-
       <div className="flex flex-col justify-center items-center w-5/6 mx-auto sm:text-center text-left px-6 py-32">
         <HeaderText as="h1" variant='large'>
           Professional Siding Contractors You Can Trust
         </HeaderText>
         <div className='my-12'>
           <SecondaryText>
-            Choosing the right siding for your home is a vital decision that impacts more than just exterior appearance.
-            Quality siding works hand-in-hand with residential roofing to create a protective shield against the elements.
-            It boosts energy efficiency, reduces utility bills, and enhances your home&apos;s overall comfort and curb appeal.
-            Whether you&apos;re planning new <strong>siding installation</strong>, tackling <strong>siding repair</strong>, or considering <strong>siding replacement</strong>,
-            you can trust Paragon Exterior to be your siding contractors. Wesiding&apos;sll guide you through selecting durable materials like <strong>fiber cement</strong>, <strong>vinyl siding</strong>, <strong>aluminum</strong>, <strong>cedar</strong>, and <strong>engineered wood</strong> for lasting performance.
+            Choosing the right siding does more than boost your home&apos;s appearance. Quality siding protects your house from harsh weather, helps lower your energy bills, and improves comfort all year.
+            Whether you need new <strong>siding installation</strong>, a quick <strong>siding repair</strong>, or a complete <strong>siding replacement</strong>, Paragon Exterior is the contractor you can rely on.
+            We help you choose durable materials like <strong>fiber cement</strong>, <strong>vinyl siding</strong>, <strong>aluminum</strong>, <strong>cedar</strong>, or <strong>engineered wood</strong>—so your home stays protected for years to come.
           </SecondaryText>
-
           <SecondaryText>
-            At Paragon Exterior&reg;, we&rsquo;re more than a siding and roofing company — we&rsquo;re your trusted partner in exterior transformation.
-            From roof repair to expert <strong>siding installations</strong> and <strong>vertical siding</strong> solutions, we help homeowners in humid continental climates like Pennsylvania
-            choose materials that withstand hot summers, harsh winters, and year-round weather.
-            Let our skilled roofing and siding contractors simplify the process and deliver results you&rsquo;ll love.
+            At Paragon Exterior<sup>&reg;</sup>, we&apos;re more than just siding and roofing—we&apos;re your local partner for exterior upgrades.
+            From roof repair to expert <strong>siding installation</strong> and <strong>vertical siding</strong>, we help Pennsylvania homeowners choose materials that handle the heat, cold, storms, and everyday wear.
+            Our experienced team makes the process simple, so you get results you&apos;ll love for years.
           </SecondaryText>
         </div>
       </div>
+
 
       <div>
         <ServicesGrid services={services} />
@@ -92,24 +88,26 @@ export default function page() {
           mainContent={
             <>
               <SecondaryText>
-                <strong>Vinyl siding</strong> remains one of the most popular choices for homeowners seeking durable, low-maintenance exterior solutions. Our professional <strong>vinyl siding installation</strong> services provide exceptional value, combining affordability with long-lasting performance. Unlike wood siding that requires regular painting and maintenance, vinyl siding offers decades of protection with minimal upkeep requirements.
+                <strong>Vinyl siding</strong> is a top pick for homeowners—it&apos;s strong, affordable, and low-maintenance. Our <strong>vinyl siding installation</strong> gives you long-lasting protection and fresh curb appeal, all without the hassle of painting or heavy upkeep.
+                With Paragon Exterior, your vinyl siding looks great and stands up to Pennsylvania&apos;s weather year after year.
               </SecondaryText>
-
             </>
           }
           bottomContent={
             <>
-                          <SecondaryText>
-                When you choose Paragon Exterior for your <strong>vinyl siding replacement</strong>, yousiding&apos;sre investing in energy efficiency and curb appeal. Modern vinyl siding systems include insulation options that can significantly reduce heating and cooling costs. Our expert team ensures proper installation techniques that maximize your vinyl siding&apos;s lifespan and performance, making us the preferred choice for <strong>siding contractors</strong> in Pennsylvania.
-                </SecondaryText>
-              <SecondaryText>Even the highest-quality vinyl siding may occasionally need attention. Our comprehensive <strong>vinyl siding repair</strong> services address common issues like cracking, fading, or storm damage. Whether you need minor repairs or extensive restoration, our experienced contractors use premium materials and proven techniques to restore your homesiding&apos;ss exterior beauty and protection.</SecondaryText>
-
+              <SecondaryText>
+                When you choose Paragon Exterior for <strong>vinyl siding replacement</strong>, you boost both your home&apos;s efficiency and its style.
+                Today&apos;s vinyl siding comes with insulation options that help reduce your heating and cooling bills. Our team installs everything with care, so your siding lasts as long as possible and performs at its best.
+              </SecondaryText>
+              <SecondaryText>
+                Even the best siding needs the occasional fix. Our <strong>vinyl siding repair</strong> services cover cracks, fading, or storm damage.
+                From small repairs to full restoration, we use top-quality materials and proven techniques to keep your siding looking and working its best.
+              </SecondaryText>
             </>
-
           }
-          
           className="text-left"
         />
+
       </div>
 
       {/* New section about siding installation process */}
@@ -123,24 +121,26 @@ export default function page() {
           mainContent={
             <>
               <SecondaryText>
-                Our comprehensive <strong>siding installation</strong> process begins with a detailed assessment of your homesiding&apos;ss current exterior condition. We inspect existing siding, check for structural issues, and evaluate insulation needs to ensure your new siding system performs optimally. This thorough approach sets us apart from other <strong>siding contractors</strong> and guarantees superior results.
+                Every <strong>siding installation</strong> starts with a free, detailed check of your home&apos;s exterior.
+                We inspect your current siding, look for hidden issues, and review insulation needs—so your new siding performs great and lasts for years.
               </SecondaryText>
             </>
           }
           bottomContent={
             <>
               <SecondaryText>
-                During the <strong>siding installation</strong> phase, our certified contractors follow industry best practices for moisture management, proper fastening techniques, and seamless integration with existing roofing and trim systems. We use premium materials and advanced installation methods to ensure your new siding withstands Pennsylvaniasiding&apos;ss challenging weather conditions while maintaining its aesthetic appeal for years to come.
+                During installation, our certified contractors use best practices for moisture protection and secure fastening.
+                We make sure your new siding fits perfectly with your roof and trim, so you get a tight seal and a beautiful finish.
               </SecondaryText>
-
               <SecondaryText>
-                Quality control is paramount in every <strong>siding installation</strong> project. Our team conducts multiple inspections throughout the process, from initial preparation to final cleanup. We ensure proper alignment, secure fastening, and weather-tight seals that protect your home investment. This attention to detail explains why homeowners consistently choose Paragon Exterior for their siding needs.
+                We pay attention to every detail, from careful alignment to final cleanup. Our commitment to quality means your siding not only looks great, but keeps your home protected in every season.
               </SecondaryText>
             </>
           }
           imagePosition='left'
           className="text-left"
         />
+
       </div>
 
       {/* Siding Repair section using Row component */}
@@ -150,25 +150,28 @@ export default function page() {
           imgSrc="/images/siding/siding4.webp"
           title="Expert Siding Repair Services"
           mainContent={
-        <>
-          <SecondaryText>
-            Even high-quality siding can suffer damage from severe weather, impact, or normal wear over time. Our professional <strong>siding repair</strong> services address these issues quickly and effectively, preventing minor problems from becoming major expenses. From loose panels and cracked sections to storm damage and pest-related issues, our skilled contractors restore your siding&apos;s integrity and appearance.
-          </SecondaryText>
-        </>
+            <>
+              <SecondaryText>
+                Even the best siding can get damaged by storms, wind, or everyday life. Our <strong>siding repair</strong> services fix problems quickly, so a small issue doesn&apos;t turn into a big expense.
+                Whether you have loose panels, cracks, or pest damage, our team restores your siding&apos;s strength and looks—fast.
+              </SecondaryText>
+            </>
           }
           bottomContent={
-        <>
-          <SecondaryText className="mt-4">
-            Early intervention through professional <strong>siding repair</strong> can extend your siding&apos;s lifespan significantly while maintaining your homesiding&apos;ss energy efficiency. Our repair specialists use color-matched materials and proven techniques to ensure seamless integration with existing siding. Whether you need emergency storm damage repair or routine maintenance, we respond promptly to protect your home investment.
-          </SecondaryText>
-          <SecondaryText className="mt-4">
-            Our comprehensive <strong>siding repair</strong> services include damage assessment, moisture inspection, structural evaluation, and complete restoration. We identify underlying issues that might compromise your siding&apos;s performance and address them during the repair process. This thorough approach ensures long-lasting results and helps prevent future problems.
-          </SecondaryText>
-        </>
+            <>
+              <SecondaryText className="mt-4">
+                Quick repairs can help your siding last longer and keep your home more energy efficient.
+                We use color-matched materials and proven techniques for repairs that blend right in.
+              </SecondaryText>
+              <SecondaryText className="mt-4">
+                Our <strong>siding repair</strong> process includes a full check for hidden moisture, structural issues, and anything else that could cause problems later. You get long-lasting results and peace of mind.
+              </SecondaryText>
+            </>
           }
           imagePosition="left"
           className="text-left bg-blue-50"
         />
+
       </div>
 
       {/* Siding Replacement section using Row component */}
@@ -178,45 +181,49 @@ export default function page() {
           imgSrc="/images/siding/siding5.webp"
           title="When to Consider Siding Replacement"
           mainContent={
-        <>
-          <SecondaryText>
-            <strong>Siding replacement</strong> becomes necessary when repair costs exceed the value of restoration or when your current siding no longer provides adequate protection. Signs that indicate the need for <strong>siding replacement</strong> include widespread damage, frequent repair requirements, significant energy loss, or outdated materials that compromise your homesiding&apos;ss performance and appearance.
-          </SecondaryText>
-        </>
+            <>
+              <SecondaryText>
+                Sometimes, <strong>siding replacement</strong> is the best choice—especially if repairs are adding up or your old siding just isn&apos;t protecting your home.
+                Signs you need new siding include major damage, high energy bills, or faded panels that hurt your home&apos;s curb appeal.
+              </SecondaryText>
+            </>
           }
           bottomContent={
-        <>
-          <SecondaryText className="mt-4">
-            Modern <strong>siding replacement</strong> offers significant advantages over older siding systems. Todaysiding&apos;ss materials provide superior insulation, weather resistance, and aesthetic options that can transform your homesiding&apos;ss exterior. Our <strong>siding replacement</strong> services include energy-efficient options that can reduce utility costs while enhancing curb appeal and property value.
-          </SecondaryText>
-          <SecondaryText className="mt-4">
-            The <strong>siding replacement</strong> process involves careful removal of existing materials, thorough inspection and preparation of the underlying structure, and installation of new siding systems designed for optimal performance. Our experienced contractors ensure proper integration with roofing, windows, and other exterior elements for a cohesive, weather-tight building envelope.
-          </SecondaryText>
-        </>
+            <>
+              <SecondaryText className="mt-4">
+                New <strong>siding replacement</strong> brings big benefits: better insulation, stronger weather resistance, and a fresh new look.
+                We offer modern materials that last longer and help lower your utility costs.
+              </SecondaryText>
+              <SecondaryText className="mt-4">
+                Our team removes old siding, checks for any hidden damage, and installs your new siding for a perfect fit.
+                Everything is carefully integrated with your roof, windows, and trim for a clean, weather-tight finish.
+              </SecondaryText>
+            </>
           }
           imagePosition="right"
           className="text-left"
         />
+
       </div>
       <div>
         <SidingMaterial />
       </div>
-
       <div className="flex flex-col justify-center items-center w-5/6 mx-auto text-left px-6 py-32">
         <HeaderText as='h2' variant='large' className='text-left'>
           The Steps We Take as Your Professional Siding Contractors
         </HeaderText>
-
         <div className='my-12'>
           <SecondaryText>
-            Replacing siding is a structured process that ensures your home remains protected, energy-efficient, and visually appealing. At Paragon Exterior®, our approach combines expert <strong>siding installation</strong> with the knowledge and precision of a trusted roofing contractor. Each phase — from removing old materials and inspecting for damage to precise installation and cleanup — is handled by our experienced team. Whether you&apos;re updating siding or working with one of the best roofing companies near you for roof repair or residential roofing, we make the process simple, stress-free, and built to last.
+            Replacing siding is a step-by-step process to keep your home protected, energy efficient, and looking great.
+            At Paragon Exterior®, our experts handle everything—from removing old materials and checking for hidden problems, to precise installation and a spotless cleanup.
           </SecondaryText>
-
           <SecondaryText>
-            Our certified <strong>siding contractors</strong> follow a systematic approach that begins with comprehensive project planning and material selection. We coordinate <strong>siding installation</strong>, <strong>siding repair</strong>, and <strong>siding replacement</strong> projects to minimize disruption to your daily routine while ensuring superior results. From initial consultation to final inspection, every step is designed to exceed your expectations and deliver lasting value.
+            Our certified <strong>siding contractors</strong> guide you through material choices, schedule every step, and keep your project on track.
+            Whether it&apos;s a full <strong>siding replacement</strong> or a small repair, we make the process easy and stress-free from start to finish.
           </SecondaryText>
         </div>
       </div>
+
 
       <div>
         <HowItWorks />
@@ -228,14 +235,16 @@ export default function page() {
           <HeaderText as='h2' variant='large' className='text-white mb-8'>
             Ready for Professional Siding Services?
           </HeaderText>
-
           <div className='space-y-6 mb-8'>
             <SecondaryText className='text-gray-300'>
-              Donsiding&apos;st let damaged or outdated siding compromise your homesiding&apos;ss protection and beauty. Whether you need <strong>siding installation</strong>, <strong>siding repair</strong>, <strong>siding replacement</strong>, or <strong>vinyl siding</strong> services, Paragon Exteriorsiding&apos;ss experienced <strong>siding contractors</strong> are ready to help. Contact us today for a comprehensive evaluation and discover why Pennsylvania homeowners trust us for all their exterior renovation needs.
+              Don&apos;t let damaged or outdated siding put your home at risk.
+              For <strong>siding installation</strong>, <strong>siding repair</strong>, <strong>siding replacement</strong>, or <strong>vinyl siding</strong>, Paragon Exterior&apos;s experienced <strong>siding contractors</strong> are ready to help.
+              Contact us today for a free estimate and see why Pennsylvania homeowners trust us for all their exterior needs.
             </SecondaryText>
           </div>
         </div>
       </div>
+
 
       {/* New FAQ Section using your existing FAQ component */}
       <div className="py-16">

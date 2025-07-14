@@ -8,7 +8,7 @@ import Row from '@/components/Row'
 import {Metadata} from 'next'
 import SidingRepairReasons from '@/components/service-page/siding/SidingRepairReasons'
 import Image from 'next/image'
-import WhyParagon, {WhyParagonSiding, WhyParagonSidingRepair} from '@/components/WhyParagon'
+import {WhyParagonSidingRepair} from '@/components/WhyParagon'
 
 // SEO Metadata export
 export const metadata: Metadata = {
@@ -62,7 +62,7 @@ export default function SidingRepairPage() {
                 {/* HERO */}
                 <Hero
                     mainText="Professional Siding Repair"
-                    subText="Fast and effective siding repair services by skilled contractors. We handle all types of siding damage with seamless color matching and expert craftsmanship."
+                    subText="Fast and effective siding repair from skilled contractors. We restore damaged siding, match colors seamlessly, and get your home protected—quickly."
                     imgSrc="/images/siding/siding-service/siding-repair/siding-repair-hero.webp"
                     imgAlt="Professional siding repair by Paragon Exterior contractors"
                 />
@@ -73,26 +73,31 @@ export default function SidingRepairPage() {
                     imgAlt="Siding repair process showing before and after"
                     titleAs="h1"
                     title="Expert Siding Repair Services You Can Trust"
-                    mainContent="When your siding is damaged or missing, there's no need for a complete replacement. Our skilled siding repair contractors can restore all types of siding damage, from cracks and missing panels to storm damage and water infiltration. Whether you need vinyl siding repair, fiber cement fixes, or wood restoration, we respond quickly to protect your home."
-                    bottomContent="Damaged siding compromises your home's protection, allowing moisture and pests to enter. Our siding repair experts provide fast response times, often within 24 hours, and use seamless color matching techniques to restore both function and curb appeal. Don't wait—damaged siding leads to bigger problems over time."
+                    mainContent={
+                        <>
+                            <SecondaryText>
+                                If your siding is cracked, loose, or missing, you don’t always need a full replacement. Our professional siding repair contractors quickly restore vinyl, fiber cement, or wood siding to keep your home protected from weather, pests, and water damage.
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
+                                We offer fast response times, seamless color matching, and repairs that blend perfectly with your existing siding. Don’t let damaged siding lead to bigger problems—call us for a free inspection and reliable repairs.
+                            </SecondaryText>
+                        </>
+                    }
                     imagePosition="right"
                 />
 
-                {/* SIDING REPAIR REASONS COMPONENT */}
-                <SidingRepairReasons
-
-                />
+                {/* WHY SIDING REPAIR MATTERS */}
+                <SidingRepairReasons />
 
                 {/* REPAIR PROCESS */}
                 <section className="py-16 px-4 bg-gray-50">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-12">
                             <HeaderText as="h2" className="mb-6">
-                                Our Detailed Siding Repair Process
+                                Our Step-by-Step Siding Repair Process
                             </HeaderText>
                             <SecondaryText className="max-w-4xl mx-auto">
-                                We take pride in delivering quality siding repair work that lasts. Our systematic approach ensures
-                                seamless results that blend perfectly with your existing siding.
+                                We follow a detailed process to deliver repairs that last—so your home stays beautiful and protected for years to come.
                             </SecondaryText>
                         </div>
 
@@ -101,9 +106,9 @@ export default function SidingRepairPage() {
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-white text-2xl font-bold">1</span>
                                 </div>
-                                <HeaderText variant="small" className="mb-4">Assessment & Matching</HeaderText>
+                                <HeaderText variant="small" className="mb-4">Thorough Assessment</HeaderText>
                                 <SecondaryText className="text-sm">
-                                    We inspect damage severity, note your siding&apos;s color, texture, and style for perfect matching.
+                                    We inspect your siding, assess the damage, and find a perfect match for color and style.
                                 </SecondaryText>
                             </div>
 
@@ -111,9 +116,9 @@ export default function SidingRepairPage() {
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-white text-2xl font-bold">2</span>
                                 </div>
-                                <HeaderText variant="small" className="mb-4">Professional Repair</HeaderText>
+                                <HeaderText variant="small" className="mb-4">Precision Repairs</HeaderText>
                                 <SecondaryText className="text-sm">
-                                    Our skilled contractors replace damaged sections using quality materials and expert techniques.
+                                    Our trained contractors repair or replace damaged panels using top-quality materials and proven techniques.
                                 </SecondaryText>
                             </div>
 
@@ -121,9 +126,9 @@ export default function SidingRepairPage() {
                                 <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-white text-2xl font-bold">3</span>
                                 </div>
-                                <HeaderText variant="small" className="mb-4">Quality Inspection</HeaderText>
+                                <HeaderText variant="small" className="mb-4">Final Quality Check</HeaderText>
                                 <SecondaryText className="text-sm">
-                                    Final inspection ensures seamless appearance and proper installation for long-lasting protection.
+                                    We inspect the repair for durability, weather-tightness, and seamless appearance—guaranteed.
                                 </SecondaryText>
                             </div>
                         </div>
@@ -132,13 +137,13 @@ export default function SidingRepairPage() {
 
                 {/* MAINTENANCE SECTION */}
                 <Row
-                    title="Prevent Future Siding Repair with Annual Maintenance"
-                    description="While you can't prevent storm damage, regular maintenance helps avoid costly siding repair issues. Annual power washing removes mold, mildew, and insects. Regular inspections catch loose or warped areas before they become major problems requiring extensive siding repair work."
+                    title="Prevent Siding Damage With Routine Maintenance"
+                    description="Annual inspections and power washing help catch minor siding problems before they turn into major repairs. Preventative care saves you money and keeps your home looking its best year-round."
                     imageSrc="/images/siding/siding-service/siding-repair/siding-repair2.webp"
                     className="py-16"
                 />
 
-                {/* REPLACEMENT VS REPAIR */}
+                {/* REPAIR VS REPLACEMENT */}
                 <section className="py-16 px-4">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -153,26 +158,22 @@ export default function SidingRepairPage() {
                             </div>
                             <div>
                                 <HeaderText as="h2" className="mb-6">
-                                    Siding Repair vs. Full Replacement
+                                    Siding Repair vs. Siding Replacement
                                 </HeaderText>
                                 <SecondaryText className="mb-6">
-                                    Not every siding issue requires complete replacement. Our siding repair experts evaluate each situation
-                                    to determine the most cost-effective solution. When damage is extensive or repair costs approach
-                                    replacement costs, we&apos;ll recommend new siding installation.
+                                    Not every siding problem requires a full replacement. We help you decide when a simple repair is enough, and when it’s smarter to upgrade to new siding.
                                 </SecondaryText>
                                 <SecondaryText className="mb-6">
-                                    We install shake and shingle, vertical, and horizontal vinyl siding that requires minimal maintenance
-                                    and lasts for decades. Our team will work with you to discuss all options and help you choose
-                                    the best path forward for your home and budget.
+                                    If damage is isolated, we save you money with targeted repairs. If issues are widespread, or repairs become costly, we’ll recommend the right replacement options for long-term value.
                                 </SecondaryText>
                                 <div className="space-y-3">
                                     {[
-                                        "Cost-effective siding repair for minor damage",
-                                        "Full siding replacement when repair isn't practical",
-                                        "Expert evaluation of repair vs. replacement options",
-                                        "Quality materials for lasting results",
-                                        "Seamless color and texture matching",
-                                        "Professional installation with warranty"
+                                        "Affordable repairs for minor or moderate damage",
+                                        "Replacement only when truly needed",
+                                        "Expert evaluation for every project",
+                                        "Seamless color and style matching",
+                                        "Quality materials and craftsmanship",
+                                        "Workmanship warranty included"
                                     ].map((service, index) => (
                                         <div key={index} className="flex items-center space-x-3">
                                             <span className="text-primaryblue font-bold">✓</span>
@@ -185,16 +186,16 @@ export default function SidingRepairPage() {
                     </div>
                 </section>
 
-
+                {/* WHY PARAGON */}
                 <WhyParagonSidingRepair
                     title="Why Choose Paragon Exterior for Siding Repair?"
                     titleAs='h2'
                 />
 
                 {/* GET ESTIMATE */}
-                            <div className="py-12 pt-20 sm:pt-0">
-                                <GetEstimate />
-                            </div>
+                <div className="py-12 pt-20 sm:pt-0">
+                    <GetEstimate />
+                </div>
             </div>
         </>
     )
