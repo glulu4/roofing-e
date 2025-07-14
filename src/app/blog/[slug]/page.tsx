@@ -1,4 +1,5 @@
 import HeaderText from "@/components/HeaderText";
+import GetEstimate from "@/components/landing-ui/GetEstimate";
 import {wisp} from "@/lib/wisp";
 import {Metadata} from "next";
 
@@ -49,17 +50,22 @@ export default async function BlogPost({
                         __html: content,
                     }}
                 />
+
+                <GetEstimate />
                 <div className="mt-10 opacity-40 text-sm">
                     {tags.map((tag, idx) => (
                         <span key={idx}>#{tag.name}</span>
                     ))}
                 </div>
+                
                 <div className="text-sm opacity-40 mt-4">
                     {Intl.DateTimeFormat("en-US").format(
                         new Date(publishedAt || createdAt),
                     )}
                 </div>
+                
             </div>
+
         </div>
     );
 }

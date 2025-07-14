@@ -11,7 +11,7 @@ import WhyParagon, {WhyParagonBoardAndBattenSiding} from '@/components/WhyParago
 
 // SEO Metadata export
 export const metadata: Metadata = {
-    title: 'Board and Batten Siding Installation | Modern Architectural Design',
+    title: 'Board and Batten Siding',
     description: 'Transform your home with stunning board and batten siding installation. Modern, eye-catching board and batten siding designs that enhance curb appeal and architectural style. Expert installation services.',
     keywords: 'board and batten siding, board and batten siding installation, modern siding, architectural siding, contemporary siding, vertical wood siding, vertical vinyl siding, board and batten siding',
     openGraph: {
@@ -93,6 +93,36 @@ export default function VerticalSidingPage() {
                     imgAlt="Vertical siding installation on modern home"
                     imagePosition="right"
                 />
+
+                <InfoSection
+                    imgSrc="/images/siding/siding-service/vertical-siding/vertical-siding5.webp"
+                    imgAlt="Vinyl board and batten siding on a residential home"
+                    title="Vinyl Board and Batten Siding: Classic Look, Modern Convenience"
+                    titleAs="h2"
+                    mainContent="
+    If you’re looking for the timeless charm of board and batten without the ongoing maintenance, vinyl board and batten siding is a smart choice. It offers the clean vertical lines and visual depth homeowners love, but with added benefits like durability and low upkeep. Unlike wood, vinyl doesn’t need painting or staining, and it resists fading, cracking, and moisture damage.
+    "
+                    bottomContent="
+    Vinyl board and batten siding comes in a variety of textures and colors, including options that mimic natural wood grain. It's a perfect choice for homeowners who want bold, eye-catching style without a lot of maintenance. Our team at Paragon Exterior ensures each panel is installed with precision so you get long-lasting beauty and performance.
+    "
+                    imagePosition="left"
+                />
+
+                <InfoSection
+                    imgSrc="/images/siding/siding-service/vertical-siding/metal-bb-siding.webp"
+                    imgAlt="Metal board and batten siding on a modern home"
+                    title="Metal Board and Batten Siding: Sleek, Strong, and Striking"
+                    titleAs="h2"
+                    mainContent="
+    For homeowners who want a modern aesthetic paired with unmatched strength, metal board and batten siding is the choice for you. It's sleek, minimal, and built to last through the toughest weather. Metal siding won’t warp, crack, or rot—and it naturally resists fire, pests, and mildew.
+    "
+                    bottomContent="
+    Metal board and batten siding is available in bold finishes, like matte black or cool grays. Metal board and batten siding gives homes a high-end architectural edge and a unique look. It’s especially popular for modern farmhouses, cabins, and contemporary builds. Paragon Exterior specializes in precision metal siding installation that enhances curb appeal and keeps your home protected for decades.
+    "
+                    imagePosition="right"
+                />
+
+
 
 
                 <div className='mx-auto w-5/6 flex flex-col justify-center items-center sm:text-center text-left px-6'>

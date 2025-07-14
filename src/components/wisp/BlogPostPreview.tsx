@@ -13,10 +13,10 @@ export const BlogPostPreview: FunctionComponent<{
     return (
         <div className="break-words">
             <Link href={`/blog/${post.slug}`}>
-                <div className="aspect-[16/9] relative">
+                <div className="aspect-[16/9] relative ">
                     <Image
                         alt={post.title}
-                        className="object-cover"
+                        className="object-cover rounded-md"
                         src={post.image || "/images/placeholder.webp"}
                         fill
                     />
