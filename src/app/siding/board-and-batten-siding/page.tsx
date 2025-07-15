@@ -41,8 +41,11 @@ const structuredData = {
         "name": "Paragon Exterior",
         "url": "https://paragonexterior.com"
     },
-    "serviceType": "Home Improvement",
-    "areaServed": "Mid Atlantic",
+    "areaServed": [
+        {"@type": "State", "name": "Pennsylvania"},
+        {"@type": "State", "name": "New Jersey"},
+        {"@type": "State", "name": "Delaware"}
+    ],
     "offers": {
         "@type": "Offer",
         "description": "Free board and batten siding design consultation and installation estimates"

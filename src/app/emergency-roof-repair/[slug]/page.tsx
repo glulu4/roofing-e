@@ -64,12 +64,12 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 // Enhanced structured data for emergency services
 const generateStructuredData = (location: any) => ({
     "@context": "https://schema.org",
-    "@type": "EmergencyService",
+    "@type": ["LocalBusiness", "EmergencyService"],
     "name": "Paragon Exterior Emergency Roof Repair",
     "description": `24/7 emergency roof repair service in ${location.name} providing immediate response for storm damage, roof leaks, and urgent roofing emergencies.`,
     "url": `https://www.paragonexterior.com/emergency-roof-repair/${location.slug}`,
     "telephone": "(215) 799-7663",
-    "email": "sales@paragonexterior.com",
+    "email": "info@paragonexterior.com",
     "availableLanguage": "English",
     "currenciesAccepted": "USD",
     "paymentAccepted": ["Cash", "Check", "Credit Card", "Insurance"],
@@ -83,13 +83,6 @@ const generateStructuredData = (location: any) => ({
         "@type": "City",
         "name": location.name
     },
-    "serviceType": [
-        "24/7 Emergency Roof Repair",
-        "Storm Damage Repair",
-        "Emergency Leak Repair",
-        "Emergency Tarping",
-        "Wind Damage Repair"
-    ],
     "availabilityStarts": "00:00",
     "availabilityEnds": "23:59",
     "dayOfWeek": [

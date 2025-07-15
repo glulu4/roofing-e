@@ -90,7 +90,7 @@ const generateStructuredData = (location: any) => ({
     "description": `Professional roofing contractor in ${location.name} specializing in roof repair, roof replacement, emergency roof repair, siding installation, and window replacement.`,
     "url": `https://www.paragonexterior.com/roofing-contractor/${location.slug}`,
     "telephone": "(215) 799-7663",
-    "email": "sales@paragonexterior.com",
+    "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
@@ -101,19 +101,123 @@ const generateStructuredData = (location: any) => ({
         "@type": "City",
         "name": location.name
     },
-    "serviceType": [
-        "Emergency Roof Repair",
-        "Roof Repair",
-        "Roof Replacement",
-        "Siding Installation",
-        "Window Replacement",
-        "Commercial Roofing"
-    ],
+
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Home Improvement Services",
         "itemListElement": [
-            // ...same as above
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Roof Repair",
+                    "description": "Expert roof repair for shingle damage, weathering, and general wear."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Roof Replacement",
+                    "description": "Complete roof replacement using asphalt, metal, or flat systems."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Metal Roof Repair",
+                    "description": "Specialized repairs for metal roofs including seam sealing and panel replacement."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Flat Roofing",
+                    "description": "Installation and repair of flat roofing systems including EPDM and TPO."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Velux Skylights",
+                    "description": "Professional installation and replacement of Velux skylights for enhanced natural lighting."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Siding Repair",
+                    "description": "Efficient repair of vinyl, fiber cement, or wood siding damaged by age or weather."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Siding Installation",
+                    "description": "Professional siding installation for new construction and exterior upgrades."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Siding Replacement",
+                    "description": "Full siding replacement to restore and modernize your home’s exterior."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Vinyl Siding Installation",
+                    "description": "High-quality vinyl siding installation for durability, insulation, and curb appeal."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Commercial Roof Repair",
+                    "description": "Timely repairs for commercial roofing systems including flat and low-slope roofs."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Commercial Roof Replacement",
+                    "description": "Comprehensive roof replacement for commercial properties with minimal disruption."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gutter Repair",
+                    "description": "Repairs for damaged or leaking gutters to protect your roof and foundation."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gutter Replacement",
+                    "description": "Full replacement of outdated or damaged gutter systems with high-performance alternatives."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Roof Leak Repair",
+                    "description": "Fast and effective leak detection and roof repair to prevent further water damage."
+                }
+            }
         ]
     }
 });

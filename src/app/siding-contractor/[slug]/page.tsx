@@ -70,12 +70,14 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 // Enhanced structured data for siding services
 const generateStructuredData = (location: any) => ({
     "@context": "https://schema.org",
-    "@type": "Contractor",
+    "@type": "HomeAndConstructionBusiness",
     "name": "Paragon Exterior",
-    "description": `Professional Siding Contractors in ${location.name} specializing in siding installation, vinyl siding, siding repair, siding replacement, and fiber cement siding services.`,
+    "description": `Professional siding contractors in ${location.name} specializing in siding installation, vinyl siding, siding repair, siding replacement, and fiber cement siding services.`,
     "url": `https://www.paragonexterior.com/siding-contractor/${location.slug}`,
     "telephone": "(215) 799-7663",
-    "email": "sales@paragonexterior.com",
+    "email": "info@paragonexterior.com",
+    "image": "https://www.paragonexterior.com/icon.png", // optional but recommended
+    "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
@@ -86,14 +88,6 @@ const generateStructuredData = (location: any) => ({
         "@type": "City",
         "name": location.name
     },
-    "serviceType": [
-        "Siding Installation",
-        "Vinyl Siding Installation",
-        "Siding Repair",
-        "Siding Replacement",
-        "Fiber Cement Siding",
-        "Board and Batten Siding"
-    ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Siding Services",
@@ -133,6 +127,7 @@ const generateStructuredData = (location: any) => ({
         ]
     }
 });
+
 
 // Custom siding FAQ for local areas
 function SidingContractorFAQ({locationName}: {locationName: string}) {

@@ -70,12 +70,14 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 // Enhanced structured data for metal roof repair services
 const generateStructuredData = (location: any) => ({
     "@context": "https://schema.org",
-    "@type": "Contractor",
+    "@type": "RoofingContractor",
     "name": "Paragon Exterior",
     "description": `Professional metal roof repair in ${location.name} specializing in metal roof leak repair, panel replacement, and storm damage restoration services.`,
     "url": `https://www.paragonexterior.com/metal-roof-repair/${location.slug}`,
     "telephone": "(215) 799-7663",
-    "email": "sales@paragonexterior.com",
+    "email": "info@paragonexterior.com",
+    "image": "https://www.paragonexterior.com/icon.png", // update if needed
+    "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
@@ -86,14 +88,6 @@ const generateStructuredData = (location: any) => ({
         "@type": "City",
         "name": location.name
     },
-    "serviceType": [
-        "Metal Roof Repair",
-        "Metal Roof Leak Repair",
-        "Metal Roof Panel Replacement",
-        "Emergency Metal Roof Repair",
-        "Metal Roof Coating",
-        "Metal Roof Flashing Repair"
-    ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Metal Roof Repair Services",
@@ -125,6 +119,7 @@ const generateStructuredData = (location: any) => ({
         ]
     }
 });
+
 
 // Metal roof repair FAQ based on search data
 function MetalRoofRepairFAQ({locationName}: {locationName: string}) {

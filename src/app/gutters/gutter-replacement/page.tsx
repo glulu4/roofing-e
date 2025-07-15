@@ -175,14 +175,6 @@ export default function Page() {
                 "name": "Delaware"
               }
             ],
-            "serviceType": [
-              "Gutter Replacement",
-              "Seamless Gutter Installation",
-              "Aluminum Gutter Installation",
-              "Copper Gutter Replacement",
-              "Gutter System Installation",
-              "New Gutter Installation"
-            ],
             "priceRange": "$$",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",

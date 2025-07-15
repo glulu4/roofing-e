@@ -39,8 +39,11 @@ const structuredData = {
         "name": "Paragon Exterior",
         "url": "https://paragonexterior.com"
     },
-    "serviceType": "Home Improvement",
-    "areaServed": "Mid Atlantic",
+    "areaServed": [
+        {"@type": "State", "name": "Pennsylvania"},
+        {"@type": "State", "name": "New Jersey"},
+        {"@type": "State", "name": "Delaware"}
+    ],
     "offers": {
         "@type": "Offer",
         "description": "Free siding installation estimates with 100% satisfaction guarantee"

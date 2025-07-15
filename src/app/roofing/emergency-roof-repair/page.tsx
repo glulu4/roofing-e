@@ -35,7 +35,11 @@ export const metadata = {
             "@type": "Organization",
             "name": "Paragon Exterior",
         },
-        "areaServed": ["Pennsylvania", "New Jersey", "Delaware"],
+        "areaServed": [
+            {"@type": "State", "name": "Pennsylvania"},
+            {"@type": "State", "name": "New Jersey"},
+            {"@type": "State", "name": "Delaware"}
+        ],
         "availableChannel": {
             "@type": "ServiceChannel",
             "availableLanguage": "English",

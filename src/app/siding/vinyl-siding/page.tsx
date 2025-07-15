@@ -43,9 +43,12 @@ const structuredData = {
     "name": "Paragon Exterior",
     "url": "https://paragonexterior.com"
   },
-  "serviceType": "Home Improvement",
-  "areaServed": "Mid Atlantic",
-  "offers": {
+  "areaServed": [
+    {"@type": "State", "name": "Pennsylvania"},
+    {"@type": "State", "name": "New Jersey"},
+    {"@type": "State", "name": "Delaware"}
+  ],
+    "offers": {
     "@type": "Offer",
     "description": "Free vinyl siding installation estimates with material consultation"
   }

@@ -87,7 +87,6 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     };
 }
 
-// Structured data for local SEO
 const generateStructuredData = (location: any) => ({
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
@@ -95,7 +94,7 @@ const generateStructuredData = (location: any) => ({
     "description": `Professional roofing contractor serving ${location.name} with expert roof repair, installation, and emergency services.`,
     "url": `https://www.paragonexterior.com/roofing-contractor/${location.slug}`,
     "telephone": "(215) 799-7663",
-    "email": "sales@paragonexterior.com",
+    "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
@@ -106,13 +105,6 @@ const generateStructuredData = (location: any) => ({
         "@type": "City",
         "name": location.name
     },
-    "serviceType": [
-        "Roof Repair",
-        "Roof Replacement",
-        "Emergency Roofing",
-        "Residential Roofing",
-        "Commercial Roofing"
-    ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Roofing Services",
@@ -129,13 +121,46 @@ const generateStructuredData = (location: any) => ({
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
+                    "name": "Roof Replacement",
+                    "description": "Complete roof replacement with high-quality materials and expert installation"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Skylight Installation",
+                    "description": "Professional skylight installation to enhance natural light in your home"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Flat Roofing",
+                    "description": "Specialized flat roofing services for commercial and residential properties"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
                     "name": "Roof Installation",
                     "description": "Complete roof installation with premium materials and expert craftsmanship"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Emergency Roofing",
+                    "description": "24/7 emergency roof repair for storm damage, leaks, and urgent issues"
                 }
             }
         ]
     }
 });
+
 
 interface PageProps {
     params: Promise<{slug: string}>;

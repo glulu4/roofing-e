@@ -35,10 +35,10 @@ const structuredData = {
     {
       "@type": "RoofingContractor",
       "name": "Paragon Exterior",
-      "image": "https://www.paragonexterior.com/logo.png",
+      "image": "https://www.paragonexterior.com/icon.png",
       "url": "https://www.paragonexterior.com",
       "telephone": "+1-215-799-7663",
-      "email": "sales@paragonexterior.com",
+      "email": "info@paragonexterior.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1 Neshaminy Interplex Dr #103",

@@ -83,7 +83,7 @@ const generateStructuredData = (location: any) => ({
     "description": `Professional gutter installation in ${location.name} specializing in seamless gutters, gutter repair, gutter replacement, and gutter guard installation services.`,
     "url": `https://www.paragonexterior.com/gutter-installation/${location.slug}`,
     "telephone": "(215) 799-7663",
-    "email": "sales@paragonexterior.com",
+    "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
@@ -94,14 +94,7 @@ const generateStructuredData = (location: any) => ({
         "@type": "City",
         "name": location.name
     },
-    "serviceType": [
-        "Gutter Installation",
-        "Seamless Gutter Installation",
-        "Gutter Repair",
-        "Gutter Replacement",
-        "Gutter Guard Installation",
-        "Gutter Cleaning"
-    ],
+
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Gutter Services",

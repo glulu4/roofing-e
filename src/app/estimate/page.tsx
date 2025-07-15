@@ -28,9 +28,6 @@ export default function Example() {
         message: ''
     });
 
-    // const [status, setStatus] = useState<SubmissionStatus>('idle');
-    // const [errorMessage, setErrorMessage] = useState<string>('');
-
     const handleChange = (
         e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {

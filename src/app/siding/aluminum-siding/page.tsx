@@ -44,8 +44,11 @@ const structuredData = {
     "name": "Paragon Exterior",
     "url": "https://paragonexterior.com"
   },
-  "serviceType": "Home Improvement",
-  "areaServed": "Pennsylvania, New Jersey, Delaware",
+  "areaServed": [
+    {"@type": "State", "name": "Pennsylvania"},
+    {"@type": "State", "name": "New Jersey"},
+    {"@type": "State", "name": "Delaware"}
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Aluminum Siding Services",
@@ -241,11 +244,11 @@ export default function Page() {
             </div>
           }
           imageSrc="/images/siding/aluminum/aluminum5.webp"
-          
+
           headerColor="text-primaryblue"
           bodyColor="text-gray-700"
           className="py-16"
-          
+
         />
 
         {/* Colors and Styles Section */}

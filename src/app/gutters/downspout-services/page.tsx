@@ -71,14 +71,7 @@ export default function Page() {
                 "name": "Delaware"
               }
             ],
-            "serviceType": [
-              "Downspout Installation",
-              "Downspout Repair",
-              "Downspout Replacement",
-              "Underground Drainage Installation",
-              "Downspout Extensions",
-              "Buried Downspout Systems"
-            ],
+
             "priceRange": "$$",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",

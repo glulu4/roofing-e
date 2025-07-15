@@ -71,16 +71,7 @@ export default function Page() {
                 "name": "Delaware"
               }
             ],
-            "serviceType": [
-              "Gutter Repair",
-              "Gutter Leak Repair",
-              "Sagging Gutter Repair",
-              "Downspout Repair",
-              "Fascia Board Repair",
-              "Emergency Gutter Repair",
-              "Gutter Cleaning",
-              "Gutter Maintenance"
-            ],
+
             "priceRange": "$$",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
