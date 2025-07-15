@@ -187,7 +187,7 @@ export const Navigation: FunctionComponent = () => {
 
                   if (item === "SERVICES_DROPDOWN"){
                     return (
-                      <div className="py-2">
+                      <div className="py-2" key={index}>
                         <button
                           onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                           className={cn(
@@ -237,7 +237,7 @@ export const Navigation: FunctionComponent = () => {
 
                     if (menuItem.name === "Free Estimate") {
                       return (
-                        <div className="pt-4">
+                        <div className="pt-4" key={index}>
                           <Link
                             href="/estimate"
                             className={cn(
@@ -255,7 +255,7 @@ export const Navigation: FunctionComponent = () => {
                     }
 
                     return (
-                      <div className="pt-2">
+                      <div className="pt-2" key={index}>
                       <Link
                         key={menuItem.href}
                         href={menuItem.href}

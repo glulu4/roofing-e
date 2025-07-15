@@ -37,6 +37,11 @@ const galleryImages = [
 
 //https://drive.google.com/file/d/1Bl2FGRLVy3FoVND_0ADtDxtQc6bNu_Ma/view?usp=sharing
 
+export const metadata = {
+    title: 'Gallery',
+    description: 'Explore our collection of stunning roofing, siding, and exterior projects. Each image showcases our commitment to quality and craftsmanship.',
+}
+
 export default function GalleryPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
