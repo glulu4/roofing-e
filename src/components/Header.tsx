@@ -44,6 +44,8 @@ const navigationItems: (MenuItem | string)[] = [
   {name: "About", href: "/about"},
   "SERVICES_DROPDOWN", // Placeholder that we'll replace with the dropdown
   {name: "Contact", href: "/contact"},
+  {name: "Gallery", href: "/gallery"},
+
   {name: "Blog", href: "/blog"},
   {name: "Free Estimate", href: "/estimate"},
 ];
@@ -180,115 +182,97 @@ export const Navigation: FunctionComponent = () => {
             <SheetDescription asChild>
               <nav className="space-y-2 text-white">
                 {/* Home */}
-                <Link
-                  href="/"
-                  className={cn(
-                    "",
-                    "block py-3 px-4 rounded-lg text-lg transition-all duration-200",
-                    "hover:bg-white/20 hover:translate-x-2",
-                    pathname === "/" && "font-semibold bg-white/20"
-                  )}
-                  onClick={() => setIsSheetOpen(false)}
-                >
-                  Home
-                </Link>
 
-                {/* About */}
-                <Link
-                  href="/about"
-                  className={cn(
-                    "block py-3 px-4 rounded-lg text-lg transition-all duration-200",
-                    "hover:bg-white/20 hover:translate-x-2",
-                    pathname === "/about" && "font-semibold bg-white/20"
-                  )}
-                  onClick={() => setIsSheetOpen(false)}
-                >
-                  About
-                </Link>
+                {navigationItems.map((item, index) => {
 
-                {/* Services Dropdown for Mobile */}
-                <div className="py-2">
-                  <button
-                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                    className={cn(
-                      "flex items-center justify-between w-full py-3 px-4 rounded-lg text-lg transition-all duration-200",
-                      "hover:bg-white/20",
-                      mobileServicesOpen && "bg-white/20"
-                    )}
-                  >
-                    <span>Services</span>
-                    <ChevronDown
-                      className={cn(
-                        "h-4 w-4 transition-transform duration-200",
-                        mobileServicesOpen && "rotate-180"
-                      )}
-                    />
-                  </button>
-
-                  <div className={cn(
-                    "overflow-hidden transition-all duration-300 ease-in-out",
-                    mobileServicesOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-                  )}>
-                    <div className="pl-6 pt-2 space-y-1">
-                      {servicesDropdown.items.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
+                  if (item === "SERVICES_DROPDOWN"){
+                    return (
+                      <div className="py-2">
+                        <button
+                          onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                           className={cn(
-                            "block py-2 px-4 rounded-md text-base transition-all duration-200",
-                            "hover:bg-white/10 hover:translate-x-1",
-                            pathname === item.href && "font-semibold bg-white/10"
+                            "flex items-center justify-between w-full py-3 px-4 rounded-lg text-lg transition-all duration-200",
+                            "hover:bg-white/20",
+                            mobileServicesOpen && "bg-white/20"
                           )}
-                          onClick={() => setIsSheetOpen(false)}
                         >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                          <span>Services</span>
+                          <ChevronDown
+                            className={cn(
+                              "h-4 w-4 transition-transform duration-200",
+                              mobileServicesOpen && "rotate-180"
+                            )}
+                          />
+                        </button>
 
-                {/* Blog */}
-                <Link
-                  href="/blog"
-                  className={cn(
-                    "block py-3 px-4 rounded-lg text-lg transition-all duration-200",
-                    "hover:bg-white/20 hover:translate-x-2",
-                    pathname === "/blog" && "font-semibold bg-white/20"
-                  )}
-                  onClick={() => setIsSheetOpen(false)}
-                >
-                  Blog
-                </Link>
+                        <div className={cn(
+                          "overflow-scroll transition-all duration-300 ease-in-out",
+                          mobileServicesOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+                        )}>
+                          <div className="pl-6 pt-2 space-y-1">
+                            {servicesDropdown.items.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className={cn(
+                                  "block py-2 px-4 rounded-md text-base transition-all duration-200",
+                                  "hover:bg-white/10 hover:translate-x-1",
+                                  pathname === item.href && "font-semibold bg-white/10"
+                                )}
+                                onClick={() => setIsSheetOpen(false)}
+                              >
+                                {item.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  }
+                  else{
+                    
 
-                {/* Contact */}
-                <Link
-                  href="/contact"
-                  className={cn(
-                    "block py-3 px-4 rounded-lg text-lg transition-all duration-200",
-                    "hover:bg-white/20 hover:translate-x-2",
-                    pathname === "/contact" && "font-semibold bg-white/20"
-                  )}
-                  onClick={() => setIsSheetOpen(false)}
-                >
-                  Contact
-                </Link>
+                    const menuItem = item as MenuItem;
 
-                {/* Free Estimate - Special styling */}
-                <div className="pt-4">
-                  <Link
-                    href="/estimate"
-                    className={cn(
-                      "block py-4 px-6 rounded-lg text-lg font-semibold transition-all duration-200",
-                      "bg-amber-500 hover:bg-amber-400 text-center",
-                      "hover:scale-105 shadow-lg",
-                      pathname === "/estimate" && "bg-amber-400"
-                    )}
-                    onClick={() => setIsSheetOpen(false)}
-                  >
-                    Free Estimate
-                  </Link>
-                </div>
+
+                    if (menuItem.name === "Free Estimate") {
+                      return (
+                        <div className="pt-4">
+                          <Link
+                            href="/estimate"
+                            className={cn(
+                              "block py-4 px-6 rounded-lg text-lg font-semibold transition-all duration-200",
+                              "bg-amber-500 hover:bg-amber-400 text-center",
+                              "hover:scale-105 shadow-lg",
+                              pathname === "/estimate" && "bg-amber-400"
+                            )}
+                            onClick={() => setIsSheetOpen(false)}
+                          >
+                            Free Estimate
+                          </Link>
+                        </div>
+                      )
+                    }
+
+                    return (
+                      <div className="pt-2">
+                      <Link
+                        key={menuItem.href}
+                        href={menuItem.href}
+                        target={menuItem.openInNewTab ? "_blank" : "_self"}
+                        className={cn(
+                          "block py-3 px-4 rounded-lg text-lg transition-all duration-200",
+                          "hover:bg-white/20 hover:translate-x-2",
+                          pathname === menuItem.href && "font-semibold bg-white/20"
+                        )}
+                        onClick={() => setIsSheetOpen(false)}
+                      >
+                        {menuItem.name}
+                      </Link>
+                      </div>
+                    );
+                  }
+                })}
 
                 {/* Contact Info Section */}
                 <div className="pt-8 mt-8 border-t border-white/20">

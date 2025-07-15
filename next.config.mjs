@@ -10,6 +10,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "drive.google.com",
+      },
+
     ],
   },
   // redirects: async () => {

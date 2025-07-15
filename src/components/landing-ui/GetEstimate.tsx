@@ -34,7 +34,7 @@ export default function GetEstimate({
                             href="tel:2157997663"
                             className="bg-primaryblue hover:bg-blue-700 text-white px-6 py-4 text-lg font-semibold rounded-lg transition-colors duration-200 block"
                         >
-                            Call: (215) 799-7663
+                            Call or Text: (215) 799-7663
                         </a>
                         <a
                             href="/estimate"

@@ -180,6 +180,10 @@ export default function Example() {
                             </div>
                         </dl>
                     </div>
+                    <iframe
+                    className='mt-10 rounded-lg shadow-lg border-0 '
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.7417432423395!2d-74.98033102369448!3d40.124776371488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b3f764baa6e3%3A0xb1cbf5dbdbedaf4b!2sParagon%20Exterior%20LLC!5e1!3m2!1sen!2sus!4v1752587072246!5m2!1sen!2sus" width="500" height="400" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
 
                 {/* Form */}
