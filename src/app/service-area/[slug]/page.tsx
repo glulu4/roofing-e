@@ -11,7 +11,7 @@ import ServicesGrid from "@/components/service-page/Services";
 import FAQ from "@/components/FAQ";
 import {WhyParagonRoofing} from "@/components/WhyParagon";
 import {Metadata} from "next";
-import {serviceAreas} from "../../../../public/service-areas";
+import {serviceAreas, Location} from "../../../../public/service-areas";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import {Columns4Icon, HomeIcon, Wind} from "lucide-react";
 import {WindowIcon} from "@heroicons/react/24/outline";
@@ -83,25 +83,24 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     };
 }
 
-const generateStructuredData = (location: any) => ({
+const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
     "name": "Paragon Exterior",
     "description": `Professional roofing contractor in ${location.name} specializing in roof repair, roof replacement, emergency roof repair, siding installation, and window replacement.`,
-    "url": `https://www.paragonexterior.com/roofing-contractor/${location.slug}`,
+    "url": `https://www.paragonexterior.com/roofing-contractor/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.state || "PA",
+        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {
-        "@type": "City",
+        "@type": "AdministrativeArea",
         "name": location.name
     },
-
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Home Improvement Services",

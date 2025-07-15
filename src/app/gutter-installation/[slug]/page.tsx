@@ -9,7 +9,7 @@ import ServicesGrid from "@/components/service-page/Services";
 import FAQ from "@/components/FAQ";
 import WhyParagon from "@/components/WhyParagon";
 import {Metadata} from "next";
-import {serviceAreas} from "../../../../public/service-areas";
+import {serviceAreas, Location} from "../../../../public/service-areas";
 import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import {
@@ -76,22 +76,22 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 }
 
 // Enhanced structured data for gutter services
-const generateStructuredData = (location: any) => ({
+const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
     "@type": "Contractor",
     "name": "Paragon Exterior",
     "description": `Professional gutter installation in ${location.name} specializing in seamless gutters, gutter repair, gutter replacement, and gutter guard installation services.`,
-    "url": `https://www.paragonexterior.com/gutter-installation/${location.slug}`,
+    "url": `https://www.paragonexterior.com/gutter-installation/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.state || "PA",
+        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {
-        "@type": "City",
+        "@type": "AdministrativeArea",
         "name": location.name
     },
 

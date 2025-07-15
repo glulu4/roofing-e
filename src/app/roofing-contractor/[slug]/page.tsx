@@ -102,7 +102,7 @@ const generateStructuredData = (location: any) => ({
         "addressCountry": "US"
     },
     "areaServed": {
-        "@type": "City",
+        "@type": "AdministrativeArea",
         "name": location.name
     },
     "hasOfferCatalog": {

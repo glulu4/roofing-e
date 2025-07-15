@@ -9,7 +9,7 @@ import ServicesGrid from "@/components/service-page/Services";
 import FAQ from "@/components/FAQ";
 import {WhyParagonEmergencyRoofRepair} from "@/components/WhyParagon";
 import {Metadata} from "next";
-import {serviceAreas} from "../../../../public/service-areas";
+import {serviceAreas, Location} from "../../../../public/service-areas";
 import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 
@@ -62,12 +62,12 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 }
 
 // Enhanced structured data for emergency services
-const generateStructuredData = (location: any) => ({
+const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "EmergencyService"],
     "name": "Paragon Exterior Emergency Roof Repair",
     "description": `24/7 emergency roof repair service in ${location.name} providing immediate response for storm damage, roof leaks, and urgent roofing emergencies.`,
-    "url": `https://www.paragonexterior.com/emergency-roof-repair/${location.slug}`,
+    "url": `https://www.paragonexterior.com/emergency-roof-repair/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "availableLanguage": "English",
@@ -76,11 +76,11 @@ const generateStructuredData = (location: any) => ({
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.state || "PA",
+        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {
-        "@type": "City",
+        "@type": "AdministrativeArea",
         "name": location.name
     },
     "availabilityStarts": "00:00",

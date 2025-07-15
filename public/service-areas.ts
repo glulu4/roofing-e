@@ -1,3 +1,9 @@
+
+export type Location = {
+    name: string;
+    description: string;
+}
+
 export const serviceAreas: {
     [key: string]: {
         name: string;

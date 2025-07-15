@@ -2,7 +2,7 @@ import HeaderText from "@/components/HeaderText";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import SecondaryText from "@/components/SecondaryText";
 import {Metadata} from "next";
-import {serviceAreas} from "../../../../public/service-areas";
+import {Location, serviceAreas} from "../../../../public/service-areas";
 import TextImgRow from "@/components/TextImgRow";
 import ThreeImageLayout from "@/components/solar/ThreeImage";
 import FAQ from "@/components/FAQ";
@@ -61,7 +61,7 @@ export default async function page({
 }) {
     const {slug} = await params;
 
-    const location = serviceAreas[slug];
+    const location: Location = serviceAreas[slug];
     if (!location) return <div>Area not found.</div>;
 
     const introText = `

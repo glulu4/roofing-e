@@ -9,7 +9,7 @@ import ServicesGrid from "@/components/service-page/Services";
 import FAQ from "@/components/FAQ";
 import {WhyParagonSiding} from "@/components/WhyParagon";
 import {Metadata} from "next";
-import {serviceAreas} from "../../../../public/service-areas";
+import {serviceAreas, Location} from "../../../../public/service-areas";
 import SidingMaterial from "@/components/siding/SidingMaterial";
 import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
@@ -68,12 +68,12 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 }
 
 // Enhanced structured data for siding services
-const generateStructuredData = (location: any) => ({
+const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Paragon Exterior",
     "description": `Professional siding contractors in ${location.name} specializing in siding installation, vinyl siding, siding repair, siding replacement, and fiber cement siding services.`,
-    "url": `https://www.paragonexterior.com/siding-contractor/${location.slug}`,
+    "url": `https://www.paragonexterior.com/siding-contractor/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "image": "https://www.paragonexterior.com/icon.png", // optional but recommended
@@ -81,11 +81,11 @@ const generateStructuredData = (location: any) => ({
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.state || "PA",
+        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {
-        "@type": "City",
+        "@type": "AdministrativeArea",
         "name": location.name
     },
     "hasOfferCatalog": {

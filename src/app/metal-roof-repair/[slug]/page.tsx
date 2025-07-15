@@ -8,7 +8,7 @@ import Row from "@/components/Row";
 import ServicesGrid from "@/components/service-page/Services";
 import WhyParagon from "@/components/WhyParagon";
 import {Metadata} from "next";
-import {serviceAreas} from "../../../../public/service-areas";
+import {serviceAreas, Location} from "../../../../public/service-areas";
 import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import {
@@ -68,12 +68,12 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 }
 
 // Enhanced structured data for metal roof repair services
-const generateStructuredData = (location: any) => ({
+const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
     "name": "Paragon Exterior",
     "description": `Professional metal roof repair in ${location.name} specializing in metal roof leak repair, panel replacement, and storm damage restoration services.`,
-    "url": `https://www.paragonexterior.com/metal-roof-repair/${location.slug}`,
+    "url": `https://www.paragonexterior.com/metal-roof-repair/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "image": "https://www.paragonexterior.com/icon.png", // update if needed
@@ -81,7 +81,7 @@ const generateStructuredData = (location: any) => ({
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.state || "PA",
+        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {
