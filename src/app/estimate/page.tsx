@@ -162,8 +162,8 @@ export default function Example() {
                                     <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
                                 </dt>
                                 <dd>
-                                    <a href="mailto:hello@example.com" className="hover:text-primaryblue">
-                                        sales@paragonexterior.com
+                                    <a href="mailto:info@paragonexterior.com" className="hover:text-primaryblue">
+                                        info@paragonexterior.com
                                     </a>
                                 </dd>
                             </div>

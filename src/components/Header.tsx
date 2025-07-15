@@ -302,11 +302,11 @@ export const Navigation: FunctionComponent = () => {
                       <span>(215) 799-7663</span>
                     </a>
                     <a
-                      href="mailto:sales@paragonexterior.com"
+                      href="mailto:info@paragonexterior.com"
                       className="flex items-center space-x-3 py-2 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200"
                     >
                       <Mail size="18" />
-                      <span>sales@paragonexterior.com</span>
+                      <span>info@paragonexterior.com</span>
                     </a>
                     <div className="flex items-center space-x-3 py-2 px-4">
                       <MapPin size="18" />
