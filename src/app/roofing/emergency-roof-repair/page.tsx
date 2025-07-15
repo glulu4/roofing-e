@@ -134,7 +134,7 @@ export default function EmergencyRoofRepairPage() {
                 ]}
             />
 
-            <section className="bg-slate-50 py-16 my-16 text-center">
+            <section className="bg-slate-50 py-16 my-16 max-w-5xl mx-auto text-center">
                 <HeaderText as="h3" className="mb-8">
                     Areas We Serve
                 </HeaderText>
