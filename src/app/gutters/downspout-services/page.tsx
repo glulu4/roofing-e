@@ -48,7 +48,7 @@ export default function Page() {
             "description": "Professional downspout installation, repair, and drainage solutions in Pennsylvania, New Jersey, and Delaware",
             "url": "https://paragonexterior.com/gutters/downspout-services",
             "telephone": "+1-215-799-7663",
-            "email": "sales@paragonexterior.com",
+            "email": "info@paragonexterior.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "1 Neshaminy Interplex Dr #103",

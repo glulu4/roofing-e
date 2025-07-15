@@ -152,7 +152,7 @@ export default function Page() {
             "description": "Professional gutter replacement and seamless gutter installation services in Pennsylvania, New Jersey, and Delaware",
             "url": "https://paragonexterior.com/gutters/gutter-replacement",
             "telephone": "+1-215-799-7663",
-            "email": "sales@paragonexterior.com",
+            "email": "info@paragonexterior.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "1 Neshaminy Interplex Dr #103",

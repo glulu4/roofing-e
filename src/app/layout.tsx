@@ -250,7 +250,7 @@ const structuredData = {
           "name": "How can I contact Paragon Exterior for roofing services?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can contact us via phone at +1-215-799-7663 or email at sales@paragonexterior.com."
+            "text": "You can contact us via phone at +1-215-799-7663 or email at info@paragonexterior.com."
           }
         },
         {
