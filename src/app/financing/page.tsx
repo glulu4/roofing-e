@@ -7,6 +7,7 @@ import Row from '@/components/Row'
 import SecondaryText from '@/components/SecondaryText'
 import InfoSection from '@/components/service-page/Info'
 import Timeline from '@/components/Timeline'
+import Image from 'next/image'
 import React from 'react'
 
 export const metadata = {
@@ -113,7 +114,10 @@ export default function page() {
                 rel="noopener noreferrer"
                 className="flex justify-center items-center mt-10 mb-10"
             >
-                <img
+                <Image
+                    width={700}
+                    height={110}
+                    className="rounded-lg shadow-lg"
                     src="https://app.gethearth.com/contractor_images/paragon-exterior/banner.jpg?color=zero_percent&size_id=700x110"
                     alt="Hearth 700x110"
                     style={{height: 110, width: 700}}
@@ -143,10 +147,10 @@ export default function page() {
                 }
                 className="my-20"
             />
-            <div className='w-full mx-auto'>
+            {/* <div className='w-full mx-auto'>
                 <GoogleReviews />
 
-            </div>
+            </div> */}
             <div>
                 <GetEstimate className="" />
             </div>

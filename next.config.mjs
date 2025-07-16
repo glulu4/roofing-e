@@ -14,7 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "drive.google.com",
       },
-
+      {
+        protocol: "https",
+        hostname: "app.gethearth.com",
+      },
     ],
   },
   // redirects: async () => {
