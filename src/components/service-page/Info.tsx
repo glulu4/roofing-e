@@ -45,9 +45,15 @@ export default function InfoSection({
                                 {title}
                             </HeaderText>
                             <div className="max-w-xl">
-                                <SecondaryText className="mt-6">
-                                    {mainContent}
-                                </SecondaryText>
+
+                                {typeof mainContent === 'string' ? (
+                                    <SecondaryText className="mt-6 text-lg text-gray-600">
+                                        {mainContent}
+                                    </SecondaryText>
+                                ) : (
+                                    mainContent
+                                )}
+
                             </div>
                         </div>
                     </div>

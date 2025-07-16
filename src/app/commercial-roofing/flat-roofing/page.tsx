@@ -68,7 +68,7 @@ export default async function Page() {
             {/* MAIN CONTENT ROWS */}
             <div >
                 <div className="mb-32 text-center">
-                    <HeaderText>Why Choose Paragon Exterior for Commercial Flat Roofing?</HeaderText>
+                    <HeaderText as="h2">Why Choose Paragon Exterior for Commercial Flat Roofing?</HeaderText>
                     <SecondaryText>
                         Our factory-trained commercial roofing crews ensure flawless installation, proper drainage, and long-term performance.
                         From emergency commercial flat roof repair to complete commercial roof replacement, we deliver workmanship that protects your business investment.
@@ -78,10 +78,10 @@ export default async function Page() {
                 <Row
                     title="Signs Your Commercial Flat Roof Needs Professional Attention"
                     description={
-                        <>
+                        <SecondaryText>
                             Ponding water, membrane blisters, cracked seams, or interior leaks in your commercial building signal it&apos;s time for professional commercial flat roofing service.{" "}
                             <a href="/blog/commercial-flat-roof-warning-signs" className="text-primaryBlue">Learn more</a> about protecting your commercial property from costly damage.
-                        </>
+                        </SecondaryText>
                     }
                     imageSrc="/images/commercial/flat/flat2.webp"
                 />

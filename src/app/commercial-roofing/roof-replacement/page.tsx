@@ -5,6 +5,7 @@ import React from 'react';
 import Row from '@/components/Row';
 import {WhyParagonRoofReplacement} from '@/components/WhyParagon';
 import Reasons from '@/components/service-page/Reasons';
+import SecondaryText from '@/components/SecondaryText';
 
 export const metadata = {
     title: 'Commercial Roof Replacement Experts',
@@ -30,7 +31,7 @@ export default function CommercialRoofReplacementPage() {
                 imgAlt="Crew replacing commercial roof with new membrane"
                 title="Commercial Roof Replacement You Can Trust"
                 mainContent={
-                    <>
+                    <SecondaryText>
                         A full commercial roof replacement is the best way to safeguard your
                         building against leaks, energy loss, and costly down-time. Our
                         licensed roofing professionals start by removing your old system,
@@ -38,10 +39,10 @@ export default function CommercialRoofReplacementPage() {
                         TPO/EPDM flat membrane, standing seam metal, or built-up roofing.
                         Every step is handled with meticulous craftsmanship, clear
                         communication, and strict safety protocols.
-                    </>
+                    </SecondaryText>
                 }
                 bottomContent={
-                    <>
+                    <SecondaryText>
                         Looking to extend the life of an existing roof? We also offer
                         targeted commercial roof repair services—patching leaks, replacing
                         damaged flashing, and addressing ponding water—when a full
@@ -50,7 +51,7 @@ export default function CommercialRoofReplacementPage() {
                         greatest long-term value. <br />
                         <br />
                         Contact us today for a free commercial roof inspection and estimate.
-                    </>
+                    </SecondaryText>
                 }
                 imagePosition="right"
             />
@@ -76,23 +77,10 @@ export default function CommercialRoofReplacementPage() {
                     </>
                 }
             />
-
-            {/* <div className="mx-auto w-5/6 py-12 lg:py-20">
-                <HeaderText as='h2' className=''>Signs You Need Commercial Roof Replacement</HeaderText>
-                <SecondaryText>
-                    • Roof membrane is more than 20 years old<br />
-                    • Multiple or recurring leaks despite repairs<br />
-                    • Extensive ponding water or blistering on the surface<br />
-                    • Significant seam separations or flashing failure<br />
-                    • Insulation saturation or sagging deck
-                </SecondaryText>
-            </div> */}
-
-            {/* REPAIR VS REPLACEMENT */}
             <Row
                 title="Commercial Roof Repair vs. Replacement"
                 description={
-                    <>
+                    <SecondaryText>
                         <strong>Commercial Roof Repair</strong> is ideal for isolated issues:
                         patching small leaks, replacing damaged flashing, resealing seams,
                         or applying a restorative coating. Repairs can extend your roof’s
@@ -103,7 +91,7 @@ export default function CommercialRoofReplacementPage() {
                         life, or energy loss is driving up operating costs. A new system
                         restores full warranty coverage, maximizes insulation performance,
                         and eliminates the need for constant patch jobs.
-                    </>
+                    </SecondaryText>
                 }
                 imageSrc="/images/commercial/replacement/replace2.webp"
                 reverse
