@@ -106,7 +106,7 @@ const Page = () => {
                     alt: "Durable commercial roofing installed by Paragon Exterior",
                 }}
                 img2={{
-                    src: "/images/commercial/commerial-roof5.webp",
+                    src: "/images/commercial/commerical-roof5.webp",
                     alt: "Energy-efficient commercial roof system on office building",
                 }}
                 text1="Our roofs are designed to handle storms, temperature swings, and daily wear. They save energy and lower your long-term costs."
