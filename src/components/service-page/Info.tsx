@@ -17,6 +17,7 @@ interface InfoSectionProps {
     className?: string;
     imagePosition?: 'left' | 'right';
     showBottomContent?: boolean;
+    imageShadow?: boolean;
 }
 
 export default function InfoSection({
@@ -28,6 +29,7 @@ export default function InfoSection({
     bottomContent,
     className = "",
     imagePosition = 'right',
+    imageShadow = true,
     showBottomContent = true
 }: InfoSectionProps) {
     const isImageRight = imagePosition === 'right';
@@ -52,7 +54,7 @@ export default function InfoSection({
 
                     {/* Image */}
                     <div className={`lg:pr-4 h-full ${isImageRight ? 'lg:order-2' : 'lg:order-1'}`}>
-                        <div className="relative overflow-hidden rounded-3xl px-6 pb-9 pt-64 sm:pt-80 lg:pt-96 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                        <div className={`relative overflow-hidden rounded-3xl px-6 pb-9 pt-64 sm:pt-80 lg:pt-96 ${imageShadow ? "shadow-2xl" : ""} sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10`}>
                             <Image
                                 width={1000}
                                 height={1000}

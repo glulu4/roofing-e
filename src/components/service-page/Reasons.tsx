@@ -1,12 +1,3 @@
-// const features = [
-//     {name: 'Origin', description: 'Designed by Good Goods, Inc.'},
-//     {name: 'Material', description: 'Solid walnut base with rare earth magnets and polycarbonate add-ons.'},
-//     {name: 'Dimensions', description: '15" x 3.75" x .75"'},
-//     {name: 'Finish', description: 'Hand sanded and finished with natural oil'},
-//     {name: 'Includes', description: 'Pen Tray, Phone Tray, Small Tray, Large Tray, Sticky Note Holder'},
-//     {name: 'Considerations', description: 'Made from natural materials. Grain and color vary with each item.'},
-// ]
-
 import Image from "next/image";
 import HeaderText from "../HeaderText";
 import SecondaryText from "../SecondaryText";

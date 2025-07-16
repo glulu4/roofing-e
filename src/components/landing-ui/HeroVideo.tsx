@@ -31,6 +31,7 @@ const HeroVideo = ({text, secText, videos}: HeroVideoProps) => {
         <div className="relative h-[80vh] w-full overflow-hidden z-0">
             {/* Video Player */}
             <video
+                
                 key={videos[currentVideoIndex]}
                 ref={videoRef}
                 className="absolute top-0 left-0 h-full w-full object-cover"

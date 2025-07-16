@@ -1,5 +1,4 @@
 import HeroVideo from "@/components/landing-ui/HeroVideo";
-import HowWeWork from "@/components/landing-ui/HowWeWork";
 import FiveStars from "@/components/landing-ui/FiveStars";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import Review from "@/components/landing-ui/Review";
@@ -11,6 +10,8 @@ import Exceptional from "@/components/landing-ui/Exceptional";
 import {Metadata} from "next";
 import RoofingServices from "@/components/landing-ui/Services";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
+import {Heart} from "lucide-react";
+import {HearthFinanceCalculator} from "@/components/HearthCalc";
 
 
 
@@ -30,8 +31,6 @@ const Page = () => {
           
           videos={[
             "/videos/house3.mp4",
-            "/videos/house1.mp4",
-            "/videos/house2.mp4",
           ]}
         />
       </div>
@@ -39,6 +38,7 @@ const Page = () => {
 
         {/* change to maybe roofing company section */}
       <RoofingCompany />
+
 
 
       <RoofingServices />

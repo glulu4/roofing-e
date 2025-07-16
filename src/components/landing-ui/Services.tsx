@@ -112,12 +112,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
                     <div className="relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0 group-hover:shadow-xl transition-shadow duration-300">
                         <Image
+                            loading='lazy'
                             width={224}
                             height={224}
                             src={service.image}
                             alt={service.title}
                             className="w-full sm:w-48 lg:w-56 h-48 lg:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                            priority={index < 2} // Optimize loading for first 2 images
+                            // priority={index < 2} // Optimize loading for first 2 images
                         />
                     </div>
                 </div>

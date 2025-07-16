@@ -20,7 +20,7 @@ export default function Row({
     imageSrc,
     reverse = false,
     className = "",
-    headerColor = "text-gray-950",
+    headerColor = "text-primaryblue",
     bodyColor = "text-gray-600",
 }: RowProps) {
     return (
@@ -32,9 +32,13 @@ export default function Row({
                 <HeaderText variant="small" className={`mt-10 font-semibold ${headerColor}`}>
                     {title}
                 </HeaderText>
-                <SecondaryText className={`mt-10 font-medium ${bodyColor}`}>
-                    {description}
-                </SecondaryText>
+                {typeof description === "string" ? (
+                    <SecondaryText className={`mt-10 font-medium ${bodyColor}`}>
+                        {description}
+                    </SecondaryText>
+                ) : (
+                    description
+                )}
             </div>
 
             <div className="flex justify-center flex-[0.4]">

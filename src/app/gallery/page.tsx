@@ -35,7 +35,51 @@ const galleryImages = [
     "1TuqzUxAYMwHtyHusjQXmNwrABFC7Sn0B",
 ]
 
-//https://drive.google.com/file/d/1Bl2FGRLVy3FoVND_0ADtDxtQc6bNu_Ma/view?usp=sharing
+
+const happyHomeownersIds = [
+    // "1qsWizbGesUXANbPzGXlh_IVANL07cJ9G",
+    // "12byGKsHbysKnAqU5I5KUUJWtI89PoM9O",
+    // "1j7idLLqMLtPba_S0MjNVKGFDKN_N8RG5",
+    // "1RWLTvFkgvJa5RxwXIDkN515xt3TJrE2n",
+    // "16vBHNFNMz23tcwn_lFaPWMbGB90JcepT",
+    // "16C4hdeyy5Z3h3sNSraAD9sELpyCgKYmF",
+    // "15vfTIcx29szJ2P7n5kCPPyqR1d98euU1",
+    // "15vfTIcx29szJ2P7n5kCPPyqR1d98euU1",
+    // "1fauSfLhJgCfL3sMs2bkZLLNH_WdbFcOe",
+    // "1-eKlmyRS-BLa_McM3f-LHbvUbDlcIivV",
+    // "1-y1Mm99P2h2tUfOgKpmF3jb9lLtVudDE",
+    // "14bCnqCpfu2MuDBf1pWsv1miCCeJBsSzA",
+    // "1DiWZv91xO0y-d0cOCILKqXlwV0TOIGM0",
+    // "1DwwUtmtyz8QnctIA1MnL2C5lMxzMfavV",
+    // "1KaP-Nrx7y7szReLzQEhLYzx4aKYhBoec",
+    // "1THm9TUPI-bQMMQU2j0Rrs0VapbcdGTtT",
+    // "1fMO0k9IB08J9fBPWdyC_mPS9PL_B01xX",
+    // "1gnLPwPSTyre6ErOUuG7T5OM-3DmWDybI",
+    // "1lL1VRW3ab6VlE2q_BeUf7aK7dw8RRl0p",
+    // "1lt2M9wHPcp--QJ8fofnqDOURWJ18kxjy",
+    // "1rVqcXmCSl5coolPvy0DiSwXm2W2bWITC",
+    // "1riN8d176lIhkmSf8T-zEPZxLPKGVsmR5",
+
+
+
+    "11YkKpqPK7GzQefWmCVjeEcwfFqVjgX0a",
+    "16N9Bt_5Lx1pcVsaEPwp46fVsWkpuO5tH",
+    "1OYRWkpWxkf2MiIh0Q1Ga3MquS7hdBAAk",
+    "1WYqqkOtSdOWC0OP9CKoYDOfFDrSsoEbr",
+    "1bFUgv_ZdPa03CRpfhTqMD_MrbD_ID2WH",
+    "1hm8u7BdHzL3lQu7ULhUWMfzbDJqrQL7M",
+    "1kPNF3PlXA-DF4Br3zIXtXI6rfBYKzmTG",
+    "1lUrI4MvBCid4dJoP4hTNOEtprYjUj_yL",
+    "1nrS5xaCq1DwKzBzGEr1Yt8xPPkbtY7eh",
+    "1ntHvWKdk22wMASLKjdfoJF4N9zM07l2R",
+    "1pOg7LBi182PwS_EVtcrzYL-2t8U5_lL2",
+    "1rDETO_p-gxO6cpB0Zs8y_REf529VWtJ4",
+    "1wSfHQHzkCJ0q4LGxPt897BNZoLXYHCnO",
+    "15oP6UshhplxyQSWhXmCO9XhlDv1IvNU1",
+]
+
+
+
 
 export const metadata = {
     title: 'Gallery',
@@ -56,6 +100,16 @@ export default function GalleryPage() {
                 </div>
 
                 <Gallery images={galleryImages} />
+            </div>
+
+            <div className="container mx-auto py-12">
+                <div className="text-center mb-12">
+                    <HeaderText as='h1' className=" font-bold text-primaryblue">
+                        Happy Homeowners
+                    </HeaderText>
+                </div>
+
+                <Gallery images={happyHomeownersIds} />
             </div>
 
             <GetEstimate/>
