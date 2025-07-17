@@ -1,3 +1,4 @@
+
 import React from 'react';
 import HeaderText from './HeaderText';
 import SecondaryText from './SecondaryText';
@@ -95,6 +96,46 @@ export default function RoofOptionsSection() {
                         />
                         <SecondaryText className="mt-4 text-gray-600">{option.description}</SecondaryText>
                         <ul className="mt-4 space-y-2">
+                            {option.features.map((feature, index) => (
+                                <li key={index} className="flex items-start">
+                                    <span className="mr-2 text-green-600">✔</span>
+                                    <span className="text-gray-700 text-lg">
+                                        <strong>{feature.label}:</strong> {feature.value}
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+}
+
+
+
+export function RoofOptionsSectionBlog() {
+    return (
+        <section className="">
+            <div className="mt-16 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                {roofOptions.map((option) => (
+                    <div key={option.title} className="border border-gray-200 rounded-lg shadow-sm p-4">
+                        {/* <HeaderText className='pb-10' variant="small">{option.title}</HeaderText> */}
+
+                        <div className="flex items-center justify-center h-32 py-3">
+                            <HeaderText className=" text-center" variant="small">{option.title}</HeaderText>
+                        </div>
+
+                        <SecondaryText className="mt-2 text-sm font-medium text-gray-500">{option.subtitle}</SecondaryText>
+                        <Image
+                            width={500}
+                            height={500}
+                            src={option.imageUrl}
+                            alt={option.title}
+                            className="mt-4 h-40 w-full object-cover rounded-md"
+                        />
+                        <SecondaryText className="mt-4 text-gray-600">{option.description}</SecondaryText>
+                        <ul className="mt-4 space-y-2 justify-start">
                             {option.features.map((feature, index) => (
                                 <li key={index} className="flex items-start">
                                     <span className="mr-2 text-green-600">✔</span>

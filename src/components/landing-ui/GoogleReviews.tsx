@@ -17,6 +17,7 @@ export default function GoogleReviews() {
         structuredData
         brandName="Paragon Exterior LLC"
         productDescription="Roofing, Siding, and Exterior Services"
+        
       />
 
     </div>
