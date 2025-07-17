@@ -99,7 +99,7 @@ import {Metadata} from "next";
 import {notFound} from "next/navigation";
 import type {BlogPosting, WithContext} from "schema-dts";
 
-export async function generateMetadata({params}: {params: Params}): Promise<Metadata> {
+export async function generateMetadata({params}: {params: Promise<{slug: string}>}) {
     const {slug} = await params;
     const result = await wisp.getPost(slug);
     if (!result || !result.post) {
