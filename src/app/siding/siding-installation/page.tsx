@@ -13,7 +13,7 @@ import {WhyParagonSidingInstallation} from '@/components/WhyParagon'
 // SEO Metadata export
 export const metadata: Metadata = {
     title: 'Expert Siding Installation Services',
-    description: 'Expert siding installation services in the Mid Atlantic. Expert vinyl, fiber cement, and wood siding installation with 100% satisfaction guarantee. Get your free siding installation estimate today.',
+    description: 'Expert siding installation services in the PA, NJ, and DE. Expert vinyl, fiber cement, and wood siding installation with 100% satisfaction guarantee.',
     keywords: 'siding installation, vinyl siding installation, siding replacement, home siding, exterior siding installation, siding contractors, Mid Atlantic siding installation, Expert siding installation',
     openGraph: {
         title: 'Expert Siding Installation Services | Paragon Exterior',

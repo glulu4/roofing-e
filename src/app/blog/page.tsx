@@ -6,9 +6,9 @@ import SecondaryText from "@/components/SecondaryText";
 
 
 export const metadata = {
-    title: "Blog",
+    title: "Roofing and Siding Blog ",
     description:
-        "Explore our blog for expert insights on roofing, siding, windows, gutters, and home improvement. Stay informed with Paragon Exterior's latest tips and trends.",
+        "Explore our blog for expert insights on roofing, siding, windows, gutters, and home improvement. Stay informed with Paragon Exterior's latest tips.",
 };
 
 const Page = async ({

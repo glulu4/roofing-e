@@ -427,7 +427,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Paragon Exterior is your trusted roofing and siding contractor for all your home's needs. Proudly serving Greater Philadelphia with quality craftsmanship, honest estimates, and fast, reliable service for roof repair, replacement, and siding installation.",
+    "Paragon Exterior is a trusted roofing company, offering expert roofing, siding, and exterior services. We serve the Greater Philadelphia area.",
 
   keywords: [
     "roof repair",
@@ -530,11 +530,6 @@ export const metadata: Metadata = {
   },
   other: {
     "application/ld+json": JSON.stringify(structuredData),
-  },
-
-  // ——— Homepage canonical (dynamic pages should supply their own) ———
-  alternates: {
-    canonical: "https://www.paragonexterior.com/",
   },
 }
 

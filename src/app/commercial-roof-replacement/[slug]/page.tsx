@@ -20,51 +20,6 @@ import {
     FaAward
 } from "react-icons/fa";
 
-// Commercial roof replacement services targeting key keywords
-const commercialRoofReplacementServices = [
-    {
-        id: 1,
-        title: "TPO Roof Installation",
-        href: "/roofing/commercial-roofing/tpo-roof-installation",
-        description: "Complete TPO roof replacement with energy-efficient white membranes, superior durability, and professional installation for long-term performance.",
-        imageUrl: "/images/roof-service/commercial/tpo-installation.webp"
-    },
-    {
-        id: 2,
-        title: "EPDM Roof Replacement",
-        href: "/roofing/commercial-roofing/epdm-roof-replacement",
-        description: "Full EPDM rubber roof replacement systems offering excellent weather resistance, flexibility, and cost-effective commercial roofing solutions.",
-        imageUrl: "/images/roof-service/commercial/epdm-replacement.webp"
-    },
-    {
-        id: 3,
-        title: "Modified Bitumen Installation",
-        href: "/roofing/commercial-roofing/modified-bitumen-installation",
-        description: "Professional modified bitumen roof replacement with multi-layer systems providing superior waterproofing and durability for commercial buildings.",
-        imageUrl: "/images/roof-service/commercial/modified-bitumen-install.webp"
-    },
-    {
-        id: 4,
-        title: "Metal Roof Replacement",
-        href: "/roofing/commercial-roofing/metal-roof-replacement",
-        description: "Complete commercial metal roof replacement with standing seam systems offering longevity, energy efficiency, and minimal maintenance requirements.",
-        imageUrl: "/images/roof-service/commercial/metal-replacement.webp"
-    },
-    {
-        id: 5,
-        title: "Built-Up Roofing Systems",
-        href: "/roofing/commercial-roofing/built-up-roofing",
-        description: "Traditional built-up roofing replacement with multiple layers of felt and asphalt providing reliable protection for commercial properties.",
-        imageUrl: "/images/roof-service/commercial/built-up-roofing.webp"
-    },
-    {
-        id: 6,
-        title: "Green Roof Installation",
-        href: "/roofing/commercial-roofing/green-roof-systems",
-        description: "Sustainable green roof replacement systems that improve energy efficiency, manage stormwater, and provide environmental benefits for commercial buildings.",
-        imageUrl: "/images/roof-service/commercial/green-roof.webp"
-    }
-];
 
 // needed to build static paths
 export async function generateStaticParams() {

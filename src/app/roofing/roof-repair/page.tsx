@@ -7,7 +7,7 @@ import React from 'react';
 
 export const metadata = {
     title: 'Local Roof Repair Contractors',
-    description: 'Reliable roof repair for homes and businesses in PA, NJ, and DE. Our experts fix leaks, replace shingles, and provide long-lasting solutions. Trust Paragon Exterior to protect your property.'
+    description: 'Reliable roof repair for homes in PA, NJ, and DE. Paragon Exterior fix leaks, replace shingles, and provide long-lasting solutions.'
 };
 
 export default async function page() {

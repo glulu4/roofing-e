@@ -11,8 +11,8 @@ import Image from 'next/image'
 import React from 'react'
 
 export const metadata = {
-    title: 'Roof, Siding, & Exterior Financing Options',
-    description: 'Explore flexible financing options for your roofing and exterior projects with Hearth. Get personalized monthly payment plans — with rates as low as 0% APR for qualified customers.',
+    title: 'Roofing & Siding Financing Options',
+    description: 'Explore flexible financing options for your roofing and exterior projects with Hearth. Get personalized monthly payment plans — with rates as low as 0%.',
 }
 
 export default function page() {

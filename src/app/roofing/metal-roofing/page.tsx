@@ -13,7 +13,7 @@ import Image from "next/image";
 // SEO metadata with metal roofing keyword focus
 export const metadata: Metadata = {
     title: "Metal Roof Installation & Repair",
-    description: "Professional metal roofing services in Philadelphia, NJ & Delaware. Get durable, energy-efficient metal roofing with 40+ year lifespan. Free metal roof estimates available.",
+    description: "Professional metal roofing services in PA, NJ & DE. Get durable, energy-efficient metal roofing with 40+ year lifespan.",
     keywords: "metal roofing, metal roof installation, metal roof repair, standing seam metal roof, steel roofing, aluminum roofing, metal roofing contractors",
     openGraph: {
         title: "Expert Metal Roofing Installation & Repair Services | Paragon Exterior",

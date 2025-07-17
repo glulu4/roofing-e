@@ -13,9 +13,9 @@ import {WhyParagonSidingReplacement} from "@/components/WhyParagon";
    SEO META
 ───────────────────────────────────────── */
 export const metadata = {
-    title: "Siding Replacement Professionals",
+    title: "Siding Replacement & Installation Professionals",
     description:
-        "Need siding replacement? Paragon Exterior provides professional siding replacement services that boost curb appeal, improve energy efficiency, and protect your home from the elements across Pennsylvania, New Jersey, and Delaware."
+        "Paragon Exterior provides professional siding replacement services that boost curb appeal & protect your home from the elements across PA, NJ, and DE."
 };
 
 /* ─────────────────────────────────────────

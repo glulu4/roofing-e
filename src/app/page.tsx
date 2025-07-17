@@ -10,14 +10,12 @@ import Exceptional from "@/components/landing-ui/Exceptional";
 import {Metadata} from "next";
 import RoofingServices from "@/components/landing-ui/Services";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
-import {Heart} from "lucide-react";
-import {HearthFinanceCalculator} from "@/components/HearthCalc";
 
 
 
 export const metadata: Metadata = {
-  title: "Roofing, Siding, & Exterior Experts",
-  description: "Paragon Exterior is your trusted roofing company specializing in residential and commercial roofing, siding, gutter, and exterior services. Serving Philadelphia, New Jersey, and Delaware with quality craftsmanship.",
+  title: "Roofing & Siding Experts Near You | Paragon Exterior",
+  description: `Paragon Exterior is a trusted roofing company, offering expert roofing, siding, and exterior services. We serve the Greater Philadelphia area.`,
 };
 
 const Page = () => {

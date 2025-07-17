@@ -10,8 +10,8 @@ import FAQSection from '@/components/FAQSection';
 import {WhyParagonVeluxSkylights} from '@/components/WhyParagon';
 
 export const metadata = {
-    title: 'Velux Skylights Installation | Paragon Exterior',
-    description: 'Paragon Exterior offers professional Velux skylights installation to brighten your home with natural light, improve ventilation, and boost energy efficiency. Serving Pennsylvania, New Jersey, and Delaware.'
+    title: 'Velux Skylights Installation and Estimates',
+    description: 'Paragon Exterior offers professional Velux skylights installation to brighten your home with natural light & improve ventilation.'
 }
 
 export default async function page() {
@@ -25,6 +25,7 @@ export default async function page() {
             />
 
             <AboutSection
+            titleAs='h1'
                 className='py-20'
                 title="Velux Skylights – Brighten Your Home"
                 subtitle="Velux skylights are designed to fill your space with natural light while maintaining energy efficiency and enhancing your home’s beauty. Our expert installers ensure a perfect fit for lasting performance."

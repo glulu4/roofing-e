@@ -57,8 +57,8 @@ const faqData = [
 ];
 
 export const metadata = {
-  title: 'Window Repair & Installation | Paragon Exterior',
-  description: 'Professional window repair and installation services in PA, NJ, and DE. Replace or upgrade your windows to improve comfort, lower energy bills, and add style to your home.',
+  title: 'Window Repair & Installation Experts',
+  description: 'Professional window repair and installation services in PA, NJ, and DE. Replace or upgrade your windows to improve comfort and lower energy bills',
 };
 
 function Page() {

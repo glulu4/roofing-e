@@ -10,8 +10,8 @@ import SecondaryText from '@/components/SecondaryText';
 import FAQSection from '@/components/FAQSection';
 
 export const metadata = {
-    title: 'Metal Roof Repair Services | Fast Leak & Panel Repair in PA, NJ & DE',
-    description: 'Top-rated metal roof repair services in Pennsylvania, New Jersey, and Delaware. We fix leaks, replace panels, treat rust, and restore standing seam and corrugated metal roofs. Free estimates for metal roof repair — call now!',
+    title: 'Metal Roof Repair Services in PA, NJ & DE',
+    description: 'Paragon Exterior is the Top-rated metal roof repair experts in Pennsylvania, New Jersey, and Delaware. We fix leaks, replace panels, & treat rust.',
 };
 
 export default function MetalRoofRepairPage() {

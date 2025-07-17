@@ -16,7 +16,7 @@ const FAQSection = ({
 }: {faqs: Array<{question: string; answer: string}>, title: string}) => {
     return (
         <section className="mx-auto w-11/12 sm:w-5/6 py-16 sm:py-24 ">
-            <HeaderText className='text-center mb-8 text-primaryblue'>
+            <HeaderText as='h3' className='text-center mb-8 text-primaryblue'>
                 {title}
             </HeaderText>
             <div className="container px-4 md:px-6">
@@ -25,12 +25,12 @@ const FAQSection = ({
                         {faqs.map((faq, index) => (
                             <AccordionItem className='py-2' key={index} value={`faq-${index}`}>
                                 <AccordionTrigger className="text-lg font-medium">
-                                    <SecondaryHeader className="text-pretty font-semibold tracking-tight text-primaryblue">
+                                    <SecondaryHeader as='h3' className="text-pretty font-semibold tracking-tight text-primaryblue">
                                         {faq.question}
                                     </SecondaryHeader>
                                 </AccordionTrigger>
                                 <AccordionContent className="text-muted-foreground">
-                                    <SecondaryText className="text-muted-foreground">
+                                    <SecondaryText as='p' className="text-muted-foreground">
                                         {faq.answer}
                                     </SecondaryText>
                                 </AccordionContent>

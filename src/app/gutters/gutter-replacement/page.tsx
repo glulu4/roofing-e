@@ -113,9 +113,9 @@ import Reasons from '@/components/service-page/Reasons';
 import type {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gutter Replacement Services PA, NJ, DE | Seamless Gutter Installation',
+  title: 'Gutter Replacement Services PA, NJ, DE',
   description:
-    'Professional gutter replacement services in Pennsylvania, New Jersey & Delaware. Expert seamless gutter installation, aluminum gutters, copper gutters & more. Free estimates from licensed contractors.',
+    'If you have damaged or missing gutters, Paragon Exterior can provide expert gutter replacement services in PA, NJ & DE. Free estimates.',
   keywords:
     'gutter replacement, seamless gutters, gutter installation, new gutter system, gutter company near me, aluminum gutter installation, copper gutter replacement, seamless gutter replacement, gutter contractor, gutter installation cost, new gutters, gutter system replacement, Pennsylvania gutter replacement, New Jersey gutter replacement, Delaware gutter replacement, Philadelphia gutter installation, residential gutter replacement, commercial gutter installation, gutter upgrade, gutter replacement near me, best gutter company, professional gutter installation, gutter replacement cost, half round gutters, k-style gutters, gutter and downspout installation',
   openGraph: {
@@ -132,9 +132,6 @@ export const metadata: Metadata = {
     description:
       'Expert gutter replacement and seamless gutter installation in PA, NJ & DE. Licensed contractors with premium materials and warranties.',
     images: ['/images/house4.jpeg'],
-  },
-  alternates: {
-    canonical: 'https://paragonexterior.com/gutters/gutter-replacement',
   },
 };
 

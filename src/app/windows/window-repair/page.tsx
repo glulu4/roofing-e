@@ -10,7 +10,7 @@ import {WhyParagonWindowRepair} from '@/components/WhyParagon';
 
 export const metadata = {
     title: 'Window Repair Services | Professional Window Repair Near Me',
-    description: 'Expert window repair services in Pennsylvania, New Jersey, and Delaware. Professional window repair for broken glass, damaged frames, seal failures, and hardware issues. Get your free window repair estimate today.',
+    description: 'Paragon Exterior is the trusted window repair expert across Pennsylvania, New Jersey, and Delaware. Get your free window repair estimate today.',
     keywords: 'window repair, window repair near me, broken window repair, window glass repair, window frame repair, window seal repair, residential window repair, commercial window repair',
     openGraph: {
         title: 'Professional Window Repair Services | Paragon Exterior',

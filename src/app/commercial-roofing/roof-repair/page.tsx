@@ -8,8 +8,8 @@ import SecondaryText from '@/components/SecondaryText';
 import HeaderText from '@/components/HeaderText';
 
 export const metadata = {
-    title: 'Commercial Roof Repair Contractor | Paragon Exterior',
-    description: 'Professional commercial roof repair services for businesses throughout PA, NJ, and DE. Expert commercial roofing contractors specializing in emergency commercial roof leak repair, flat roof repair, and building restoration.',
+    title: 'Commercial Roof Repair Contractor',
+    description: 'Professional commercial roof repair services for businesses throughout PA, NJ, and DE. We specialize in commercial roof leak repair, & flat roof repair.',
 };
 
 export default function Page() {

@@ -55,9 +55,8 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const location = serviceAreas[slug];
     return {
         title: `Metal Roof Repair in ${location?.name}`,
-        description: `Professional metal roof repair in ${location.name}. Expert repair of metal roof leaks, panel damage, and storm repairs. Learn how to repair metal roofs with trusted contractors.`,
+        description: `Professional metal roof repair in ${location.name}. Expert repair of metal roof leaks, panel damage, and storm repairs.`,
         keywords: `metal roof repair ${location.name}, how to repair metal roof, metal roof leak repair, how to repair leaking metal roof, metal roof contractors ${location.name}`,
-        alternates: {canonical: `https://www.paragonexterior.com/metal-roof-repair/${slug}`},
         openGraph: {
             title: `Metal Roof Repair in ${location?.name} | Paragon Exterior`,
             description: `Expert metal roof repair serving ${location.name}. Professional repair of metal roof leaks, panel damage, and storm repairs with warranties.`,

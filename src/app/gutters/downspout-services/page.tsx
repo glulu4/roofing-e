@@ -9,9 +9,9 @@ import Reasons from '@/components/service-page/Reasons';
 import type {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Downspout Installation & Repair Services PA, NJ, DE | Professional Drainage Solutions',
+  title: 'Downspout Installation & Repair Services Near Me',
   description:
-    'Expert downspout installation, repair, and replacement services in Pennsylvania, New Jersey & Delaware. Underground drainage, extensions, buried downspouts & more. Licensed contractors with free estimates.',
+    'Do you need new gutters and downspouts? Paragon Exterior can provide expert downspout installation services in PA, NJ & DE. Free estimates available.',
   keywords:
     'downspout installation, downspout repair, downspout replacement, downspout services, gutter downspouts, downspout extensions, buried downspouts, underground drainage, downspout cleaning, downspout maintenance, aluminum downspouts, copper downspouts, downspout elbow repair, downspout disconnect, rain barrel connection, foundation drainage, Pennsylvania downspout services, New Jersey downspout installation, Delaware downspout repair, Philadelphia downspout contractor, downspout cost, downspout problems, water drainage solutions, basement flooding prevention',
   openGraph: {
@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     description:
       'Expert downspout installation, repair & drainage solutions in PA, NJ & DE. Protect your foundation with professional downspout services.',
     images: ['/images/house4.jpeg'],
-  },
-  alternates: {
-    canonical: 'https://paragonexterior.com/gutters/downspout-services',
   },
 };
 

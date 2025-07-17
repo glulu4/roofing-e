@@ -22,8 +22,8 @@ export async function generateMetadata({
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `${location?.name} Roof Replacement Cost 2025 | Average Prices & Estimates`,
-        description: `Complete roof replacement cost guide for ${location?.name}. Average prices: $8,000-$60,000+ depending on materials. Get detailed cost breakdowns, free estimates from licensed contractors.`,
+        title: `${location?.name} Roof Replacement Cost Guide 2025`,
+        description: `Complete roof replacement cost guide for ${location?.name}. Get detailed cost breakdowns, free estimates from licensed contractors.`,
         keywords: `roof replacement cost ${location?.name}, roof replacement price ${location?.name}, new roof cost ${location?.name}, roof installation cost, roofing contractor ${location?.name}, roof replacement estimate, asphalt shingle cost, metal roof cost, tile roof cost, roof replacement calculator, average roof replacement cost, roof replacement financing, roof replacement quotes ${location?.name}`,
         openGraph: {
             title: `${location?.name} Roof Replacement Cost Guide 2025`,

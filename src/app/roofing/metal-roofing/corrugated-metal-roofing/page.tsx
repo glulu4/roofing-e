@@ -12,7 +12,7 @@ import FAQSection from '@/components/FAQSection';
 export const metadata = {
     title: 'Corrugated Metal Roofing Installation and Repair',
     description:
-        'Paragon Exterior provides expert corrugated metal roofing installation and repair in Pennsylvania, New Jersey, and Delaware. Learn about its durability, affordability, and energy-saving benefits.',
+        'Paragon Exterior provides expert corrugated metal roofing installation and repair in PA, NJ, and DE. Learn about its durability & affordability.',
 };
 
 export default function CorrugatedMetalRoofPage() {

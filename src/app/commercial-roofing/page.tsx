@@ -35,7 +35,7 @@ const posts = [
 export const metadata = {
     title: "Local Commercial Roofing Services",
     description:
-        "Paragon Exterior provides expert commercial roofing in PA, NJ, and DE. We install and repair flat roofs, metal roofs, and commercial roof systems that last.",
+        "Paragon Exterior provides expert commercial roofing in PA, NJ, and DE. We install and repair flat roofs, metal roofs, and commercial roof systems.",
 };
 
 const Page = () => {

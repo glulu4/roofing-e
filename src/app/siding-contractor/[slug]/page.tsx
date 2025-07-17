@@ -54,10 +54,9 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `Siding Contractors in ${location?.name}  | Siding Installation, Repair, & Replacement`,
-        description: `Professional Siding Contractors in ${location.name} offering vinyl siding installation, siding repair, siding replacement, and fiber cement siding. Licensed and insured with free estimates.`,
+        title: `Siding Contractors in ${location?.name}`,
+        description: `Professional Siding Contractors in ${location.name} offering vinyl siding installation, siding repair, siding replacement, and fiber cement siding.`,
         keywords: `${location.name} Siding Contractors, siding installation ${location.name}, vinyl siding ${location.name}, siding repair ${location.name}, siding replacement ${location.name}, fiber cement siding`,
-        alternates: {canonical: `https://www.paragonexterior.com/siding-contractor/${slug}`},
         openGraph: {
             title: ` Siding Contractors in ${location?.name} | Paragon Exterior`,
             description: `Expert Siding Contractors serving ${location.name}. Specializing in siding installation, vinyl siding, siding repair, and siding replacement services.`,

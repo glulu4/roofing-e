@@ -11,7 +11,7 @@ import {WhyParagonFlatRoofing} from "@/components/WhyParagon";
 export const metadata = {
     title: "Commercial Flat Roofing Contractor",
     description:
-        "Trusted commercial flat roofing contractor serving Pennsylvania, New Jersey, and Delaware. Expert EPDM, TPO, and modified bitumen commercial flat roof installation, repair, and replacement for businesses."
+        "Paragon Exterior is your trusted commercial flat roofing contractor serving Pennsylvania, New Jersey, and Delaware.",
 };
 
 /* ——— Inline Highlights ——— */

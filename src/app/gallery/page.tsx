@@ -82,7 +82,7 @@ const happyHomeownersIds = [
 
 
 export const metadata = {
-    title: 'Gallery',
+    title: 'Gallery | Roofing & Siding Projects',
     description: 'Explore our collection of stunning roofing, siding, and exterior projects. Each image showcases our commitment to quality and craftsmanship.',
 }
 

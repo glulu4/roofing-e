@@ -11,8 +11,8 @@ import WhyParagon, {WhyParagonBoardAndBattenSiding} from '@/components/WhyParago
 
 // SEO Metadata export
 export const metadata: Metadata = {
-    title: 'Board and Batten Siding',
-    description: 'Transform your home with stunning board and batten siding installation. Modern, eye-catching board and batten siding designs that enhance curb appeal and architectural style. Expert installation services.',
+    title: 'Board and Batten Siding Installation',
+    description: 'Paragon Exterior specializes in board and batten siding installation. Transform your home with a modern, architectural look that stands out.',
     keywords: 'board and batten siding, board and batten siding installation, modern siding, architectural siding, contemporary siding, vertical wood siding, vertical vinyl siding, board and batten siding',
     openGraph: {
         title: 'Board and Batten Siding Installation | Paragon Exterior',
@@ -25,9 +25,7 @@ export const metadata: Metadata = {
         title: 'Board and Batten Siding Installation | Paragon Exterior',
         description: 'Transform your home with stunning board and batten siding installation.',
     },
-    alternates: {
-        canonical: 'https://www.paragonexterior.com/services/vertical-siding'
-    }
+
 }
 
 // Structured data for SEO

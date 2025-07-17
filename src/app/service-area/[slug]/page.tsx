@@ -70,10 +70,9 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `${location?.name} Roofing Contractor | Roof Repair, Roof Replacement & More`,
-        description: `Professional roofing contractor in ${location.name} offering roof repair, roof replacement, emergency roof repair, siding installation, and window replacement. Licensed and insured with 24/7 emergency service.`,
+        title: `${location?.name}'s Roofing Contractor`,
+        description: `Trusted roofing contractor in ${location.name} offering roof repair, roof replacement, emergency roof repair, siding installation, and window replacement.`,
         keywords: `${location.name} roofing contractor, roof repair ${location.name}, roof replacement ${location.name}, emergency roof repair, siding installation ${location.name}, window replacement ${location.name}`,
-        alternates: {canonical: `https://www.paragonexterior.com/roofing-contractor/${slug}`},
         openGraph: {
             title: `${location?.name} Roofing Contractor | Paragon Exterior`,
             description: `Expert roofing contractor serving ${location.name}. Specializing in roof repair, roof replacement, emergency services, siding installation, and window replacement.`,
@@ -270,12 +269,12 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     titleAs="h1"
                     mainContent={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Paragon Exterior is your one-stop source for <strong>roof repair</strong>, <strong>roof replacement</strong>, <strong>emergency roof repair</strong>, <strong>siding installation</strong>, and <strong>window replacement</strong> in {location.name}. We handle every project with care and professionalism—using only the best materials, the latest techniques, and a commitment to your complete satisfaction.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Our team is licensed, insured, and highly trained to protect your home from leaks, weather, and energy loss. Whether you need urgent help or a full exterior upgrade, you can trust Paragon Exterior for fast, friendly service.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     bottomContent={`Join your neighbors in ${location.name} who choose Paragon Exterior for dependable roof repairs, new roofs, and complete exterior makeovers.`}
@@ -302,12 +301,12 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     title={`Emergency Roof Repair Services in ${location.name}`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Storm damage or leaks? Our <strong>emergency roof repair</strong> team is ready 24/7. We respond fast to stop leaks, prevent water damage, and keep your family safe—any time, day or night.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Emergency roof repair includes leak detection, storm assessment, and immediate tarping. Our crews arrive fully equipped to secure your home right away.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/service-area/img2.webp"
@@ -321,12 +320,12 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     title={`Roof Repair & Roof Replacement in ${location.name}`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Need roof repair? We fix leaks, missing shingles, and storm damage with quality materials and expert skill. For <strong>roof replacement</strong>, we offer top brands and styles, from asphalt shingles to standing seam metal roofing.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Every roof we install in {location.name} is built to last, backed by strong warranties and installed by licensed, insured pros.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/service-area/img3.webp"
@@ -341,12 +340,12 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     title={`Siding & Window Replacement`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Upgrade your curb appeal and energy savings with our <strong>siding installation</strong> and <strong>window replacement</strong> services. Choose from vinyl, fiber cement, wood siding, and high-performance windows.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 We handle all exterior renovations for your {location.name} home—saving you time, hassle, and money with one trusted contractor.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/service-area/img4.webp"
@@ -446,32 +445,6 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
 
                 <GoogleReviews />
                 <FAQ locationName={location.name} />
-
-                {/* Service Area & CTA */}
-                <section className="py-16 bg-gray-50">
-                    <div className="max-w-4xl mx-auto px-6 text-center">
-                        <HeaderText as="h2" className="mb-8">
-                            Serving {location.name} and Nearby Areas
-                        </HeaderText>
-                        <SecondaryText className="mb-8">
-                            Need a trusted roofing contractor in {location.name}? Our services cover roof repair, roof replacement, emergency repairs, siding, and windows for all homes and businesses in the area. Call us for same-day help or your free estimate.
-                        </SecondaryText>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <a
-                                href="tel:2157997663"
-                                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors duration-200 block"
-                            >
-                                Emergency: (215) 799-7663
-                            </a>
-                            <a
-                                href="/estimate"
-                                className="bg-primaryblue hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors duration-200 block"
-                            >
-                                Free Estimate
-                            </a>
-                        </div>
-                    </div>
-                </section>
 
                 <GetEstimate location={location.name} />
             </div>

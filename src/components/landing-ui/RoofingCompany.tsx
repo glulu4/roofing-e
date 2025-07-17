@@ -29,37 +29,19 @@ export default function RoofingCompany() {
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:gap-x-44">
 
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl flex flex-col gap-12">
-                                    <HeaderText as="h1" className="text-pretty font-semibold tracking-tight text-primaryblue sm:text-7xl">
-                                        Your Trusted Residential and Commercial Roofing Company
+                                    <HeaderText as="h1" className="text-pretty font-semibold tracking-tight text-primaryblue">
+                                        Paragon Exterior is the Trusted Roofing Company in the Greater Philadelphia Area
                                     </HeaderText>
                                     <SecondaryText>
-                                        At Paragon Exterior, we pride ourselves on the quality 
-                                        of our work and the satisfaction of our customers. 
-                                        We&apos;ve been proudly serving the Philadelphia, New Jersey, 
-                                        and Delaware areas for years, with a team of experienced roofing contractors dedicated to protecting your home or business.
-                                        We specialize in roof and siding services, such as repairs, replacements, and installations.
-                                        Our expertise extends to roofing systems of all types, including asphalt shingles, metal roofs, and
-                                        flat roofs. We also offer comprehensive exterior services like
+                                        At Paragon Exterior, we deliver reliable,
+                                        high-quality roofing and siding services
+                                        for homeowners across Pennsylvania, New Jersey, and Delaware.
+                                        We know how important your home is, and we treat it with the care and respect it deserves.
+                                        From full roof replacements, using premium GAF shingles, to precision siding installations,
+                                        we combine expert craftsmanship with fair pricing.
+                                        Located in Feasterville-Trevose, we proudly serve a 50-mile radius from zip code 19053 with certified crews and exceptional service.
                                         <br />
-                                        <span className="font-semibold">siding repair</span>,
-                                        <span className="font-semibold">siding replacement</span>,
-                                        <span className="font-semibold">gutter installation</span>,
-                                        <span className="font-semibold">gutter cleaning</span>,
-                                        <span className="font-semibold">gutter maintenance</span>,
-                                        <span className="font-semibold">gutter guards</span>,
-                                        <span className="font-semibold">gutter installation</span>,
-                                        <span className="font-semibold">gutter repair</span>,
-                                        <span className="font-semibold">gutter replacement</span>,
-                                        and more. Our team is equipped to handle everything from minor repairs to complete roof replacements,
-                                        ensuring your property remains safe and aesthetically pleasing.
-                                        We understand that your roof is a significant investment, and we are committed to providing the best
-                                        roofing solutions tailored to your needs. Our services include thorough inspections, detailed consultations, and transparent
-                                        estimates, so you know exactly what to expect. We use only high-quality materials and the latest techniques to ensure your roof is built to last.
-                                        
-                                        {/* Whether you need a new roof, a roof repair, or an exterior upgrade, Paragon Exterior is here to help. 
-                                        siding installation, gutter repair, and even gutter replacements — all designed to improve your property’s durability and curb appeal.
-                                        Whether you&apos;re dealing with storm damage, a leaking roof, or 
-                                        planning a full exterior upgrade, our roofing company delivers long-lasting results with unmatched craftsmanship and care. */}
+
 
                                         Looking for the best roofing company near you? We&apos;re committed to quality, affordability, and customer satisfaction — building roofs that last and relationships that matter.
                                     </SecondaryText>

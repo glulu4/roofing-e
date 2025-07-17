@@ -48,10 +48,9 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `Emergency Roof Repair ${location?.name} | 24/7 Roofing Emergency Service`,
-        description: `24/7 emergency roof repair in ${location.name}. Immediate response for storm damage, roof leaks, and urgent roofing emergencies. Licensed contractors available now - call for instant help!`,
+        title: `Emergency Roof Repair ${location?.name}`,
+        description: `24/7 emergency roof repair in ${location.name}. Immediate response for storm damage, roof leaks, and urgent roofing emergencies.`,
         keywords: `emergency roof repair ${location.name}, 24/7 roof repair, emergency roofing ${location.name}, storm damage repair, roof leak repair, emergency roofer ${location.name}`,
-        alternates: {canonical: `https://www.paragonexterior.com/emergency-roof-repair/${slug}`},
         openGraph: {
             title: `Emergency Roof Repair ${location?.name} | 24/7 Response`,
             description: `Immediate emergency roof repair in ${location.name}. 24/7 response for storm damage, leaks, and urgent roofing emergencies. Call now for instant help!`,

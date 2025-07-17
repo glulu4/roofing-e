@@ -11,8 +11,9 @@ import Reasons from '@/components/service-page/Reasons';
 import {WhyParagonWindowReplacement} from '@/components/WhyParagon';
 
 export const metadata = {
-    title: 'Window Replacement Services | Professional Window Replacement Near Me',
-    description: 'Expert window replacement services in Pennsylvania, New Jersey, and Delaware. Professional window replacement contractors offering energy-efficient windows, vinyl windows, and complete window replacement installation. Get your free window replacement estimate today.',
+    title: 'Window Replacement Services Near Me',
+    description: 
+    'Paragon Exterior is your expert window replacement company in PA, NJ, and DE. We offer complete window replacement & installation.',
     keywords: 'window replacement, window replacement near me, new windows, energy efficient windows, vinyl window replacement, residential window replacement, window installation, window replacement contractors',
     openGraph: {
         title: 'Professional Window Replacement Services | Paragon Exterior',

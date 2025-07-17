@@ -11,7 +11,7 @@ import {WhyParagonFlatRoofing} from "@/components/WhyParagon";
 export const metadata = {
     title: "Flat Roofing Company | EPDM, TPO, and Flat Roof Repair",
     description:
-        "Looking for a flat roofing company you can trust? Paragon Exterior provides expert flat roof repair, replacement, and energy-efficient flat roofing systems in PA, NJ, and DE.",
+        "Looking for a flat roofing company you can trust? Paragon Exterior provides expert flat roofing services in PA, NJ, and DE.",
     keywords:
         "flat roof repair, flat roofing company, flat roof contractor, EPDM repair, TPO roofing, modified bitumen, flat roof company near me",
 };

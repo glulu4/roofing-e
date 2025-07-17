@@ -10,7 +10,7 @@ import StandingSeamTabs from '@/components/service-page/roof/StandingSeamTabs';
 export const metadata = {
     title: 'Standing Seam Metal Roof Installation',
     description:
-        'Paragon Exterior delivers premium standing seam metal roof installation and repair across Pennsylvania, New Jersey, and Delaware. Discover the durability, weather resistance, and low-maintenance performance of standing seam metal roofing systems.',
+        'Paragon Exterior delivers premium standing seam metal roof installation and repair across PA, NJ, and DE. ',
 };
 
 export default function StandingSeamMetalRoofPage() {

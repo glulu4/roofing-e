@@ -45,8 +45,8 @@ const services = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Expert Siding Installation, Repair & Replacement Contractors | Vinyl Siding Specialists',
-  description: 'Professional siding contractors specializing in siding installation, siding repair, and siding replacement. Expert vinyl siding services, fiber cement, and board & batten siding solutions for Pennsylvania homes.',
+  title: 'Expert Siding Installation, Repair & Replacement Contractors',
+  description: 'Paragon Exterior is a trusted siding contractors specializing in installation, repair, and replacement. Serving PA, NJ, and DE with quality craftsmanship.',
 }
 
 export default function page() {

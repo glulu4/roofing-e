@@ -63,9 +63,8 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const location = serviceAreas[slug];
     return {
         title: `Gutter Installation in ${location?.name}`,
-        description: `Professional gutter installation in ${location.name} with seamless gutters, gutter repair, and gutter replacement. Licensed contractors offering aluminum, copper, and steel gutters with warranties.`,
+        description: `Professional gutter installation in ${location.name} with seamless gutters, gutter repair, and gutter replacement.`,
         keywords: `gutter installation ${location.name}, seamless gutters ${location.name}, gutter repair ${location.name}, gutter replacement ${location.name}, gutter contractors ${location.name}`,
-        alternates: {canonical: `https://www.paragonexterior.com/gutter-installation/${slug}`},
         openGraph: {
             title: `Gutter Installation in ${location?.name} | Paragon Exterior`,
             description: `Expert gutter installation serving ${location.name}. Specializing in seamless gutters, gutter repair, and complete gutter replacement services.`,

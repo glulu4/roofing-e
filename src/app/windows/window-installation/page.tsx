@@ -12,8 +12,8 @@ import {WhyParagonWindowInstallation} from '@/components/WhyParagon';
 import WindowInstallationProcess from '@/components/service-page/window/WindowInstallationProcess';
 
 export const metadata = {
-    title: 'Window Installation Services | Professional Window Installation Near Me',
-    description: 'Expert window installation services in Pennsylvania, New Jersey, and Delaware. Professional window installation contractors offering new construction windows, replacement window installation, and custom window installation. Get your free window installation estimate today.',
+    title: 'Window Installation Services ',
+    description: 'Paragon Exterior offers expert window installation services in PA, NJ, and DE. Get a free estimate for new construction or replacement windows.',
     keywords: 'window installation, window installation near me, new window installation, professional window installation, window installation contractors, residential window installation, commercial window installation, window installers',
     openGraph: {
         title: 'Professional Window Installation Services | Paragon Exterior',

@@ -9,9 +9,9 @@ import Reasons from '@/components/service-page/Reasons';
 import type {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gutter Repair Services PA, NJ, DE | Expert Leak & Damage Repair',
+  title: 'Gutter Repair Services PA, NJ, DE',
   description:
-    'Professional gutter repair services in Pennsylvania, New Jersey & Delaware. Expert repair for leaks, sagging gutters, clogs, fascia damage & more. Emergency service available. Free estimates.',
+    'If you have damaged or missing gutters, Paragon Exterior can provide expert gutter repair services in PA, NJ & DE. Free estimates.',
   keywords:
     'gutter repair, gutter leak repair, sagging gutter repair, gutter cleaning, fascia board repair, downspout repair, gutter maintenance, emergency gutter repair, seamless gutter repair, aluminum gutter repair, copper gutter repair, gutter contractor, Pennsylvania gutter repair, New Jersey gutter repair, Delaware gutter repair, Philadelphia gutter repair, gutter repair cost, gutter repair near me, residential gutter repair, commercial gutter repair, gutter system repair, soffit repair, gutter guard installation, gutter replacement, storm damage gutter repair',
   openGraph: {
@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     description:
       'Expert gutter repair contractors serving PA, NJ & DE. Emergency repairs, leak fixes, sagging gutter solutions. Licensed & insured with free estimates.',
     images: ['/images/house4.jpeg'],
-  },
-  alternates: {
-    canonical: 'https://paragonexterior.com/gutters/gutter-repair',
   },
 };
 

@@ -8,9 +8,9 @@ import Reasons from '@/components/service-page/Reasons';
 import SecondaryText from '@/components/SecondaryText';
 
 export const metadata = {
-    title: 'Commercial Roof Replacement Experts',
+    title: 'Commercial Roof Replacement Experts Near Me',
     description:
-        'Paragon Exterior delivers best-in-class commercial roof replacement services across Pennsylvania, New Jersey, and Delaware. From flat roof tear-offs to metal roof installations, our team ensures a durable, energy-efficient system backed by industry-leading warranties.',
+        'Paragon Exterior delivers best-in-class commercial roof replacement services across Pennsylvania, New Jersey, and Delaware. ',
 };
 
 export default function CommercialRoofReplacementPage() {

@@ -12,8 +12,8 @@ import {WhyParagonSidingRepair} from '@/components/WhyParagon'
 
 // SEO Metadata export
 export const metadata: Metadata = {
-    title: 'Professional Siding Repair Services | Fast & Effective Repairs',
-    description: 'Expert siding repair services for damaged, cracked, or missing siding. Fast response, seamless color matching, and quality workmanship. Get your free siding repair estimate today.',
+    title: 'Professional Siding Repair Services',
+    description: 'Expert siding repair services for damaged, cracked, or missing siding. Fast response, seamless color matching, and quality workmanship.',
     keywords: 'siding repair, vinyl siding repair, siding contractors, damaged siding repair, siding replacement, home siding repair, exterior siding repair, professional siding repair',
     openGraph: {
         title: 'Professional Siding Repair Services | Paragon Exterior',
@@ -26,9 +26,6 @@ export const metadata: Metadata = {
         title: 'Professional Siding Repair Services | Paragon Exterior',
         description: 'Expert siding repair services for all types of damage. Fast response and seamless repairs.',
     },
-    alternates: {
-        canonical: 'https://www.paragonexterior.com/services/siding-repair'
-    }
 }
 
 // Structured data for SEO
