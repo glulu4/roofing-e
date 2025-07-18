@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const metadata = {
+    title: "James Hardie Siding",
+    description: "Explore our James Hardie siding options for durable, stylish, and low-maintenance home exteriors. Contact us for expert installation and a free estimate.",
+}
+
 export default function page() {
     return (
         <div>

@@ -61,7 +61,7 @@ export default function page() {
         <div className='my-12'>
             <SecondaryText>
             Choosing the right siding does more than boost your home&apos;s appearance. Quality siding protects your house from harsh weather, helps lower your energy bills, and improves comfort all year.
-            That&apos;s why Paragon Exterior exclusively works with <a href="/james-hardie" className="underline text-blue-700">James Hardie</a> for siding material and installation—trusted for durability and style.
+            That&apos;s why Paragon Exterior exclusively works with <a href="/siding/james-hardie" className="underline text-blue-700">James Hardie</a> for siding material and installation—trusted for durability and style.
 
             Whether you need new <strong>siding installation</strong>, a quick <strong>siding repair</strong>, or a complete <strong>siding replacement</strong>, Paragon Exterior is the contractor you can rely on.
             We help you choose durable materials like <strong>fiber cement</strong>, <strong>vinyl siding</strong>, <strong>aluminum</strong>, <strong>cedar</strong>, or <strong>engineered wood</strong>—so your home stays protected for years to come.
