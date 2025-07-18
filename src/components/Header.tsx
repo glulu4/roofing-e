@@ -13,6 +13,8 @@ import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {FunctionComponent, useState, useEffect, useRef} from "react";
+import {isMobile} from "react-device-detect";
+import Marquee from "react-fast-marquee";   
 
 interface MenuItem {
   name: string;
@@ -328,8 +330,20 @@ export const Header: FunctionComponent = () => {
         ? "bg-white backdrop-blur-md shadow-lg"
         : "bg-white"
     )}>
+      <PromoBanner />
+      {/* <div className="w-full bg-primaryblue h-8 sm:h-12 flex flex-row items-center justify-around">
+
+        <p className="text-white text-center text-sm md:text-lg">
+          Free gutters and downspouts with any full roof replacement in July & August! 
+        </p>
+            
+            <p className="text-white font-medium text-center text-sm md:text-lg">
+              Free Estimates Available Call or Text <a href="tel:+12157997663" className="underline">+1 (215) 799-7663</a>
+            </p>
+           
+      </div> */}
       <div className="flex items-center justify-between py-4 md:py-6  w-full px-8">
-      <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#152D47" />
         
         <Link
           href="/"
@@ -340,7 +354,7 @@ export const Header: FunctionComponent = () => {
             alt="Company Logo"
             width={150}
             height={75}
-            className="object-contain w-32 sm:w-40"
+            className="object-contain w-32 sm:w-32"
             priority
           />
         </Link>
@@ -349,3 +363,54 @@ export const Header: FunctionComponent = () => {
     </header>
   );
 };
+
+
+
+
+function PromoBanner() {
+  return (
+    <div className="w-full bg-primaryblue h-8 sm:h-12 flex items-center">
+=
+    {isMobile ? (
+        <Marquee
+          className="block sm:hidden w-full"
+          speed={20}           // tweak to taste
+          pauseOnHover
+          gradient={false}     // no fade on the edges
+        >
+          <span className="mx-4 text-white text-sm">
+            Free gutters and downspouts with any full roof replacement in July & August!
+          </span>
+          <span className="mx-4 text-white font-medium text-sm">
+            Free Estimates Available — Call or Text&nbsp;
+            <a href="tel:+12157997663" className="underline">+1 (215) 799-7663</a>
+          </span>
+        </Marquee>
+    ) : (
+          <div className="w-full bg-primaryblue h-8 sm:h-12 flex flex-row items-center justify-around">
+
+            <p className="text-white text-center text-sm md:text-lg">
+              Free gutters and downspouts with any full roof replacement in July & August!
+            </p>
+
+            <p className="text-white font-medium text-center text-sm md:text-lg">
+              Free Estimates Available Call or Text <a href="tel:+12157997663" className="underline">+1 (215) 799-7663</a>
+            </p>
+
+          </div>
+    )}
+
+
+      {/* ---- Tablet & desktop: static layout ---- */}
+      {/* <div className="hidden sm:flex w-full items-center justify-around">
+        <p className="text-white text-sm md:text-lg text-center">
+          Free gutters and downspouts with any full roof replacement in July & August!
+        </p>
+        <p className="text-white font-medium text-sm md:text-lg text-center">
+          Free Estimates Available — Call or Text&nbsp;
+          <a href="tel:+12157997663" className="underline">+1 (215) 799-7663</a>
+        </p>
+      </div> */}
+    </div>
+  );
+}

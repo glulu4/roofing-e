@@ -22,6 +22,14 @@ export default function TrustedBy() {
                         className="h-16 sm:h-20 w-auto object-contain px-10"
                     />
                     <Image
+
+                        width={500}
+                        height={500}
+                        alt="James Hardie"
+                        src="/images/home/company_icons/jh logo.png"
+                        className="h-16 sm:h-20 w-auto object-contain px-10"
+                    />
+                    <Image
                         
                         width={500}
                         height={500}
@@ -77,7 +85,7 @@ export default function TrustedBy() {
                         alt="Acorn"
                         src="/images/home/company_icons/acorn.svg"
                         className="h-16 sm:h-20 w-auto object-contain px-10"
-                    />
+                    /> 
                     <Image
 
                         width={500}
@@ -86,6 +94,8 @@ export default function TrustedBy() {
                         src="/images/home/company_icons/hearth_logo.svg"
                         className="h-16 sm:h-20 w-auto object-contain px-10"
                     />
+
+
                 </Marquee>
                 {/* </div> */}
             </div>

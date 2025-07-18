@@ -104,7 +104,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                 <div className="flex flex-col sm:flex-row sm:items-center lg:flex-row lg:items-center lg:flex-1 sm:gap-10">
                     <HeaderText
                         variant='large'
-                        as="p"
+                        as="div"
                         className="font-bold text-primaryblue mb-4 sm:mb-0 sm:mr-8 lg:mr-12"
                     >
                         {service.id}

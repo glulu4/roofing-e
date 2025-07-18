@@ -10,6 +10,7 @@ import SecondaryText from './SecondaryText';
 import SecondaryHeader from './SecondaryHeader';
 import HeaderText from './HeaderText';
 
+
 const FAQSection = ({
     title,
     faqs

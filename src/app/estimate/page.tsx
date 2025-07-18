@@ -47,36 +47,36 @@ export default function Example() {
                                 className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                             >
 
-                                    <defs>
-                                        <pattern
-                                            x="100%"
-                                            y={-1}
-                                            id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                                            width={200}
-                                            height={200}
-                                            patternUnits="userSpaceOnUse"
-                                        >
-                                            <path d="M130 200V.5M.5 .5H200" fill="none" />
-                                        </pattern>
-                                    </defs>
-                                    <rect fill="white" width="100%" height="100%" strokeWidth={0} />
-                                    <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
-                                        <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                                    </svg>
-                                    <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
+                                <defs>
+                                    <pattern
+                                        x="100%"
+                                        y={-1}
+                                        id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                                        width={200}
+                                        height={200}
+                                        patternUnits="userSpaceOnUse"
+                                    >
+                                        <path d="M130 200V.5M.5 .5H200" fill="none" />
+                                    </pattern>
+                                </defs>
+                                <rect fill="white" width="100%" height="100%" strokeWidth={0} />
+                                <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
+                                    <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
+                                </svg>
+                                <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
                             </svg>
                         </div>
                         <h2 className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-6xl">
                             Get Your Free Estimate
                         </h2>
                         <p className="mt-6 text-xl text-gray-600">
-                            Paragon Exterior is changing the game in roofing and siding. 
-                            We&apos;re leading with quality, trust, and total transparency — 
-                            and we&apos;re not afraid to say it: the outdated, 
-                            frustrating parts of this industry are going in the dumpster. At Paragon, we elevate 
-                            everything that should matter: communication, craftsmanship, and care. 
-                            Our mission is simple — to be the perfect partner for homeowners before, 
-                            during, and long after the project is complete. 
+                            Paragon Exterior is changing the game in roofing and siding.
+                            We&apos;re leading with quality, trust, and total transparency —
+                            and we&apos;re not afraid to say it: the outdated,
+                            frustrating parts of this industry are going in the dumpster. At Paragon, we elevate
+                            everything that should matter: communication, craftsmanship, and care.
+                            Our mission is simple — to be the perfect partner for homeowners before,
+                            during, and long after the project is complete.
                             This is how roofing and siding should feel: comfortable, honest, and hassle-free.
                         </p>
                         <dl className="mt-10 space-y-4 text-lg text-gray-600">
@@ -115,12 +115,16 @@ export default function Example() {
                             </div>
                         </dl>
                     </div>
-                    <iframe
-                    className='mt-10 rounded-lg shadow-lg border-0 '
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.7417432423395!2d-74.98033102369448!3d40.124776371488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b3f764baa6e3%3A0xb1cbf5dbdbedaf4b!2sParagon%20Exterior%20LLC!5e1!3m2!1sen!2sus!4v1752587072246!5m2!1sen!2sus" width="500" height="400" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div className="w-full h-0 pb-[75%] relative rounded-lg overflow-hidden mt-10">
+                        <iframe
+                            className='mt-10 rounded-lg shadow-lg border-0 '
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.7417432423395!2d-74.98033102369448!3d40.124776371488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b3f764baa6e3%3A0xb1cbf5dbdbedaf4b!2sParagon%20Exterior%20LLC!5e1!3m2!1sen!2sus!4v1752587072246!5m2!1sen!2sus" width="500" height="400" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
 
                 </div>
-                        <Form/>
+                <Form />
 
             </div>
         </div>
