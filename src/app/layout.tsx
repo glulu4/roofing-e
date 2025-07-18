@@ -8,6 +8,7 @@ import {Footer} from "@/components/Footer";
 import { Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
+import Script from "next/script";
 
 
 const fontSans = Raleway({
@@ -542,6 +543,25 @@ export default function RootLayout({
   return (
     
     <html lang="en">
+      <head>
+       
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-579NF17ZZ7"></Script>
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-579NF17ZZ7');
+        `
+
+        }}
+        >
+        </Script>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased m-auto",
