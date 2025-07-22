@@ -213,20 +213,20 @@ export default function MetalRoofingPage() {
                 title="Metal Roofing Cost & Investment Value in 2025"
                 description={
                     <div>
-                        <p className="mb-4">
+                        <SecondaryText className="mb-4">
                             While metal roofing requires a higher initial investment than asphalt shingles,
                             it delivers exceptional long-term value. Metal roofing costs range from $4-30 per
                             square foot installed, depending on material type and complexity.
-                        </p>
-                        <p className="mb-4">
+                        </SecondaryText>
+                        <SecondaryText className="mb-4">
                             Consider that you may replace an asphalt roof 3-4 times over the lifespan of
                             one metal roof. When you consider energy savings of up to 40% and low maintenance needs, 
                             metal roofing can cost less over time.
-                        </p>
-                        <p>
+                        </SecondaryText>
+                        <SecondaryText>
                             Our metal roofing experts provide transparent pricing and financing options
                             to make premium metal roofing accessible for every budget.
-                        </p>
+                        </SecondaryText>
                     </div>
                 }
                 imageSrc="/images/roof-service/metal/metal3.avif"
@@ -306,3 +306,6 @@ export default function MetalRoofingPage() {
         </div>
     );
 }
+
+
+
