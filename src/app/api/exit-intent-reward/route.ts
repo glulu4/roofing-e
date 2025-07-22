@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
       from: `Paragon Exterior <${infoEmail}>`,
       to: email,
       replyTo: infoEmail,
-      subject: `Your Gift - Paragon Exterior`,
+      subject: `🎉 Your Gift 🎉 - Paragon Exterior`,
       html: `
 <!-- <!DOCTYPE html>
 <html lang="en">
