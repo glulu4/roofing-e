@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
         <table width="100%" style="max-width: 600px;" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td style="padding: 0;">
-              <img src="https://www.paragonexterior.com/images/house1.jpeg" alt="Roofing Banner" width="600" style="display: block; width: 100%; max-width: 600px; height: auto;">
+              <img src="https://www.paragonexterior.com/images/email-banner.webp" alt="Roofing Banner" width="600" style="display: block; width: 100%; max-width: 600px; height: auto;">
             </td>
           </tr>
 
