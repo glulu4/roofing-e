@@ -8,10 +8,10 @@ export const metadata = {
 export default function page() {
     return (
         <div>
-
-
-
             <iframe
+
+                title="James Hardie Siding"
+                loading="lazy"
             allowFullScreen
                 className='w-full min-h-screen '
                 src="https://contractorkit.jameshardie.com/">

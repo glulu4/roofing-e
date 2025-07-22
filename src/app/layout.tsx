@@ -9,6 +9,7 @@ import { Raleway, Cabin } from "next/font/google";
 import StickyButton from "@/components/StickyButton";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import Script from "next/script";
+import ExitIntentPopup from "@/components/ExitIntent";
 
 
 const fontSans = Raleway({
@@ -581,6 +582,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <StickyButton/>
+            <ExitIntentPopup />
           </main>
         </ThemeProvider>
       </body>

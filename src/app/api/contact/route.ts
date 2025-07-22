@@ -5,8 +5,6 @@ const nodemailer = require('nodemailer');
 
 export async function POST(request: NextRequest) {
     try {
-        console.log("Processing request...");
-
         // Parse the form data
         const body = await request.json();
         const formData:ContactFormData = body.formData;
