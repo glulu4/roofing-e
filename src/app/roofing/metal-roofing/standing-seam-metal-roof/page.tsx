@@ -289,7 +289,22 @@ export const metadata = {
 };
 
 // Enhanced FAQ data with more comprehensive answers and keywords
-const standingSeamFaqs = [
+const standingSeamFaqs = [{
+    question: "Is a standing seam metal roof better?",
+    answer: "Yes, a standing seam metal roof is considered better than traditional roofing options like asphalt shingles for many homeowners and businesses. It offers superior durability, weather resistance, energy efficiency, and a modern appearance. While it costs more upfront, its 40–70 year lifespan and low maintenance needs often make it the better long-term investment."
+},
+    {
+        question: "What is the lifespan of a standing seam metal roof?",
+        answer: "Standing seam metal roofs typically last between 40 and 70 years, depending on the metal type and installation quality. Steel and aluminum roofs often last 40–50 years, while premium metals like copper or zinc can exceed 70 years. Proper maintenance and professional installation help maximize roof life."
+    },
+    {
+        question: "What is a standing seam metal roof system?",
+        answer: "A standing seam metal roof system is a high-performance roofing system made from long metal panels that run vertically up the roof. Each panel connects at raised seams that 'stand' above the surface and lock together using concealed fasteners. This design creates a watertight seal that resists leaks and lasts for decades."
+    },
+    {
+        question: "What is the difference between a flat seam and a standing seam metal roof?",
+        answer: "The main difference is in how the metal panels join. A standing seam roof uses raised interlocking seams and hidden fasteners to create a sleek, watertight system. A flat seam roof, on the other hand, has low-profile seams that lie flat against the surface and are usually soldered together. Standing seam is more common for steep-slope roofs, while flat seam is often used on low-slope or curved architectural surfaces."
+    },
     {
         question: "What is a standing seam metal roof and how does it work?",
         answer: "A standing seam metal roof is a premium roofing system featuring long metal panels with raised, interlocking seams that run vertically from ridge to eave. The 'standing' seams where panels connect are raised above the roof surface and lock together using concealed fasteners, creating a completely watertight barrier. Unlike exposed fastener systems, all screws and clips are hidden beneath the seams, eliminating potential leak points and extending roof life to 40-70 years."
