@@ -194,12 +194,12 @@ export default async function SidingContractorPage({params}: {params: Promise<{s
                     titleAs="h1"
                     mainContent={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 As {location.name}&apos;s trusted siding contractors, Paragon Exterior provides comprehensive exterior solutions including expert <strong>siding installation</strong>, professional <strong>vinyl siding</strong> services, quality <strong>siding repair</strong>, and complete <strong>siding replacement</strong>. Our experienced team transforms homes throughout {location.name} with durable, beautiful siding that enhances both protection and curb appeal.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 From popular <strong>vinyl siding installation</strong> to premium fiber cement and natural cedar options, our siding contractors deliver exceptional results. We specialize in <strong>siding repair</strong> services that address storm damage, wear, and maintenance needs, plus complete <strong>siding replacement</strong> projects that modernize and protect your home investment.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     bottomContent={`Choose Paragon Exterior as your local siding contractor for superior craftsmanship, premium materials, and complete customer satisfaction. Our reputation in ${location.name} is built on quality siding installation and reliable service that homeowners trust.`}
@@ -227,12 +227,12 @@ export default async function SidingContractorPage({params}: {params: Promise<{s
                     title={`Expert Vinyl Siding Installation in ${location.name}`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 <strong>Vinyl siding installation</strong> remains the most popular choice for {location.name} homeowners seeking durable, low-maintenance exterior solutions. Our professional <strong>vinyl siding</strong> services include comprehensive material selection, expert installation, and ongoing support that ensures decades of beautiful, worry-free performance.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 As experienced siding contractors, we understand that proper <strong>vinyl siding installation</strong> requires attention to moisture management, thermal expansion, and precise fastening techniques. Our <strong>vinyl siding</strong> expertise ensures optimal performance while providing the aesthetic flexibility that makes vinyl the preferred choice for discerning homeowners.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/siding-contractor/img2.webp"
@@ -266,12 +266,12 @@ export default async function SidingContractorPage({params}: {params: Promise<{s
                     title={`Premium Siding Materials and Installation Options`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Beyond <strong>vinyl siding installation</strong>, our siding contractor services include fiber cement siding for superior fire resistance, natural cedar siding for authentic beauty, and engineered wood siding for enhanced durability. Each material offers unique benefits suited to different architectural styles and performance requirements in {location.name}.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Our siding contractors help you choose the perfect material based on your budget, maintenance preferences, and aesthetic goals. From traditional horizontal <strong>siding installation</strong> to modern vertical and board & batten styles, we provide expert guidance and professional installation that maximizes both beauty and performance.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/siding-contractor/img4.webp"
@@ -319,69 +319,6 @@ export default async function SidingContractorPage({params}: {params: Promise<{s
                     imagePosition="left"
                     incentiveColumns={2}
                 />
-
-                {/* Siding Benefits */}
-                {/* <section className="py-16 bg-gray-50">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="text-center mb-12">
-                            <HeaderText as="h2">Benefits of Professional Siding Installation</HeaderText>
-                            <SecondaryText>
-                                Professional siding contractor services provide numerous advantages that enhance your {location.name} home's protection, efficiency, and value.
-                            </SecondaryText>
-                        </div>
-
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                                <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-white font-bold text-xl">🏠</span>
-                                </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Enhanced Protection</h3>
-                                <p className="text-gray-700 text-sm">Professional siding installation creates a durable barrier against weather, moisture, and pests</p>
-                            </div>
-
-                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                                <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-white font-bold text-xl">💰</span>
-                                </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Energy Savings</h3>
-                                <p className="text-gray-700 text-sm">Quality siding installation improves insulation and reduces heating and cooling costs</p>
-                            </div>
-
-                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                                <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-white font-bold text-xl">📈</span>
-                                </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Increased Value</h3>
-                                <p className="text-gray-700 text-sm">New siding installation significantly boosts curb appeal and property value</p>
-                            </div>
-
-                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                                <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-white font-bold text-xl">🔧</span>
-                                </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Low Maintenance</h3>
-                                <p className="text-gray-700 text-sm">Modern siding materials require minimal upkeep compared to traditional materials</p>
-                            </div>
-
-                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                                <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-white font-bold text-xl">🎨</span>
-                                </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Design Flexibility</h3>
-                                <p className="text-gray-700 text-sm">Extensive color and style options to match any architectural preference</p>
-                            </div>
-
-                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                                <div className="w-16 h-16 bg-primaryblue rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-white font-bold text-xl">⏱️</span>
-                                </div>
-                                <h3 className="font-bold text-primaryblue mb-3">Quick Installation</h3>
-                                <p className="text-gray-700 text-sm">Efficient siding installation process minimizes disruption to your daily routine</p>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-
 
                 <div>
                 <SidingMaterial />
