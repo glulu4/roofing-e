@@ -14,10 +14,11 @@ export default function ExitIntentPopup() {
             "key": "use-exit-intent"
         },
         "desktop": {
-            "triggerOnIdle": true,
+            "triggerOnIdle": false,
             "useBeforeUnload": true,
             "triggerOnMouseLeave": true,
-            "delayInSecondsToTrigger": 0.5
+            "delayInSecondsToTrigger": 0.5,
+
         },
         "mobile": {
             "triggerOnIdle": true,
