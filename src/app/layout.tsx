@@ -7,7 +7,6 @@ import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import {Raleway, Cabin} from "next/font/google";
 import StickyButton from "@/components/StickyButton";
-import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import Script from "next/script";
 import ExitIntentPopup from "@/components/ExitIntent";
 

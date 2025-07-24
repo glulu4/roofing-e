@@ -30,6 +30,7 @@ export default function GoogleInner() {
       layout="carousel"
       featurableId={"1267cf54-a64c-403f-8fed-1c9d518c78fa"}
       structuredData
+      accessibility
       brandName="Paragon Exterior LLC"
       productDescription="Roofing, Siding, and Exterior Services"
 
