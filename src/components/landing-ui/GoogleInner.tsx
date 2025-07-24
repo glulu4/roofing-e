@@ -26,7 +26,7 @@ export default function GoogleInner() {
   return (
     <ReactGoogleReviews
       showDots={false}
-      
+
       layout="carousel"
       featurableId={"1267cf54-a64c-403f-8fed-1c9d518c78fa"}
       structuredData
