@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState, useEffect, useRef} from "react";
+import React from "react";
 
 interface HeroVideoProps {
     text?:string
@@ -9,26 +9,10 @@ interface HeroVideoProps {
 }
 const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
 
-    // const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-    // const videoRef = useRef<HTMLVideoElement | null>(null);
-
-    // useEffect(() => {
-    //     const handleVideoEnd = () => {
-    //         setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-    //     };
-    //     const videoElement = videoRef.current;
-    //     if (videoElement) {
-    //         videoElement.addEventListener("ended", handleVideoEnd);
-    //     }
-    //     return () => {
-    //         if (videoElement) {
-    //             videoElement.removeEventListener("ended", handleVideoEnd);
-    //         }
-    //     };
-    // }, [videos.length]);
 
     return (
         <div className="relative h-[80vh] w-full  z-0">
+
             {/* Video Player */}
             <video
                 
@@ -39,6 +23,8 @@ const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
                 autoPlay
                 muted
                 poster="/images/roof-service/skylight/skylight2.webp"
+                
+                
                 playsInline
             ></video>
             {/* Overlay Content */}

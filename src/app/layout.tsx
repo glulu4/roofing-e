@@ -544,6 +544,13 @@ export default function RootLayout({
 
     <html lang="en">
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/roof-service/skylight/skylight2.webp"
+          fetchPriority="high"
+          type="image/webp"
+        />
 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-579NF17ZZ7"></Script>
         <Script
