@@ -1,12 +1,6 @@
-
-// "use client";
-
 import Image from "next/image"
 import {FunctionComponent} from "react"
-import HeaderText from "./HeaderText"
 import SecondaryHeader from "./SecondaryHeader"
-
-// import {FunctionComponent} from "react";
 import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube, } from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
 import clsx from "clsx";
@@ -101,6 +95,7 @@ const navigation = {
     {name: 'Financing', href: '/financing'},
     {name: 'Gallery', href: '/gallery'},
     {name: 'Roof Pitch Calculator', href: '/roof-pitch-calculator'},
+
   ],
   service: [
     {name: 'All Areas we Serve', href: "/areas-we-serve"},
