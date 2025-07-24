@@ -821,10 +821,10 @@ const RoofPitchCalculator: React.FC = () => {
 
                                         {/* Labels */}
                                         <text x="205" y={195 - (parseFloat(results.rise) * 2)} fill="#2563eb" fontSize="12" fontWeight="bold">
-                                            Rise: {results.rise}"
+                                            Rise: {results.rise}&quot;
                                         </text>
                                         <text x="240" y="215" fill="#16a34a" fontSize="12" fontWeight="bold">
-                                            Run: {results.run}"
+                                            Run: {results.run}&quot;
                                         </text>
                                         <text x="150" y="170" fill="#dc2626" fontSize="14" fontWeight="bold">
                                             {results.degrees}°
@@ -903,7 +903,7 @@ const RoofPitchCalculator: React.FC = () => {
                         <div className="space-y-4 text-gray-600">
                             <p>
                                 Roof pitch affects water drainage, snow load capacity, material choices, and overall aesthetics.
-                                Understanding your roof's pitch is crucial for:
+                                Understanding your roof&apos;s pitch is crucial for:
                             </p>
                             <ul className="list-disc list-inside space-y-2">
                                 <li>Selecting appropriate roofing materials</li>
