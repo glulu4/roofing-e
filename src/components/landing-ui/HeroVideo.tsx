@@ -38,7 +38,7 @@ const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
                 src={video}
                 autoPlay
                 muted
-                poster="/images/email-banner.webp"
+                // poster="/images/email-banner.webp"
                 playsInline
             ></video>
             {/* Overlay Content */}
