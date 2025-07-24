@@ -791,7 +791,7 @@ const RoofPitchCalculator: React.FC = () => {
 
                                         {/* Roof */}
                                         <polygon
-                                            points={`100,200 200,${200 - (parseFloat(results.rise) * 4)} 300,200`}
+                                            points={`100,200 200,${200 - ((results.rise) * 4)} 300,200`}
                                             fill="#dc2626"
                                             stroke="#991b1b"
                                             strokeWidth="2"
@@ -802,7 +802,7 @@ const RoofPitchCalculator: React.FC = () => {
                                             x1="200"
                                             y1="200"
                                             x2="200"
-                                            y2={200 - (parseFloat(results.rise) * 4)}
+                                            y2={200 - ((results.rise) * 4)}
                                             stroke="#2563eb"
                                             strokeWidth="3"
                                             strokeDasharray="5,5"
@@ -820,7 +820,7 @@ const RoofPitchCalculator: React.FC = () => {
                                         />
 
                                         {/* Labels */}
-                                        <text x="205" y={195 - (parseFloat(results.rise) * 2)} fill="#2563eb" fontSize="12" fontWeight="bold">
+                                        <text x="205" y={195 - ((results.rise) * 2)} fill="#2563eb" fontSize="12" fontWeight="bold">
                                             Rise: {results.rise}&quot;
                                         </text>
                                         <text x="240" y="215" fill="#16a34a" fontSize="12" fontWeight="bold">
