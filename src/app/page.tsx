@@ -15,7 +15,7 @@ import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 
 export const metadata: Metadata = {
   title: "Roofing & Siding Experts Near You | Paragon Exterior",
-  description: `Paragon Exterior is a trusted roofing company, offering expert roofing, siding, and exterior services. We serve the Greater Philadelphia area.`,
+  description: `Paragon Exterior is a trusted roofing and siding company, offering expert roofing, siding, and exterior services. We serve the Greater Philadelphia area.`,
 };
 
 const Page = () => {
