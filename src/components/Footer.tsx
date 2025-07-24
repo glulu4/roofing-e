@@ -100,6 +100,7 @@ const navigation = {
     {name: 'Free Estimate', href: "/estimate"},
     {name: 'Financing', href: '/financing'},
     {name: 'Gallery', href: '/gallery'},
+    {name: 'Roof Pitch Calculator', href: '/roof-pitch-calculator'},
   ],
   service: [
     {name: 'All Areas we Serve', href: "/areas-we-serve"},
