@@ -44,34 +44,34 @@ export default function ExitIntentPopup() {
             // setShowModal(false)
 
             fetch('/api/exit-intent-reward', {
-                method:"POST",
-                headers:{
+                method: "POST",
+                headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     email,
                 })
             })
-            .then((response) => {
-                if (response.ok) {
-                    setShowModal(false)
-                    alert('Gift claimed successfully! Check your email for details.')
-                    return response.json();
-                } else {
-                    alert('Failed to claim gift. Please try again later.')
-                    console.log('Error:', response.statusText);
-                    
-                }
-            })
-            .then((data) => {
-                console.log('Success:', data);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert('An error occurred while claiming the gift. Please try again later.');
-            })
+                .then((response) => {
+                    if (response.ok) {
+                        setShowModal(false)
+                        alert('Gift claimed successfully! Check your email for details.')
+                        return response.json();
+                    } else {
+                        alert('Failed to claim gift. Please try again later.')
+                        console.log('Error:', response.statusText);
+
+                    }
+                })
+                .then((data) => {
+                    console.log('Success:', data);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('An error occurred while claiming the gift. Please try again later.');
+                })
         }
-        else{
+        else {
             alert('Please enter a valid email address.');
         }
     }
@@ -86,29 +86,19 @@ export default function ExitIntentPopup() {
         <>
             {showModal && (
                 <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-50 p-4">
-                    <div className="bg-white rounded-2xl max-w-4xl w-full shadow-2xl max-h-screen my-auto overflow-hidden transform transition-all duration-300 scale-100 opacity-100">
+                    <div className="bg-white rounded-2xl max-w-4xl w-full shadow-2xl max-h-screen my-auto  transform transition-all duration-300 scale-100 opacity-100">
                         <div className="flex flex-col md:flex-row">
                             {/* Left side - Image */}
-                            <div className="md:w-1/2 relative bg-gradient-to-br from-primaryblue via-blue-800 to-amber-500  flex items-center justify-center">
-                            <Image
+                            {/* <div className="md:w-1/2 flex items-center justify-center"> */}
+                                <Image
                                     src="/images/window/window-hero2.webp"
-                                alt="Exclusive Gift"
-                                    fill
-                                className=" object-fill shadow-lg"
-                            />
-                                {/* <div className="absolute inset-0 bg-black/20"></div>
-                                <div className="relative z-10 text-center text-white">
-                                    <div className="hidden sm:flex h-16 w-16 sm:w-32 sm:h-32 mx-auto mb-6 bg-white/20 rounded-full items-center justify-center backdrop-blur-sm">
-                                        <Gift className=" sm:w-16 sm:h-16 text-white" />
-                                    </div>
-                                    <h3 className="text-2xl font-bold mb-2">Exclusive Gift</h3>
-                                    <p className="text-lg opacity-90">10% off your next project</p>
-                                    <div className="mt-6 flex justify-center items-center text-sm">
-                                        <Clock className="w-4 h-4 mr-2" />
-                                        <span>Limited time offer</span>
-                                    </div>
-                                </div> */}
-                            </div>
+                                    alt="Exclusive Gift"
+                                    width={500}
+                                    height={500}
+
+                                    className="md:w-1/2 hidden md:block object-fill shadow-lg rounded-tl-2xl rounded-bl-2xl"
+                                />
+                            {/* </div> */}
 
                             {/* Right side - Content */}
                             <div className="md:w-1/2 p-8 relative">
@@ -129,9 +119,9 @@ export default function ExitIntentPopup() {
                                             🎁 Get 15% off your next project
                                         </h3>
                                         <p className="text-gray-600 leading-relaxed mb-4">
-                                            No Spam. No Marketing. Just 15% off. 
+                                            No Spam. No Marketing. Just 15% off.
                                         </p>
-      
+
                                     </div>
 
                                     <div className="space-y-4">

@@ -94,11 +94,9 @@ const Page = () => {
         <div>
             <div className="flex w-full">
                 <HeroVideo
-                    videos={[
-                        "/videos/house1.mp4",
-                        "/videos/house2.mp4",
-                        "/videos/house3.mp4",
-                    ]}
+                    video="/videos/house1.mp4"
+
+                    
                     text="Roofing Services"
                     secText="Reliable Repairs. Lasting Roofs. Local Experts."
                 />

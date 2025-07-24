@@ -5,39 +5,40 @@ import React, {useState, useEffect, useRef} from "react";
 interface HeroVideoProps {
     text?:string
     secText?:string;
-    videos:string[]
+    video:string;
 }
-const HeroVideo = ({text, secText, videos}: HeroVideoProps) => {
+const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
 
-    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-    const videoRef = useRef<HTMLVideoElement | null>(null);
+    // const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+    // const videoRef = useRef<HTMLVideoElement | null>(null);
 
-    useEffect(() => {
-        const handleVideoEnd = () => {
-            setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-        };
-        const videoElement = videoRef.current;
-        if (videoElement) {
-            videoElement.addEventListener("ended", handleVideoEnd);
-        }
-        return () => {
-            if (videoElement) {
-                videoElement.removeEventListener("ended", handleVideoEnd);
-            }
-        };
-    }, [videos.length]);
+    // useEffect(() => {
+    //     const handleVideoEnd = () => {
+    //         setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+    //     };
+    //     const videoElement = videoRef.current;
+    //     if (videoElement) {
+    //         videoElement.addEventListener("ended", handleVideoEnd);
+    //     }
+    //     return () => {
+    //         if (videoElement) {
+    //             videoElement.removeEventListener("ended", handleVideoEnd);
+    //         }
+    //     };
+    // }, [videos.length]);
 
     return (
-        <div className="relative h-[80vh] w-full overflow-hidden z-0">
+        <div className="relative h-[80vh] w-full  z-0">
             {/* Video Player */}
             <video
                 
-                key={videos[currentVideoIndex]}
-                ref={videoRef}
+               
+                
                 className="absolute top-0 left-0 h-full w-full object-cover"
-                src={videos[currentVideoIndex]}
+                src={video}
                 autoPlay
                 muted
+                poster="/images/email-banner.webp"
                 playsInline
             ></video>
             {/* Overlay Content */}

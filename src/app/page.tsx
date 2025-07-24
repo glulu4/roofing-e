@@ -27,9 +27,8 @@ const Page = () => {
           text="Roof & Exterior Professionals"
           secText="Your Trusted Partner for Quality Roofing and Exterior Needs"
           
-          videos={[
-            "/videos/house3.mp4",
-          ]}
+          video="/videos/house3.mp4"
+          
         />
       </div>
 

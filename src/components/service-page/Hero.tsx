@@ -17,7 +17,7 @@ export default function Hero({
     imgAlt,
 }: HeroProps) {
   return (
-           <div className="relative isolate overflow-hidden py-24 sm:py-32 min-h-[80vh]">
+           <div className="relative isolate py-24 sm:py-32 min-h-[80vh]">
                <Image
                    width={1000}
                    height={1000}
