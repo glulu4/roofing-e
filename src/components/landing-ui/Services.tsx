@@ -136,7 +136,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
                     {/* Arrow Button */}
                     <div className="mt-6 lg:mt-0 lg:ml-8">
-                        <button className="w-14 h-14 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center transition-all duration-200 group-hover:scale-110 shadow-lg hover:shadow-xl">
+                        <button 
+                        aria-label='Learn more about this service'
+                        className="w-14 h-14 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center transition-all duration-200 group-hover:scale-110 shadow-lg hover:shadow-xl">
+                            <span className="sr-only">Learn More Button</span>
                             <ArrowUpRightIcon className="w-6 h-6 text-white" />
                         </button>
                     </div>

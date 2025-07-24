@@ -104,8 +104,10 @@ export default function ExitIntentPopup() {
                             <div className="md:w-1/2 p-8 relative">
                                 <button
                                     onClick={handleClose}
+                                    aria-label="Close popup"
                                     className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors"
                                 >
+                                    <span className="sr-only">Close popup</span>
                                     <X className="w-5 h-5 text-gray-500" />
                                 </button>
 

@@ -1,11 +1,11 @@
 
-import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
+import {ThemeProvider} from "@/components/theme-provider";
+import {cn} from "@/lib/utils";
+import type {Metadata} from "next";
 import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
-import { Raleway, Cabin } from "next/font/google";
+import {Raleway, Cabin} from "next/font/google";
 import StickyButton from "@/components/StickyButton";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import Script from "next/script";
@@ -415,7 +415,7 @@ const structuredData = {
           }
         }
       ]
-    }    
+    }
   ]
 };
 
@@ -494,7 +494,7 @@ export const metadata: Metadata = {
   applicationName: "Paragon Exterior | Roofing & Siding Experts",
   openGraph: {
     title: "Roof Repair, Flat Roofing & Siding | Paragon Exterior",
-    description: 
+    description:
       "Looking for fast, high-quality roof repair or siding work? Paragon Exterior handles flat roof repair, roof leak repair, and emergency roofing services throughout Greater Philadelphia. Trusted. Local. Professional.",
     url: "https://www.paragonexterior.com",
     siteName: "Paragon Exterior",
@@ -542,16 +542,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
+
     <html lang="en">
       <head>
-       
+
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-579NF17ZZ7"></Script>
         <Script
           id="gtag-init"
           strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          dangerouslySetInnerHTML={{
+            __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -559,14 +559,14 @@ export default function RootLayout({
           gtag('config', 'G-579NF17ZZ7');
         `
 
-        }}
+          }}
         >
         </Script>
       </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased m-auto",
-          fontSans.variable, 
+          fontSans.variable,
           fontCabin.variable
           // heebo.variable
         )}
@@ -574,14 +574,14 @@ export default function RootLayout({
         <ThemeProvider
           // attribute="class"
           defaultTheme="light"
-          // enableSystem
-          // disableTransitionOnChange
+        // enableSystem
+        // disableTransitionOnChange
         >
           <main>
             <Header />
             {children}
             <Footer />
-            <StickyButton/>
+            <StickyButton />
             <ExitIntentPopup />
           </main>
         </ThemeProvider>
