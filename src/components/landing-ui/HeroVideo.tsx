@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import React from "react";
 
 interface HeroVideoProps {
@@ -8,11 +9,17 @@ interface HeroVideoProps {
     video:string;
 }
 const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
-
-
     return (
         <div className="relative h-[80vh] w-full  z-0">
-
+            <Head>
+                <link
+                    rel="preload"
+                    as="image"
+                    href="/images/roof-service/skylight/skylight2.webp"
+                    fetchPriority="high"
+                    type="image/webp"
+                />
+            </Head>
             {/* Video Player */}
             <video
                 

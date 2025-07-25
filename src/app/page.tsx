@@ -26,9 +26,7 @@ const Page = () => {
         <HeroVideo
           text="Roof & Exterior Professionals"
           secText="Your Trusted Partner for Quality Roofing and Exterior Needs"
-          
           video="/videos/house3short.mp4"
-          
         />
       </div>
 

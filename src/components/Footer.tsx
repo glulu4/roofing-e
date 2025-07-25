@@ -99,7 +99,7 @@ const navigation = {
   ],
   service: [
     {name: 'All Areas we Serve', href: "/areas-we-serve"},
-    {name: 'Philadelphia', href: '#'},
+    {name: 'Philadelphia', href: '/areas/pennsylvania/philadelphia'},
     {name: 'Bensalem', href: '#'},
     {name: 'Levittown', href: '#'},
     {name: 'Langhorne', href: '#'},
@@ -150,7 +150,7 @@ export const Footer: FunctionComponent = () => {
               height={500}
               alt="Paragon Exterior Logo"
               src="/images/header.png"
-              className="object-cover overflow-visible"
+              className="object-cover"
             />
             <p className="text-balance text-md/6 text-primaryblue">
               Trusted roofing and siding contractors serving Pennsylvania, New Jersey, and Delaware.
