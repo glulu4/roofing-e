@@ -48,6 +48,11 @@ const structuredData = {
         "postalCode": "19053",
         "addressCountry": "US"
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "56"
+      },
       "description":
         "Paragon Exterior is the best roofing company near you offering expert roof repair, roof replacements, siding repair and installation, metal roofing, and licensed roofing contractor services throughout Greater Philadelphia.",
       "areaServed": [

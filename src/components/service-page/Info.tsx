@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeaderText from "../HeaderText";
 import SecondaryText from "../SecondaryText";
+import Link from "next/link";
 
 interface InfoSectionProps {
     // Image props
@@ -18,6 +19,8 @@ interface InfoSectionProps {
     imagePosition?: 'left' | 'right';
     showBottomContent?: boolean;
     imageShadow?: boolean;
+    titleHref?: string;
+
 }
 
 export default function InfoSection({
@@ -30,7 +33,8 @@ export default function InfoSection({
     className = "",
     imagePosition = 'right',
     imageShadow = true,
-    showBottomContent = true
+    showBottomContent = true,
+    titleHref,
 }: InfoSectionProps) {
     const isImageRight = imagePosition === 'right';
 
@@ -41,9 +45,22 @@ export default function InfoSection({
                     {/* Text Content */}
                     <div className={isImageRight ? 'lg:order-1' : 'lg:order-2'}>
                         <div className="text-base/7 text-gray-700 lg:max-w-lg">
-                            <HeaderText as={titleAs} className="mt-2 text-pretty font-semibold tracking-tight text-primaryblue">
+                            {/* <HeaderText as={titleAs} className="mt-2 text-pretty font-semibold tracking-tight text-primaryblue">
                                 {title}
+                            </HeaderText> */}
+                            <HeaderText as={titleAs} className="mt-2 text-pretty font-semibold tracking-tight text-primaryblue">
+                                {titleHref ? (
+                                    <Link
+                                        href={titleHref}
+                                        className="transition-colors duration-200 hover:text-blue-800"
+                                    >
+                                        {title}
+                                    </Link>
+                                ) : (
+                                    title
+                                )}
                             </HeaderText>
+
                             <div className="max-w-xl">
 
                                 {typeof mainContent === 'string' ? (

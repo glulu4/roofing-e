@@ -75,6 +75,7 @@ export default function page() {
                 imgSrc="/images/locations/philadelphia/philly2.webp"
                 imgAlt="Professional roofing contractors working on Philadelphia home"
                 imagePosition="left"
+                titleHref="/roofing-contractor/philadelphia"
             />
 
             <InfoSection
@@ -83,6 +84,7 @@ export default function page() {
                 bottomContent="Don't let roof damage compromise your Philadelphia home. Our emergency roof repair services in Philadelphia are available when you need them most. From storm damage to aging materials, our skilled technicians diagnose problems quickly and provide lasting solutions. We handle all types of roof repair in Philadelphia, ensuring your family stays safe and dry."
                 imgSrc="/images/locations/philadelphia/philly3.webp"
                 imgAlt="Professional roof repair services in Philadelphia"
+                titleHref="/roofing/roof-repair"
             />
 
             <InfoSection
@@ -92,6 +94,7 @@ export default function page() {
                 imgSrc="/images/locations/philadelphia/philly4.webp"
                 imgAlt="New roof installation project in Philadelphia neighborhood"
                 imagePosition="left"
+                titleHref="/roofing/roof-replacement"
             />
 
             <InfoSection
@@ -100,6 +103,7 @@ export default function page() {
                 bottomContent="Board and batten siding is a stylish, durable option for Philadelphia homeowners who want to boost curb appeal. We offer expert installation in a variety of materials to match your home's look and protect it from the elements."
                 imgSrc="/images/siding/vinyl/board-batten.webp"
                 imgAlt="Board and batten siding installation on a Philadelphia home"
+                titleHref="/siding/board-and-batten-siding"
             />
 
             <InfoSection
@@ -108,6 +112,7 @@ export default function page() {
                 bottomContent="If you're looking for affordable, reliable siding in Philadelphia, vinyl siding is a top option. Paragon installs high-quality vinyl siding built to last and look great."
                 imgSrc="/images/siding/vinyl/vinyl1.webp"
                 imgAlt="Vinyl siding installed on a Philadelphia home"
+                titleHref="/siding/vinyl-siding"
             />
 
             <InfoSection
@@ -116,6 +121,7 @@ export default function page() {
                 bottomContent="Discover the benefits of metal roofing in Philadelphia with Paragon. Metal roofs offer exceptional durability, energy efficiency, and style that perfectly suits Philadelphia's diverse architectural landscape. Our metal roofing specialists install premium steel, aluminum, and copper roofing systems designed to withstand Philadelphia's weather extremes while adding lasting value to your home."
                 imgSrc="/images/locations/philadelphia/philly5.webp"
                 imgAlt="Beautiful metal roofing installation on Philadelphia home"
+                titleHref="/roofing/metal-roofing"
             />
 
             <InfoSection
