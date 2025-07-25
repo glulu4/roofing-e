@@ -7,8 +7,8 @@ import React from "react";
 
 
 export const metadata = {
-    title: "Philadelphia Exterior Services",
-    description: "Expert exterior services in Philadelphia, including roofing & siding. Trust Paragon Exterior for quality home improvements in the City of Brotherly Love.",
+    title: "Philadelphia Home Improvement Contractor",
+    description: "We are Philadelphia's trusted home improvement contractor, specializing in roofing, siding, gutters, and windows.",
     openGraph: {
         title: "Philadelphia Exterior Services",
         description: "Expert exterior services in Philadelphia, including roofing & siding. Trust Paragon Exterior for quality home improvements in the City of Brotherly Love.",
@@ -35,6 +35,7 @@ export const metadata = {
         card: "summary_large_image",
     },
     keywords: [
+        "Philadelphia Home Improvement Contractor",
         "Philadelphia exterior services",
         "roofing Philadelphia",
         "siding Philadelphia",
@@ -52,14 +53,15 @@ export default function page() {
     return (
         <div>
             <Hero
-                mainText="Philadelphia Exterior Services"
+                mainText="Philadelphia's Roofing & Siding Experts"
                 subText="Transform your Philadelphia home with our expert exterior services. From roofing to siding, we provide comprehensive solutions for all your exterior needs in the City of Brotherly Love."
                 imgSrc="/images/locations/philadelphia/hero.webp"
                 imgAlt="Professional exterior services in Philadelphia - roofing, siding, and windows"
             />
 
             <InfoSection
-                title="Comprehensive Philadelphia Exterior Services"
+            titleAs="h2"
+                title="Philadelphia's Select Home Improvement Contractor"
                 mainContent="At Paragon, we provide Philadelphia homeowners with trusted, top-quality exterior services tailored to the unique needs of local properties. Whether you're updating an aging roof, replacing damaged siding, or installing energy-efficient windows, we deliver expert craftsmanship and honest guidance every step of the way. Our team is trained to handle Philly's unpredictable weather and historical home styles with care."
                 bottomContent="Paragon delivers exceptional exterior services throughout Philadelphia and surrounding areas. Our experienced team understands the unique challenges Philadelphia homes face, from harsh winters to humid summers. We provide complete roofing, siding, and window solutions designed to protect and enhance your Philadelphia property for years to come."
                 imgSrc="/images/locations/philadelphia/philly1.webp"
@@ -90,6 +92,22 @@ export default function page() {
                 imgSrc="/images/locations/philadelphia/philly4.webp"
                 imgAlt="New roof installation project in Philadelphia neighborhood"
                 imagePosition="left"
+            />
+
+            <InfoSection
+                title="Board and Batten Siding Installation in Philadelphia"
+                mainContent="Add character and charm to your Philadelphia home with professionally installed board and batten siding. This popular vertical siding style not only looks great but also adds strength and weather resistance. Paragon installs board and batten siding in vinyl and fiber cement materials to suit both traditional and modern Philly home styles. Our team ensures a seamless installation with sharp lines and long-lasting durability."
+                bottomContent="Board and batten siding is a stylish, durable option for Philadelphia homeowners who want to boost curb appeal. We offer expert installation in a variety of materials to match your home's look and protect it from the elements."
+                imgSrc="/images/siding/vinyl/board-batten.webp"
+                imgAlt="Board and batten siding installation on a Philadelphia home"
+            />
+
+            <InfoSection
+                title="Vinyl Siding Services in Philadelphia"
+                mainContent="Paragon offers expert vinyl siding installation and replacement services across Philadelphia. Vinyl siding is known for its affordability, durability, and low maintenance—making it a great choice for many Philly homeowners. We carry a wide range of colors and styles to match your vision while boosting energy efficiency and protection. Our skilled team delivers precision installation backed by long-term warranties."
+                bottomContent="If you're looking for affordable, reliable siding in Philadelphia, vinyl siding is a top option. Paragon installs high-quality vinyl siding built to last and look great."
+                imgSrc="/images/siding/vinyl/vinyl1.webp"
+                imgAlt="Vinyl siding installed on a Philadelphia home"
             />
 
             <InfoSection
