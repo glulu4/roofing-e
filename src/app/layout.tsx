@@ -34,7 +34,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "RoofingContractor",
+      "@type": "LocalBusiness",
       "name": "Paragon Exterior",
       "image": "https://www.paragonexterior.com/icon.png",
       "url": "https://www.paragonexterior.com",

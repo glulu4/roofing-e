@@ -66,14 +66,14 @@ export default function MetalRoofRepairPage() {
                 title="Expert Metal Roof Repair Services"
                 mainContent={
                     <>
-                        Our <strong>metal roof repair services</strong> keep your roof strong, watertight, and looking great. We fix metal roof leaks, dents, rust, corrosion, and damaged panels—helping you avoid bigger, more expensive problems down the road.
+                        Our <strong>metal roofing services</strong> keep your roof strong, watertight, and looking great. We fix metal roof leaks, dents, rust, corrosion, and damaged panels—helping you avoid bigger, more expensive problems down the road.
                         <br /><br />
                         Whether you need emergency <strong>metal roof leak repair</strong> after a storm or routine <strong>metal roof maintenance</strong>, our licensed contractors use the best materials and proven techniques for repairs that last.
                     </>
                 }
                 bottomContent={
                     <>
-                        We service all metal roof types, including standing seam, corrugated, ribbed, and architectural metal roofing. Our local, certified metal roof repair contractors serve both homes and businesses across Pennsylvania, New Jersey, and Delaware—offering fast, honest service and strong warranties.
+                        We service all metal roof types, including standing seam, corrugated, ribbed, and architectural metal roofing. Our local, certified metal roofing contractors serve both homes and businesses across Pennsylvania, New Jersey, and Delaware—offering fast, honest service and strong warranties.
                     </>
                 }
                 imagePosition="right"
