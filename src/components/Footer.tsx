@@ -30,7 +30,7 @@ const navigation = {
   ],
   service: [
     {name: 'All Areas we Serve', href: "/areas-we-serve"},
-    {name: 'Philadelphia', href: '/areas/pennsylvania/philadelphia-home-improvement-contractor'},
+    {name: 'Philadelphia', href: '/areas/pennsylvania/trusted-roofing-contractor-philadelphia'},
     {name: 'Bensalem', href: '#'},
     {name: 'Levittown', href: '#'},
     {name: 'Langhorne', href: '#'},

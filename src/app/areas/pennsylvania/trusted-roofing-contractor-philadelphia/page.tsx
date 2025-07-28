@@ -7,76 +7,80 @@ import React from "react";
 
 
 export const metadata = {
-    title: "Philadelphia Home Improvement Contractor",
-    description: "We are Philadelphia's trusted home improvement contractor, specializing in roofing, siding, gutters, and windows.",
+    title: "Trusted Roofing Contractor Philadelphia | Paragon Exterior",
+    description: "Paragon Exterior is the trusted roofing contractor in Philadelphia. We specialize in roof repair, roof replacement, and expert exterior services for homes and businesses.",
     openGraph: {
-        title: "Philadelphia Exterior Services",
-        description: "Expert exterior services in Philadelphia, including roofing & siding. Trust Paragon Exterior for quality home improvements in the City of Brotherly Love.",
+        title: "Trusted Roofing Contractor Philadelphia",
+        description: "Need a reliable roofing contractor in Philadelphia? Paragon Exterior delivers expert roof repair, installation, and replacement backed by local trust and experience.",
         images: [
             {
                 url: "/images/locations/philadelphia/hero.webp",
                 width: 1200,
                 height: 630,
-                alt: "Professional exterior services in Philadelphia - roofing, siding, and windows",
+                alt: "Trusted roofing contractor Philadelphia - roof installation and repair",
             },
         ],
     },
     twitter: {
-        title: "Philadelphia Exterior Services",
-        description: "Expert exterior services in Philadelphia, including roofing & siding. Trust Paragon Exterior for quality home improvements in the City of Brotherly Love.",
+        title: "Trusted Roofing Contractor Philadelphia",
+        description: "Looking for a trusted roofing contractor in Philadelphia? Paragon Exterior offers expert service, long-lasting results, and honest guidance for your roof.",
         images: [
             {
                 url: "/images/locations/philadelphia/hero.webp",
                 width: 1200,
                 height: 630,
-                alt: "Professional exterior services in Philadelphia - roofing, siding, and windows",
+                alt: "Trusted roofing contractor Philadelphia - roof installation and repair",
             },
         ],
         card: "summary_large_image",
     },
     keywords: [
-        "Philadelphia Home Improvement Contractor",
-        "Philadelphia exterior services",
-        "roofing Philadelphia",
-        "siding Philadelphia",
-        "window installation Philadelphia",
+        "trusted roofing contractor Philadelphia",
+        "Philadelphia roofing company",
         "roof repair Philadelphia",
         "roof replacement Philadelphia",
+        "licensed roofer in Philadelphia",
         "metal roofing Philadelphia",
         "commercial roofing Philadelphia",
-        "home improvement Philadelphia",
-        "Paragon Exterior",
+        "Philadelphia roofers",
+        "Paragon Exterior roofing contractor",
     ],
 };
+
 
 export default function page() {
     return (
         <div>
             <Hero
-                mainText="Philadelphia's Roofing & Siding Experts"
-                subText="Transform your Philadelphia home with our expert exterior services. From roofing to siding, we provide comprehensive solutions for all your exterior needs in the City of Brotherly Love."
+                mainText="Trusted Roofing Contractor in Philadelphia"
+                subText="Paragon Exterior is the roofing contractor Philadelphia homeowners trust. We provide reliable roof repair, roof replacement, and exterior upgrades with expert craftsmanship and honest guidance."
                 imgSrc="/images/locations/philadelphia/hero.webp"
-                imgAlt="Professional exterior services in Philadelphia - roofing, siding, and windows"
+                imgAlt="Trusted roofing contractor Philadelphia - residential roof work"
             />
 
-            <InfoSection
-            titleAs="h2"
-                title="Philadelphia's Select Home Improvement Contractor"
-                mainContent="At Paragon, we provide Philadelphia homeowners with trusted, top-quality exterior services tailored to the unique needs of local properties. Whether you're updating an aging roof, replacing damaged siding, or installing energy-efficient windows, we deliver expert craftsmanship and honest guidance every step of the way. Our team is trained to handle Philly's unpredictable weather and historical home styles with care."
-                bottomContent="Paragon delivers exceptional exterior services throughout Philadelphia and surrounding areas. Our experienced team understands the unique challenges Philadelphia homes face, from harsh winters to humid summers. We provide complete roofing, siding, and window solutions designed to protect and enhance your Philadelphia property for years to come."
-                imgSrc="/images/locations/philadelphia/philly1.webp"
-                imgAlt="Philadelphia exterior services - comprehensive home improvement solutions"
-            />
 
             <InfoSection
-                title="Expert Roofing Contractors in Philadelphia"
-                mainContent="Looking for reliable roofing contractors in Philadelphia? Paragon is known for professional roofing services that stand the test of time. We handle shingle, metal, and flat roofing systems with precision and care. Whether it's a minor leak or full roof installation, we treat every home like our own. We serve Philadelphia neighborhoods with quality materials, skilled labor, and honest pricing."
-                bottomContent="When you need reliable roofing contractors in Philadelphia, Paragon stands above the rest. Our certified Philadelphia roofing team has decades of combined experience handling everything from minor repairs to complete roof overhauls. We use premium materials and proven techniques to ensure your Philadelphia home stays protected through every season."
+                title="Philadelphia's Trusted Roofing Contractor"
+                mainContent="Paragon Exterior has earned a reputation as the trusted roofing contractor in Philadelphia. Our team brings decades of experience to every roof repair, replacement, or installation. We know the local climate, understand historic Philly homes, and work with premium materials to protect your property for the long term."
+                bottomContent="From rowhomes in South Philly to suburban properties in the Northeast, Paragon Exterior is Philadelphia’s roofing company of choice. We offer free inspections, honest quotes, and craftsmanship that lasts through every season."
                 imgSrc="/images/locations/philadelphia/philly2.webp"
-                imgAlt="Professional roofing contractors working on Philadelphia home"
+                imgAlt="Roofers working on home in Philadelphia - trusted contractor"
                 imagePosition="left"
                 titleHref="/roofing-contractor/philadelphia"
+                titleAs="h1"
             />
+
+
+            <InfoSection
+                title="Full Roof Replacement by a Trusted Philadelphia Contractor"
+                mainContent="If your roof is beyond repair, our trusted team delivers expert roof replacement services across Philadelphia. We use only high-quality materials and proven installation methods to give your home lasting protection. Whether you're replacing shingles, upgrading to metal, or dealing with storm damage, Paragon is the roofing contractor Philadelphia counts on."
+                bottomContent="From permits to cleanup, we handle every step of your Philadelphia roof replacement. Our team prioritizes communication, safety, and precision—so you feel confident every step of the way."
+                imgSrc="/images/locations/philadelphia/philly6.avif"
+                imgAlt="Trusted roofing contractor in Philadelphia replacing roof"
+                imagePosition="left"
+
+            />
+
 
             <InfoSection
                 title="Expert Roof Repair in Philadelphia"
@@ -138,6 +142,16 @@ export default function page() {
                 imageSrc="/images/locations/philadelphia/philly7.webp"
                 description="Paragon extends our expertise to commercial roofing in Philadelphia, serving businesses throughout the metropolitan area. Our commercial roofing team understands the unique demands of Philadelphia businesses, providing durable, cost-effective roofing solutions that minimize downtime and maximize protection. From flat roof systems to metal installations, we deliver commercial roofing services that keep Philadelphia businesses operating smoothly."
             />
+
+            <InfoSection
+                title="Why Philadelphia Homeowners Trust Paragon Exterior"
+                mainContent="As a local, licensed roofing contractor in Philadelphia, we’ve built our business on trust, transparency, and results. Our roofers are trained, insured, and committed to doing things right the first time. We stand behind our work with strong warranties, responsive service, and 5-star reviews from your neighbors."
+                bottomContent="Choosing a roofing contractor in Philadelphia doesn’t have to be stressful. Paragon Exterior combines big-company capability with small-town customer care—so your home stays safe, dry, and beautiful."
+                imgSrc="=/images/roof-service/roof-replacement/roof-replacement-hero.webp"
+                imgAlt="Homeowners trust Paragon Exterior as their roofing contractor in Philadelphia"
+                imagePosition="left"
+            />
+
 
             <WhyParagon
             title="Why Choose Paragon for Your Philadelphia Exterior Needs?"
