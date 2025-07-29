@@ -31,7 +31,7 @@ const navigation = {
   service: [
     {name: 'All Areas we Serve', href: "/areas-we-serve"},
     {name: 'Philadelphia', href: '/areas/pennsylvania/trusted-roofing-contractor-philadelphia'},
-    {name: 'Bensalem', href: '#'},
+    {name: 'Bensalem', href: '/areas/pennsylvania/bensalem-roofing-company'},
     {name: 'Levittown', href: '#'},
     {name: 'Langhorne', href: '#'},
     {name: 'Feasterville', href: '#'},
