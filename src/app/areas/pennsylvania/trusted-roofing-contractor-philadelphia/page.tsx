@@ -8,7 +8,7 @@ import React from "react";
 
 export const metadata = {
     title: "Trusted Roofing Contractor Philadelphia | Paragon Exterior",
-    description: "Paragon Exterior is the trusted roofing contractor in Philadelphia. We specialize in roof repair, roof replacement, and expert exterior services for homes and businesses.",
+    description: "Paragon Exterior is the trusted roofing contractor in Philadelphia. We specialize in roof repair, roof replacement, and expert exterior services.",
     openGraph: {
         title: "Trusted Roofing Contractor Philadelphia",
         description: "Need a reliable roofing contractor in Philadelphia? Paragon Exterior delivers expert roof repair, installation, and replacement backed by local trust and experience.",
