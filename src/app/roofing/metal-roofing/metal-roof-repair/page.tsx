@@ -88,7 +88,7 @@ export default function MetalRoofRepairPage() {
                     <>
                         If your metal roof is leaking, rusting, or showing any signs of damage, don’t wait! Our professional roofing team recommends an annual inspection—both from the ground and on the roof—to catch issues early and protect your investment.
                         <br /><br />
-                        We handle all types of metal roof repairs: fixing scuffs and scratches, removing debris and mildew, treating rust before it spreads, and replacing worn fasteners and flashing. Our team reseals seams and penetrations to stop leaks and extend your roof’s life.
+                        We handle all types of repairs from fixing scuffs and scratches, removing debris and mildew, treating rust before it spreads, to replacing worn fasteners and flashing. Our team reseals seams and penetrations to stop leaks and extend your roof’s life.
                     </>
                 }
                 bottomContent={
@@ -148,7 +148,7 @@ export default function MetalRoofRepairPage() {
                             <div className="bg-primaryblue text-white aspect-square rounded-full w-10 h-10 flex items-center justify-center font-semibold">2</div>
                             <div>
                                 <h3 className="text-lg font-semibold">Transparent Estimate</h3>
-                                <p className="text-gray-600">We give you a written, detailed estimate for all recommended metal roof repairs. No surprises or hidden fees—just straightforward, fair pricing.</p>
+                                <p className="text-gray-600">We give you a written, detailed estimate for all recommended repairs. No surprises or hidden fees—just straightforward, fair pricing.</p>
                             </div>
                         </div>
                         <div className="flex items-start space-x-6">
@@ -171,8 +171,8 @@ export default function MetalRoofRepairPage() {
 
             {/* KEY BENEFITS */}
             <Benefits
-                title="Why Choose Professional Metal Roof Repair?"
-                description="Expert metal roof repair keeps your property safe, saves you money, and gives your roof a longer life. Our certified team uses proven repair methods and quality materials for results you can trust."
+                title="Why Choose a Professional to Repair Your Metal Roof?"
+                description="Expert repair keeps your property safe, saves you money, and gives your roof a longer life. Our certified team uses proven repair methods and quality materials for results you can trust."
                 titleAs="h2"
                 img1={{
                     src: "/images/roof-service/metal/metal-roof-repair/metal-roof-repair4.avif",

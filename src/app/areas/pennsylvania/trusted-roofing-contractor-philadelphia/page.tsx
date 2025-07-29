@@ -147,7 +147,7 @@ export default function page() {
                 title="Why Philadelphia Homeowners Trust Paragon Exterior"
                 mainContent="As a local, licensed roofing contractor in Philadelphia, we’ve built our business on trust, transparency, and results. Our roofers are trained, insured, and committed to doing things right the first time. We stand behind our work with strong warranties, responsive service, and 5-star reviews from your neighbors."
                 bottomContent="Choosing a roofing contractor in Philadelphia doesn’t have to be stressful. Paragon Exterior combines big-company capability with small-town customer care—so your home stays safe, dry, and beautiful."
-                imgSrc="=/images/roof-service/roof-replacement/roof-replacement-hero.webp"
+                imgSrc="/images/roof-service/roof-replacement/roof-replacement-hero.webp"
                 imgAlt="Homeowners trust Paragon Exterior as their roofing contractor in Philadelphia"
                 imagePosition="left"
             />
