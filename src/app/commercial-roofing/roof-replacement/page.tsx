@@ -65,15 +65,18 @@ export default function CommercialRoofReplacementPage() {
                 className="pt-12 lg:pt-24"
                 description={
                     <>
-                        If your commercial roof is showing signs of age or damage, it may be
-                        time for a full replacement. Look for these warning signs:
-                        <ul className="list-disc pl-6 mt-4">
+                        <SecondaryText>
+                            If your commercial roof is showing signs of age or damage, it may be
+                            time for a full replacement. Look for these warning signs:
+                        </SecondaryText>
+
+                        <SecondaryText as='ul' className="list-disc pl-6 mt-4">
                             <li>Roof membrane is more than 20 years old</li>
                             <li>Multiple or recurring leaks despite repairs</li>
                             <li>Extensive ponding water or blistering on the surface</li>
                             <li>Significant seam separations or flashing failure</li>
                             <li>Insulation saturation or sagging deck</li>
-                        </ul>
+                        </SecondaryText>
                     </>
                 }
             />

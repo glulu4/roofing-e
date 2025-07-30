@@ -82,13 +82,13 @@ export default function Page() {
             <Row
                 title="Is It Time for Siding Replacement?"
                 description={
-                    <>
+                    <SecondaryText>
                         Do you see cracked panels, warped spots, bubbling paint, mold, or higher utility bills? These are signs your siding may be failing.{" "}
                         <a href="/blog/when-to-replace-siding" className="text-primaryBlue underline">
                             Learn more about when to replace siding
                         </a>{" "}
                         and how new siding can protect your investment.
-                    </>
+                    </SecondaryText>
                 }
                 imageSrc="/images/siding/siding-service/siding-replace/siding-replacement2.webp"
             />

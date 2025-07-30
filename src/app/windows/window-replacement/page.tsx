@@ -42,20 +42,18 @@ export default function WindowReplacementPage() {
                 title="Window Replacement That Transforms Your Home"
                 mainContent={
                     <>
-                        <p>
+                        <SecondaryText>
                             Old, drafty, or broken windows aren’t just an eyesore—they can drain your wallet through higher energy bills and allow costly weather damage to your home. Paragon Exterior offers full-service window replacement that goes beyond “just new glass.” Our expert team guides you through every step, from window selection to custom measurement, precision installation, and final walkthrough. We install energy-efficient windows that <strong>reduce utility costs, eliminate drafts, block noise, and boost your curb appeal</strong>.
-                        </p>
-                        <p className="mt-4">
+                        </SecondaryText>
+                        <SecondaryText className="mt-4">
                             Whether you’re replacing one window or upgrading your entire home, our window replacement process is built for <strong>maximum performance and long-term value</strong>. We carry all major brands and window types, including <strong>vinyl, fiberglass, wood, and composite</strong>. Let us help you select the perfect style, finish, and features to match your needs and your budget.
-                        </p>
+                        </SecondaryText>
                     </>
                 }
                 bottomContent={
-                    <>
-                        <p>
+                        <SecondaryText>
                             Every project is backed by our industry-leading warranties and meticulous attention to detail. From insulated glass to custom trim, Paragon Exterior delivers a seamless, stress-free window replacement experience for homeowners throughout the Greater Philadelphia region, South Jersey, and Delaware.
-                        </p>
-                    </>
+                        </SecondaryText>
                 }
                 imagePosition="right"
             />
@@ -132,7 +130,7 @@ export default function WindowReplacementPage() {
                     </div>
                     <div className="text-center mt-8">
                         <SecondaryText className="text-gray-600">
-                            *Window replacement cost includes professional installation, removal of old windows, and basic trim. Price can vary based on unique installation needs, custom sizes, or specialty finishes. Ask for a free, no-pressure estimate!
+                            Window replacement cost includes professional installation, removal of old windows, and basic trim. Price can vary based on unique installation needs, custom sizes, or specialty finishes. Ask for a free, no-pressure estimate!
                         </SecondaryText>
                     </div>
                 </div>

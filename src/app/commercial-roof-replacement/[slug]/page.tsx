@@ -61,7 +61,7 @@ const generateStructuredData = (location: Location) => ({
         "addressCountry": "US"
     },
     "areaServed": {
-        "@type": "City",
+        "@type": "AdministrativeArea",
         "name": location.name
     },
     "hasOfferCatalog": {
@@ -255,34 +255,34 @@ export default async function CommercialRoofReplacementPage({params}: {params: P
                             </SecondaryText>
                         </div>
 
-                                                <ServicesGrid
-                                                    services={[
-                                                        {
-                                                            id: 1,
-                                                            title: "Commercial Flat Roofing",
-                                                            description:
-                                                                "EPDM, TPO, and built-up flat roofs for business buildings. Waterproof, energy-efficient, and built to last.",
-                                                            imageUrl: "/images/commercial/flat-commerical.webp",
-                                                            href: "/commercial-roofing/flat-roofing",
-                                                        },
-                                                        {
-                                                            id: 2,
-                                                            title: "Commercial Roof Replacement",
-                                                            description:
-                                                                "Upgrade your roof with high-performance materials that prevent leaks and save on long-term repairs.",
-                                                            imageUrl: "/images/commercial/replacement-commercial.webp",
-                                                            href: "/commercial-roofing/roof-replacement",
-                                                        },
-                                                        {
-                                                            id: 3,
-                                                            title: "Commercial Roof Repair",
-                                                            description:
-                                                                "Fix leaks and damage fast. We offer emergency repairs and long-term maintenance for all roof types.",
-                                                            imageUrl: "/images/commercial/repair-commercial-roof.webp",
-                                                            href: "/commercial-roofing/roof-repair",
-                                                        },
-                                                    ]}
-                                                />
+                        <ServicesGrid
+                            services={[
+                                {
+                                    id: 1,
+                                    title: "Commercial Flat Roofing",
+                                    description:
+                                        "EPDM, TPO, and built-up flat roofs for business buildings. Waterproof, energy-efficient, and built to last.",
+                                    imageUrl: "/images/commercial/flat-commerical.webp",
+                                    href: "/commercial-roofing/flat-roofing",
+                                },
+                                {
+                                    id: 2,
+                                    title: "Commercial Roof Replacement",
+                                    description:
+                                        "Upgrade your roof with high-performance materials that prevent leaks and save on long-term repairs.",
+                                    imageUrl: "/images/commercial/replacement-commercial.webp",
+                                    href: "/commercial-roofing/roof-replacement",
+                                },
+                                {
+                                    id: 3,
+                                    title: "Commercial Roof Repair",
+                                    description:
+                                        "Fix leaks and damage fast. We offer emergency repairs and long-term maintenance for all roof types.",
+                                    imageUrl: "/images/commercial/repair-commercial-roof.webp",
+                                    href: "/commercial-roofing/roof-repair",
+                                },
+                            ]}
+                        />
                     </div>
                 </section>
 
