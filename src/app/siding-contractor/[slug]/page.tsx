@@ -246,12 +246,12 @@ export default async function SidingContractorPage({params}: {params: Promise<{s
                     title={`Professional Siding Repair and Siding Replacement Services`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Our comprehensive <strong>siding repair</strong> services address storm damage, loose panels, cracks, and general wear with precision and quality materials. When <strong>siding replacement</strong> becomes necessary, our siding contractors guide {location.name} homeowners through material selection and provide expert installation that transforms your home&apos;s exterior.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Whether you need minor <strong>siding repair</strong> or complete <strong>siding replacement</strong>, our team ensures lasting results using premium materials and proven techniques. We specialize in seamless repairs that blend perfectly with existing siding and comprehensive replacements that enhance both protection and property value.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/siding-contractor/img3.webp"

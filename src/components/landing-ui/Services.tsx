@@ -17,65 +17,101 @@ interface ServiceCategory {
     image: string;
     slug: string; // for routing to detail pages
 }
+// const serviceData = [
+//     {
+//         id: "01",
+//         title: "Roofing Services",
+//         description: `
+//         Explore our range of roofing services, including roof repair, 
+//         roof installation, roof leak repair, and roof replacement – tailored to enhance your home's 
+//         protection and aesthetics. `,
+//         image: "/images/home/roof-service.webp",
+//         slug: "/roofing"
+//     },
+//     {
+//         id: "02",
+//         title: "Siding Services",
+//         description: "Learn more about our siding services, including siding installation, siding repair, and vertical siding",
+//         image: "/images/home/siding-service.webp",
+//         slug: "siding"
+//     },
+//     {
+//         id: "03",
+//         title: "Windows",
+//         description: "Upgrade your home's energy efficiency and curb appeal with our window services, including window installation, window replacement, and window repair.",
+//         image: "/images/home/window-card.webp",
+//         slug: "/windows"
+//     },
+//     {
+//         id: "04",
+//         title: "Gutter Services",
+//         description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+//         image: "/images/home/gutter-card.webp",
+//         slug: "gutters"
+//     },
+//     {
+//         id: "05",
+//         title: "Commercial Services",
+//         description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
+//         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+//         slug: "/commercial-roofing"
+//     }
+// ] as const satisfies readonly ServiceCategory[];
+
 const serviceData = [
     {
         id: "01",
         title: "Roofing Services",
-        description: "Explore our range of roofing services, including roof repair, roof installation, roof leak repair, and roof replacement – tailored to enhance your home's protection and aesthetics.",
+        description: `
+      Explore our full range of roofing services, including roof repair, 
+      roof installation, roof leak repair, and complete roof replacement—each tailored to enhance 
+      your home's protection, longevity, and curb appeal. Whether you're dealing with storm damage or planning 
+      a new roof, we deliver expert craftsmanship and premium materials.`,
         image: "/images/home/roof-service.webp",
-        slug: "/roofing"
+        slug: "/roofing",
     },
     {
         id: "02",
         title: "Siding Services",
-        description: "Learn more about our siding services, including siding installation, siding repair, and vertical siding",
+        description: `
+      Discover our siding services, including professional siding installation, siding repair, and vertical 
+      siding solutions that boost your home's insulation and exterior style. We work with vinyl, fiber cement, 
+      and other durable materials built for the Greater Philadelphia climate.`,
         image: "/images/home/siding-service.webp",
-        slug: "siding"
+        slug: "siding",
     },
     {
         id: "03",
         title: "Windows",
-        description: "Upgrade your home's energy efficiency and curb appeal with our window services, including window installation, window replacement, and window repair.",
+        description: `
+      Upgrade your home's energy efficiency and appearance with our expert window services. We specialize 
+      in window installation, replacement, and repair—designed to reduce drafts, lower energy bills, and 
+      let in more natural light without sacrificing insulation.`,
         image: "/images/home/window-card.webp",
-        slug: "/windows"
+        slug: "/windows",
     },
     {
         id: "04",
         title: "Gutter Services",
-        description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
+        description: `
+      Protect your foundation with our reliable gutter services, including gutter installation, cleaning, 
+      and repair. We install seamless gutters and gutter guards to manage stormwater runoff, reduce clogs, 
+      and prevent water damage to your home’s exterior and basement.`,
         image: "/images/home/gutter-card.webp",
-        slug: "gutters"
+        slug: "gutters",
     },
     {
         id: "05",
         title: "Commercial Services",
-        description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
+        description: `
+      We offer durable commercial roofing solutions, including flat roof repair, commercial roof 
+      replacement, and preventative maintenance. Our team works with property managers and business owners 
+      to ensure long-lasting performance, minimal disruption, and full code compliance across PA, NJ, and DE.`,
         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-        slug: "/commercial-roofing"
-    }
-
-    // {
-    //     id: "04",
-    //     title: "Windows",
-    //     description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
-    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-    //     slug: "gutters"
-    // },
-    // {
-    //     id: "05",
-    //     title: "Chimneys",
-    //     description: "Upgrade your home's drainage with our gutter services, including gutter installation, gutter cleaning, and gutter repair.",
-    //     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-    //     slug: "gutters"
-    // },
-    // {
-    //     id: "06",
-    //     title: "Commercial Services",
-    //     description: "Large-scale roofing solutions, such as flat roof repair, commerical roof repair, and commerical roof replacement. Our work is designed for durability and weather resistance for commercial properties",
-    //     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-    //     slug: "commercial"
-    // }
+        slug: "/commercial-roofing",
+    },
 ] as const satisfies readonly ServiceCategory[];
+
 
 // 🚀 Extract types from the data
 type Service = typeof serviceData[number];
@@ -177,7 +213,7 @@ const RoofingServices = () => {
                     </div>
                     <div className="mt-8 lg:max-w-md">
                         <p className="text-gray-600 text-lg leading-relaxed">
-                            Experience Top-Tier Roofing, Siding, and Exterior Services, Designed to Withstand the Elements While Elevating Your Property&apos;s Aesthetic and Value.
+                            Experience quality Roofing, Siding, and Exterior Services, Designed to Withstand the Elements While Elevating Your Property&apos;s Aesthetic and Value.
                         </p>
                     </div>
                 </div>

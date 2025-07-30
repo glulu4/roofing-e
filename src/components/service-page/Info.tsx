@@ -45,9 +45,7 @@ export default function InfoSection({
                     {/* Text Content */}
                     <div className={isImageRight ? 'lg:order-1' : 'lg:order-2'}>
                         <div className="text-base/7 text-gray-700 lg:max-w-lg">
-                            {/* <HeaderText as={titleAs} className="mt-2 text-pretty font-semibold tracking-tight text-primaryblue">
-                                {title}
-                            </HeaderText> */}
+
                             <HeaderText as={titleAs} className="mt-2 text-pretty font-semibold tracking-tight text-primaryblue">
                                 {titleHref ? (
                                     <Link

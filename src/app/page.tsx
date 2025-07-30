@@ -10,6 +10,8 @@ import Exceptional from "@/components/landing-ui/Exceptional";
 import {Metadata} from "next";
 import RoofingServices from "@/components/landing-ui/Services";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
+import HowWeWork from "@/components/landing-ui/HowWeWork";
+import Expertise from "@/components/landing-ui/Expertise";
 
 
 
@@ -24,8 +26,8 @@ const Page = () => {
       {/* Hero Video Section */}
       <div className="flex w-full">
         <HeroVideo
-          text="Roof & Exterior Professionals"
-          secText="Your Trusted Partner for Quality Roofing and Exterior Needs"
+          text="Expert Roofing & Exterior Services"
+          secText="Trusted roofing, siding, and exterior experts delivering top-quality solutions"
           video="/videos/house3short.mp4"
         />
       </div>
@@ -38,9 +40,15 @@ const Page = () => {
 
       <RoofingServices />
 
-      {/* <div >
+      
+
+      <div >
         <HowWeWork />
-      </div> */}
+      </div>
+
+      <div>
+        <Expertise/>
+      </div>
 
       <div className="flex justify-center items-center">
         <Enrich />

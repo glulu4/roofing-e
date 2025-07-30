@@ -236,12 +236,12 @@ export default async function MetalRoofRepairPage({params}: {params: Promise<{sl
                     titleAs="h1"
                     mainContent={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Do you need your metal roof repaired? When you need reliable <strong>metal roof repair in {location.name}</strong>, Paragon Exterior provides expert solutions for all types of metal roofing damage. Our comprehensive services include professional <strong>metal roof leak repair</strong>, panel replacement, fastener repairs, and emergency storm damage restoration. We understand how to repair metal roofs properly using proven techniques that deliver lasting results.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Whether you&apos;re dealing with a <strong>leaking metal roof</strong>, damaged panels, or aging fasteners, our experienced team knows how to repair metal roof problems efficiently and effectively. We specialize in all metal roofing systems including standing seam, corrugated, and metal shingles, providing targeted <strong>metal roof repair</strong> solutions that restore your roof&apos;s integrity and performance.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     bottomContent={`Trust Paragon Exterior for all your metal roof repair needs in ${location.name}. Our reputation is built on quality workmanship, fast response times, and permanent solutions that protect your investment for years to come.`}
@@ -253,12 +253,12 @@ export default async function MetalRoofRepairPage({params}: {params: Promise<{sl
                     title="Common Causes of Metal Roof Damage"
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Understanding how metal roofs get damaged helps homeowners recognize when <strong>metal roof repair</strong> is needed. <strong>Weather damage</strong> from hail, high winds, and thermal expansion creates the most common issues. Hail can dent panels and damage protective coatings, while extreme temperature changes cause metal to expand and contract, loosening fasteners over time.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 <strong>Fastener failure</strong> is another leading cause requiring <strong>metal roof repair</strong>. As screws and nails age, they can work loose, creating entry points for water. <strong>Corrosion</strong> at cut edges, scratches, or areas where protective coatings have worn away also compromises metal roof integrity. <strong>Poor installation</strong> or maintenance issues can accelerate these problems, making professional <strong>metal roof repair</strong> essential.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/metal-roof-repair/img2.webp"
@@ -288,12 +288,12 @@ export default async function MetalRoofRepairPage({params}: {params: Promise<{sl
                     title="How to Repair Metal Roof Leaks: Professional Process"
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Professional <strong>metal roof leak repair</strong> begins with thorough leak detection to identify all problem areas, not just obvious ones. Our experts examine fasteners, seams, flashing, and penetrations where most <strong>metal roof leaks</strong> originate. We use advanced techniques to trace water paths since leaks often appear far from their actual source.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Once identified, <strong>metal roof leak repair</strong> involves cleaning affected areas, replacing damaged fasteners with proper gaskets, sealing seams with compatible materials, and ensuring proper drainage. For significant leaks, we may replace entire panels or sections. Our <strong>metal roof repair</strong> process always includes testing to verify complete leak elimination before considering the job complete.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/metal-roof-repair/img3.jpg"
@@ -308,12 +308,12 @@ export default async function MetalRoofRepairPage({params}: {params: Promise<{sl
                     title="What Homeowners Can Do About Metal Roof Problems"
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 While professional <strong>metal roof repair</strong> is recommended for safety and warranty reasons, homeowners can take preventive steps to minimize damage. <strong>Regular inspections</strong> help identify loose fasteners, damaged panels, or debris accumulation early. Look for rust spots, gaps around penetrations, or interior water stains that indicate potential <strong>metal roof</strong> issues.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 <strong>Emergency temporary repairs</strong> like applying roofing tape or tarps can prevent immediate water damage while waiting for professional <strong>metal roof repair</strong>. However, permanent repairs require proper materials, tools, and expertise. Attempting DIY <strong>metal roof repair</strong> can void warranties, create safety hazards, and often costs more when professionals must fix improper repairs.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/metal-roof-repair/img4.webp"

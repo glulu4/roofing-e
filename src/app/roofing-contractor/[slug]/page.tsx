@@ -193,9 +193,15 @@ export default async function ServiceAreaPage({params}: PageProps) {
                             <HeaderText as="h1" variant="large">
                                 Why {location.name} Homeowners Choose Paragon Exterior
                             </HeaderText>
-                            <SecondaryText className="max-w-4xl mx-auto">
-                                Choosing the right roofing contractor shouldn’t be stressful. At Paragon Exterior, we keep everything simple, honest, and clear—from your first estimate to final cleanup. Enjoy quick turnarounds, friendly service, and strong warranties—plus constant updates, so you’re never left in the dark. See why your neighbors in {location.name} trust us as their go-to roofing company.
+                            <SecondaryText className="mt-6">
+                                We’re more than just a contractor—we’re part of the {location.name} community. From minor repairs to full roof replacements, our mission is to make your project smooth, affordable, and built to last. As a locally rooted company, we understand the unique roofing challenges in {location.name}—from older homes with complex structures to newer builds requiring energy-efficient materials.
                             </SecondaryText>
+
+                            <SecondaryText className="mt-6">
+                                Our team lives and works in the same neighborhoods we serve, which means we take pride in every roof we install or repair. When you choose Paragon Exterior, you’re getting more than great craftsmanship—you’re getting a trusted partner who cares about your home, your timeline, and your peace of mind.
+                            </SecondaryText>
+
+
                         </div>
                         {/* Trust Indicators */}
                         <div className="grid md:grid-cols-4 gap-6 mb-16">
@@ -342,6 +348,22 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     subTitle={`Discover why more homeowners in ${location.name} recommend us for roof repair, installation, and peace of mind. Honest advice, expert crews, and local experience—every time.`}
                     titleAs="h2"
                 />
+
+
+                <section className="max-w-5xl mx-auto px-6 py-20">
+                    <h2 className="text-3xl font-bold text-primaryblue mb-4">
+                        Your Local Roofing Company in {location.name}
+                    </h2>
+                    <p className="text-lg text-gray-700 mb-4">
+                        Paragon Exterior has proudly served the {location.name} area for years. We’ve worked on homes and businesses throughout the region—from historic neighborhoods to newer developments—helping homeowners stay protected through Pennsylvania’s unpredictable weather.
+                    </p>
+                    <p className="text-lg text-gray-700 mb-4">
+                        Our local crews understand the building codes, weather patterns, and architectural styles that make {location.name} unique. Whether you&apos;re dealing with storm damage, replacing an aging roof, or starting fresh with new siding, we’re here to guide you through the process.
+                    </p>
+                    <p className="text-lg text-gray-700">
+                        Looking for a reliable roofing contractor in {location.name}? Paragon Exterior offers honest advice, fast scheduling, and a commitment to quality that’s earned us 5-star reviews across the region.
+                    </p>
+                </section>
 
 
                 {/* Enhanced FAQ */}

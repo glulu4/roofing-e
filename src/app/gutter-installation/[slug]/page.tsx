@@ -248,12 +248,12 @@ export default async function GutterInstallationPage({params}: {params: Promise<
                     titleAs="h1"
                     mainContent={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 When you need reliable <strong>gutter installation in {location.name}</strong>, Paragon Exterior delivers professional solutions that protect your home from water damage. Our comprehensive gutter services include <strong>seamless gutter installation</strong>, expert <strong>gutter repair</strong>, complete <strong>gutter replacement</strong>, and preventive maintenance that keeps your drainage system functioning perfectly year-round.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 We specialize in <strong>seamless gutters</strong> that provide superior leak protection compared to traditional sectional systems. Our on-site fabrication ensures perfect fit and clean aesthetics, while our <strong>gutter installation</strong> expertise guarantees proper slope, secure mounting, and optimal drainage performance for {location.name}&apos;s climate conditions.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     bottomContent={`Choose Paragon Exterior for your gutter installation needs and experience the difference professional installation makes. Our reputation in ${location.name} is built on quality workmanship, premium materials, and customer satisfaction that protects your home investment.`}
@@ -281,12 +281,12 @@ export default async function GutterInstallationPage({params}: {params: Promise<
                     title={`Seamless Gutter Installation: Superior Protection for ${location.name} Homes`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 <strong>Seamless gutters</strong> represent the gold standard in gutter installation, offering superior leak protection and enhanced aesthetics for {location.name} homes. Unlike sectional gutters with multiple joints, our <strong>seamless gutter installation</strong> creates custom-fitted drainage systems with joints only at corners and downspouts, dramatically reducing potential failure points.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Our on-site fabrication process ensures each <strong>seamless gutter</strong> section fits your home perfectly. This precision approach eliminates gaps, reduces maintenance requirements, and provides the clean, professional appearance that enhances your home&apos;s curb appeal while delivering decades of reliable water management.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/gutter-installation/img2.webp"
@@ -300,12 +300,12 @@ export default async function GutterInstallationPage({params}: {params: Promise<
                     title={`Premium Gutter Materials and Installation Options`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Our <strong>gutter installation</strong> services include a complete range of premium materials designed for {location.name}&apos;s climate. <strong>Aluminum gutters</strong> offer excellent value with 20+ year lifespan and variety of colors. <strong>Copper gutters</strong> provide premium aesthetics and 50+ year durability. <strong>Steel gutters</strong> deliver maximum strength for challenging conditions.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Each <strong>gutter installation</strong> includes professional assessment to determine optimal size, slope, and downspout placement for your specific property. We consider roof pitch, rainfall patterns, and architectural features to design drainage systems that perform reliably while complementing your home&apos;s appearance.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/gutter-installation/img3.avif"
@@ -320,12 +320,12 @@ export default async function GutterInstallationPage({params}: {params: Promise<
                     title={`Professional Gutter Repair and Replacement Services`}
                     description={
                         <div>
-                            <p>
+                            <SecondaryText>
                                 Beyond new <strong>gutter installation</strong>, we provide comprehensive <strong>gutter repair</strong> services for leaks, clogs, sagging, and storm damage. When <strong>gutter replacement</strong> becomes necessary, our experts guide {location.name} homeowners through material selection and system design for optimal long-term performance.
-                            </p>
-                            <p className="mt-4">
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
                                 Our <strong>gutter repair</strong> expertise addresses common issues like loose fasteners, damaged sections, and improper drainage quickly and effectively. For complete <strong>gutter replacement</strong>, we remove old systems safely and install modern drainage solutions that enhance both protection and property value.
-                            </p>
+                            </SecondaryText>
                         </div>
                     }
                     imageSrc="/images/dynamic/gutter-installation/img4.webp"

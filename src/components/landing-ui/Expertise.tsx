@@ -1,28 +1,39 @@
-
 export default function Expertise() {
     const features = [
         {
-            name: 'Experienced Craftsmen',
+            name: 'Specialists in Siding Installation',
             description:
-                'Our team is comprised of highly skilled and experienced roofers who have a deep understanding of all roofing materials and techniques.',
+                'Paragon Exterior specializes in high-performance siding solutions designed to protect and enhance homes throughout Pennsylvania, New Jersey, and Delaware. Our expert team installs vinyl, fiber cement, and vertical siding with attention to detail, proper flashing, and energy-efficient techniques that stand the test of time.',
         },
         {
-            name: 'Comprehensive Services',
+            name: 'James Hardie® & CertainTeed® Certified Installers',
             description:
-                'We offer a full range of roofing services, from repairs and replacements to maintenance and inspections. No job is too big or too small.',
+                'We work with the industry’s best brands—offering fiber cement siding from James Hardie® and premium vinyl siding from CertainTeed®. These materials are engineered to resist warping, cracking, and fading, while delivering unbeatable curb appeal and long-lasting value for your home.',
+        },
+        {
+            name: 'Weather-Ready Performance',
+            description:
+                'Our siding systems are built to handle the harsh weather of the Northeast. From humid summers to freezing winters, we ensure proper installation and insulation to protect against moisture, pests, and heat loss—while keeping your home looking sharp all year round.',
+        },
+        {
+            name: 'Warranty-Backed Craftsmanship',
+            description:
+                'We follow manufacturer-certified installation guidelines to maintain warranty eligibility and ensure every board is properly sealed, secured, and finished. Whether it’s HardiePlank® lap siding or CertainTeed Monogram® vinyl panels, your siding will be backed by top-tier warranties and professional-grade quality.',
         },
     ];
 
-    // main text was text-gray-900
     return (
-        <div>
+        <div className="mx-auto w-11/12 px-4 py-24 sm:px-6 lg:px-8">
             {/* Main container */}
-            <div className="flex flex-col justify-around mx-auto w-10/12 px-6 lg:px-8 bg-card rounded-md p-10 py-32">
+            <div className="flex flex-col justify-around rounded-md p-10 py-32 bg-gray-50">
                 {/* Heading Section */}
                 <div className="max-w-3xl">
                     <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-                        Transform Your Roof with Our Expertise
+                        Siding Expertise That Protects and Elevates Your Home
                     </h2>
+                    <p className="mt-4 text-lg text-gray-600 font-secondary">
+                        From fiber cement to premium vinyl siding, Paragon Exterior delivers superior siding installation using industry-trusted brands and expert craftsmanship you can count on.
+                    </p>
                 </div>
 
                 {/* Features Section */}
@@ -38,6 +49,5 @@ export default function Expertise() {
                 </div>
             </div>
         </div>
-
     );
 }
