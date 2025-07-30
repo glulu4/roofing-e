@@ -74,8 +74,13 @@ export default function Page() {
                     Why Paragon Exterior for Siding Replacement?
                 </HeaderText>
                 <SecondaryText className="mt-6 text-center">
-                    Our siding replacement crews go the extra mile—handling everything from safe removal and repairs to precise installation and debris-free cleanup. All backed by strong warranties and local reputation.
+                    Our siding replacement crews go the extra mile—handling everything from safe removal and structural repairs to precise installation and debris-free cleanup. We don’t just cover your walls—we protect your home. Every Paragon Exterior project includes clear communication, strong manufacturer warranties, and expert craftsmanship trusted across Pennsylvania, New Jersey, and Delaware.
                 </SecondaryText>
+
+                <SecondaryText className="mt-4 text-center">
+                    Whether you're upgrading faded vinyl, replacing damaged fiber cement, or giving your home a modern refresh, we deliver siding solutions that improve energy efficiency, resist harsh weather, and increase your property’s value. It’s why homeowners continue to choose Paragon Exterior for professional, stress-free siding replacement.
+                </SecondaryText>
+
             </section>
 
             {/* WARNING SIGNS ROW */}
@@ -96,13 +101,17 @@ export default function Page() {
             {/* BENEFITS ROW */}
             <Row
                 title="The Benefits of New Siding"
-                description="New siding improves your home's insulation, blocks moisture, and gives your exterior a crisp, updated look. Most homeowners see up to 80% of their project cost added to resale value."
+                description={
+                    <SecondaryText>
+                        New siding does more than change your home’s look—it boosts your home's thermal efficiency, improves protection against wind and moisture, and adds long-term value. With the right installation and materials, new siding can reduce energy bills, prevent mold growth, and give your home a like-new appearance.{" "}
+                        <strong>Most homeowners recoup 70–80% of siding costs</strong> in resale value, making it one of the smartest exterior upgrades you can make.
+                    </SecondaryText>
+                }
                 imageSrc="/images/siding/siding-service/siding-replace/siding-replacement3.webp"
                 reverse
                 className="pt-12 lg:pt-24"
             />
 
-            {/* FAQ */}
             <FAQSection
                 title="Frequently Asked Questions About Siding Replacement"
                 faqs={[
@@ -120,9 +129,35 @@ export default function Page() {
                         question: "What siding materials do you offer?",
                         answer:
                             "We install vinyl, fiber cement, aluminum, cedar, and engineered wood siding—always from leading brands and in dozens of colors and textures."
+                    },
+                    {
+                        question: "Do you remove old siding?",
+                        answer:
+                            "Yes. We remove all old siding and check for water damage, rot, or structural issues underneath. If we find problems, we’ll fix them before installing your new siding—no surprises."
+                    },
+                    {
+                        question: "Can you match the style of my current home?",
+                        answer:
+                            "Absolutely. We offer horizontal lap siding, vertical board and batten, and shake-style panels in a wide variety of finishes. We’ll help you find the perfect match—or something even better."
+                    },
+                    {
+                        question: "Is new siding energy efficient?",
+                        answer:
+                            "Yes! Especially when paired with insulation wrap or insulated vinyl panels. Upgrading your siding improves your home’s R-value, lowers heating/cooling costs, and improves year-round comfort."
                     }
                 ]}
             />
+
+            <section className="max-w-5xl mx-auto py-16 px-6">
+                <HeaderText as="h2" className="text-3xl font-bold text-primaryblue text-center mb-6">
+                    What to Expect During Your Siding Replacement
+                </HeaderText>
+                <SecondaryText className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
+                    At Paragon Exterior, we make siding replacement easy. From your free estimate to final cleanup, our team walks you through each step of the process. We handle material selection, scheduling, and permitting—and always communicate clearly before, during, and after the job. Most homes are completed within a few days, and we leave your property spotless.
+                </SecondaryText>
+            </section>
+
+
 
             <WhyParagonSidingReplacement
                 title="Why Homeowners Trust Paragon Exterior for Siding Replacement"
