@@ -7,6 +7,7 @@ import HeaderText from "@/components/HeaderText";
 import SecondaryText from "@/components/SecondaryText";
 import ServicesGrid from "@/components/service-page/Services";
 
+
 const posts = [
     {
         id: 1,
@@ -96,7 +97,7 @@ const Page = () => {
                 <HeroVideo
                     video="/videos/house1.mp4"
 
-                    
+                    poster="/images/roof-default.webp"
                     text="Roofing Services"
                     secText="Reliable Repairs. Lasting Roofs. Local Experts."
                 />

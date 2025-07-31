@@ -29,6 +29,7 @@ const Page = () => {
           text="Expert Roofing & Exterior Services"
           secText="Trusted roofing, siding, and exterior experts delivering top-quality solutions"
           video="/videos/house3short.mp4"
+          poster="/images/home/default.webp"
         />
       </div>
 

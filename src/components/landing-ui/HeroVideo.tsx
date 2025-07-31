@@ -7,19 +7,11 @@ interface HeroVideoProps {
     text?:string
     secText?:string;
     video:string;
+    poster: string;
 }
-const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
+const HeroVideo = ({text, secText, video, poster}: HeroVideoProps) => {
     return (
         <div className="relative h-[80vh] w-full  z-0">
-            <Head>
-                <link
-                    rel="preload"
-                    as="image"
-                    href="/images/roof-service/skylight/skylight2.webp"
-                    fetchPriority="high"
-                    type="image/webp"
-                />
-            </Head>
             {/* Video Player */}
             <video
                 
@@ -29,10 +21,9 @@ const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
                 src={video}
                 autoPlay
                 muted
-                poster="/images/roof-service/skylight/skylight2.webp"
-                
-                
+                poster={poster}
                 playsInline
+                
             ></video>
             {/* Overlay Content */}
             <div className="absolute top-0 left-0 z-10 flex h-full w-full flex-col items-left justify-center bg-black bg-opacity-50 text-white text-center px-6">
