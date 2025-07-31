@@ -103,7 +103,7 @@ export default function Page() {
                 title="The Benefits of New Siding"
                 description={
                     <SecondaryText>
-                        New siding does more than change your home&apos;s look—it boosts your home's thermal efficiency, improves protection against wind and moisture, and adds long-term value. With the right installation and materials, new siding can reduce energy bills, prevent mold growth, and give your home a like-new appearance.{" "}
+                        New siding does more than change your home&apos;s look—it boosts your home&apos;s thermal efficiency, improves protection against wind and moisture, and adds long-term value. With the right installation and materials, new siding can reduce energy bills, prevent mold growth, and give your home a like-new appearance.{" "}
                         <strong>Most homeowners recoup 70–80% of siding costs</strong> in resale value, making it one of the smartest exterior upgrades you can make.
                     </SecondaryText>
                 }
