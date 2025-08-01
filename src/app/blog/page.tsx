@@ -18,7 +18,7 @@ const Page = async ({
 }) => {
     const params = await searchParams;
     const page = params.page ? parseInt(params.page as string) : 1;
-    const result = await wisp.getPosts({limit: "all", page});
+    const result = await wisp.getPosts({limit: 6, page});
     return (
         <div className="container mx-auto px-5 mb-10">
 
@@ -33,7 +33,9 @@ const Page = async ({
 
 
             <BlogPostsPreview posts={result.posts} />
-            <BlogPostsPagination pagination={result.pagination} />
+            <BlogPostsPagination
+                
+            pagination={result.pagination} />
         </div>
     );
 };

@@ -21,7 +21,7 @@ export default function ExitIntentPopup() {
 
         },
         "mobile": {
-            "triggerOnIdle": true,
+            "triggerOnIdle": false,
             "delayInSecondsToTrigger": 1
         }
     })
