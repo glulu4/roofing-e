@@ -94,25 +94,65 @@ import GetEstimate from "@/components/landing-ui/GetEstimate";
 import {BlogPostContent} from "@/components/wisp/BlogPostContent";
 import {RelatedPosts} from "@/components/wisp/RelatedPost";
 import {config} from "@/config";
-import {wisp} from "@/lib/wisp";
+import {GetPostResult, wisp} from "@/lib/wisp";
+import {Author, TagInPost,} from "@wisp-cms/client";
 import {Metadata} from "next";
 import {notFound} from "next/navigation";
 import type {BlogPosting, WithContext} from "schema-dts";
 
+
+
+interface BlogPost {
+    id: string;
+    createdAt: Date;
+    teamId: string;
+    description: string | null;
+    title: string;
+    content: string;
+    slug: string;
+    image: string | null;
+    authorId: string;
+    updatedAt: Date;
+    publishedAt: Date | null;
+    tags: TagInPost[];
+    author: Author;
+
+    metadata?: Record<string, any>;
+}
+
+
 export async function generateMetadata({params}: {params: Promise<{slug: string}>}) {
     const {slug} = await params;
-    const result = await wisp.getPost(slug);
+    const result: GetPostResult = await wisp.getPost(slug);
     if (!result || !result.post) {
         return {
             title: "Blog post not found",
         };
     }
 
-    const {title, description, image} = result.post;
+    const post: BlogPost = result.post;
+    const metadata = post.metadata;
+
+    let title;
+
+    if (metadata && metadata.title) {
+        title = metadata.title;
+    }
+    else {
+        title = post.title;
+    }
+    
+    const description = post.description;
+
+
+
+    // const {title, description, image } = result.post;
+    
 
     return {
         title,
         description,
+
         openGraph: {
             title,
         },
@@ -160,3 +200,4 @@ const Page = async ({params}: {params: Promise<{slug: string}>}) => {
 };
 
 export default Page;
+
