@@ -69,18 +69,15 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 // Enhanced structured data for siding services
 const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
+    "@type": "LocalBusiness",
     "name": "Paragon Exterior",
     "description": `Professional siding contractors in ${location.name} specializing in siding installation, vinyl siding, siding repair, siding replacement, and fiber cement siding services.`,
     "url": `https://www.paragonexterior.com/siding-contractor/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
-    "image": "https://www.paragonexterior.com/icon.png", // optional but recommended
-    "priceRange": "$$",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {

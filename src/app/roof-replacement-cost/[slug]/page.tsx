@@ -77,36 +77,19 @@ Understanding roof replacement costs in ${location.name} helps you budget effect
 
     return (
         <div className="min-h-screen">
-            {/* Schema.org structured data */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "Article",
-                        "headline": `${location.name} Roof Replacement Cost Guide 2025`,
-                        "description": `Complete guide to roof replacement costs in ${location.name} with detailed price breakdowns and estimates`,
-                        "author": {
-                            "@type": "Organization",
-                            "name": "Paragon Exterior"
-                        },
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Paragon Exterior",
-                            "logo": "https://www.paragonexterior.com/logo.png"
-                        },
-                        "mainEntity": {
-                            "@type": "FAQPage",
-                            "mainEntity": [
-                                {
-                                    "@type": "Question",
-                                    "name": `What does roof replacement cost in ${location.name}?`,
-                                    "acceptedAnswer": {
-                                        "@type": "Answer",
-                                        "text": `Roof replacement costs in ${location.name} typically range from $8,000-$60,000+ depending on materials, home size, and complexity. Asphalt shingles average $8,000-$18,000, while premium materials can exceed $40,000.`
-                                    }
-                                }
-                            ]
+                        "@type": "RoofingContractor",
+                        "name": "Paragon Exterior",
+                        "description": `${location.name} roofing contractor for roof repair, roof replacement, metal roofing, flat roofs, siding, and windows.`,
+                        "email": "info@paragonexterior.com",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": location.name,
+                            "addressCountry": "US"
                         }
                     })
                 }}

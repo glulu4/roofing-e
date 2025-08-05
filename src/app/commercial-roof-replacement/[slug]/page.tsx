@@ -52,12 +52,9 @@ const generateStructuredData = (location: Location) => ({
     "url": `https://www.paragonexterior.com/commercial-roof-replacement/${location.name}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
-    "image": "https://www.paragonexterior.com/icon.png",
-    "priceRange": "$$$",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
         "addressCountry": "US"
     },
     "areaServed": {

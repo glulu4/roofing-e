@@ -34,21 +34,21 @@ const Page = () => {
       </div>
 
 
-        {/* change to maybe roofing company section */}
+      {/* change to maybe roofing company section */}
       <RoofingCompany />
 
 
 
       <RoofingServices />
 
-      
 
-        <HowWeWork />
 
-        <Expertise/>
+      <HowWeWork />
+
+      <Expertise />
 
       {/* <div className="flex justify-center items-center"> */}
-        <Enrich />
+      <Enrich />
       {/* </div> */}
 
 
@@ -68,9 +68,9 @@ const Page = () => {
 
 
 
-        <TrustedBy />
+      <TrustedBy />
       {/* Get Estimate Section */}
-        <GetEstimate />
+      <GetEstimate />
 
 
 
