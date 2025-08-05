@@ -21,6 +21,7 @@ export default function Expertise() {
                 'We follow manufacturer-certified installation guidelines to maintain warranty eligibility and ensure every board is properly sealed, secured, and finished. Whether it’s HardiePlank® lap siding or CertainTeed Monogram® vinyl panels, your siding will be backed by top-tier warranties and professional-grade quality.',
         },
     ];
+    
 
     return (
         <div className="mx-auto w-11/12 px-4 py-24 sm:px-6 lg:px-8">

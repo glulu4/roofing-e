@@ -88,15 +88,11 @@
 // }
 
 
-import {Footer} from "@/components/Footer";
-import {Header} from "@/components/Header";
 import GetEstimate from "@/components/landing-ui/GetEstimate";
 import {BlogPostContent} from "@/components/wisp/BlogPostContent";
 import {RelatedPosts} from "@/components/wisp/RelatedPost";
-import {config} from "@/config";
 import {GetPostResult, wisp} from "@/lib/wisp";
 import {Author, TagInPost,} from "@wisp-cms/client";
-import {Metadata} from "next";
 import {notFound} from "next/navigation";
 import type {BlogPosting, WithContext} from "schema-dts";
 

@@ -43,17 +43,13 @@ const Page = () => {
 
       
 
-      <div >
         <HowWeWork />
-      </div>
 
-      <div>
         <Expertise/>
-      </div>
 
-      <div className="flex justify-center items-center">
+      {/* <div className="flex justify-center items-center"> */}
         <Enrich />
-      </div>
+      {/* </div> */}
 
 
       <Exceptional />
@@ -72,13 +68,9 @@ const Page = () => {
 
 
 
-      <div>
         <TrustedBy />
-      </div>
       {/* Get Estimate Section */}
-      <div >
         <GetEstimate />
-      </div>
 
 
 

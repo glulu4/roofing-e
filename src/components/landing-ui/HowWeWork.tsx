@@ -36,55 +36,51 @@ const features = [
 
 export default function GAFRoofSystem() {
     return (
-        <div>
-            <div className="mx-auto w-11/12 px-4 py-24 sm:px-6 lg:px-8">
-                <div className="rounded-2xl  px-6 py-16 sm:p-16">
-                    <div className="mx-auto max-w-xl lg:max-w-none">
-                        <div className="text-center">
-                            <HeaderText
-                                as="h2"
-                                className="text-2xl font-bold tracking-tight text-primaryblue"
-                            >
-                                We Install Complete GAF Roofing Systems
-                            </HeaderText>
+        <div className="rounded-2xl sm:p-16 mx-auto w-full sm:w-10/12 px-12 py-24 sm:px-6 lg:px-8">
+            <div className="">
+                <div className="text-center flex flex-col justify-center items-center py-12">
+                    <HeaderText
+                        as="h2"
+                        className="text-2xl font-bold  text-primaryblue"
+                    >
+                        We Install Complete GAF Roofing Systems
+                    </HeaderText>
 
-                            <SecondaryText className="mt-4 text-lg ">
-                                Paragon Exterior is proud to be a GAF-certified roofing contractor. That means every roof we install is built using GAF’s high-performance components for unmatched protection, beauty, and long-term value.
-                                From advanced leak barriers and starter shingles to ridge caps and attic ventilation, we follow GAF’s 
-                                full system approach—not just shingle installation. This ensures your roof performs as a cohesive unit, 
-                                backed by industry-leading warranties and engineered to withstand the extreme weather common in Pennsylvania, 
-                                New Jersey, and Delaware. When you choose Paragon, you&apos;re choosing quality, reliability,
-                                and the peace of mind that only a factory-certified GAF system can provide.                            
-                            </SecondaryText>
-                        </div>
+                    <SecondaryText className="py-6 text-lg ">
+                        Paragon Exterior is proud to be a GAF-certified roofing contractor. That means every roof we install is built using GAF’s high-performance components for unmatched protection, beauty, and long-term value.
+                        From advanced leak barriers and starter shingles to ridge caps and attic ventilation, we follow GAF’s
+                        full system approach—not just shingle installation. This ensures your roof performs as a cohesive unit,
+                        backed by industry-leading warranties and engineered to withstand the extreme weather common in Pennsylvania,
+                        New Jersey, and Delaware. When you choose Paragon, you&apos;re choosing quality, reliability,
+                        and the peace of mind that only a factory-certified GAF system can provide.
+                    </SecondaryText>
+                </div>
 
-                        <div className="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3">
-                            {features.map((feature) => (
-                                <div
-                                    key={feature.name}
-                                    className="text-center sm:flex sm:text-left lg:block lg:text-center"
-                                >
-                                    <div className="sm:shrink-0">
-                                        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primaryblue">
-                                            <feature.icon className="h-8 w-8 text-amber-500" />
-                                        </div>
-                                    </div>
-                                    <div className="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                        <HeaderText
-                                            as="h3"
-                                            variant="small"
-                                            className=""
-                                        >
-                                            {feature.name}
-                                        </HeaderText>
-                                        <SecondaryText className="mt-2 ">
-                                            {feature.description}
-                                        </SecondaryText>
-                                    </div>
+                <div className="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3">
+                    {features.map((feature) => (
+                        <div
+                            key={feature.name}
+                            className="text-center sm:flex sm:text-left lg:block lg:text-center"
+                        >
+                            <div className="sm:shrink-0">
+                                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primaryblue">
+                                    <feature.icon className="h-8 w-8 text-amber-500" />
                                 </div>
-                            ))}
+                            </div>
+                            <div className="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                <HeaderText
+                                    as="h3"
+                                    variant="small"
+                                    className=""
+                                >
+                                    {feature.name}
+                                </HeaderText>
+                                <SecondaryText className="mt-2 ">
+                                    {feature.description}
+                                </SecondaryText>
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

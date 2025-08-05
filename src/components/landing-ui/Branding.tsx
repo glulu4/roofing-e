@@ -4,7 +4,7 @@ export default function Branding() {
     return (
         <div className="flex flex-col items-center justify-center p-8 rounded-lg pb-0">
             {/* Brand Image Container */}
-            <div className=" relative">
+            {/* <div className=" relative"> */}
                 <Image
                     src="/images/header.png"
                     alt="Brand Logo"
@@ -12,7 +12,7 @@ export default function Branding() {
                     width={600}
                     height={600} // Provide height for better responsiveness
                 />
-            </div>
+            {/* </div> */}
 
         </div>
     );

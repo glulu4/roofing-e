@@ -77,8 +77,7 @@ export default function Exceptional() {
             {/* Content */}
             <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Heading Section */}
-                <div className="flex flex-col items-center justify-center">
-                    <div className="mx-auto max-w-2xl text-center">
+                <div className="flex flex-col items-center justify-center mx-auto max-w-2xl text-center px-6 sm:px-0">
                         <HeaderText className="text-neutral-50">
                             What to expect from Your Local Roofing and Siding Company
                         </HeaderText>
@@ -86,7 +85,6 @@ export default function Exceptional() {
                             We know inviting a crew to your home is a big decision. That&apos;s why at Paragon Exterior, you can expect professionalism from start to finish—clear communication, dependable craftsmanship, and a crew that respects your time and property. 
                             From small repairs to full replacements, we make the process smooth and stress-free. We ensure you know exactly what to expect and a clean job site when we leave.
                         </SecondaryText>
-                    </div>
                 </div>
 
 
