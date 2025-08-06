@@ -33,7 +33,6 @@ export default function GoogleInner() {
       accessibility
       brandName="Paragon Exterior LLC"
       productDescription="Roofing, Siding, and Exterior Services"
-
     />
   )
 }

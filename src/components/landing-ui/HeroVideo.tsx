@@ -4,9 +4,9 @@ import Head from "next/head";
 import React from "react";
 
 interface HeroVideoProps {
-    text?:string
-    secText?:string;
-    video:string;
+    text?: string
+    secText?: string;
+    video: string;
     poster: string;
 }
 const HeroVideo = ({text, secText, video, poster}: HeroVideoProps) => {
@@ -14,17 +14,19 @@ const HeroVideo = ({text, secText, video, poster}: HeroVideoProps) => {
         <div className="relative h-[80vh] w-full  z-0">
             {/* Video Player */}
             <video
-                
-               
-                
+
+
+
                 className="absolute top-0 left-0 h-full w-full object-cover"
                 src={video}
                 autoPlay
+
                 muted
                 poster={poster}
                 playsInline
-                
-            ></video>
+
+            ><track kind="captions" src={undefined} label="No audio" />
+            </video>
             {/* Overlay Content */}
             <div className="absolute top-0 left-0 z-10 flex h-full w-full flex-col items-left justify-center bg-black bg-opacity-50 text-white text-center px-6">
 
@@ -38,7 +40,7 @@ const HeroVideo = ({text, secText, video, poster}: HeroVideoProps) => {
                 </div>
 
 
- 
+
             </div>
         </div>
     );
