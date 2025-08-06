@@ -379,7 +379,7 @@ function PromoBanner() {
           gradient={false}     // no fade on the edges
         >
           <span className="mx-4 text-white text-sm">
-            Free gutters and downspouts with any full roof replacement in July & August!
+            Get 10% off your full roof or siding replacement you mention this banner!
           </span>
           <span className="mx-4 text-white font-medium text-sm">
             Free Estimates Available — Call or Text&nbsp;
@@ -390,7 +390,7 @@ function PromoBanner() {
           <div className="w-full bg-primaryblue h-8 sm:h-12 flex flex-row items-center justify-around">
 
             <p className="text-white text-center text-sm md:text-lg">
-              Free gutters and downspouts with any full roof replacement in July & August!
+              Get 10% off your full roof or siding replacement you mention this banner!
             </p>
 
             <p className="text-white font-medium text-center text-sm md:text-lg">
