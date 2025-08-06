@@ -428,7 +428,7 @@ const RoofPitchCalculatorClient: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Contact CTA */}
+                        {/* Contact CTA
                         <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 text-white">
                             <h3 className="text-xl font-bold mb-2">Need Professional Help?</h3>
                             <p className="text-blue-100 mb-4">
@@ -448,7 +448,7 @@ const RoofPitchCalculatorClient: React.FC = () => {
                                     Call (215) 799-7663
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
