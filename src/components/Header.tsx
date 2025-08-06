@@ -440,7 +440,7 @@ const Navigation: FunctionComponent = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>();
+  const dropdownRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
