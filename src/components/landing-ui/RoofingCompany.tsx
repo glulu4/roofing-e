@@ -27,7 +27,7 @@ export default function RoofingCompany() {
 
                         <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl flex flex-col gap-12">
                             <HeaderText as="h1" className="text-pretty font-semibold tracking-tight text-primaryblue">
-                                Paragon Exterior is the Trusted Roofing Company in the Greater Philadelphia Area
+                                Paragon Exterior is the Best Roofing Company in Greater Philadelphia
                             </HeaderText>
                             <SecondaryText>
                                 At Paragon Exterior, we deliver reliable,

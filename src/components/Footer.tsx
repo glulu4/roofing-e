@@ -12,34 +12,22 @@ const navigation = {
     {name: "Siding", href: "/siding"},
     {name: "Windows", href: "/windows"},
     {name: "Gutters", href: "/gutters"},
-    {name: "Commercial", href: "/commercial-roofing"},
+    {name: "Commercial Roofing", href: "/commercial-roofing"},
   ],
-  support: [
-    {name: 'Submit ticket', href: '#'},
-    {name: 'Documentation', href: '#'},
-    {name: 'Guides', href: '#'},
+  resources: [
+    {name: "Roof Pitch Calculator", href: "/roof-pitch-calculator"},
+    {name: "Financing", href: "/financing"},
+    {name: "Gallery", href: "/gallery"},
+    {name: "Blog", href: "/blog"},
   ],
   company: [
-    {name: 'About', href: '/about'},
-    {name: 'Blog', href: '/blog'},
-    {name: 'Free Estimate', href: "/estimate"},
-    {name: 'Financing', href: '/financing'},
-    {name: 'Gallery', href: '/gallery'},
-    {name: 'Roof Pitch Calculator', href: '/roof-pitch-calculator'},
-
-  ],
-  service: [
-    {name: 'All Areas we Serve', href: "/areas-we-serve"},
-    {name: 'Philadelphia', href: '/areas/pennsylvania/trusted-roofing-contractor-philadelphia'},
-    {name: 'Bensalem', href: '/areas/pennsylvania/bensalem-roofing-company'},
-    {name: 'Levittown', href: '#'},
-    {name: 'Langhorne', href: '#'},
-    {name: 'Feasterville', href: '#'},
-    {name: 'Doylestown', href: '#'},
-    {name: 'Newtown', href: '#'},
-
+    {name: "About", href: "/about"},
+    {name: "Free Estimate", href: "/estimate"},
+    {name: "All Areas We Serve", href: "/areas-we-serve"},
+    {name: "Sitemap", href: "/sitemap.xml"}, // optional if you want to show it
   ],
 }
+
 
 
 
@@ -130,9 +118,9 @@ export const Footer: FunctionComponent = () => {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <SecondaryHeader className="text-md/6 font-semibold text-gray-900">Service Areas</SecondaryHeader>
+                <SecondaryHeader className="text-md/6 font-semibold text-gray-900">Resources</SecondaryHeader>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.service.map((item) => (
+                  {navigation.resources.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-md/6 text-gray-600 hover:text-gray-900">
                         {item.name}

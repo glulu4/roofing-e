@@ -583,12 +583,12 @@ export default function RootLayout({
           // heebo.variable
         )}
       >
-        <ThemeProvider
+        {/* <ThemeProvider
           // attribute="class"
           defaultTheme="light"
         // enableSystem
         // disableTransitionOnChange
-        >
+        > */}
           <main>
             <Header />
             {children}
@@ -596,7 +596,7 @@ export default function RootLayout({
             <StickyButton />
             <ExitIntentPopup />
           </main>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

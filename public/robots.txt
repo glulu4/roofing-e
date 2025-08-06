@@ -1,9 +1,5 @@
-# *
+
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.paragonexterior.com
-
-# Sitemaps
 Sitemap: https://www.paragonexterior.com/sitemap.xml
