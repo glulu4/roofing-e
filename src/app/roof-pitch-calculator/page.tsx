@@ -111,7 +111,7 @@ export default function RoofPitchCalculatorPage() {
                     Roofs are classified by their pitch—or steepness. Here&apos;s a breakdown of the most common categories:<br /><br />
 
                     <strong>Flat Roofs</strong><br />
-                    These aren't completely flat—they have a slight slope to allow water to drain off. Flat roofs typically range from 0.5:12 to 2:12 in pitch (about 4%–17%).<br /><br />
+                    These aren&apos;t completely flat—they have a slight slope to allow water to drain off. Flat roofs typically range from 0.5:12 to 2:12 in pitch (about 4%–17%).<br /><br />
 
                     <strong>Low-Pitched Roofs</strong><br />
                     Any roof with a pitch under 4:12 (or 33%) is considered low-pitched. These require special waterproof materials and are harder to maintain.<br /><br />
@@ -188,7 +188,7 @@ export default function RoofPitchCalculatorPage() {
                     <code><span className='bg-yellow-300/50 px-1'>x</span> = 0.25 × 12 = 3</code><br />
                     So the roof pitch is <code>3:12</code>. That&apos;s the same as <code>25%</code> or <code>14 degrees</code>.<br /><br />
 
-                    If you've figured out your pitch and you're ready to move on, you may want to check out our <a href="/roofing/roof-shingle-calculator" className="text-blue-600 underline">Roof Shingle Calculator</a> to estimate how much material you'll need.
+                    If you&apos;ve figured out your pitch and you&apos;re ready to move on, you may want to check out our <a href="/roofing/roof-shingle-calculator" className="text-blue-600 underline">Roof Shingle Calculator</a> to estimate how much material you&apos;ll need.
                 </SecondaryText>
 
                 
