@@ -87,7 +87,7 @@ const serviceData = [
       Upgrade your home's energy efficiency and appearance with our expert window services. We specialize 
       in window installation, replacement, and repair—designed to reduce drafts, lower energy bills, and 
       let in more natural light without sacrificing insulation.`,
-        image: "/images/home/window-card.webp",
+        image: "/images/home/windows.webp",
         slug: "/windows",
     },
     {

@@ -51,7 +51,7 @@ export default function RoofingCompany() {
                                         width={200}
                                         height={200}
                                         alt="roofing and siding company"
-                                        src="/images/roof-tiles.jpeg"
+                                    src="/images/home/best-roofing-company.webp"
                                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                     />
                             </div>
@@ -67,7 +67,8 @@ export default function RoofingCompany() {
                                         width={200}
                                         height={200}
                                         alt="roofing and siding company"
-                                        src="/images/house1.jpeg"
+                                    src="/images/home/best-roofers.webp"
+                                    
                                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                     />
                             </div>
@@ -83,7 +84,7 @@ export default function RoofingCompany() {
                                         width={200}
                                         height={200}
                                         alt="roofing and siding company"
-                                        src="/images/house4.jpeg"
+                                    src="/images/home/best-roofing-contractor.webp"
                                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                     />
                             </div>

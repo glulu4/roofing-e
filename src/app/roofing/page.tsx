@@ -14,21 +14,21 @@ const posts = [
         title: 'Roof Repair and Protection for Your Home',
         description:
             "Your roof shields your home from storms, wind, and sun. We offer expert roof repair and replacement using long-lasting materials and expert installation.",
-        imageUrl: "/images/house7.jpeg",
+        imageUrl: "/images/roof-service/house7.jpeg",
     },
     {
         id: 2,
         title: 'Solar-Ready Roofing from Top Roofing Contractors',
         description:
             "Get a roof that's built for solar power. Our team installs durable, energy-efficient roofing systems that are ready for panels—now or later.",
-        imageUrl: "/images/house6.webp",
+        imageUrl: "/images/roof-service/house6new.webp",
     },
     {
         id: 3,
         title: 'Residential Roofing with Style and Heritage',
         description:
             "We serve homeowners with beautiful roofing that fits your home’s look and your family’s needs. Choose from traditional or custom styles with confidence.",
-        imageUrl: "/images/house10.jpeg",
+        imageUrl: "/images/roof-service/house10new.webp",
     },
 ];
 
