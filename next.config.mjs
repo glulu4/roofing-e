@@ -1,5 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+
+  async rewrites() {
+    return [
+      {
+        source: '/home-improvement-:slug',
+        destination: '/home-improvement/:slug',
+      },
+    ];
+  },
+
   images: {
     minimumCacheTTL: 2678400, // 31 days in seconds
     remotePatterns: [
@@ -21,17 +32,6 @@ const nextConfig = {
       },
     ],
   },
-  // redirects: async () => {
-  //   return [
-  //     {
-  //       // source: "/:path*", // Redirect all pages
-  //       source: "/((?!dvd$).*)", // Match everything EXCEPT "/dvd"
-
-  //       destination: "/dvd", // Redirect to a notice page
-  //       permanent: false,
-  //     },
-  //   ];
-  // },
 };
 
 export default nextConfig;

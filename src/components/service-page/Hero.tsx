@@ -8,6 +8,7 @@ interface HeroProps {
     subText: string;
     imgSrc: string;
     imgAlt: string;
+    textTagAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
 
 export default function Hero({
@@ -15,6 +16,8 @@ export default function Hero({
     subText,
     imgSrc,
     imgAlt,
+    textTagAs = 'h2',
+
 }: HeroProps) {
   return (
            <div className="relative isolate py-24 sm:py-32 min-h-[80vh]">
@@ -31,7 +34,7 @@ export default function Hero({
    
                <div className="mx-auto max-w-7xl px-6 lg:px-8">
                    <div className="mx-auto max-w-4xl text-center">
-                       <HeaderText variant="large" className="mt-2 text-neutral-50">
+                  <HeaderText as={textTagAs} variant="large" className="mt-2 text-neutral-50">
                             {mainText}
                        </HeaderText>
                    </div>
