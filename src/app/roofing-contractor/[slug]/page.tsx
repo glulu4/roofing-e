@@ -74,8 +74,8 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `${location?.name}'s Roofing Contractor`,
-        description: `We are ${location.name} Professional roofing contractor. We specialize in roof repair, roof replacement, and roof leak repairs.`,
+        title: `Roofing Contractor in ${location?.name}`,
+        description: `We are ${location.name}'s best roofing contractor. We specialize in roof repair, roof replacement, and roof leak repairs.`,
         keywords: `${location.name} roofing contractor, roof repair ${location.name}, roofing company ${location.name}, residential roofing, emergency roof repair`,
         openGraph: {
             title: `${location?.name} Roofing Contractor | Paragon Exterior`,
@@ -191,10 +191,10 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-12">
                             <HeaderText as="h1" variant="large">
-                                Why {location.name} Homeowners Choose Paragon Exterior
+                                Why {location.name} Homeowners Choose Paragon Exterior as their Roofing Contractor?
                             </HeaderText>
                             <SecondaryText className="mt-6">
-                                We’re more than just a contractor—we’re part of the {location.name} community. From minor repairs to full roof replacements, our mission is to make your project smooth, affordable, and built to last. As a locally rooted company, we understand the unique roofing challenges in {location.name}—from older homes with complex structures to newer builds requiring energy-efficient materials.
+                                {location.name} homeowners chose Paragon Exterior because we’re more than just a roofing contractor—we’re part of the {location.name} community. From minor repairs to full roof replacements, our mission is to make your project smooth, affordable, and built to last. As a locally rooted company, we understand the unique roofing challenges in {location.name}—from older homes with complex structures to newer builds requiring energy-efficient materials.
                             </SecondaryText>
 
                             <SecondaryText className="mt-6">

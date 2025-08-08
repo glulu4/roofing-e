@@ -74,7 +74,7 @@ export default async function page({
             {/* Hero Section */}
             <section className="text-center">
                 <HeaderText as="h1" variant="large">
-                    {location.name}&apos;s Roof Replacement Experts
+                    Best Roof Replacement Experts in {location.name}
                 </HeaderText>
                 <SecondaryText as="h2" className="mt-4">
                     Paragon Exterior delivers complete roof replacement solutions in{" "}

@@ -205,7 +205,7 @@ export default function RoofPitchCalculatorPage() {
                         },
                         {
                             question: "What is the minimum roof pitch for snow?",
-                            answer: "To shed snow effectively, a roof should have a pitch of around 6/12 or 7/12 (roughly 30°). However, this isn’t guaranteed—factors like material type, snow direction, and wind also matter. Some roofs with pitches as low as 10° have shed snow, but in snow-heavy areas, a steeper pitch is a safer bet."
+                            answer: "For snow to slide effectively, a roof should have a pitch of around 6/12 or 7/12 (roughly 30°). However, this isn’t guaranteed—factors like material type, snow direction, and wind also matter. Some roofs with pitches as low as 10° have shed snow, but in snow-heavy areas, a steeper pitch is a safer bet."
                         },
                         {
                             question: "What does a 4/12 roof pitch mean?",

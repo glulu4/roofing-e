@@ -3,6 +3,14 @@ import Gallery from '@/components/Gallery'
 import SecondaryText from '@/components/SecondaryText'
 import GetEstimate from '@/components/landing-ui/GetEstimate'
 
+/**
+ * 
+ 
+https://drive.google.com/file/d/1T6RpYWQLggu75-NEP8JQAbHmAlWRCiEG/view?usp=sharing
+
+
+*/
+
 const galleryImages = [
     "1AQKgiCWAloQ-OBU03HB5hXQY1n-aewBj",
     "1Bl2FGRLVy3FoVND_0ADtDxtQc6bNu_Ma",
@@ -33,35 +41,44 @@ const galleryImages = [
     '1pZ4vyM8dsxeYuK3zE7RSYkzToMNB83hb',
     "1pI_2pYGjxKvzjIWzMzgCAXaBYMII1j_-",
     "1TuqzUxAYMwHtyHusjQXmNwrABFC7Sn0B",
+
+    "12tl6lPZXQDGFhaPlx4Zbfibp4nlWQiT2",
+    "13jLeXE-nQrQvzxUdvRJ6wR6pTsISUk7B",
+    "1FSozpB31CPKOw6V2fiHl_mm5vQnld-ka",
+    "1FVRIZMliwfcFCuF-NrpjPFJzcuSZzPBu",
+    "1Ki1OqpbXHkd0jOnaxV_qSGUBdP_LhWrM",
+    "1PPNRUUb8iuMBfyodo31icCx0PZW4VnS0",
+    "1Q2FEAHcqKkVXj6ZSzMtOGuRPFBTjhJN6",
+    "1U7zbXCPszuwoYzC5pmWd9sd2n1XK_hRa",
+    "1UD4pfp5lwwopfCHejR-lP-M4VEJg1XS4",
+    "1VDGGr9QwAXeDUv6IbvHNW8NrIPbMfPF_",
+    "1WeHGhYhLEosbVd69Eq30FlNR3gPHveQ5",
+    "1_vpJ2f_QN6F-6L_eftKM1nQ6vcFOEpPU",
+    "1Dy0wYsgS5ksXSi1zziEDSzw9xbV023c3",
+    "1ECt1M5JYcLOKomDnSyq4XysPto4M6Qfw",
+    "1JN1senvpL_SejCena_Rujxagh-qmXsJ6",
+    "1KDIP0M4rpDT5cWg2g3iPQK-X4otmG4pH",
+    "1KfslbZNp_jLwPfu3b4J4gk-cfisdhnaE",
+    "1Rlcwif-lvctK8HtXkzeaJ4ckBMWvXPpG",
+    "1_GqF1jSd-401TYvqLY9-PHgMuMWWgMv5",
+    "1mAFdOBjAc4GQEgUKZMTSk8qx2ryMh0Jw",
+    "1nmo_0w46EivBpIJEF5emkgs52WaKmeOL",
+    "1nsysQHaY1wTiAt3WRmcjhRowEDTpQ1EO",
+    "1nxXLkUB6EDPkkGepJLaOgIJIfke5rGij",
+    "1pOPLhJfAaRtDM-LlRYqAzDDYkQ2xOF66",
+    "1cwVGrkqTZhNiRhVECUMcJrWitNDBMq8u",
+    "1o59h6IoCOysCpCEUT5KIh8ZND6PS3EzP",
+    "1qIR8Qk8iIl3bOs5yG-aZ7YDJgjeenp0o",
+    "1rlxw_B4UFMqvAdittpCQwCdyOLLjBxV4",
+    "1vdQmPY3yU_4MQEwjLq59m7X-VBzyBxwz",
+    "1w53o4w1q_K_JXwDiZn3nIBFFWF6OLRDE",
+    // "1x9U8arTC2W8EINmMjEX3GvrMcVKdKnid",
+    "1xUikWI4xFnK09t_zqXdLJuaRN8zmucR5",
+    "1zk7bYgI-9-LesHPxkcmi1s7_idfqOKtw"
 ]
 
 
 const happyHomeownersIds = [
-    // "1qsWizbGesUXANbPzGXlh_IVANL07cJ9G",
-    // "12byGKsHbysKnAqU5I5KUUJWtI89PoM9O",
-    // "1j7idLLqMLtPba_S0MjNVKGFDKN_N8RG5",
-    // "1RWLTvFkgvJa5RxwXIDkN515xt3TJrE2n",
-    // "16vBHNFNMz23tcwn_lFaPWMbGB90JcepT",
-    // "16C4hdeyy5Z3h3sNSraAD9sELpyCgKYmF",
-    // "15vfTIcx29szJ2P7n5kCPPyqR1d98euU1",
-    // "15vfTIcx29szJ2P7n5kCPPyqR1d98euU1",
-    // "1fauSfLhJgCfL3sMs2bkZLLNH_WdbFcOe",
-    // "1-eKlmyRS-BLa_McM3f-LHbvUbDlcIivV",
-    // "1-y1Mm99P2h2tUfOgKpmF3jb9lLtVudDE",
-    // "14bCnqCpfu2MuDBf1pWsv1miCCeJBsSzA",
-    // "1DiWZv91xO0y-d0cOCILKqXlwV0TOIGM0",
-    // "1DwwUtmtyz8QnctIA1MnL2C5lMxzMfavV",
-    // "1KaP-Nrx7y7szReLzQEhLYzx4aKYhBoec",
-    // "1THm9TUPI-bQMMQU2j0Rrs0VapbcdGTtT",
-    // "1fMO0k9IB08J9fBPWdyC_mPS9PL_B01xX",
-    // "1gnLPwPSTyre6ErOUuG7T5OM-3DmWDybI",
-    // "1lL1VRW3ab6VlE2q_BeUf7aK7dw8RRl0p",
-    // "1lt2M9wHPcp--QJ8fofnqDOURWJ18kxjy",
-    // "1rVqcXmCSl5coolPvy0DiSwXm2W2bWITC",
-    // "1riN8d176lIhkmSf8T-zEPZxLPKGVsmR5",
-
-
-
     "11YkKpqPK7GzQefWmCVjeEcwfFqVjgX0a",
     "16N9Bt_5Lx1pcVsaEPwp46fVsWkpuO5tH",
     "1OYRWkpWxkf2MiIh0Q1Ga3MquS7hdBAAk",
