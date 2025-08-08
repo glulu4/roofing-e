@@ -23,7 +23,7 @@ export async function generateMetadata({
     const location = serviceAreas[slug];
     return {
         title: `Home Improvement Contractor in ${location?.name}`,
-        description: `Looking for expert roof replacement in ${location?.name}? Paragon Exterior handles everything from asphalt shingle replacements to metal and tile roof installs, backed by industry-leading warranties.`,
+        description: `Trusted home improvement contractor in ${location?.name}. Paragon Exterior specializes in roofing, siding, windows, and gutters. Get a free estimate today!`,
     };
 }
 
