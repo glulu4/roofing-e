@@ -1,44 +1,4 @@
-// import React from 'react'
-// import {serviceAreas} from '../../../public/service-areas';
-// import {Metadata} from 'next';
 
-
-// // export async function generateStaticParams() {
-// //     return Object.keys(serviceAreas).map((slug) => ({slug}));
-// // }
-// export async function generateStaticParams() {
-//     return Object.keys(serviceAreas).map((locationSlug) => ({
-//         slug: locationSlug
-//     }));
-// }
-
-// export async function generateMetadata({
-//     params,
-// }: {
-//     params: Promise<{slug: string}>;
-// }): Promise<Metadata> {
-//     const {slug} = await params;
-//     const location = serviceAreas[slug];
-//     return {
-//         title: `${location?.name} `,
-//         description: `Looking for expert roof replacement in ${location?.name}? Paragon Exterior handles everything from asphalt shingle replacements to metal and tile roof installs, backed by industry-leading warranties.`,
-//     };
-// }
-
-
-
-// export default async function page({params}: {params: Promise<{slug: string}>}) {
-//     const {slug} = await params;
-//     const location = serviceAreas[slug];  
-
-
-//     if (!location) {
-//         return <div>Location not found</div>;
-//     }
-//     return (
-//     <div>page {location.name}</div>
-//   )
-// }
 import React from 'react'
 import {serviceAreas, Location} from '../../../../public/service-areas';
 import {Metadata} from 'next';
