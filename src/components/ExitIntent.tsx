@@ -15,7 +15,7 @@ export default function ExitIntentPopup() {
         },
         "desktop": {
             "triggerOnIdle": false,
-            "useBeforeUnload": true,
+            "useBeforeUnload": false,
             "triggerOnMouseLeave": true,
             "delayInSecondsToTrigger": 0.5,
 
