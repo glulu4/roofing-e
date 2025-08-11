@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import HeaderText from "../HeaderText";
@@ -120,7 +120,7 @@ export default function GoogleReviews() {
                     <div className="mt-5 flex items-center justify-between">
                       <div className="flex gap-1 text-yellow-400">
                         {Array.from({length: stars}, (_, idx) => (
-                          <StarIcon  aria-hidden="true" className="size-5 flex-none" />
+                          <StarIcon key={idx} aria-hidden="true" className="size-5 flex-none" />
 
                         ))}
                       </div>
