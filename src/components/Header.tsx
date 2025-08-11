@@ -629,7 +629,7 @@ const Navigation: FunctionComponent = () => {
 };
 
 function PromoBanner() {
-  const promoText = "Get 10% off your full roof or siding replacement you mention this banner!";
+  const promoText = "Get 10% off your full roof or siding replacement when you mention this banner!";
   const contactText = "Free Estimates Available — Call or Text ";
 
   return (

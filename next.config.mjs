@@ -30,6 +30,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "app.gethearth.com",
       },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
     ],
   },
 };
