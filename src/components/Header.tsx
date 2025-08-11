@@ -673,7 +673,7 @@ export const Header: FunctionComponent = () => {
       <div className="flex items-center justify-between py-4 md:py-6 px-8">
         <Link href="/" className="transform hover:scale-105 transition-transform duration-200">
           <Image
-            src="/images/header.png"
+            src="/images/header2.webp"
             alt="Paragon Exterior"
             width={150}
             height={75}

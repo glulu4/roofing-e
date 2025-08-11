@@ -77,7 +77,7 @@ const serviceData = [
       Discover our siding services, including professional siding installation, siding repair, and vertical 
       siding solutions that boost your home's insulation and exterior style. We work with vinyl, fiber cement, 
       and other durable materials built for the Greater Philadelphia climate.`,
-        image: "/images/home/siding-service.webp",
+        image: "/images/siding/siding5.webp",
         slug: "siding",
     },
     {
