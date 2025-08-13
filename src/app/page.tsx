@@ -12,6 +12,8 @@ import RoofingServices from "@/components/landing-ui/Services";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import HowWeWork from "@/components/landing-ui/HowWeWork";
 import Expertise from "@/components/landing-ui/Expertise";
+import {BlogPostPreview, BlogPostsPreview} from "@/components/wisp/BlogPostPreview";
+import BlogPreview from "@/components/wisp/BlogPreview";
 
 
 
@@ -54,10 +56,13 @@ const Page = () => {
 
       <Exceptional />
 
+      <BlogPreview />
 
       {/* Reviews and Five Stars Section */}
       <Branding />
       <FiveStars />
+
+     
 
       <GoogleReviews />
       <div className="flex flex-col justify-center items-center sm:py-16 md:py-20">
