@@ -14,7 +14,8 @@ export interface EstimateFormData {
 }
 
 export const metadata = {
-    title: 'Get Your Free Estimate',
+    title: 'Free Roof and Siding Estimate',
+    description: 'Get a free estimate for your roofing and siding needs. Contact us today to schedule an appointment with our experts.',
 }
 
 export default function Example() {
@@ -66,9 +67,9 @@ export default function Example() {
                                 <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
                             </svg>
                         </div>
-                        <h2 className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-6xl">
+                        <h1 className="text-pretty text-5xl font-semibold tracking-tight text-primaryblue sm:text-6xl">
                             Get Your Free Estimate
-                        </h2>
+                        </h1>
                         <p className="mt-6 text-xl text-gray-600">
                             Paragon Exterior is changing the game in roofing and siding.
                             We&apos;re leading with quality, trust, and total transparency —

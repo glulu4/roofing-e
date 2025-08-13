@@ -22,8 +22,8 @@ const Page = async ({
     return (
         <div className="container mx-auto px-5 mb-10">
 
-            <HeaderText className="text-center mt-10 mb-5">
-                Explore Our Blog
+            <HeaderText as="h1" className="text-center mt-10 mb-5">
+                Explore Our Roofing and Exterior Blog
             </HeaderText>
             <SecondaryText className="text-center mb-10">
                 Discover expert insights on roofing, siding, windows, gutters, and home improvement. Stay informed with Paragon Exterior&apos;s latest tips and trends.
