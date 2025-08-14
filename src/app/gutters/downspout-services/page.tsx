@@ -7,9 +7,10 @@ import WhyParagon from '@/components/WhyParagon';
 import IncentivesSection from '@/components/service-page/Incentive';
 import Reasons from '@/components/service-page/Reasons';
 import type {Metadata} from 'next';
+import HeaderText from '@/components/HeaderText';
 
 export const metadata: Metadata = {
-  title: 'Downspout Installation & Repair Services Near Me',
+  title: 'Downspout Installation Services Near Me',
   description:
     'Do you need new gutters and downspouts? Paragon Exterior can provide expert downspout installation services in PA, NJ & DE. Free estimates available.',
   keywords:
@@ -34,78 +35,8 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="min-h-screen">
-      {/* Schema.org structured data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HomeAndConstructionBusiness",
-            "name": "Paragon Exterior Downspout Services",
-            "description": "Professional downspout installation, repair, and drainage solutions in Pennsylvania, New Jersey, and Delaware",
-            "url": "https://paragonexterior.com/gutters/downspout-services",
-            "telephone": "+1-215-799-7663",
-            "email": "info@paragonexterior.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "1 Neshaminy Interplex Dr #103",
-              "addressLocality": "Feasterville-Trevose",
-              "addressRegion": "PA",
-              "postalCode": "19053",
-              "addressCountry": "US"
-            },
-            "areaServed": [
-              {
-                "@type": "State",
-                "name": "Pennsylvania"
-              },
-              {
-                "@type": "State",
-                "name": "New Jersey"
-              },
-              {
-                "@type": "State",
-                "name": "Delaware"
-              }
-            ],
-
-            "priceRange": "$$",
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Downspout Services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Downspout Installation",
-                    "description": "Professional installation of aluminum, copper, and steel downspouts with proper sizing and placement"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Underground Drainage Systems",
-                    "description": "Buried downspout systems and underground drainage to carry water away from foundations"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Downspout Repair & Maintenance",
-                    "description": "Expert repair of damaged downspouts, elbows, and drainage connections"
-                  }
-                }
-              ]
-            }
-          })
-        }}
-      />
-
       <Hero
-        mainText="Professional Downspout Installation & Repair Services"
+        mainText="Professional Downspout Installation Services"
         subText="Expert downspout services including installation, repair, extensions, and underground drainage systems. Protect your foundation and prevent water damage with professional downspout solutions in Pennsylvania, New Jersey, and Delaware."
         imgSrc="/images/gutters/down/hero.webp"
         imgAlt="Professional downspout installation and repair services by licensed contractors"
@@ -114,16 +45,16 @@ export default function Page() {
       <InfoSection
         imgSrc="/images/gutters/down/img1.webp"
         imgAlt="Professional downspout installation on residential home"
-        title="Expert Downspout Installation & Repair Services"
+        title="Expert Downspout Installation Services"
         titleAs="h1"
-        mainContent="Properly functioning downspouts are critical for protecting your home's foundation, basement, and landscaping from water damage. Our licensed contractors provide comprehensive downspout services including new installation, repair of damaged systems, extensions, underground drainage, and complete replacement. We serve residential and commercial properties across Pennsylvania, New Jersey, and Delaware with expert craftsmanship and premium materials."
+        mainContent="Properly functioning downspouts are critical for protecting your home's foundation, basement, and landscaping from water damage. Our licensed contractors provide comprehensive downspout installation. We also provide services including new installation, repair of damaged systems, extensions, underground drainage, and complete replacement. We serve residential and commercial properties across Pennsylvania, New Jersey, and Delaware with expert craftsmanship and premium materials."
         bottomContent="From simple downspout repairs to complex underground drainage systems, our experienced team ensures your home's water management system functions flawlessly. We install aluminum, copper, and steel downspouts with proper sizing, strategic placement, and connections to effectively channel water away from your foundation and prevent costly water damage."
         imagePosition="right"
       />
 
       {/* Downspout Services with Incentives */}
       <IncentivesSection
-        title="Complete Downspout Services & Drainage Solutions"
+        title="Complete Downspout Solutions"
         titleAs="h2"
         subtitle="From basic downspout installation to sophisticated underground drainage systems, we provide comprehensive solutions that protect your home from water damage and foundation problems."
         heroImage={{
@@ -174,6 +105,35 @@ export default function Page() {
         headerColor="text-primaryblue"
         bodyColor="text-gray-600"
       />
+
+
+      <section className="py-16 bg-red-50">
+        <div className="mx-auto w-5/6 px-4">
+          <HeaderText className='text-center'>Signs You Need Downspout Repair or Replacement</HeaderText>
+          <div className="grid md:grid-cols-2 gap-8 mt-20">
+            <div>
+              <HeaderText variant='small' as='h3'>Immediate Problems:</HeaderText>
+              <ul className='mt-4'>
+                <li>• Water pooling around foundation</li>
+                <li>• Overflowing gutters during rain</li>
+                <li>• Loose or disconnected downspouts</li>
+                <li>• Visible cracks or holes</li>
+                <li>• Basement flooding issues</li>
+              </ul>
+            </div>
+            <div>
+              <HeaderText variant='small' as='h3'>Long-term Damage:</HeaderText>
+              <ul className='mt-4'>
+                <li>• Foundation settling and cracks</li>
+                <li>• Landscape erosion</li>
+                <li>• Mold and mildew growth</li>
+                <li>• Siding and paint damage</li>
+                <li>• Decreased property value</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Downspout Services Breakdown */}
       <section className="py-16 bg-gray-50">
