@@ -9,6 +9,7 @@ import {Raleway, Cabin} from "next/font/google";
 import StickyButton from "@/components/StickyButton";
 import Script from "next/script";
 import ExitIntentPopup from "@/components/ExitIntent";
+import Breadcrumbs from "@/components/breadcrumb/Breadcrumbs";
 
 
 const fontSans = Raleway({
@@ -591,6 +592,7 @@ export default function RootLayout({
         > */}
           <main>
             <Header />
+            <Breadcrumbs baseUrl="https://www.paragonexterior.com" />
             {children}
             <Footer />
             <StickyButton />
