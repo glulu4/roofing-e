@@ -44,6 +44,13 @@ const metalRoofingServices = [
         href: "/roofing/metal-roofing/metal-roof-repair",
         description: "Expert metal roof repair services including leak repair, panel replacement, and fastener maintenance to extend your roof's lifespan.",
         imageUrl: "/images/roof-service/metal/metal-roof-repair/metal-roof-repair-card.webp"
+    },
+    {
+        id: 4,
+        title: "Metal Roof Colors",
+        href: "/roofing/metal-roofing/metal-roof-colors",
+        description: "Discover popular metal roof colors and choose the best shade for your property.",
+        imageUrl: "/images/roof-service/metal/color4.webp"
     }
 ];
 
