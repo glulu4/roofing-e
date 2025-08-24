@@ -50,7 +50,7 @@ const metalRoofingServices = [
         title: "Metal Roof Colors",
         href: "/roofing/metal-roofing/metal-roof-colors",
         description: "Discover popular metal roof colors and choose the best shade for your property.",
-        imageUrl: "/images/roof-service/metal/metal-roof-card.webp"
+        imageUrl: "/images/roof-service/metal/color4.webp"
     }
 ];
 
