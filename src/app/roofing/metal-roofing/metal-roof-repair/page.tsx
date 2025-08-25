@@ -91,8 +91,15 @@ export default function MetalRoofRepairPage() {
                 title="Expert Metal Roof Repair Services"
                 mainContent={
                     <SecondaryText>
-                        Our team restores metal roofs to a clean, watertight condition. We fix leaks, replace damaged panels, correct
-                        fasteners, and repair flashings—so small problems don’t turn into costly interior damage.
+                        Our team restores metal roofs to a clean, watertight condition. We fix leaks, replace a damaged metal roof
+                        panel, correct fasteners, and repair flashings—so small problems don’t turn into costly interior damage.
+                        <br />
+                        <br />
+                        As a roofing contractor trained on every metal roof system, we handle sloped roof projects, metal roof leak
+                        repair, and long term maintenance. We use professional metal roof sealant and roofing sealant compatible with
+                        your roof material, stopping rust and corrosion before they spread. If a metal roof panel was improperly
+                        installed or the existing finish has deteriorated, we can apply a protective coating to strengthen the
+                        surface for years to come.
                         <br />
                         <br />
                         Need help now? We offer emergency leak repair and routine maintenance using proven methods and
