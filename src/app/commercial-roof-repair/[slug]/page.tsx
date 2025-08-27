@@ -43,58 +43,6 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     };
 }
 
-// Enhanced structured data for commercial roof repair services
-const generateStructuredData = (location: Location) => ({
-    "@context": "https://schema.org",
-    "@type": "RoofingContractor",
-    "name": "Paragon Exterior",
-    "description": `Professional commercial roof repair in ${location.name} specializing in TPO roof repair, EPDM roof repair, emergency repairs, and commercial roofing maintenance services.`,
-    "url": `https://www.paragonexterior.com/commercial-roof-repair/${location.name}`,
-    "telephone": "(215) 799-7663",
-    "email": "info@paragonexterior.com",
-    "image": "https://www.paragonexterior.com/icon.png",
-    "priceRange": "$$",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "City",
-        "name": location.name
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Commercial Roof Repair Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "TPO Roof Repair",
-                    "description": "Professional TPO membrane repair services for commercial flat roofs"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "EPDM Roof Repair",
-                    "description": "Expert EPDM rubber roof repair and maintenance services"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Emergency Commercial Roof Repair",
-                    "description": "24/7 emergency commercial roof repair services for urgent business needs"
-                }
-            }
-        ]
-    }
-});
 
 // Commercial roof repair FAQ based on business needs
 function CommercialRoofRepairFAQ({locationName}: {locationName: string}) {
@@ -188,10 +136,10 @@ export default async function CommercialRoofRepairPage({params}: {params: Promis
 
     return (
         <>
-            <script
+            {/* <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
-            />
+            /> */}
 
             <div className="min-h-screen">
                 {/* Enhanced Hero Section */}

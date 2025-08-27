@@ -29,7 +29,7 @@ export default function Row({
                 } items-center justify-between `}
         >
             <div className="flex-[0.6] max-w-xl justify-start text-left">
-                <HeaderText variant="small" className={`mt-10 font-semibold ${headerColor}`}>
+                <HeaderText  className={`mt-10 font-semibold ${headerColor}`}>
                     {title}
                 </HeaderText>
                 {typeof description === "string" ? (
