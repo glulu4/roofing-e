@@ -83,7 +83,7 @@ const AboutPage = () => {
             bottomContent={
               <>
                 <SecondaryText>
-                  Whether you need emergency <strong>roof leak repair</strong>, complete <strong>roof replacement</strong>, or preventive maintenance, our certified roofing team delivers reliable solutions. We also specialize in <strong>metal roofing</strong>, including standing seam and corrugated systems, <strong>flat roofing</strong> for commercial properties, and Velux skylight installations. Every roofing project includes thorough inspections and quality materials that extend your roof's lifespan.
+                  Whether you need emergency <strong>roof leak repair</strong>, complete <strong>roof replacement</strong>, or preventive maintenance, our certified roofing team delivers reliable solutions. We also specialize in <strong>metal roofing</strong>, including standing seam and corrugated systems, <strong>flat roofing</strong> for commercial properties, and Velux skylight installations. Every roofing project includes thorough inspections and quality materials that extend your roof&apos;s lifespan.
                 </SecondaryText>
               </>
             }
@@ -98,10 +98,10 @@ const AboutPage = () => {
             description={
               <div>
                 <SecondaryText>
-                  Our expert <strong>siding contractors</strong> provide comprehensive <strong>siding installation</strong>, <strong>siding repair</strong>, and <strong>siding replacement</strong> services using premium materials. We work exclusively with James Hardie fiber cement siding, known for its durability and weather resistance. Whether you choose <strong>vinyl siding</strong>, <strong>cedar siding</strong>, <strong>aluminum siding</strong>, or <strong>engineered wood siding</strong>, we ensure proper installation that enhances your home's protection and curb appeal.
+                  Our expert <strong>siding contractors</strong> provide comprehensive <strong>siding installation</strong>, <strong>siding repair</strong>, and <strong>siding replacement</strong> services using premium materials. We work exclusively with James Hardie fiber cement siding, known for its durability and weather resistance. Whether you choose <strong>vinyl siding</strong>, <strong>cedar siding</strong>, <strong>aluminum siding</strong>, or <strong>engineered wood siding</strong>, we ensure proper installation that enhances your home&apos;s protection and curb appeal.
                 </SecondaryText>
                 <SecondaryText className="mt-4">
-                  From traditional horizontal siding to modern <strong>board and batten siding</strong> styles, our siding specialists help you select materials that complement your home's architecture while providing long-lasting performance. Every siding project includes moisture barrier installation and precise finishing work.
+                  From traditional horizontal siding to modern <strong>board and batten siding</strong> styles, our siding specialists help you select materials that complement your home&apos;s architecture while providing long-lasting performance. Every siding project includes moisture barrier installation and precise finishing work.
                 </SecondaryText>
               </div>
             }
@@ -121,7 +121,7 @@ const AboutPage = () => {
             title="Complete Gutter Solutions"
             mainContent={
               <SecondaryText>
-                Protect your home's foundation with our professional <strong>gutter installation</strong>, <strong>gutter repair</strong>, and <strong>gutter replacement</strong> services. We install seamless aluminum, vinyl, and copper gutters designed to channel water away from your property effectively. Our gutter systems include proper downspout placement and optional gutter guards to reduce maintenance requirements.
+                Protect your home&apos;s foundation with our professional <strong>gutter installation</strong>, <strong>gutter repair</strong>, and <strong>gutter replacement</strong> services. We install seamless aluminum, vinyl, and copper gutters designed to channel water away from your property effectively. Our gutter systems include proper downspout placement and optional gutter guards to reduce maintenance requirements.
               </SecondaryText>
             }
             bottomContent={
@@ -143,7 +143,7 @@ const AboutPage = () => {
             description={
               <div>
                 <SecondaryText>
-                  Upgrade your home's comfort and energy efficiency with professional <strong>window installation</strong>, <strong>window replacement</strong>, and <strong>window repair</strong> services. We install ENERGY STAR® rated windows in vinyl, fiberglass, wood, and composite materials. Popular styles include double-hung, casement, bay, bow, picture, and awning windows designed to enhance your home's aesthetics while reducing energy costs.
+                  Upgrade your home&apos;s comfort and energy efficiency with professional <strong>window installation</strong>, <strong>window replacement</strong>, and <strong>window repair</strong> services. We install ENERGY STAR® rated windows in vinyl, fiberglass, wood, and composite materials. Popular styles include double-hung, casement, bay, bow, picture, and awning windows designed to enhance your home&apos;s aesthetics while reducing energy costs.
                 </SecondaryText>
                 <SecondaryText className="mt-4">
                   Our window specialists help you select the right windows for your climate and architectural style. From single window replacements to whole-house upgrades, we ensure proper installation with weatherproofing and insulation that maximizes performance and longevity.
@@ -171,7 +171,7 @@ const AboutPage = () => {
             bottomContent={
               <>
                 <SecondaryText>
-                  Every commercial project is managed with minimal business disruption and strict safety protocols. We're fully licensed, insured, and certified to install top commercial roofing brands. Whether you need emergency <strong>commercial roof repair</strong> or planned <strong>commercial roof replacement</strong>, our experienced team delivers durable, energy-efficient solutions that protect your investment.
+                  Every commercial project is managed with minimal business disruption and strict safety protocols. We&apos;re fully licensed, insured, and certified to install top commercial roofing brands. Whether you need emergency <strong>commercial roof repair</strong> or planned <strong>commercial roof replacement</strong>, our experienced team delivers durable, energy-efficient solutions that protect your investment.
                 </SecondaryText>
               </>
             }

@@ -161,7 +161,7 @@ export default async function CommercialRoofRepairPage({params}: {params: Promis
                     mainContent={
                         <>
                             <SecondaryText>
-                                When your business needs reliable <strong>commercial roof repair in {location.name}</strong>, Paragon Exterior delivers professional solutions that protect your operations and assets. Our comprehensive commercial roofing services include expert <strong>TPO roof repair</strong>, <strong>EPDM roof repair</strong>, emergency leak repairs, and preventive maintenance that keeps your commercial roof performing optimally year-round.
+                                Paragon Exterior is the most reputable commercial roofing contractor in {location.name}. We offer solutions that protect your operations and assets. Our comprehensive commercial roofing services include expert <strong>TPO roof repair</strong>, <strong>EPDM roof repair</strong>, emergency leak repairs, and preventive maintenance that keeps your commercial roof performing optimally year-round.
                             </SecondaryText>
                             <SecondaryText className="mt-4">
                                 Whether you&apos;re managing a retail facility, office building, warehouse, or industrial property, our experienced <strong>commercial roof repair</strong> team understands the unique challenges of commercial roofing systems. We specialize in flat roof repairs, membrane restoration, and emergency services that minimize business disruption while providing lasting solutions with comprehensive warranties.

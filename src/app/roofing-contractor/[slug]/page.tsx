@@ -74,8 +74,8 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `Roofing Contractor in ${location?.name}`,
-        description: `We are ${location.name}'s best roofing contractor. We specialize in roof repair, roof replacement, and roof leak repairs.`,
+        title: `${location?.name}'s Trusted Residential Roofing Contractor `,
+        description: `We are ${location.name}'s best residential roofing contractor. We specialize in roof repair, roof replacement, and roof leak repairs.`,
         keywords: `${location.name} roofing contractor, roof repair ${location.name}, roofing company ${location.name}, residential roofing, emergency roof repair`,
         openGraph: {
             title: `${location?.name} Roofing Contractor | Paragon Exterior`,
@@ -191,10 +191,17 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-12">
                             <HeaderText as="h1" variant="large">
-                                Why {location.name} Homeowners Choose Paragon Exterior as their Roofing Contractor?
+                                {location.name}&apos; Trusted Residential Roofing Contractor?
                             </HeaderText>
                             <SecondaryText className="mt-6">
-                                {location.name} homeowners chose Paragon Exterior because we’re more than just a roofing contractor—we’re part of the {location.name} community. From minor repairs to full roof replacements, our mission is to make your project smooth, affordable, and built to last. As a locally rooted company, we understand the unique roofing challenges in {location.name}—from older homes with complex structures to newer builds requiring energy-efficient materials.
+                                {location.name} homeowners chose Paragon Exterior because we’re 
+                                more than just a roofing contractor—we’re part of the {location.name} 
+                                community. From minor repairs to full roof replacements, our mission is 
+                                to make your project smooth, affordable, and built to last. As certified 
+                                roofing contractors, we understand the specific roofing challenges in 
+                                {location.name}. From older homes with complex structures to newer builds 
+                                requiring energy-efficient materials, we have the local expertise to get 
+                                the job done right.
                             </SecondaryText>
 
                             <SecondaryText className="mt-6">
@@ -246,7 +253,11 @@ export default async function ServiceAreaPage({params}: PageProps) {
                     mainContent={
                         <div>
                             <SecondaryText>
-                                Looking for a reliable roofer in {location.name}? Paragon Exterior brings years of local experience, high-quality materials, and a commitment to craftsmanship. Our roofing specialists know the unique weather and roofing needs in {location.name}, so your roof will stand strong in every season.
+                                Looking for roofing solutions in {location.name}? Paragon Exterior brings 
+                                years of local experience, high-quality materials, and a commitment to 
+                                craftsmanship. Our roofing specialists know the unique weather and roofing 
+                                needs in {location.name}, so your roof will stand strong in every season.
+                                We install full GAF roof systems with industry-leading warranties.
                             </SecondaryText>
                             <SecondaryText className="mt-4">
                                 We believe in fast estimates, honest communication, and top-notch workmanship—backed by industry-leading warranties. When you choose Paragon Exterior, you get a roofing partner you can trust for the long haul.

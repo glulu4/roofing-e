@@ -15,6 +15,7 @@ import {serviceAreas, Location} from "../../../../public/service-areas";
 import GoogleReviews from "@/components/landing-ui/GoogleReviews";
 import {Columns4Icon, HomeIcon, Wind} from "lucide-react";
 import {WindowIcon} from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 // Comprehensive services data targeting key keywords
 const comprehensiveServices = [
@@ -70,32 +71,22 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const {slug} = await params;
     const location = serviceAreas[slug];
     return {
-        title: `${location?.name}'s Roofing Contractor`,
-        description: `Trusted roofing contractor in ${location.name} offering roof repair, roof replacement, emergency roof repair, siding installation, and window replacement.`,
-        keywords: `${location.name} roofing contractor, roof repair ${location.name}, roof replacement ${location.name}, emergency roof repair, siding installation ${location.name}, window replacement ${location.name}`,
+        title: `${location?.name}'s Roofing, Siding & Window Company`,
+        description: `Trusted roofing, siding, and window company in ${location.name} offering full replacements, repairs, and great service. Free estimated available.`,
         openGraph: {
             title: `${location?.name} Roofing Contractor | Paragon Exterior`,
             description: `Expert roofing contractor serving ${location.name}. Specializing in roof repair, roof replacement, emergency services, siding installation, and window replacement.`,
             type: 'website',
-            images: ['/images/roofing-contractor-hero.jpg'],
+            images: ["/images/dynamic/service-area/hero.webp"],
         },
     };
 }
 
 const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
-    "@type": "RoofingContractor",
     "name": "Paragon Exterior",
     "description": `Professional roofing contractor in ${location.name} specializing in roof repair, roof replacement, emergency roof repair, siding installation, and window replacement.`,
-    "url": `https://www.paragonexterior.com/roofing-contractor/${location.name}`,
-    "telephone": "(215) 799-7663",
-    "email": "info@paragonexterior.com",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
-        "addressCountry": "US"
-    },
+
     "areaServed": {
         "@type": "AdministrativeArea",
         "name": location.name
@@ -235,42 +226,25 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
             <div className="min-h-screen">
                 {/* HERO */}
                 <Hero
-                    mainText={`${location.name} Roofing Contractor | Trusted Local Experts`}
-                    subText={`Looking for a reliable roofing contractor in ${location.name}? Paragon Exterior delivers expert roof repair, roof replacement, emergency service, siding, and window installation—all with honest pricing and a satisfaction guarantee.`}
+                    mainText={`${location.name}'s Roofing, Siding, and Window Company`}
+                    subText={`Looking for a reliable exterior contractor in ${location.name}? Paragon Exterior delivers expert roof repair, roof replacement, emergency service, siding, and window installation; all with honest pricing and a satisfaction guarantee.`}
                     imgSrc="/images/dynamic/service-area/hero.webp"
                     imgAlt={`Professional roofing contractor team in ${location.name}`}
                 />
 
-                {/* Emergency Banner */}
-                <section className="py-8 bg-red-600">
-                    <div className="max-w-7xl mx-auto px-6 text-center">
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                            <div className="text-white">
-                                <HeaderText variant="small" className="text-white mb-2">
-                                    24/7 Emergency Roof Repair in {location.name}
-                                </HeaderText>
-                                <p className="text-red-100">Storm damage or a roof leak? Call us now for fast, local help!</p>
-                            </div>
-                            <a
-                                href="tel:2157997663"
-                                className="bg-white text-red-600 px-8 py-3 font-bold rounded-lg hover:bg-red-50 transition-colors"
-                            >
-                                Call (215) 799-7663
-                            </a>
-                        </div>
-                    </div>
-                </section>
 
                 {/* Overview Section */}
                 <InfoSection
                     imgSrc="/images/dynamic/service-area/img1.webp"
                     imgAlt={`Roofing contractor services in ${location.name}`}
-                    title={`Your Local Roofing Contractor in ${location.name}`}
+                    title={`Best Roofing, Siding, and Window Replacement Company in ${location.name}`}
                     titleAs="h1"
                     mainContent={
                         <div>
                             <SecondaryText>
-                                Paragon Exterior is your one-stop source for <strong>roof repair</strong>, <strong>roof replacement</strong>, <strong>emergency roof repair</strong>, <strong>siding installation</strong>, and <strong>window replacement</strong> in {location.name}. We handle every project with care and professionalism—using only the best materials, the latest techniques, and a commitment to your complete satisfaction.
+                                Paragon Exterior is your one-stop shop for exterior home improvements. We serve the greater {location.name} area and pride ourselves on the quality of our work.
+                                We offer expert roofing, siding, and window services that not only make your home look amazing, but also ensure its built to last. 
+                                We are equipped for full replacements and repairs. We handle every project with professionalism, using only the best materials, the latest techniques, and a commitment to your home.
                             </SecondaryText>
                             <SecondaryText className="mt-4">
                                 Our team is licensed, insured, and highly trained to protect your home from leaks, weather, and energy loss. Whether you need urgent help or a full exterior upgrade, you can trust Paragon Exterior for fast, friendly service.
@@ -283,17 +257,17 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
 
                 {/* Services Grid */}
                 <section className="py-16 bg-gray-50">
-                    <div className="max-w-7xl mx-auto px-6">
+                    {/* <div className="max-w-7xl mx-auto px-6"> */}
                         <div className="text-center mb-12">
                             <HeaderText as="h2" variant="large">
-                                Our Most Popular Services in {location.name}
+                                Popular Services in {location.name}
                             </HeaderText>
                             <SecondaryText>
                                 From quick emergency fixes to full home renovations—our roofing contractor team is ready to help you protect, restore, and upgrade your home or business.
                             </SecondaryText>
                         </div>
                         <ServicesGrid services={comprehensiveServices} />
-                    </div>
+                    {/* </div> */}
                 </section>
 
                 {/* Emergency Roofing */}
@@ -302,7 +276,8 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     description={
                         <div>
                             <SecondaryText>
-                                Storm damage or leaks? Our <strong>emergency roof repair</strong> team is ready 24/7. We respond fast to stop leaks, prevent water damage, and keep your family safe—any time, day or night.
+                                If your home as been damaged in a storm damage, call Paragon Exterior. Since we operate out of {location.name}, we have local experts that specialize in <strong>emergency roof repair and replacements</strong>. 
+                                We respond fast to stop leaks, prevent water damage, and keep your family safe—any time, day or night.
                             </SecondaryText>
                             <SecondaryText className="mt-4">
                                 Emergency roof repair includes leak detection, storm assessment, and immediate tarping. Our crews arrive fully equipped to secure your home right away.
@@ -310,7 +285,7 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                         </div>
                     }
                     imageSrc="/images/dynamic/service-area/img2.webp"
-                    headerColor="text-red-600"
+                   
                     bodyColor="text-gray-700"
                     className="py-16"
                 />
@@ -321,10 +296,12 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                     description={
                         <div>
                             <SecondaryText>
-                                Need roof repair? We fix leaks, missing shingles, and storm damage with quality materials and expert skill. For <strong>roof replacement</strong>, we offer top brands and styles, from asphalt shingles to standing seam metal roofing.
+                                Looking to just repair your roof. Our team knows what to look for and if a repair is all you need. We follow a comprehensive process to ensure that your roof gets exactly what it needs. 
+                                We fix leaks and missing shingles with quality materials and expert skill. 
+                                For <strong>roof replacement</strong>, we install full GAF roofing systems to ensure your roof is built to last and looks amazing. We also install metal roofing systems, such as standing seam metal roofs.
                             </SecondaryText>
                             <SecondaryText className="mt-4">
-                                Every roof we install in {location.name} is built to last, backed by strong warranties and installed by licensed, insured pros.
+                                Every roof we install in {location.name} is built to last, backed by strong warranties and installed by licensed, insured professionals.
                             </SecondaryText>
                         </div>
                     }
@@ -336,22 +313,77 @@ export default async function ServiceAreaPage({params}: {params: Promise<{slug: 
                 />
 
                 {/* Siding & Windows */}
+                {/* Siding – Repair & Replacement */}
                 <Row
-                    title={`Siding & Window Replacement`}
+                    title={`Siding Repair & Replacement in ${location.name}`}
                     description={
                         <div>
                             <SecondaryText>
-                                Upgrade your curb appeal and energy savings with our <strong>siding installation</strong> and <strong>window replacement</strong> services. Choose from vinyl, fiber cement, wood siding, and high-performance windows.
+                                Got loose panels, cracks, or warping? We handle <strong>siding repair</strong> in {location.name}—fast.
+                                We’ll color-match where possible, resecure panels, fix trim and flashing, and stop water from sneaking behind your walls.
+                                If the damage is bigger than a patch job, we’ll tell you straight and show the options side-by-side.
                             </SecondaryText>
+
                             <SecondaryText className="mt-4">
-                                We handle all exterior renovations for your {location.name} home—saving you time, hassle, and money with one trusted contractor.
+                                When it’s time for a full <strong>siding replacement</strong>, we install vinyl, fiber cement, and engineered wood.
+                                Our process is clean and tight: remove old siding, inspect sheathing, add house wrap and flashing, then install siding with proper clearances and sealed trim.
+                                You get better curb appeal, lower drafts, and a warranty that actually means something.
                             </SecondaryText>
+
                         </div>
                     }
-                    imageSrc="/images/dynamic/service-area/img4.webp"
+                    imageSrc="/images/siding/siding-service/siding-installation.webp"
                     headerColor="text-primaryblue"
                     bodyColor="text-gray-700"
                     className="py-16"
+                />
+
+                {/* Window Replacement */}
+                <Row
+                    title={`Window Replacement in ${location.name}`}
+                    description={
+                        <div>
+                            <SecondaryText>
+                                Our team provides honest window inspections in {location.name}. 
+                                Whether you have drafty windows or cracks, Paragon Exterior offers expert window replacement and repair services.
+                                
+                                When replacement is the smarter move, we’ll guide you through styles like double-hung, casement, sliding, and picture windows that fit both your home’s look and your budget.
+                                Learn more about or window services <Link className="text-blue-600" href="/windows">here</Link>.
+                            </SecondaryText>
+
+                            <SecondaryText className="mt-4">
+                                Every window we install is built for energy efficiency, weather protection, and everyday durability.
+                                Homeowners in the {location.name} area trust Paragon Exterior because we treat your home like our own. From careful installation, clean job sites, and top-notch warranties, we make window replacement easy.
+                            </SecondaryText>
+                        </div>
+                    }
+                    imageSrc="/images/window/window-replace/replacement3.webp"
+                    headerColor="text-primaryblue"
+                    bodyColor="text-gray-700"
+                    className="py-16"
+                    reverse
+                />
+
+
+
+                <InfoSection
+                    imgSrc="/images/dynamic/gutter-installation/img1.webp"
+                    imgAlt={`Seamless gutter installation in ${location.name}`}
+                    title={`Premier Gutter Installation Services in ${location.name}`}
+                    
+                    mainContent={
+                        <div>
+                            <SecondaryText>
+                                When you need reliable <strong>gutter installation in {location.name}</strong>, Paragon Exterior delivers professional gutter solutions that protect your home from water damage. 
+                                Our gutter services include <strong>seamless gutter installation</strong>, expert <strong>gutter repair</strong>, complete <strong>gutter replacement</strong>, and preventive maintenance that keeps your drainage system functioning perfectly year-round.
+                            </SecondaryText>
+                            <SecondaryText className="mt-4">
+                                We specialize in <strong>seamless gutters</strong> that provide superior leak protection compared to traditional sectional systems. Our team ensures perfect fit and clean aesthetics, while our <strong>gutter installation</strong> expertise guarantees proper slope, secure mounting, and optimal drainage performance for {location.name}&apos;s climate conditions.
+                            </SecondaryText>
+                        </div>
+                    }
+                    bottomContent={`Choose Paragon Exterior for your gutter installation needs and experience the difference professional installation makes. Our reputation in ${location.name} is built on quality workmanship, premium materials, and customer satisfaction that protects your home investment.`}
+                    imagePosition="right"
                 />
 
                 {/* Trust and Service Banner */}
