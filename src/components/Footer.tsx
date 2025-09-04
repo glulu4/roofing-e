@@ -68,7 +68,7 @@ export const Footer: FunctionComponent = () => {
               width={200}
               height={500}
               alt="Paragon Exterior Logo"
-              src="/images/header.png"
+              src="/images/footer-icon.webp"
               className="object-cover"
             />
             <p className="text-balance text-md/6 text-primaryblue">
