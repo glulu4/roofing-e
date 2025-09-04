@@ -595,7 +595,7 @@ export default function RootLayout({
         
       </head>
 
-      <meta name="wot-verification" content="b85e7a476a7e512de93b" />
+      <meta name="norton-safeweb-site-verification" content="IJOEIIL1V59MWH7BACCG-B7Z46309VBIMQKWTHVAPCF2VOIR0NI5F3LJHFH11XEFE3CWYYOHQFMB1SGB9M1648C-6CN0M7XOCKZ5WY3GDNQKUJ4RQSI7VHQ22QYBRHB4" />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased m-auto",
