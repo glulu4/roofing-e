@@ -594,6 +594,8 @@ export default function RootLayout({
         />
         
       </head>
+
+      <meta name="wot-verification" content="b85e7a476a7e512de93b" />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased m-auto",
