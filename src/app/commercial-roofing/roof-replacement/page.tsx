@@ -6,6 +6,8 @@ import Row from '@/components/Row';
 import {WhyParagonRoofReplacement} from '@/components/WhyParagon';
 import Reasons from '@/components/service-page/Reasons';
 import SecondaryText from '@/components/SecondaryText';
+import GoogleReviews from '@/components/landing-ui/GoogleReviews';
+import FAQSection from '@/components/FAQSection';
 
 export const metadata = {
     title: 'Commercial Roof Replacement Experts Near Me',
@@ -147,6 +149,48 @@ export default function CommercialRoofReplacementPage() {
                 title="Why Choose Paragon Exterior for Commercial Roof Replacement?"
                 titleAs="h2"
                 subTitle="With decades of experience in commercial roofing, Paragon Exterior combines premium materials, OSHA-compliant safety, and industry-leading warranties to deliver a replacement roof that stands up to weather, reduces your energy bills, and protects your bottom line."
+            />
+
+            {/* GOOGLE REVIEWS */}
+            <GoogleReviews />
+
+            {/* FAQ SECTION */}
+            <FAQSection
+                title="People Also Ask About Commercial Roof Replacement"
+                faqs={[
+                    {
+                        question: "What is the average cost to replace a commercial roof?",
+                        answer: "Commercial roof replacement typically costs between $5-$15 per square foot, depending on the materials, building size, and complexity. A 10,000 sq ft warehouse might cost $50,000-$150,000 for a complete replacement. We always provide detailed, upfront estimates so you know exactly what to expect — no surprises halfway through the project."
+                    },
+                    {
+                        question: "How much does it cost to replace a 1000 sq ft roof?",
+                        answer: "For a 1,000 sq ft commercial roof replacement, you're typically looking at $5,000-$15,000 depending on the material choice. TPO and EPDM are on the lower end, while metal roofing or modified bitumen systems cost more. The final price also depends on roof access, removal complexity, and any structural repairs needed."
+                    },
+                    {
+                        question: "What is commercial roofing called?",
+                        answer: "Commercial roofing refers to roofing systems designed for business buildings like offices, warehouses, retail spaces, and industrial facilities. Common types include flat roofing systems (TPO, EPDM, modified bitumen), metal roofing, and built-up roofing. These systems are engineered for durability, energy efficiency, and the ability to support HVAC equipment."
+                    },
+                    {
+                        question: "How to calculate roof replacement cost?",
+                        answer: "Calculate your commercial roof replacement cost by measuring the roof area in square feet, then multiply by the material cost per square foot ($5-$15 typically). Add costs for tear-off, disposal, permits, and any structural repairs. We provide free inspections and detailed estimates that break down all costs clearly, so you understand exactly what you're paying for."
+                    },
+                    {
+                        question: "Why is replacing a roof so expensive?",
+                        answer: "Commercial roof replacement involves specialized materials designed to last 20-30 years, skilled labor, safety equipment, permits, disposal fees, and often structural repairs discovered during tear-off. While the upfront cost seems high, a quality replacement saves money long-term by eliminating constant repairs and reducing energy costs through better insulation."
+                    },
+                    {
+                        question: "How long does it take to replace a 1000 sq ft roof?",
+                        answer: "A 1,000 sq ft commercial roof replacement typically takes 2-4 days, depending on weather, material type, and building access. Simple flat roof membrane replacements are faster, while complex installations with structural work take longer. We always provide realistic timelines upfront and work to minimize disruption to your business operations."
+                    },
+                    {
+                        question: "What is the most expensive part of a new roof?",
+                        answer: "The roofing materials themselves are usually the biggest cost, followed by labor. Premium materials like standing seam metal or high-end membrane systems drive up costs, but they also last longer and perform better. Structural repairs discovered during tear-off can also add significant expense, which is why we do thorough inspections before starting work."
+                    },
+                    {
+                        question: "What is the cheapest way to replace a roof?",
+                        answer: "The most cost-effective commercial roof replacement usually involves EPDM rubber membrane for flat roofs or basic TPO systems. However, 'cheapest upfront' isn't always cheapest long-term. We help you balance initial cost with long-term performance, energy savings, and maintenance requirements to find the best value for your specific building and budget."
+                    }
+                ]}
             />
 
             {/* CTA */}

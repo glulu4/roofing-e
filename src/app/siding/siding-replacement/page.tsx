@@ -26,8 +26,8 @@ export default function Page() {
         <div className="min-h-screen">
             {/* HERO */}
             <Hero
-                mainText="Upgrade Your Home With Professional Siding Replacement"
-                subText="Give your home a fresh, durable exterior with expert siding replacement from Paragon Exterior. Boost curb appeal, improve insulation, and enjoy protection that lasts through every season."
+                mainText="Trusted Siding Replacement Services with 100% Satisfaction Guarantee"
+                subText="Safeguard your home from the elements with expert siding replacement from Paragon Exterior. We combine the finest materials with exceptional workmanship to wrap your home in its new protective layer—built to last through every season."
                 imgSrc="/images/siding/siding-service/siding-replace/hero.jpeg"
                 imgAlt="Crew installing new siding during siding replacement"
             />
@@ -68,17 +68,81 @@ export default function Page() {
                 incentiveColumns={3}
             />
 
+            {/* SIDING STYLES SECTION */}
+            <section className="py-16 px-4 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <HeaderText as="h2" className="text-center mb-4">
+                        High-Quality Vinyl Siding in an Array of Styles, Colors, and Textures
+                    </HeaderText>
+                    <SecondaryText className="text-center mb-12 max-w-4xl mx-auto">
+                        We&apos;ll collaborate with you to select the ideal siding style and material that safeguards your home while enhancing its curb appeal. Every installation includes a comprehensive assessment and 100% satisfaction guarantee.
+                    </SecondaryText>
+                    
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            {
+                                title: "Horizontal Vinyl Siding",
+                                description: "The classic choice for traditional and modern homes. Clean lines and easy maintenance with superior weather protection.",
+                                benefits: ["Traditional appeal", "Easy maintenance", "Weather-resistant"]
+                            },
+                            {
+                                title: "Vertical Vinyl Siding",
+                                description: "Add visual height and modern sophistication to your home's exterior with durable vertical panels.",
+                                benefits: ["Modern appearance", "Visual height", "Architectural interest"]
+                            },
+                            {
+                                title: "Vinyl Shake Siding",
+                                description: "Get the natural beauty of cedar shake without the maintenance. Perfect for adding texture and charm.",
+                                benefits: ["Natural wood look", "Low maintenance", "Textured appeal"]
+                            },
+                            {
+                                title: "Vinyl Shingle Siding",
+                                description: "Capture the coastal charm of traditional shingles with the durability of modern vinyl technology.",
+                                benefits: ["Coastal charm", "Durable materials", "Classic styling"]
+                            },
+                            {
+                                title: "Board & Batten Siding",
+                                description: "Create bold vertical lines and farmhouse appeal with this distinctive architectural style.",
+                                benefits: ["Farmhouse style", "Bold vertical lines", "Distinctive look"]
+                            },
+                            {
+                                title: "Insulated Vinyl Siding",
+                                description: "Maximize energy efficiency with insulated panels that can lower heating and cooling costs by up to 15%.",
+                                benefits: ["Energy efficient", "Lower utility bills", "Year-round comfort"]
+                            }
+                        ].map((style, index) => (
+                            <div key={index} className="bg-slate-50 p-6 rounded-lg">
+                                <HeaderText as="h3" className="text-xl mb-3 text-primaryblue">
+                                    {style.title}
+                                </HeaderText>
+                                <SecondaryText className="mb-4">
+                                    {style.description}
+                                </SecondaryText>
+                                <ul className="space-y-2">
+                                    {style.benefits.map((benefit, idx) => (
+                                        <li key={idx} className="flex items-center space-x-2">
+                                            <span className="text-primaryblue font-bold">✓</span>
+                                            <span className="text-gray-700 text-sm">{benefit}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* WHY CHOOSE US */}
             <section className="mx-auto w-5/6 py-12">
                 <HeaderText className="text-center" as="h2">
-                    Why Paragon Exterior for Siding Replacement?
+                    Why Homeowners Trust Paragon Exterior for Siding Replacement
                 </HeaderText>
                 <SecondaryText className="mt-6 text-center">
-                    Our siding replacement crews go the extra mile—handling everything from safe removal and structural repairs to precise installation and debris-free cleanup. We don’t just cover your walls—we protect your home. Every Paragon Exterior project includes clear communication, strong manufacturer warranties, and expert craftsmanship trusted across Pennsylvania, New Jersey, and Delaware.
+                    Our siding replacement crews go the extra mile—handling everything from safe removal and structural repairs to precise installation and debris-free cleanup. We don&apos;t just cover your walls—we safeguard your home from the elements. Every Paragon Exterior project includes a comprehensive assessment before installation, clear communication, <strong>100% satisfaction guarantee</strong>, and expert craftsmanship trusted across Pennsylvania, New Jersey, and Delaware.
                 </SecondaryText>
 
                 <SecondaryText className="mt-4 text-center">
-                    Whether you&apos;re upgrading faded vinyl, replacing damaged fiber cement, or giving your home a modern refresh, we deliver siding solutions that improve energy efficiency, resist harsh weather, and increase your property’s value. It’s why homeowners continue to choose Paragon Exterior for professional, stress-free siding replacement.
+                    Whether you&apos;re upgrading faded vinyl, replacing damaged fiber cement, or giving your home a modern refresh, we deliver trusted siding replacement services that combine the finest materials with exceptional workmanship. We&apos;re committed to meeting the needs of all our clients with unmatched customer service and results that improve energy efficiency, resist harsh weather, and increase your property&apos;s value.
                 </SecondaryText>
 
             </section>
@@ -112,6 +176,61 @@ export default function Page() {
                 className="pt-12 lg:pt-24"
             />
 
+            {/* COMPREHENSIVE INSTALLATION PROCESS */}
+            <section className="py-16 px-4 bg-slate-50">
+                <div className="max-w-7xl mx-auto">
+                    <HeaderText as="h2" className="text-center mb-4">
+                        Our Comprehensive Siding Replacement Process
+                    </HeaderText>
+                    <SecondaryText className="text-center mb-12 max-w-4xl mx-auto">
+                        From initial assessment to final cleanup, we handle every detail with precision and care. Our process safeguards your home while delivering exceptional results.
+                    </SecondaryText>
+                    
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {[
+                            {
+                                step: "1",
+                                title: "Comprehensive Assessment",
+                                description: "We inspect your existing siding, check for structural issues, and assess your home's unique needs before recommending the ideal materials and approach."
+                            },
+                            {
+                                step: "2", 
+                                title: "Eliminate & Replace Deteriorating Materials",
+                                description: "Safe removal of old siding, identification and repair of any water damage or rot, plus preparation of the underlying structure for optimal installation."
+                            },
+                            {
+                                step: "3",
+                                title: "Install Flashing on Leak-Prone Areas", 
+                                description: "Professional installation with weather-tight flashing around windows, doors, and corners to prevent moisture infiltration and ensure long-lasting protection."
+                            },
+                            {
+                                step: "4",
+                                title: "Final Inspection & Cleanup",
+                                description: "Thorough walkthrough to ensure quality, complete debris removal, and your 100% satisfaction before project completion."
+                            }
+                        ].map((process, index) => (
+                            <div key={index} className="text-center">
+                                <div className="w-16 h-16 bg-primaryblue text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                                    {process.step}
+                                </div>
+                                <HeaderText as="h3" className="text-lg mb-3">
+                                    {process.title}
+                                </HeaderText>
+                                <SecondaryText className="text-sm">
+                                    {process.description}
+                                </SecondaryText>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div className="mt-12 text-center">
+                        <SecondaryText className="max-w-3xl mx-auto">
+                            Every step is performed by skilled and certified installers who combine decades of experience with the latest techniques. We protect your landscaping, maintain clear communication throughout the project, and leave your property cleaner than we found it.
+                        </SecondaryText>
+                    </div>
+                </div>
+            </section>
+
             <FAQSection
                 title="Frequently Asked Questions About Siding Replacement"
                 faqs={[
@@ -133,7 +252,7 @@ export default function Page() {
                     {
                         question: "Do you remove old siding?",
                         answer:
-                            "Yes. We remove all old siding and check for water damage, rot, or structural issues underneath. If we find problems, we’ll fix them before installing your new siding—no surprises."
+                            "Yes. We safely eliminate and replace all deteriorating siding, then perform a comprehensive assessment for water damage, rot, or structural issues underneath. If we find problems, we'll fix them before wrapping your home in its new protective layer—no surprises."
                     },
                     {
                         question: "Can you match the style of my current home?",
@@ -143,7 +262,7 @@ export default function Page() {
                     {
                         question: "Is new siding energy efficient?",
                         answer:
-                            "Yes! Especially when paired with insulation wrap or insulated vinyl panels. Upgrading your siding improves your home’s R-value, lowers heating/cooling costs, and improves year-round comfort."
+                            "Yes! Especially when paired with insulation wrap or insulated vinyl panels. Our energy-efficient siding installation safeguards your home from temperature extremes, improves your home's R-value, lowers heating/cooling costs by up to 15%, and improves year-round comfort."
                     }
                 ]}
             />

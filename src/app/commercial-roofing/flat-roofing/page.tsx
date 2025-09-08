@@ -6,6 +6,8 @@ import HeaderText from "@/components/HeaderText";
 import SecondaryText from "@/components/SecondaryText";
 import React from "react";
 import {WhyParagonFlatRoofing} from "@/components/WhyParagon";
+import GoogleReviews from "@/components/landing-ui/GoogleReviews";
+import FAQSection from "@/components/FAQSection";
 
 /* ——— META ——— */
 export const metadata = {
@@ -104,8 +106,38 @@ export default async function Page() {
 
             <WhyParagonFlatRoofing
                 title="Why Choose Paragon Exterior for Commercial Flat Roofing?"
-                subTitle="At Paragon Exterior, we specialize in commercial flat roofing solutions that combine durability with energy efficiency. Our experienced commercial roofing team understands the unique challenges of commercial flat roofs, ensuring your business property is protected against leaks and weather damage. We use only premium commercial-grade materials and proven installation techniques to provide commercial flat roofing systems built to last decades."
+                subTitle="At Paragon Exterior, we specialize in flat roofing solutions that combine durability with energy efficiency. Our experienced team understands the unique challenges of flat roofs, ensuring your business property is protected against leaks and weather damage. We use only premium materials and proven installation techniques to provide roofing systems built to last decades."
                 titleAs="h2"
+            />
+
+            {/* GOOGLE REVIEWS */}
+            <GoogleReviews />
+
+            {/* FAQ SECTION */}
+            <FAQSection
+                title="Commercial Flat Roofing FAQ"
+                faqs={[
+                    {
+                        question: "How long do commercial flat roofs last?",
+                        answer: "A well-installed commercial flat roof typically lasts 15-30 years depending on the material. EPDM rubber roofs often last 20-25 years, TPO systems 15-20 years, and modified bitumen can go 20-30 years. The key is proper installation, regular maintenance, and addressing small issues before they become big problems."
+                    },
+                    {
+                        question: "What causes ponding water on flat roofs?",
+                        answer: "Ponding water happens when your flat roof doesn't drain properly — usually due to clogged drains, inadequate slope, or roof sagging from age. While some ponding is normal after rain, water that sits for more than 48 hours can cause membrane damage and leaks. We can fix drainage issues and prevent future ponding."
+                    },
+                    {
+                        question: "Should I repair or replace my commercial flat roof?",
+                        answer: "If your roof is under 15 years old with isolated damage, repair usually makes sense. But if you're dealing with multiple leaks, widespread membrane deterioration, or a roof over 20 years old, replacement often saves money long-term. We'll give you an honest assessment of what makes the most financial sense for your building."
+                    },
+                    {
+                        question: "What's the best material for commercial flat roofs?",
+                        answer: "EPDM rubber is reliable and cost-effective, TPO offers good energy efficiency with its white reflective surface, and modified bitumen handles heavy foot traffic well. The best choice depends on your building use, budget, and climate. We'll help you pick what makes sense for your specific situation."
+                    },
+                    {
+                        question: "How much does commercial flat roof repair cost?",
+                        answer: "Simple repairs like sealing small leaks might cost $500-$1,500, while larger membrane patches or drainage fixes can range $2,000-$5,000. The cost depends on the damage extent, roof accessibility, and materials needed. We provide detailed estimates so you know exactly what you're paying for."
+                    }
+                ]}
             />
 
             {/* CTA */}

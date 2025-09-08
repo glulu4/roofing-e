@@ -110,6 +110,7 @@ import GetEstimate from '@/components/landing-ui/GetEstimate';
 import WhyParagon from '@/components/WhyParagon';
 import IncentivesSection from '@/components/service-page/Incentive';
 import Reasons from '@/components/service-page/Reasons';
+import GoogleReviews from '@/components/landing-ui/GoogleReviews';
 import type {Metadata} from 'next';
 
 export const metadata: Metadata = {
@@ -573,6 +574,9 @@ export default function Page() {
         ]}
         className="bg-gray-50"
       />
+
+      {/* GOOGLE REVIEWS */}
+      <GoogleReviews />
 
       <div className="py-12">
         <GetEstimate />

@@ -49,12 +49,12 @@ const Page = () => {
             />
 
             <div className="text-center mx-auto w-5/6 py-20">
-                <HeaderText as="h1">Commercial Roofing You Can Count On</HeaderText>
+                <HeaderText as="h1">Commercial Roofing That Actually Works for Your Business</HeaderText>
                 <SecondaryText>
-                    When your business needs a roof repair or replacement, you can’t afford delays or poor work. At Paragon Exterior, we install durable, low-maintenance commercial roofing that keeps your building safe and dry year-round.
+                    Let&apos;s be honest — when your commercial roof starts leaking, it&apos;s not just about water damage. It&apos;s about shutting down operations, dealing with insurance, and potentially losing money every day the problem isn&apos;t fixed. We get that. That&apos;s why we focus on getting your roof done right the first time, on schedule, and without disrupting your business any more than necessary.
                 </SecondaryText>
                 <SecondaryText>
-                    We work on flat roofs, metal roofs, and specialty commercial systems for offices, warehouses, schools, and more. Our team is fully licensed, insured, and certified to install top brands like GAF, Firestone, and Carlisle. Whether it’s a new build or an urgent repair, we’ll get the job done right.
+                    We&apos;ve worked on everything from small office buildings to massive warehouses, and we know that every business has different needs. Some need energy-efficient roofs to cut utility costs. Others need quick emergency repairs to stay operational. Whatever your situation, we&apos;re licensed, insured, and experienced with the commercial brands that actually hold up — GAF, Firestone, Carlisle, and others that we trust to protect your investment.
                 </SecondaryText>
             </div>
 
@@ -87,6 +87,74 @@ const Page = () => {
                 ]}
             />
 
+            {/* BUSINESS-FOCUSED SECTION */}
+            <section className="py-16 px-4 bg-gray-50">
+                <div className="max-w-7xl mx-auto">
+                    <HeaderText as="h2" className="text-center mb-6">
+                        What Business Owners Really Care About
+                    </HeaderText>
+                    <SecondaryText className="text-center mb-12 max-w-4xl mx-auto">
+                        We&apos;ve been doing commercial roofing long enough to know what keeps business owners up at night. Here&apos;s how we handle the stuff that actually matters to you.
+                    </SecondaryText>
+                    
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <HeaderText as="h3" className="text-lg mb-3 text-blue-600">
+                                Minimal Business Disruption
+                            </HeaderText>
+                            <SecondaryText className="text-sm">
+                                We schedule around your busy times, work in sections when possible, and always clean up daily. Most repairs happen without you having to close or move operations.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <HeaderText as="h3" className="text-lg mb-3 text-blue-600">
+                                Emergency Response
+                            </HeaderText>
+                            <SecondaryText className="text-sm">
+                                When your roof starts leaking during business hours, we prioritize getting there fast to stop the damage and get you back to normal operations.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <HeaderText as="h3" className="text-lg mb-3 text-blue-600">
+                                Energy Savings That Actually Show Up
+                            </HeaderText>
+                            <SecondaryText className="text-sm">
+                                Modern commercial roofing can seriously cut your heating and cooling costs. We&apos;ll show you the options that make sense for your building size and usage.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <HeaderText as="h3" className="text-lg mb-3 text-blue-600">
+                                Insurance & Documentation
+                            </HeaderText>
+                            <SecondaryText className="text-sm">
+                                We&apos;re fully insured and know how to work with your insurance company. We document everything properly so claims go smoothly.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <HeaderText as="h3" className="text-lg mb-3 text-blue-600">
+                                Transparent Pricing
+                            </HeaderText>
+                            <SecondaryText className="text-sm">
+                                No surprises in the middle of the job. We give you detailed estimates upfront and stick to them. You&apos;ll know exactly what you&apos;re paying for and why.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <HeaderText as="h3" className="text-lg mb-3 text-blue-600">
+                                Long-Term Maintenance Plans
+                            </HeaderText>
+                            <SecondaryText className="text-sm">
+                                Regular maintenance prevents expensive surprises. We offer annual inspection and maintenance programs to keep your roof in good shape.
+                            </SecondaryText>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div className="py-32 sm:py-48 md:py-32">
                 <QualitySection
                     mainText="Built to Withstand the Elements"
@@ -112,6 +180,54 @@ const Page = () => {
                 text1="Our roofs are designed to handle storms, temperature swings, and daily wear. They save energy and lower your long-term costs."
                 text2="We work with all types of commercial roofs—from metal and TPO to modified bitumen. Count on us for clean installs, clear communication, and long-term warranties."
             />
+
+            {/* MATERIALS EXPLANATION */}
+            <section className="py-16 px-4">
+                <div className="max-w-4xl mx-auto">
+                    <HeaderText as="h2" className="text-center mb-6">
+                        Commercial Roofing Materials That Make Sense
+                    </HeaderText>
+                    <SecondaryText className="text-center mb-8">
+                        Not sure which roofing material is right for your building? Here&apos;s our honest take on the most popular options for commercial properties.
+                    </SecondaryText>
+                    
+                    <div className="space-y-6">
+                        <div className="border-l-4 border-blue-600 pl-6">
+                            <HeaderText as="h3" className="text-lg mb-2">TPO (Single-Ply Membrane)</HeaderText>
+                            <SecondaryText className="text-sm">
+                                Great all-around choice for most flat commercial roofs. Energy-efficient white surface reflects heat, decent lifespan, and reasonable cost. Works well for office buildings and retail spaces.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="border-l-4 border-blue-600 pl-6">
+                            <HeaderText as="h3" className="text-lg mb-2">EPDM (Rubber Membrane)</HeaderText>
+                            <SecondaryText className="text-sm">
+                                The workhorse of commercial roofing. Black rubber that&apos;s been around forever and proven reliable. More affordable than TPO but doesn&apos;t reflect heat as well. Perfect for warehouses and industrial buildings.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="border-l-4 border-blue-600 pl-6">
+                            <HeaderText as="h3" className="text-lg mb-2">Metal Roofing</HeaderText>
+                            <SecondaryText className="text-sm">
+                                Lasts the longest but costs more upfront. Standing seam metal is virtually maintenance-free and handles wind and fire better than anything else. Great for buildings where long-term value matters more than initial cost.
+                            </SecondaryText>
+                        </div>
+                        
+                        <div className="border-l-4 border-blue-600 pl-6">
+                            <HeaderText as="h3" className="text-lg mb-2">Modified Bitumen</HeaderText>
+                            <SecondaryText className="text-sm">
+                                The tough guy option. Multi-layer system that handles foot traffic and harsh weather well. More expensive and complex to install, but great for buildings that need extra durability.
+                            </SecondaryText>
+                        </div>
+                    </div>
+                    
+                    <div className="mt-8 text-center">
+                        <SecondaryText>
+                            Bottom line: we&apos;ll look at your building, your budget, and how you use the space, then recommend what makes the most sense. No upselling, just practical advice.
+                        </SecondaryText>
+                    </div>
+                </div>
+            </section>
 
             <FAQSection
                 title="Commercial Roofing FAQ"

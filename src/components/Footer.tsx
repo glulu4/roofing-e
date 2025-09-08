@@ -1,7 +1,7 @@
 import Image from "next/image"
 import {FunctionComponent} from "react"
 import SecondaryHeader from "./SecondaryHeader"
-import {FaFacebookF, FaInstagram, FaTiktok, FaYoutube, } from "react-icons/fa";
+import {FaFacebookF, FaInstagram, FaLinkedin, FaTiktok, FaYoutube, } from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
 import clsx from "clsx";
 
@@ -46,6 +46,11 @@ const socials = [
     name: "X",
     href: "https://x.com/ParagonEXTR",
     icon: BsTwitterX,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/paragon-exterior",
+    icon: FaLinkedin, // Replace with actual LinkedIn icon if available
   },
   {
     name: "TikTok",
