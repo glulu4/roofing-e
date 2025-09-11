@@ -5,26 +5,6 @@ import HeaderText from '../HeaderText';
 import SecondaryText from '../SecondaryText';
 import Image from 'next/image';
 
-// const cards = [
-//     {
-//         name: 'Custom Roof Installations',
-//         description:
-//             'Looking for a roofing company that understands style and performance? We install asphalt shingles, metal roofs, clay tiles, and flat roofing systems tailored to your home’s design and needs.',
-//         icon: HomeIcon,
-//     },
-//     {
-//         name: 'Solar Roof Solutions',
-//         description:
-//             'Go green with our solar roofing options. As trusted residential roofing contractors, we help you save on energy bills while increasing your home’s value with state-of-the-art roof technology.',
-//         icon: SunIcon,
-//     },
-//     {
-//         name: 'Repairs & Maintenance',
-//         description:
-//             'Need roof repair near you? Our expert roofing contractors handle everything from minor leaks to storm damage. Prevent costly issues with proactive maintenance you can count on.',
-//         icon: WrenchScrewdriverIcon,
-//     },
-// ]
 const cards = [
     {
         name: 'Clear Communication',
@@ -56,7 +36,7 @@ export default function Exceptional() {
                 width={1000}
                 height={1000}
                 alt="roofing company"
-                src="/images/quality-roof-image.jpg"
+                src="/images/shingle.jpg"
                 className="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center"
             />
 
@@ -78,13 +58,13 @@ export default function Exceptional() {
             <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Heading Section */}
                 <div className="flex flex-col items-center justify-center mx-auto max-w-2xl text-center px-6 sm:px-0">
-                        <HeaderText className="text-neutral-50">
-                            What to expect from Your Local Roofing and Siding Company
-                        </HeaderText>
-                        <SecondaryText className='text-neutral-50'>
-                            We know inviting a crew to your home is a big decision. That&apos;s why at Paragon Exterior, you can expect professionalism from start to finish—clear communication, dependable craftsmanship, and a crew that respects your time and property. 
-                            From small repairs to full replacements, we make the process smooth and stress-free. We ensure you know exactly what to expect and a clean job site when we leave.
-                        </SecondaryText>
+                    <HeaderText className="text-neutral-50">
+                        What to expect from Your Local Roofing and Siding Company
+                    </HeaderText>
+                    <SecondaryText className='text-neutral-50'>
+                        We know inviting a crew to your home is a big decision. That&apos;s why at Paragon Exterior, you can expect professionalism from start to finish—clear communication, dependable craftsmanship, and a crew that respects your time and property.
+                        From small repairs to full replacements, we make the process smooth and stress-free. We ensure you know exactly what to expect and a clean job site when we leave.
+                    </SecondaryText>
                 </div>
 
 
