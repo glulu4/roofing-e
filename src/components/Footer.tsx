@@ -16,6 +16,7 @@ const navigation = {
   ],
   resources: [
     {name: "Roof Pitch Calculator", href: "/roof-pitch-calculator"},
+    {name: "Roof Lifespan Calculator", href: "/roof-lifespan-calculator"},
     {name: "Financing", href: "/financing"},
     {name: "Gallery", href: "/gallery"},
     {name: "Blog", href: "/blog"},
