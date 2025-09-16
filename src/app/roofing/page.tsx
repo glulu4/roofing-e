@@ -82,6 +82,13 @@ const services = [
         description: 'Tough, long-lasting metal roofs in standing seam, corrugated, and custom profiles.',
         imageUrl: '/images/roof-service/metal/metal-roof-card.webp',
     },
+    {
+        id: 8,
+        title: 'Soffit Repair & Replacement',
+        href: '/roofing/soffit-repair',
+        description: 'Complete soffit repair and replacement services for damaged, rotted, or outdated soffits.',
+        imageUrl: '/images/roof-service/soffit/unused.jpeg',
+    },
 ];
 
 export const metadata = {
