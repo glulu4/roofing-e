@@ -85,7 +85,7 @@ const services = [
     {
         id: 8,
         title: 'Soffit Repair & Replacement',
-        href: '/roofing/soffit-repair',
+        href: '/roofing/soffit-repair-and-replacement',
         description: 'Complete soffit repair and replacement services for damaged, rotted, or outdated soffits.',
         imageUrl: '/images/roof-service/soffit/unused.jpeg',
     },
