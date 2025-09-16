@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       'Expert soffit repair contractors serving Pennsylvania, New Jersey & Delaware. Quality repairs for damaged, rotted, or sagging soffits. Licensed & insured with free estimates.',
     type: 'website',
     images: ["/images/roof-service/soffit/img4.webp"],
-    url: 'https://paragonexterior.com/roofing/soffit-repair',
+    url: 'https://paragonexterior.com/roofing/soffit-repair-and-replacement',
   },
   twitter: {
     card: 'summary_large_image',
@@ -44,7 +44,7 @@ export default function Page() {
             "@type": "HomeAndConstructionBusiness",
             "name": "Paragon Exterior Soffit Repair & Replacement",
             "description": "Professional soffit repair and replacement services in Pennsylvania, New Jersey, and Delaware",
-            "url": "https://paragonexterior.com/roofing/soffit-repair",
+            "url": "https://paragonexterior.com/roofing/soffit-repair-and-replacement",
             "telephone": "+1-215-799-7663",
             "email": "info@paragonexterior.com",
             "address": {
