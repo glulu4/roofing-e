@@ -63,10 +63,10 @@ export default function Page() {
                 mainContent={
                     <>
                         <SecondaryText className="mt-6 text-lg text-gray-600">
-                            Paragon Exterior has established itself as Philadelphia's leading home improvement contractor, bringing decades of expertise to every project. From historic rowhomes in Center City to modern builds in the suburbs, we understand what it takes to enhance and protect Philadelphia homes.
+                            Paragon Exterior has established itself as Philadelphia&apos;s leading home improvement contractor, bringing decades of expertise to every project. From historic rowhomes in Center City to modern builds in the suburbs, we understand what it takes to enhance and protect Philadelphia homes.
                         </SecondaryText>
                         <SecondaryText className="mt-6 text-lg text-gray-600">
-                            As a locally owned and operated company, we've completed thousands of projects across every Philadelphia neighborhood—from Fishtown to Fairmount, Northern Liberties to South Philadelphia. Our comprehensive approach covers all your exterior improvement needs.
+                            As a locally owned and operated company, we&apos;ve completed thousands of projects across every Philadelphia neighborhood—from Fishtown to Fairmount, Northern Liberties to South Philadelphia. Our comprehensive approach covers all your exterior improvement needs.
                         </SecondaryText>
                     </>
                 }
@@ -108,7 +108,7 @@ export default function Page() {
                 mainContent={
                     <>
                         <SecondaryText className="mt-6 text-lg text-gray-600">
-                            Planning a comprehensive exterior makeover? As Philadelphia's premier home improvement contractor, we coordinate complete exterior renovations that transform your property. Our services include roofing, siding, windows, doors, gutters, and trim work—all managed by a single, trusted team.
+                            Planning a comprehensive exterior makeover? As Philadelphia&apos;s premier home improvement contractor, we coordinate complete exterior renovations that transform your property. Our services include roofing, siding, windows, doors, gutters, and trim work—all managed by a single, trusted team.
                         </SecondaryText>
                         <SecondaryText className="mt-6 text-lg text-gray-600">
                             We understand the unique challenges of Philadelphia homes, from narrow lot access to historic preservation requirements. Our project management ensures seamless coordination and quality results.
@@ -186,10 +186,10 @@ export default function Page() {
                     Serving All Philadelphia Neighborhoods
                 </h2>
                 <p className="text-lg text-gray-700 mb-4">
-                    As Philadelphia's trusted home improvement contractor, we serve homeowners throughout the entire metropolitan area. From Center City condos to suburban homes in the Northeast, our team understands the unique needs of each neighborhood and architectural style.
+                    As Philadelphia&apos;s trusted home improvement contractor, we serve homeowners throughout the entire metropolitan area. From Center City condos to suburban homes in the Northeast, our team understands the unique needs of each neighborhood and architectural style.
                 </p>
                 <p className="text-lg text-gray-700">
-                    Whether you're in South Philly, West Philadelphia, Kensington, Fishtown, or any surrounding area, our home improvement experts are ready to enhance your property's beauty, efficiency, and value with quality craftsmanship and reliable service.
+                    Whether you&apos;re in South Philly, West Philadelphia, Kensington, Fishtown, or any surrounding area, our home improvement experts are ready to enhance your property&apos;s beauty, efficiency, and value with quality craftsmanship and reliable service.
                 </p>
             </section>
 
