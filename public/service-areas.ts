@@ -228,42 +228,6 @@ export const serviceAreas: {
         name: "Jenkintown",
         description: "We offer roof repair and residential roofing services in Jenkintown, PA.",
     },
-    rockledge: {
-        name: "Rockledge",
-        description: "Paragon Exterior specializes in roof repair and residential roofing in Rockledge, PA.",
-    },
-    roslyn: {
-        name: "Roslyn",
-        description: "We deliver high-quality roof repair and residential roofing services in Roslyn, PA.",
-    },
-    foxchasefarm: {
-        name: "Fox Chase Farm",
-        description: "Paragon Exterior offers expert roof repair and residential roofing in Fox Chase Farm, PA.",
-    },
-    meadowbrook: {
-        name: "Meadowbrook",
-        description: "We provide reliable roof repair and residential roofing services in Meadowbrook, PA.",
-    },
-    huntingpark: {
-        name: "Hunting Park",
-        description: "Paragon Exterior delivers roof repair and residential roofing services in Hunting Park, PA.",
-    },
-    springfieldmontco: {
-        name: "Springfield (Montco)",
-        description: "We specialize in roof repair and residential roofing services in Springfield, Montgomery County, PA.",
-    },
-    eastfalls: {
-        name: "East Falls",
-        description: "Paragon Exterior provides residential roofing and expert roof repair services in East Falls, PA.",
-    },
-    logan: {
-        name: "Logan",
-        description: "We offer professional roof repair and residential roofing services in Logan, Philadelphia.",
-    },
-    ogontz: {
-        name: "Ogontz",
-        description: "Paragon Exterior specializes in roof repair and residential roofing solutions in Ogontz, PA.",
-    },
     abingtontownship: {
         name: "Abington Township",
         description: "We provide top-notch roof repair and residential roofing in Abington Township, PA.",
@@ -297,6 +261,150 @@ export const serviceAreas: {
         name: "South Jersey",
         description: "Paragon Exterior offers expert roof repair and residential roofing services in South Jersey.",
     },
+
+    // NEW JERSEY AREAS - Closest to Philadelphia First
+    camden: {
+        name: "Camden",
+        description: "Paragon Exterior provides professional roof repair and residential roofing services in Camden, NJ.",
+    },
+    gloucester: {
+        name: "Gloucester",
+        description: "We offer expert roof repair and residential roofing solutions in Gloucester, NJ.",
+    },
+    collingswood: {
+        name: "Collingswood",
+        description: "Paragon Exterior specializes in roof repair and residential roofing services in Collingswood, NJ.",
+    },
+    haddon: {
+        name: "Haddon",
+        description: "We provide reliable roof repair and residential roofing services in Haddon, NJ.",
+    },
+    haddonfield: {
+        name: "Haddonfield",
+        description: "Paragon Exterior delivers expert roof repair and residential roofing in Haddonfield, NJ.",
+    },
+    audubon: {
+        name: "Audubon",
+        description: "We specialize in roof repair and residential roofing solutions in Audubon, NJ.",
+    },
+    oaklyn: {
+        name: "Oaklyn",
+        description: "Paragon Exterior offers professional roof repair and residential roofing services in Oaklyn, NJ.",
+    },
+    merchantville: {
+        name: "Merchantville",
+        description: "We provide expert roof repair and residential roofing services in Merchantville, NJ.",
+    },
+    pennsauken: {
+        name: "Pennsauken",
+        description: "Paragon Exterior specializes in roof repair and residential roofing in Pennsauken, NJ.",
+    },
+    moorestown: {
+        name: "Moorestown",
+        description: "We deliver high-quality roof repair and residential roofing services in Moorestown, NJ.",
+    },
+    mountlaurel: {
+        name: "Mount Laurel",
+        description: "Paragon Exterior provides professional roof repair and residential roofing in Mount Laurel, NJ.",
+    },
+    cherryhill: {
+        name: "Cherry Hill",
+        description: "We offer expert roof repair and residential roofing services in Cherry Hill, NJ.",
+    },
+    voorhees: {
+        name: "Voorhees",
+        description: "Paragon Exterior specializes in roof repair and residential roofing solutions in Voorhees, NJ.",
+    },
+    marlton: {
+        name: "Marlton",
+        description: "We provide reliable roof repair and residential roofing services in Marlton, NJ.",
+    },
+    evesham: {
+        name: "Evesham",
+        description: "Paragon Exterior delivers expert roof repair and residential roofing in Evesham, NJ.",
+    },
+    medford: {
+        name: "Medford",
+        description: "We provide professional roof repair and residential roofing services in Medford, NJ.",
+    },
+    marltonlakes: {
+        name: "Marlton Lakes",
+        description: "Paragon Exterior offers expert roof repair and residential roofing in Marlton Lakes, NJ.",
+    },
+    lumberton: {
+        name: "Lumberton",
+        description: "We specialize in roof repair and residential roofing solutions in Lumberton, NJ.",
+    },
+    shamong: {
+        name: "Shamong",
+        description: "We deliver expert roof repair and residential roofing services in Shamong, NJ.",
+    },
+    tabernacle: {
+        name: "Tabernacle",
+        description: "Paragon Exterior specializes in roof repair and residential roofing in Tabernacle, NJ.",
+    },
+    vincentown: {
+        name: "Vincentown",
+        description: "We provide professional roof repair and residential roofing services in Vincentown, NJ.",
+    },
+    berlin: {
+        name: "Berlin",
+        description: "Paragon Exterior offers expert roof repair and residential roofing services in Berlin, NJ.",
+    },
+    waterford: {
+        name: "Waterford",
+        description: "We specialize in roof repair and residential roofing solutions in Waterford, NJ.",
+    },
+    atco: {
+        name: "Atco",
+        description: "Paragon Exterior provides reliable roof repair and residential roofing in Atco, NJ.",
+    },
+    clementon: {
+        name: "Clementon",
+        description: "We deliver expert roof repair and residential roofing services in Clementon, NJ.",
+    },
+
+    // Northern New Jersey Areas Near Philadelphia
+    riverton: {
+        name: "Riverton",
+        description: "Paragon Exterior provides professional roof repair and residential roofing services in Riverton, NJ.",
+    },
+    palmyra: {
+        name: "Palmyra",
+        description: "We offer expert roof repair and residential roofing solutions in Palmyra, NJ.",
+    },
+    beverly: {
+        name: "Beverly",
+        description: "Paragon Exterior specializes in roof repair and residential roofing services in Beverly, NJ.",
+    },
+    edgewater: {
+        name: "Edgewater Park",
+        description: "We provide reliable roof repair and residential roofing services in Edgewater Park, NJ.",
+    },
+    burlington: {
+        name: "Burlington",
+        description: "Paragon Exterior delivers expert roof repair and residential roofing in Burlington, NJ.",
+    },
+    florence: {
+        name: "Florence",
+        description: "We specialize in roof repair and residential roofing solutions in Florence, NJ.",
+    },
+    bordentown: {
+        name: "Bordentown",
+        description: "Paragon Exterior offers professional roof repair and residential roofing services in Bordentown, NJ.",
+    },
+    fieldsboro: {
+        name: "Fieldsboro",
+        description: "We provide expert roof repair and residential roofing services in Fieldsboro, NJ.",
+    },
+    roebling: {
+        name: "Roebling",
+        description: "Paragon Exterior specializes in roof repair and residential roofing in Roebling, NJ.",
+    },
+    hamilton: {
+        name: "Hamilton",
+        description: "We deliver high-quality roof repair and residential roofing services in Hamilton, NJ.",
+    },
     delawareCounty: {
         name: "Delaware County",
         description: "We specialize in roof repair and residential roofing solutions in Delaware County, PA.",
@@ -313,30 +421,8 @@ export const serviceAreas: {
         name: "New Jersey",
         description: "Paragon Exterior specializes in roof repair and residential roofing services in New Jersey.",
     },
-    cherryhill: {
-        name: "Cherry Hill",
-        description: "We provide top-notch roof repair and residential roofing solutions in Cherry Hill, NJ.",
-    },
-    burlington: {
-        name: "Burlington",
-        description: "Paragon Exterior offers expert roof repair and residential roofing services in Burlington, NJ.",
-    },
-    mountlaurel: {
-        name: "Mount Laurel",
-        description: "We specialize in roof repair and residential roofing solutions in Mount Laurel, NJ.",
-    },
-    medford: {
-        name: "Medford",
-        description: "Paragon Exterior provides professional roof repair and residential roofing services in Medford, NJ.",
-    },
-    evesham: {
-        name: "Evesham",
-        description: "We deliver expert roof repair and residential roofing solutions in Evesham, NJ.",
-    },
-    moorestown: {
-        name: "Moorestown",
-        description: "Paragon Exterior specializes in roof repair and residential roofing services in Moorestown, NJ.",
-    },
+
+
     feastervilleTrevose: {
         name: "Feasterville-Trevose",
         description: "We provide top-notch roof repair and residential roofing solutions in Feasterville-Trevose, NJ.",
@@ -654,46 +740,24 @@ export const serviceAreas: {
         name: "Port Richmond",
         description: "Paragon Exterior specializes in roof repair and residential roofing services in Port Richmond, PA.",
     },
-    camden: {
-        name: "Camden",
-        description: "We provide top-notch roof repair and residential roofing solutions in Camden, NJ.",
-    },
-    pennsauken: {
-        name: "Pennsauken",
-        description: "Paragon Exterior offers expert roof repair and residential roofing services in Pennsauken, NJ.",
-    },
+
     gloucestercity: {
         name: "Gloucester City",
         description: "We specialize in roof repair and residential roofing solutions in Gloucester City, NJ.",
     },
-    collingswood: {
-        name: "Collingswood",
-        description: "Paragon Exterior provides professional roof repair and residential roofing services in Collingswood, NJ.",
-    },
+
     haddonheights: {
         name: "Haddon Heights",
         description: "We deliver expert roof repair and residential roofing solutions in Haddon Heights, NJ.",
     },
-    haddonfield: {
-        name: "Haddonfield",
-        description: "Paragon Exterior specializes in roof repair and residential roofing services in Haddonfield, NJ.",
-    },
-    voorhees: {
-        name: "Voorhees",
-        description: "We provide top-notch roof repair and residential roofing solutions in Voorhees, NJ.",
-    },
+
+
     lindenwold: {
         name: "Lindenwold",
         description: "Paragon Exterior offers expert roof repair and residential roofing services in Lindenwold, NJ.",
     },
-    berlin: {
-        name: "Berlin",
-        description: "We specialize in roof repair and residential roofing solutions in Berlin, NJ.",
-    },
-    clementon: {
-        name: "Clementon",
-        description: "Paragon Exterior provides professional roof repair and residential roofing services in Clementon, NJ.",
-    },
+
+
     laurelsprings: {
         name: "Laurel Springs",
         description: "We deliver expert roof repair and residential roofing solutions in Laurel Springs, NJ.",
@@ -706,10 +770,7 @@ export const serviceAreas: {
         name: "Mount Ephraim",
         description: "We provide top-notch roof repair and residential roofing solutions in Mount Ephraim, NJ.",
     },
-    oaklyn: {
-        name: "Oaklyn",
-        description: "Paragon Exterior offers expert roof repair and residential roofing services in Oaklyn, NJ.",
-    },
+
     pinehill: {
         name: "Pine Hill",
         description: "We specialize in roof repair and residential roofing solutions in Pine Hill, NJ.",
@@ -734,10 +795,7 @@ export const serviceAreas: {
         name: "Delran",
         description: "Paragon Exterior offers expert roof repair and residential roofing services in Delran, NJ.",
     },
-    florence: {
-        name: "Florence",
-        description: "We specialize in roof repair and residential roofing solutions in Florence, NJ.",
-    },
+
     mapleshade: {
         name: "Maple Shade",
         description: "Paragon Exterior provides professional roof repair and residential roofing services in Maple Shade, NJ.",
@@ -746,10 +804,7 @@ export const serviceAreas: {
         name: "Mount Holly",
         description: "We deliver expert roof repair and residential roofing solutions in Mount Holly, NJ.",
     },
-    palmyra: {
-        name: "Palmyra",
-        description: "Paragon Exterior specializes in roof repair and residential roofing services in Palmyra, NJ.",
-    },
+
     pemberton: {
         name: "Pemberton",
         description: "We provide top-notch roof repair and residential roofing solutions in Pemberton, NJ.",
@@ -758,22 +813,12 @@ export const serviceAreas: {
         name: "Riverside",
         description: "Paragon Exterior offers expert roof repair and residential roofing services in Riverside, NJ.",
     },
-    riverton: {
-        name: "Riverton",
-        description: "We specialize in roof repair and residential roofing solutions in Riverton, NJ.",
-    },
+
     westampton: {
         name: "Westampton",
         description: "Paragon Exterior provides professional roof repair and residential roofing services in Westampton, NJ.",
     },
-    beverly: {
-        name: "Beverly",
-        description: "We deliver expert roof repair and residential roofing solutions in Beverly, NJ.",
-    },
-    bordentown: {
-        name: "Bordentown",
-        description: "Paragon Exterior specializes in roof repair and residential roofing services in Bordentown, NJ.",
-    },
+
     edgewaterpark: {
         name: "Edgewater Park",
         description: "We provide top-notch roof repair and residential roofing solutions in Edgewater Park, NJ.",

@@ -33,80 +33,107 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
         title: `Commercial Roof Replacement in ${location?.name} | New Commercial Roofing Systems`,
         description: `Professional commercial roof replacement in ${location.name}. Expert TPO, EPDM, and metal roof installation. New commercial roofing systems with warranties and financing options.`,
         keywords: `commercial roof replacement ${location.name}, commercial roofing contractors, new commercial roof installation, TPO roof replacement, EPDM roof replacement ${location.name}`,
-        alternates: {canonical: `https://www.paragonexterior.com/commercial-roof-replacement/${slug}`},
         openGraph: {
             title: `Commercial Roof Replacement in ${location?.name} | Paragon Exterior`,
             description: `Expert commercial roof replacement serving ${location.name}. Professional new commercial roofing systems with TPO, EPDM, and metal options with warranties.`,
             type: 'website',
-            images: ['/images/roof-service/commercial/replacement-hero.webp'],
+            images: ['/images/commercial/replacement/hero.webp'],
         },
     };
 }
 
 // Enhanced structured data for commercial roof replacement services
-const generateStructuredData = (location: Location) => ({
+const generateStructuredData = (location: Location, slug: string) => ({
     "@context": "https://schema.org",
-    "@type": "RoofingContractor",
+    "@type": "LocalBusiness",
+    "@id": `https://www.paragonexterior.com/commercial-roof-replacement/${slug}`,
     "name": "Paragon Exterior",
     "description": `Professional commercial roof replacement in ${location.name} specializing in TPO roof replacement, EPDM roof replacement, metal roofing installation, and complete commercial roofing systems.`,
-    "url": `https://www.paragonexterior.com/commercial-roof-replacement/${location.name}`,
+    "url": `https://www.paragonexterior.com/commercial-roof-replacement/${slug}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": location.name,
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
+
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": location.name
+        },
+        {
+            "@type": "AdministrativeArea",
+            "name": "Pennsylvania"
+        },
+        {
+            "@type": "AdministrativeArea",
+            "name": "New Jersey"
+        },
+        {
+            "@type": "AdministrativeArea",
+            "name": "Delaware"
+        }
+    ],
+    "serviceType": [
+        "Commercial Roof Replacement",
+        "TPO Roof Installation",
+        "EPDM Roof Installation",
+        "Metal Roof Installation",
+        "Commercial Roofing Contractor"
+    ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Commercial Roof Replacement Services",
         "itemListElement": [
             {
                 "@type": "Offer",
+                "name": "TPO Roof Replacement",
+                "description": "Complete TPO membrane roof replacement systems for commercial buildings",
+                "priceRange": "$8-$15 per square foot",
                 "itemOffered": {
                     "@type": "Service",
                     "name": "TPO Roof Replacement",
-                    "description": "Complete TPO membrane roof replacement systems for commercial buildings"
+                    "serviceType": "Commercial Roofing"
                 }
             },
             {
                 "@type": "Offer",
+                "name": "EPDM Roof Replacement",
+                "description": "Full EPDM rubber roof replacement and installation services",
+                "priceRange": "$8-$15 per square foot",
                 "itemOffered": {
                     "@type": "Service",
                     "name": "EPDM Roof Replacement",
-                    "description": "Full EPDM rubber roof replacement and installation services"
+                    "serviceType": "Commercial Roofing"
                 }
             },
             {
                 "@type": "Offer",
+                "name": "Commercial Metal Roof Replacement",
+                "description": "Complete commercial metal roofing system installation and replacement",
+                "priceRange": "$12-$20 per square foot",
                 "itemOffered": {
                     "@type": "Service",
                     "name": "Commercial Metal Roof Replacement",
-                    "description": "Complete commercial metal roofing system installation and replacement"
+                    "serviceType": "Commercial Roofing"
                 }
             }
         ]
-    }
+    },
+
 });
 
 // Commercial roof replacement FAQ based on business needs
 function CommercialRoofReplacementFAQ({locationName}: {locationName: string}) {
     const commercialRoofReplacementFaqData = [
         {
-            question: "How much does commercial roof replacement cost?",
-            answer: `Commercial roof replacement costs in ${locationName} typically range from $8-15 per square foot for TPO or EPDM systems, $12-20 per square foot for metal roofing, and $15-25 per square foot for premium systems. Total project costs depend on roof size, material choice, structural requirements, and building complexity.`,
+            question: "How much does a commercial roof cost?",
+            answer: `Commercial roofs costs in ${locationName} typically range from 5,000 to $50,000. $8-15 per square foot for TPO or EPDM systems, $12-20 per square foot for metal roofing, and $15-25 per square foot for premium systems. Total project costs depend on roof size, material choice, structural requirements, and building complexity.`,
         },
         {
             question: "How long does commercial roof replacement take?",
             answer: "Most commercial roof replacement projects take 1-4 weeks depending on building size, weather conditions, and roofing system complexity. We work efficiently to minimize business disruption and often can phase work to maintain operations during replacement.",
         },
         {
-            question: "What commercial roofing systems do you install?",
-            answer: "We install all major commercial roofing systems including TPO, EPDM, modified bitumen, built-up roofing (BUR), metal roofing, and green roof systems. Our experts help you choose the best system based on your building requirements, budget, and performance needs.",
+            question: "How often do commercial roofs need to be replaced?",
+            answer: "Usually every 20 - 30 years depending on the roofing system. TPO and EPDM typically last 15-25 years, while metal roofs can exceed 40-60 years with proper maintenance. Regular inspections and maintenance can extend roof life and delay replacement needs.",
         },
         {
             question: "Can you replace a commercial roof while business is operating?",
@@ -124,10 +151,7 @@ function CommercialRoofReplacementFAQ({locationName}: {locationName: string}) {
             question: "How do I know if I need roof replacement vs repair?",
             answer: "Consider replacement when your roof is over 20 years old, has recurring leak issues, widespread membrane deterioration, or repair costs exceed 25% of replacement cost. We provide detailed assessments to help you make informed decisions about repair vs replacement.",
         },
-        {
-            question: "Do you offer financing for commercial roof replacement?",
-            answer: "Yes, we offer various financing options for commercial roof replacement including equipment financing, business loans, and flexible payment plans. We work with your budget and cash flow needs to make roof replacement affordable for your business.",
-        }
+
     ];
 
     return (
@@ -187,7 +211,7 @@ export default async function CommercialRoofReplacementPage({params}: {params: P
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}}
             />
 
             <div className="min-h-screen">

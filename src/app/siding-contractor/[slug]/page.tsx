@@ -61,29 +61,33 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             title: ` Siding Contractors in ${location?.name} | Paragon Exterior`,
             description: `Expert Siding Contractors serving ${location.name}. Specializing in siding installation, vinyl siding, siding repair, and siding replacement services.`,
             type: 'website',
-            images: ['/images/siding-contractor-hero.jpg'],
+            images: ['/images/dynamic/siding-contractor/hero.webp'],
         },
     };
 }
 
 // Enhanced structured data for siding services
-const generateStructuredData = (location: Location) => ({
+const generateStructuredData = (location: Location, slug: string) => ({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `https://www.paragonexterior.com/siding-contractor/${slug}`,
     "name": "Paragon Exterior",
     "description": `Professional siding contractors in ${location.name} specializing in siding installation, vinyl siding, siding repair, siding replacement, and fiber cement siding services.`,
-    "url": `https://www.paragonexterior.com/siding-contractor/${location.name}`,
+    "url": `https://www.paragonexterior.com/siding-contractor/${slug}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
+        "addressRegion": "PA",
         "addressCountry": "US"
     },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": location.name
+        }
+    ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Siding Services",
@@ -171,7 +175,7 @@ export default async function SidingContractorPage({params}: {params: Promise<{s
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}}
             />
 
             <div className="min-h-screen">

@@ -38,7 +38,7 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             title: `Commercial Roof Repair in ${location?.name} | Paragon Exterior`,
             description: `Expert commercial roof repair serving ${location.name}. Professional TPO, EPDM, and flat roof repair services with emergency response and warranties.`,
             type: 'website',
-            images: ['/images/roof-service/commercial/hero.webp'],
+            images: ['/images/commercial/repair/hero.webp'],
         },
     };
 }
@@ -89,6 +89,65 @@ function CommercialRoofRepairFAQ({locationName}: {locationName: string}) {
     );
 }
 
+const generateStructuredData = (location: Location, slug: string) => ({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `https://www.paragonexterior.com/commercial-roof-repair/${slug}`,
+    "name": "Paragon Exterior",
+    "description": `Professional commercial roof repair in ${location.name} specializing in TPO, EPDM, flat roof repair, and emergency commercial roofing services.`,
+    "url": `https://www.paragonexterior.com/commercial-roof-repair/${slug}`,
+    "telephone": "(215) 799-7663",
+    "email": "info@paragonexterior.com",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": location.name,
+        "addressRegion": "PA",
+        "addressCountry": "US"
+    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": location.name
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Commercial Roof Repair Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "name": "TPO Roof Repair",
+                "description": "Professional TPO membrane repair services for commercial buildings",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "TPO Roof Repair",
+                    "serviceType": "Commercial Roof Repair"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "EPDM Roof Repair",
+                "description": "Expert EPDM rubber roof repair and maintenance services",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "EPDM Roof Repair",
+                    "serviceType": "Commercial Roof Repair"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Emergency Commercial Roof Repair",
+                "description": "24/7 emergency commercial roof repair services for urgent issues",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Emergency Commercial Roof Repair",
+                    "serviceType": "Commercial Roof Repair"
+                }
+            }
+        ]
+    }
+});
+
 export default async function CommercialRoofRepairPage({params}: {params: Promise<{slug: string}>}) {
     const {slug} = await params;
     const location = serviceAreas[slug];
@@ -136,10 +195,10 @@ export default async function CommercialRoofRepairPage({params}: {params: Promis
 
     return (
         <>
-            {/* <script
+            <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
-            /> */}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}}
+            />
 
             <div className="min-h-screen">
                 {/* Enhanced Hero Section */}

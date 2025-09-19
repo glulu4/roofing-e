@@ -50,8 +50,15 @@ export async function generateMetadata({
     return {
         title: `${location?.name} Roof Replacement `,
         description: `Looking for expert roof replacement in ${location?.name}? Paragon Exterior handles everything from asphalt shingle replacements to metal and tile roof installs, backed by industry-leading warranties.`,
+        openGraph: {
+            title: `${location?.name} Roof Replacement | Paragon Exterior`,
+            description: `Looking for expert roof replacement in ${location?.name}? Paragon Exterior handles everything from asphalt shingle replacements to metal and tile roof installs, backed by industry-leading warranties.`,
+            type: 'website',
+            images: ["/images/replace1.jpeg"],
+        },
     };
 }
+
 
 export default async function page({
     params,

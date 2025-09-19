@@ -75,24 +75,27 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 }
 
 // Enhanced structured data for gutter services
-const generateStructuredData = (location: Location) => ({
+const generateStructuredData = (location: Location, slug: string) => ({
     "@context": "https://schema.org",
-    "@type": "Contractor",
+    "@type": "LocalBusiness",
+    "@id": `https://www.paragonexterior.com/gutter-installation/${slug}`,
     "name": "Paragon Exterior",
     "description": `Professional gutter installation in ${location.name} specializing in seamless gutters, gutter repair, gutter replacement, and gutter guard installation services.`,
-    "url": `https://www.paragonexterior.com/gutter-installation/${location.name}`,
+    "url": `https://www.paragonexterior.com/gutter-installation/${slug}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
+        "addressRegion": "PA",
         "addressCountry": "US"
     },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": location.name
+        }
+    ],
 
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -228,7 +231,7 @@ export default async function GutterInstallationPage({params}: {params: Promise<
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}}
             />
 
             <div className="min-h-screen">

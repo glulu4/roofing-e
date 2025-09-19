@@ -84,6 +84,7 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 
 const generateStructuredData = (location: Location) => ({
     "@context": "https://schema.org",
+    "@type": "LocalBusiness",
     "name": "Paragon Exterior",
     "description": `Professional roofing contractor in ${location.name} specializing in roof repair, roof replacement, emergency roof repair, siding installation, and window replacement.`,
 

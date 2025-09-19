@@ -69,9 +69,9 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     const location = serviceAreas[slug];
 
     const title = `Exterior Contractors in ${location?.name}`;
-    const description = `Need a roofing contractor in ${location?.name}? Fast roof repair, full replacement, metal & flat roofing. Licensed, insured, local. Free same‑day estimates.`;
+    const description = `Need exterior contractors in ${location?.name}? Expert roofing, siding, gutters & complete exterior renovations. Licensed, insured, local. Free estimates.`;
 
-    const canonical = `https://www.paragonexterior.com/roofing-contractor/${slug}`;
+    const canonical = `https://www.paragonexterior.com/exterior-contractors/${slug}`;
 
     return {
         title,
@@ -82,7 +82,7 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             description,
             url: canonical,
             type: 'website',
-            images: [{url: '/images/dynamic/roofing-contractor/og.webp', width: 1200, height: 630, alt: `Roofing Contractor in ${location?.name}`}],
+            images: [{url: '/images/dynamic/siding-contractor/hero.webp', width: 1200, height: 630, alt: `Exterior Contractors in ${location?.name}`}],
             locale: 'en_US',
             siteName: 'Paragon Exterior',
         },
@@ -90,29 +90,70 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             card: 'summary_large_image',
             title,
             description,
-            images: ['/images/dynamic/roofing-contractor/og.webp'],
+            images: ['/images/dynamic/siding-contractor/hero.webp'],
         },
     };
 }
 
 
 
-const generateStructuredData = (location: Location) => ({
+const generateStructuredData = (location: Location, slug: string) => ({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `https://www.paragonexterior.com/exterior-contractors/${slug}`,
     "name": "Paragon Exterior",
-    "url": `https://www.paragonexterior.com/exterior-contractors/${location.name}`,
+    "description": `Professional exterior contractors in ${location.name} specializing in roofing, siding, gutters, and complete exterior renovations.`,
+    "url": `https://www.paragonexterior.com/exterior-contractors/${slug}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
+        "addressRegion": "PA",
         "addressCountry": "US"
     },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": location.name
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Exterior Contractor Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "name": "Roofing Services",
+                "description": "Professional roofing installation, repair, and replacement services",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Roofing Services",
+                    "serviceType": "Exterior Construction"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Siding Installation",
+                "description": "Expert siding installation and replacement services",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Siding Installation",
+                    "serviceType": "Exterior Construction"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Gutter Installation",
+                "description": "Professional gutter installation and repair services",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gutter Installation",
+                    "serviceType": "Exterior Construction"
+                }
+            }
+        ]
+    }
 });
 
 
@@ -127,7 +168,7 @@ export default async function page({params}: {params: Promise<{slug: string}>}) 
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}}
             />
 
 

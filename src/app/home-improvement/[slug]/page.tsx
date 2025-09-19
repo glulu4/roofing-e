@@ -24,27 +24,38 @@ export async function generateMetadata({
     return {
         title: `Home Improvement Contractor in ${location?.name}`,
         description: `Trusted home improvement contractor in ${location?.name}. Paragon Exterior specializes in roofing, siding, windows, and gutters. Get a free estimate today!`,
+        openGraph: {
+            title: `Home Improvement Contractor in ${location?.name} | Paragon Exterior`,
+            description: `Trusted home improvement contractor in ${location?.name}. Paragon Exterior specializes in roofing, siding, windows, and gutters. Get a free estimate today!`,
+            type: 'website',
+            images: ['/images/home/best-roofing-contractor.webp'],
+        },
     };
 }
 
 
 
-const generateStructuredData = (location: Location) => ({
+const generateStructuredData = (location: Location, slug: string) => ({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `https://www.paragonexterior.com/home-improvement/${slug}`,
     "name": "Paragon Exterior",
-    "url": `https://www.paragonexterior.com/exterior-contractors/${location.name}`,
+    "description": `Professional home improvement contractor in ${location.name} specializing in roofing, siding, windows, doors, and complete home renovations.`,
+    "url": `https://www.paragonexterior.com/home-improvement/${slug}`,
     "telephone": "(215) 799-7663",
     "email": "info@paragonexterior.com",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": location.name,
+        "addressRegion": "PA",
         "addressCountry": "US"
     },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": location.name
+        }
+    ],
 });
 
 export default async function page({params}: {params: Promise<{slug: string}>}) {
@@ -60,7 +71,7 @@ export default async function page({params}: {params: Promise<{slug: string}>}) 
         <div className='min-h-screen'>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
+                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}}
             />
 
             <Hero

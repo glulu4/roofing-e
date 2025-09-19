@@ -81,84 +81,10 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             title: `${location?.name} Roofing Contractor | Paragon Exterior`,
             description: `Professional roofing services in ${location.name}. Expert roof repair, installation, and emergency services from your trusted local roofing contractor.`,
             type: 'website',
-            images: ['/images/slug-images/roofing-contractor.jpg'],
+            images: ["/images/dynamic/roofing-contractor/hero.webp"],
         },
     };
 }
-
-const generateStructuredData = (location: any) => ({
-    "@context": "https://schema.org",
-    "@type": "RoofingContractor",
-    "name": "Paragon Exterior",
-    "description": `Professional roofing contractor serving ${location.name} with expert roof repair, installation, and emergency services.`,
-    "url": `https://www.paragonexterior.com/roofing-contractor/${location.slug}`,
-    "telephone": "(215) 799-7663",
-    "email": "info@paragonexterior.com",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": location.name,
-        "addressRegion": location.state || "PA",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Roofing Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Roof Repair",
-                    "description": "Professional roof repair services for residential and commercial properties"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Roof Replacement",
-                    "description": "Complete roof replacement with high-quality materials and expert installation"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Skylight Installation",
-                    "description": "Professional skylight installation to enhance natural light in your home"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Flat Roofing",
-                    "description": "Specialized flat roofing services for commercial and residential properties"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Roof Installation",
-                    "description": "Complete roof installation with premium materials and expert craftsmanship"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Emergency Roofing",
-                    "description": "24/7 emergency roof repair for storm damage, leaks, and urgent issues"
-                }
-            }
-        ]
-    }
-});
 
 
 interface PageProps {
@@ -172,13 +98,7 @@ export default async function ServiceAreaPage({params}: PageProps) {
     if (!location) return <div>Area not found.</div>;
 
     return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
-            />
-
-            <div className="min-h-screen">
+        <div className="min-h-screen">
                 <Hero
                     mainText={`${location.name}'s Trusted Roofing Contractor`}
                     subText={`Need roofing help in ${location.name}? Paragon Exterior provides expert roof repairs, full roof replacements, and fast emergency service for homes and businesses. Our local roofing company is licensed, insured, and trusted for over 10 years.`}
@@ -385,6 +305,5 @@ export default async function ServiceAreaPage({params}: PageProps) {
                 {/* Final CTA */}
                 <GetEstimate location={location.name} />
             </div>
-        </>
     );
 }

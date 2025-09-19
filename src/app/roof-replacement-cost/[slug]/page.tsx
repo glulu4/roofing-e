@@ -82,7 +82,7 @@ Understanding roof replacement costs in ${location.name} helps you budget effect
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "RoofingContractor",
+                        "@type": "LocalBusiness",
                         "name": "Paragon Exterior",
                         "description": `${location.name} roofing contractor for roof repair, roof replacement, metal roofing, flat roofs, siding, and windows.`,
                         "email": "info@paragonexterior.com",

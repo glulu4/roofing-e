@@ -27,17 +27,17 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             title: `Vinyl Siding Repair in ${location.name} | Paragon Exterior`,
             description: `Expert vinyl siding repair services in ${location.name}. Storm damage, cracks, and panel replacement with perfect color matching. Get your free estimate today.`,
             type: "website",
-            images: ["/images/vinyl-siding-repair-hero.jpg"],
+            images: ["/images/siding/vinyl/hero.jpg"],
         },
     };
 }
 
-const generateStructuredData = (location: Location) => ({
+const generateStructuredData = (location: Location, slug: string) => ({
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     name: "Paragon Exterior",
     description: `Professional vinyl siding repair services in ${location.name}. Specializing in storm damage repair, crack fixes, panel replacement, and color matching for lasting results.`,
-    url: `https://www.paragonexterior.com/vinyl-siding-repair/${location.name}`,
+    url: `https://www.paragonexterior.com/vinyl-siding-repair/${slug}`,
     telephone: "(215) 799-7663",
     email: "info@paragonexterior.com",
     image: "https://www.paragonexterior.com/icon.png",
@@ -92,7 +92,7 @@ export default async function VinylSidingRepairPage({params}: {params: Promise<{
 
     return (
         <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location, slug))}} />
 
             <div className="min-h-screen">
                 <Hero

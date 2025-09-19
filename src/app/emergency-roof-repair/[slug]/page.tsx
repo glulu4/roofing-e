@@ -55,61 +55,11 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
             title: `Emergency Roof Repair ${location?.name} | 24/7 Response`,
             description: `Immediate emergency roof repair in ${location.name}. 24/7 response for storm damage, leaks, and urgent roofing emergencies. Call now for instant help!`,
             type: 'website',
-            images: ['/images/emergency-roof-repair-hero.jpg'],
+            images: ['/images/dynamic/emergency/hero.webp'],
         },
     };
 }
 
-// Enhanced structured data for emergency services
-const generateStructuredData = (location: Location) => ({
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "EmergencyService"],
-    "name": "Paragon Exterior Emergency Roof Repair",
-    "description": `24/7 emergency roof repair service in ${location.name} providing immediate response for storm damage, roof leaks, and urgent roofing emergencies.`,
-    "url": `https://www.paragonexterior.com/emergency-roof-repair/${location.name}`,
-    "telephone": "(215) 799-7663",
-    "email": "info@paragonexterior.com",
-    "availableLanguage": "English",
-    "currenciesAccepted": "USD",
-    "paymentAccepted": ["Cash", "Check", "Credit Card", "Insurance"],
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": location.name
-    },
-    "availabilityStarts": "00:00",
-    "availabilityEnds": "23:59",
-    "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-    ],
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Emergency Roofing Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "24/7 Emergency Roof Repair",
-                    "description": "Immediate emergency roof repair response available around the clock"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Storm Damage Repair",
-                    "description": "Expert storm damage assessment and emergency roof repair services"
-                }
-            }
-        ]
-    }
-});
 
 // Custom emergency FAQ for local areas
 function EmergencyRoofRepairFAQ({locationName}: {locationName: string}) {
@@ -162,12 +112,6 @@ export default async function EmergencyRoofRepairPage({params}: {params: Promise
     if (!location) return <div>Area not found.</div>;
 
     return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
-            />
-
             <div className="min-h-screen">
                 {/* Enhanced Hero Section */}
                 <Hero
@@ -404,6 +348,5 @@ export default async function EmergencyRoofRepairPage({params}: {params: Promise
                 {/* Final CTA */}
                 <GetEstimate location={location.name} />
             </div>
-        </>
     );
 }

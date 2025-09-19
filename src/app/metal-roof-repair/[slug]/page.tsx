@@ -66,60 +66,6 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     };
 }
 
-// Enhanced structured data for metal roof repair services
-const generateStructuredData = (location: Location) => ({
-    "@context": "https://schema.org",
-    "@type": "RoofingContractor",
-    "name": "Paragon Exterior",
-    "description": `Professional metal roof repair in ${location.name} specializing in metal roof leak repair, panel replacement, and storm damage restoration services.`,
-    "url": `https://www.paragonexterior.com/metal-roof-repair/${location.name}`,
-    "telephone": "(215) 799-7663",
-    "email": "info@paragonexterior.com",
-    "image": "https://www.paragonexterior.com/icon.png", // update if needed
-    "priceRange": "$$",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": location.name,
-        "addressRegion": location.name || "PA",
-        "addressCountry": "US"
-    },
-    "areaServed": {
-        "@type": "City",
-        "name": location.name
-    },
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Metal Roof Repair Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Metal Roof Leak Repair",
-                    "description": "Professional repair of metal roof leaks with permanent solutions and warranties"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Metal Roof Panel Replacement",
-                    "description": "Expert replacement of damaged metal roof panels with color-matched materials"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Emergency Metal Roof Repair",
-                    "description": "24/7 emergency metal roof repair services for urgent leak and storm damage"
-                }
-            }
-        ]
-    }
-});
-
-
 // Metal roof repair FAQ based on search data
 function MetalRoofRepairFAQ({locationName}: {locationName: string}) {
     const metalRoofFaqData = [
@@ -211,12 +157,6 @@ export default async function MetalRoofRepairPage({params}: {params: Promise<{sl
     ];
 
     return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{__html: JSON.stringify(generateStructuredData(location))}}
-            />
-
             <div className="min-h-screen">
                 {/* Enhanced Hero Section */}
                 <Hero
@@ -461,6 +401,5 @@ export default async function MetalRoofRepairPage({params}: {params: Promise<{sl
                 {/* Final CTA */}
                 <GetEstimate location={location.name} />
             </div>
-        </>
     );
 }
